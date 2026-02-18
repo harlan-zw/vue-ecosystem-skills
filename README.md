@@ -67,82 +67,82 @@ npx skills add harlan-zw/vue-ecosystem-skills
 
 ### Core
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**vue**](./skills/vue-skilld/SKILL.md) | 3.6.0-beta.6 | Vue — reactivity, components, Composition API |
-| [**pinia**](./skills/pinia-skilld/SKILL.md) | 3.0.4 | Pinia — stores, plugins, SSR, devtools |
-| [**vue-router**](./skills/vue-router-skilld/SKILL.md) | 5.0.2 | Vue Router — navigation guards, data loaders |
-| [**vue-test-utils**](./skills/vue-test-utils-skilld/SKILL.md) | 2.4.6 | Vue Test Utils — component testing utilities |
-| [**unhead**](./skills/unhead-skilld/SKILL.md) | 2.1.4 | Unhead — document head management |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vue              # 3.6.0-beta.6
+npx skilld add harlan-zw/vue-ecosystem-skills --skill pinia            # 3.0.4
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vue-router       # 5.0.2
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vue-test-utils   # 2.4.6
+npx skilld add harlan-zw/vue-ecosystem-skills --skill unhead           # 2.1.4
+```
 
 ### Data & State
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**pinia-colada**](./skills/pinia-colada-skilld/SKILL.md) | 0.21.4 | Pinia Colada — type-safe data fetching for Pinia |
-| [**tanstack-vue-query**](./skills/tanstack-vue-query-skilld/SKILL.md) | 5.92.9 | TanStack Vue Query — async state management and caching |
-| [**tanstack-vue-store**](./skills/tanstack-vue-store-skilld/SKILL.md) | 0.9.1 | TanStack Vue Store — framework-agnostic reactive store |
-| [**tanstack-vue-table**](./skills/tanstack-vue-table-skilld/SKILL.md) | 8.21.3 | TanStack Vue Table — headless table/datagrid utilities |
-| [**tanstack-vue-virtual**](./skills/tanstack-vue-virtual-skilld/SKILL.md) | 3.13.18 | TanStack Vue Virtual — virtualized list/grid rendering |
-| [**tanstack-vue-form**](./skills/tanstack-vue-form-skilld/SKILL.md) | 1.28.3 | TanStack Vue Form — type-safe form management |
-| [**tanstack-vue-router**](./skills/tanstack-vue-router-skilld/SKILL.md) | 1.160.0 | TanStack Vue Router — type-safe routing |
-| [**tanstack-ai-vue**](./skills/tanstack-ai-vue-skilld/SKILL.md) | 0.5.4 | TanStack AI Vue — AI/LLM integration utilities |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill pinia-colada          # 0.21.4
+npx skilld add harlan-zw/vue-ecosystem-skills --skill tanstack-vue-query    # 5.92.9
+npx skilld add harlan-zw/vue-ecosystem-skills --skill tanstack-vue-store    # 0.9.1
+npx skilld add harlan-zw/vue-ecosystem-skills --skill tanstack-vue-table    # 8.21.3
+npx skilld add harlan-zw/vue-ecosystem-skills --skill tanstack-vue-virtual  # 3.13.18
+npx skilld add harlan-zw/vue-ecosystem-skills --skill tanstack-vue-form     # 1.28.3
+npx skilld add harlan-zw/vue-ecosystem-skills --skill tanstack-vue-router   # 1.160.0
+npx skilld add harlan-zw/vue-ecosystem-skills --skill tanstack-ai-vue       # 0.5.4
+```
 
 ### UI Libraries
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**reka-ui**](./skills/reka-ui-skilld/SKILL.md) | 2.8.0 | Reka UI — unstyled, accessible component primitives |
-| [**shadcn-vue**](./skills/shadcn-vue-skilld/SKILL.md) | 2.4.3 | shadcn-vue — re-usable components built on Reka UI |
-| [**primevue**](./skills/primevue-skilld/SKILL.md) | 4.5.4 | PrimeVue — rich UI component suite |
-| [**vuetify**](./skills/vuetify-skilld/SKILL.md) | 4.0.0-beta.2 | Vuetify — Material Design component framework |
-| [**quasar**](./skills/quasar-skilld/SKILL.md) | 2.18.6 | Quasar — cross-platform Vue framework |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill reka-ui      # 2.8.0
+npx skilld add harlan-zw/vue-ecosystem-skills --skill shadcn-vue   # 2.4.3
+npx skilld add harlan-zw/vue-ecosystem-skills --skill primevue     # 4.5.4
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vuetify      # 4.0.0-beta.2
+npx skilld add harlan-zw/vue-ecosystem-skills --skill quasar       # 2.18.6
+```
 
 ### Forms
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**formkit**](./skills/formkit-core-skilld/SKILL.md) | 1.7.2 | FormKit — form building framework |
-| [**vee-validate**](./skills/vee-validate-skilld/SKILL.md) | 4.15.1 | VeeValidate — form validation |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill formkit        # 1.7.2
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vee-validate   # 4.15.1
+```
 
 ### Data Visualization
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**vue-data-ui**](./skills/vue-data-ui-skilld/SKILL.md) | 3.15.2 | Vue Data UI — data visualization components |
-| [**unovis-vue**](./skills/unovis-vue-skilld/SKILL.md) | 1.6.4 | Unovis Vue — modular data visualization framework |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vue-data-ui    # 3.15.2
+npx skilld add harlan-zw/vue-ecosystem-skills --skill unovis-vue     # 1.6.4
+```
 
 ### Positioning
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**floating-ui-vue**](./skills/floating-ui-vue-skilld/SKILL.md) | 1.1.10 | Floating UI for Vue — positioning for tooltips, popovers, dropdowns |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill floating-ui-vue   # 1.1.10
+```
 
 ### Animation
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**motion-vue**](./skills/motion-v-skilld/SKILL.md) | 2.0.0-beta.4 | Motion for Vue — animation library |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill motion-vue   # 2.0.0-beta.4
+```
 
 ### VueUse
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**vueuse-core**](./skills/vueuse-core-skilld/SKILL.md) | 14.2.1 | VueUse Core — essential composition utilities |
-| [**vueuse-shared**](./skills/vueuse-shared-skilld/SKILL.md) | 14.2.1 | VueUse Shared — shared utilities |
-| [**vueuse-components**](./skills/vueuse-components-skilld/SKILL.md) | 14.2.1 | VueUse Components — renderless component utilities |
-| [**vueuse-integrations**](./skills/vueuse-integrations-skilld/SKILL.md) | 14.2.1 | VueUse Integrations — third-party library integrations |
-| [**vueuse-head**](./skills/vueuse-head-skilld/SKILL.md) | 2.0.0 | VueUse Head — document head management (legacy) |
-| [**vueuse-math**](./skills/vueuse-math-skilld/SKILL.md) | 14.2.1 | VueUse Math — math/logic composition utilities |
-| [**vueuse-motion**](./skills/vueuse-motion-skilld/SKILL.md) | 3.0.3 | VueUse Motion — animation composition utilities |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vueuse-core           # 14.2.1
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vueuse-shared         # 14.2.1
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vueuse-components     # 14.2.1
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vueuse-integrations   # 14.2.1
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vueuse-head           # 2.0.0
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vueuse-math           # 14.2.1
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vueuse-motion         # 3.0.3
+```
 
 ### Tooling & DX
 
-| Skill | Version | Description |
-|-------|---------|-------------|
-| [**vue-i18n**](./skills/vue-i18n-skilld/SKILL.md) | 11.2.8 | Vue I18n — internationalization |
-| [**vitepress**](./skills/vitepress-skilld/SKILL.md) | 1.6.4 | VitePress — static site generator |
-| [**tresjs**](./skills/tresjs-core-skilld/SKILL.md) | 5.5.0 | TresJS — 3D rendering with Three.js |
+```bash
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vue-i18n     # 11.2.8
+npx skilld add harlan-zw/vue-ecosystem-skills --skill vitepress    # 1.6.4
+npx skilld add harlan-zw/vue-ecosystem-skills --skill tresjs       # 5.5.0
+```
 
 ## What's in Each Skill
 
