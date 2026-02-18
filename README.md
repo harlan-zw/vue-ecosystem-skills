@@ -26,7 +26,7 @@ This repo bridges the gap: pre-generated skills from real sources (docs, GitHub 
 
 - 📦 **Bleeding Edge Context**: Always use the latest best practices and avoid deprecated patterns.
 - 📚 **Unopinionated**: Just follows the docs, no personal biases or opinions injected
-- 🔬 **Deep References**: Real GitHub issues, discussions, and changelogs — not just docs
+- 🔬 **Deep References**: Real GitHub issues, discussions, and changelogs
 - 🎯 **Version-Aware**: API changes and best practices tied to specific package versions
 - 🤝 **Ecosystem**: Compatible with [`npx skills`](https://skills.sh/) and [skilld](https://github.com/harlan-zw/skilld)
 
@@ -42,6 +42,13 @@ Or if you prefer [skills.sh](https://skills.sh/):
 npx skills add harlan-zw/vue-ecosystem-skills
 ```
 
+**Ensure skills are used** — Add this to your agent file (e.g. `CLAUDE.md`, `.cursorrules`):
+
+```
+Before modifying code, evaluate each installed skill against the current task.
+For each skill, determine YES/NO relevance and invoke all YES skills before proceeding.
+```
+
 ### Claude Code Marketplace
 
 ```bash
@@ -54,14 +61,6 @@ npx skills add harlan-zw/vue-ecosystem-skills
 # Install multiple skills
 /plugin install pinia@vue-ecosystem-skills vue-router@vue-ecosystem-skills reka-ui@vue-ecosystem-skills
 ```
-
-### Tips
-
-- **Ensure skills are used** — Add this to your agent file (e.g. `CLAUDE.md`, `.cursorrules`):
-  ```
-  Before modifying code, evaluate each installed skill against the current task.
-  For each skill, determine YES/NO relevance and invoke all YES skills before proceeding.
-  ```
 
 ## Available Skills
 
