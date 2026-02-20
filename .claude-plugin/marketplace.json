@@ -102,10 +102,10 @@
       "skills": ["./skills/tresjs-core-skilld"]
     },
     {
-      "name": "unhead",
+      "name": "vue",
       "source": "./",
-      "description": "ALWAYS use when writing code importing \"unhead\". Consult for debugging, best practices, or modifying unhead.",
-      "skills": ["./skills/unhead-skilld"]
+      "description": "ALWAYS use when editing or working with *.vue files or code importing \"vue\". Consult for debugging, best practices, or modifying vue.",
+      "skills": ["./skills/vue-skilld"]
     },
     {
       "name": "vee-validate",
@@ -154,12 +154,6 @@
       "source": "./",
       "description": "ALWAYS use when writing code importing \"@vueuse/core\". Consult for debugging, best practices, or modifying vueuse core.",
       "skills": ["./skills/vueuse-core-skilld"]
-    },
-    {
-      "name": "vueuse-head",
-      "source": "./",
-      "description": "ALWAYS use when writing code importing \"@vueuse/head\". Consult for debugging, best practices, or modifying vueuse head.",
-      "skills": ["./skills/vueuse-head-skilld"]
     },
     {
       "name": "vueuse-integrations",
