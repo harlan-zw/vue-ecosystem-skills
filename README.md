@@ -28,7 +28,7 @@ This repo bridges the gap: pre-generated skills from real sources (docs, GitHub 
 - 📚 **Unopinionated**: Just follows the docs, no personal biases or opinions injected
 - 🔬 **Deep References**: Real GitHub issues, discussions, and changelogs
 - 🎯 **Version-Aware**: API changes and best practices tied to specific package versions
-- 🍋 **Always up-to-date (soon)**: Hooked into ecosystem releases so you're always working with the latest best practices
+- 🍋 **Always up-to-date**: Hooked into ecosystem releases so you're always working with the latest best practices
 - 🤝 **Ecosystem**: Compatible with [`npx skills`](https://skills.sh/) and [skilld](https://github.com/harlan-zw/skilld)
 
 ## Quick Start
