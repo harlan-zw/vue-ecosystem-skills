@@ -215,7 +215,7 @@ for pkg in "${PACKAGES[@]}"; do
     old_body=$(extract_body "$skill_md.bak")
 
     # 2. Run skilld eject without --model (syncs refs + header)
-    eject_args=("$pkg" --out "$EJECT_DIR" --yes --force --debug)
+    eject_args=("$pkg" --out "$EJECT_DIR" --yes --force --debug --no-search)
     if ! $SKILLD eject "${eject_args[@]}"; then
       echo "  ✗ $pkg (failed)"
       # Restore backup on failure
@@ -231,7 +231,7 @@ for pkg in "${PACKAGES[@]}"; do
     # 3. Decide: LLM regen or merge
     if [ "$REFS_AND_REGEN" = true ] && { [ "$change" = "major" ] || [ "$change" = "minor" ]; }; then
       echo "  ↑ $old_ver → $new_ver ($change bump) — regenerating with LLM"
-      if $SKILLD eject "$pkg" --out "$EJECT_DIR" --yes --force --model "$MODEL" --debug; then
+      if $SKILLD eject "$pkg" --out "$EJECT_DIR" --yes --force --model "$MODEL" --debug --no-search; then
         regenerated+=("$pkg ($old_ver → $new_ver)")
         echo "  ✓ $pkg (regenerated)"
       else
@@ -255,7 +255,7 @@ for pkg in "${PACKAGES[@]}"; do
     rm -f "$skill_md.bak"
   else
     # --- full generation path ---
-    eject_args=("$pkg" --out "$EJECT_DIR" --yes --force --model "$MODEL" --debug)
+    eject_args=("$pkg" --out "$EJECT_DIR" --yes --force --model "$MODEL" --debug --no-search)
     if $SKILLD eject "${eject_args[@]}"; then
       echo "  ✓ $pkg"
     else
