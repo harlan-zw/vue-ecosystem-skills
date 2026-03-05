@@ -3,7 +3,7 @@ set -euo pipefail
 
 MODEL="sonnet"
 EJECT_DIR="./skills"
-SKILLD="npx -y skilld@v0.13.2"
+SKILLD="npx -y skilld@latest"
 REFS_ONLY=false
 REFS_AND_REGEN=false
 
