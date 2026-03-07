@@ -1,24 +1,24 @@
 ---
-title: "Integration Motion for Vue with Radix | Motion"
+title: "Integration Motion for Vue with Reka | Motion"
 meta:
-  "og:description": "Integrate Motion with Radix Vue for stunning animations. Learn to animate Radix primitives, use AnimatePresence for smooth exits, &amp; animate Tooltip, Toast &amp; more."
-  "og:title": "Integration Motion for Vue with Radix | Motion"
-  "twitter:description": "Integrate Motion with Radix Vue for stunning animations. Learn to animate Radix primitives, use AnimatePresence for smooth exits, &amp; animate Tooltip, Toast &amp; more."
-  "twitter:title": "Integration Motion for Vue with Radix | Motion"
-  description: "Integrate Motion with Radix Vue for stunning animations. Learn to animate Radix primitives, use AnimatePresence for smooth exits, &amp; animate Tooltip, Toast &amp; more."
+  "og:description": "Integrate Motion with Reka-UI for stunning animations. Learn to animate Reka primitives, use AnimatePresence for smooth exits, &amp; animate Tooltip, Toast &amp; more."
+  "og:title": "Integration Motion for Vue with Reka | Motion"
+  "twitter:description": "Integrate Motion with Reka-UI for stunning animations. Learn to animate Reka primitives, use AnimatePresence for smooth exits, &amp; animate Tooltip, Toast &amp; more."
+  "twitter:title": "Integration Motion for Vue with Reka | Motion"
+  description: "Integrate Motion with Reka-UI for stunning animations. Learn to animate Reka primitives, use AnimatePresence for smooth exits, &amp; animate Tooltip, Toast &amp; more."
 ---
 
 Vue
 
-# Integrate Motion with Radix
+# Integrate Motion with Reka
 
-Radix-Vue is one of the most popular component libraries for Vue, and it takes just a couple steps to use Motion for Vue for animations.
+Reka-UI is one of the most popular component libraries for Vue, and it takes just a couple steps to use Motion for Vue for animations.
 
-In this guide, we'll learn how to use `[motion](https://motion.dev/vue-motion-component)` components with Radix primitives, as well as specific setups for exit and layout animations.
+In this guide, we'll learn how to use `[motion](https://motion.dev/vue-motion-component)` components with Reka primitives, as well as specific setups for exit and layout animations.
 
 ## [Setup `motion` components](#setup-motion-components)
 
-Most Radix components render and control their own DOM elements. But they also provide the`[asChild](https://reka-ui.com/docs/guides/composition#composition)` prop that, when set to `true`, will make the component use the first provided child as its DOM node instead.
+Most Reka components render and control their own DOM elements. But they also provide the`[asChild](https://reka-ui.com/docs/guides/composition#composition)` prop that, when set to `true`, will make the component use the first provided child as its DOM node instead.
 
 By passing a `[motion](https://motion.dev/react-motion-component)` component as this child, we can now use all of its animation props as normal:
 
@@ -32,7 +32,7 @@ By passing a `[motion](https://motion.dev/react-motion-component)` component as 
 
 ## [Exit animations](#exit-animations)
 
-Many Radix components, like Toast or Tooltip, would be perfect for exit animations, but can't perform them without Motion's `[AnimatePresence](https://motion.dev/vue-animate-presence)`.
+Many Reka components, like Toast or Tooltip, would be perfect for exit animations, but can't perform them without Motion's `[AnimatePresence](https://motion.dev/vue-animate-presence)`.
 
 `AnimatePresence` is built on top of Vue's Transition component,This is how it tracks which components are exiting:
 
@@ -45,7 +45,7 @@ Many Radix components, like Toast or Tooltip, would be perfect for exit animatio
   </AnimatePresence>
 </template>
 
-Using exit animations with Motion Vue and Radix components is straightforward. Just wrap your unmounting component with `AnimatePresence`, and it can detect the direct child DOM unmounting and trigger exit animations.
+Using exit animations with Motion Vue and Reka components is straightforward. Just wrap your unmounting component with `AnimatePresence`, and it can detect the direct child DOM unmounting and trigger exit animations.
 
 For example, works with the Tooltip component：
 
@@ -93,7 +93,7 @@ This is to ensure `motion` components know to perform layout animations when the
 
 Motion+ is a one-time payment, lifetime membership that gains you access to the source code of an ever-growing library of examples, as well as premium components like `[Cursor](https://motion.dev/vue-cursor)` and `[AnimateNumber](https://motion.dev/vue-animate-number)`.
 
-Motion+ features examples for most Radix components:
+Motion+ features examples for most Reka components:
 
 - Accordion
 - Checkbox
@@ -111,13 +111,13 @@ Motion+ features examples for most Radix components:
 - Toolbar
 - Tooltip
 
-Radix-Vue is one of the most popular component libraries for Vue, and it takes just a couple steps to use Motion for Vue for animations.
+Reka-UI is one of the most popular component libraries for Vue, and it takes just a couple steps to use Motion for Vue for animations.
 
-In this guide, we'll learn how to use `[motion](https://motion.dev/vue-motion-component)` components with Radix primitives, as well as specific setups for exit and layout animations.
+In this guide, we'll learn how to use `[motion](https://motion.dev/vue-motion-component)` components with Reka primitives, as well as specific setups for exit and layout animations.
 
 ## [Setup `motion` components](#setup-motion-components)
 
-Most Radix components render and control their own DOM elements. But they also provide the`[asChild](https://reka-ui.com/docs/guides/composition#composition)` prop that, when set to `true`, will make the component use the first provided child as its DOM node instead.
+Most Reka components render and control their own DOM elements. But they also provide the`[asChild](https://reka-ui.com/docs/guides/composition#composition)` prop that, when set to `true`, will make the component use the first provided child as its DOM node instead.
 
 By passing a `[motion](https://motion.dev/react-motion-component)` component as this child, we can now use all of its animation props as normal:
 
@@ -131,7 +131,7 @@ By passing a `[motion](https://motion.dev/react-motion-component)` component as 
 
 ## [Exit animations](#exit-animations)
 
-Many Radix components, like Toast or Tooltip, would be perfect for exit animations, but can't perform them without Motion's `[AnimatePresence](https://motion.dev/vue-animate-presence)`.
+Many Reka components, like Toast or Tooltip, would be perfect for exit animations, but can't perform them without Motion's `[AnimatePresence](https://motion.dev/vue-animate-presence)`.
 
 `AnimatePresence` is built on top of Vue's Transition component,This is how it tracks which components are exiting:
 
@@ -144,7 +144,7 @@ Many Radix components, like Toast or Tooltip, would be perfect for exit animatio
   </AnimatePresence>
 </template>
 
-Using exit animations with Motion Vue and Radix components is straightforward. Just wrap your unmounting component with `AnimatePresence`, and it can detect the direct child DOM unmounting and trigger exit animations.
+Using exit animations with Motion Vue and Reka components is straightforward. Just wrap your unmounting component with `AnimatePresence`, and it can detect the direct child DOM unmounting and trigger exit animations.
 
 For example, works with the Tooltip component：
 
@@ -192,7 +192,7 @@ This is to ensure `motion` components know to perform layout animations when the
 
 Motion+ is a one-time payment, lifetime membership that gains you access to the source code of an ever-growing library of examples, as well as premium components like `[Cursor](https://motion.dev/vue-cursor)` and `[AnimateNumber](https://motion.dev/vue-animate-number)`.
 
-Motion+ features examples for most Radix components:
+Motion+ features examples for most Reka components:
 
 - Accordion
 - Checkbox
@@ -210,13 +210,13 @@ Motion+ features examples for most Radix components:
 - Toolbar
 - Tooltip
 
-Radix-Vue is one of the most popular component libraries for Vue, and it takes just a couple steps to use Motion for Vue for animations.
+Reka-UI is one of the most popular component libraries for Vue, and it takes just a couple steps to use Motion for Vue for animations.
 
-In this guide, we'll learn how to use `[motion](https://motion.dev/vue-motion-component)` components with Radix primitives, as well as specific setups for exit and layout animations.
+In this guide, we'll learn how to use `[motion](https://motion.dev/vue-motion-component)` components with Reka primitives, as well as specific setups for exit and layout animations.
 
 ## [Setup `motion` components](#setup-motion-components)
 
-Most Radix components render and control their own DOM elements. But they also provide the`[asChild](https://reka-ui.com/docs/guides/composition#composition)` prop that, when set to `true`, will make the component use the first provided child as its DOM node instead.
+Most Reka components render and control their own DOM elements. But they also provide the`[asChild](https://reka-ui.com/docs/guides/composition#composition)` prop that, when set to `true`, will make the component use the first provided child as its DOM node instead.
 
 By passing a `[motion](https://motion.dev/react-motion-component)` component as this child, we can now use all of its animation props as normal:
 
@@ -230,7 +230,7 @@ By passing a `[motion](https://motion.dev/react-motion-component)` component as 
 
 ## [Exit animations](#exit-animations)
 
-Many Radix components, like Toast or Tooltip, would be perfect for exit animations, but can't perform them without Motion's `[AnimatePresence](https://motion.dev/vue-animate-presence)`.
+Many Reka components, like Toast or Tooltip, would be perfect for exit animations, but can't perform them without Motion's `[AnimatePresence](https://motion.dev/vue-animate-presence)`.
 
 `AnimatePresence` is built on top of Vue's Transition component,This is how it tracks which components are exiting:
 
@@ -243,7 +243,7 @@ Many Radix components, like Toast or Tooltip, would be perfect for exit animatio
   </AnimatePresence>
 </template>
 
-Using exit animations with Motion Vue and Radix components is straightforward. Just wrap your unmounting component with `AnimatePresence`, and it can detect the direct child DOM unmounting and trigger exit animations.
+Using exit animations with Motion Vue and Reka components is straightforward. Just wrap your unmounting component with `AnimatePresence`, and it can detect the direct child DOM unmounting and trigger exit animations.
 
 For example, works with the Tooltip component：
 
@@ -291,7 +291,7 @@ This is to ensure `motion` components know to perform layout animations when the
 
 Motion+ is a one-time payment, lifetime membership that gains you access to the source code of an ever-growing library of examples, as well as premium components like `[Cursor](https://motion.dev/vue-cursor)` and `[AnimateNumber](https://motion.dev/vue-animate-number)`.
 
-Motion+ features examples for most Radix components:
+Motion+ features examples for most Reka components:
 
 - Accordion
 - Checkbox

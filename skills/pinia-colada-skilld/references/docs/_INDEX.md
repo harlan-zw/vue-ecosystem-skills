@@ -1,5 +1,5 @@
 ---
-total: 37
+total: 38
 ---
 
 # Docs Index
@@ -14,7 +14,7 @@ total: 37
 - [Query Cache](./advanced/query-cache.md): The query cache is a central piece of the Pinia colada library. It centralizes the caching logic of queries and is used for query invalidation and ...
 - [Reusable Queries](./advanced/reusable-queries.md): While useQuery() can be directly called in components, we often need to reuse the same query across components or even add extra properties like co...
 
-## cookbook (7)
+## cookbook (8)
 
 - [Cache Persistence](./cookbook/cache-persistence.md): Persist your query cache to storage so users don't start with empty state on page reload.
 - [Cookbook](./cookbook/index.md)
@@ -22,6 +22,7 @@ total: 37
 - [Migration Codemods](./cookbook/migrations.md): Pinia Colada ships ast-grep codemods to automate breaking-change migrations. Always commit your changes before running a codemod so you can review ...
 - [Prefetching queries](./cookbook/prefetching.md): Prefetching queries is a way to ensure that your data is ready before useQuery() is called. Usually done before navigating to a page or to prefetch...
 - [Query Hooks](./cookbook/query-hooks.md): You might notice that useQuery does not support onSuccess, onError, or onSettled callbacks. This is intentional. Local callbacks introduce side eff...
+- [TanStack Query Compatibility Plugin](./cookbook/tanstack-compat.md): This plugin provides a compatibility layer for developers migrating from TanStack Query (Vue) to Pinia Colada, or for those who prefer the TanStack...
 - [Testing](./cookbook/testing.md): When testing components that use Pinia Colada, focus on testing your app behavior, not Pinia Colada internals.
 In most cases, mock at the network l...
 

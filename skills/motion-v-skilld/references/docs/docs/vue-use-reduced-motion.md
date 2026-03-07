@@ -111,7 +111,7 @@ useInView
 
 Next
 
-Integrate Motion with Radix
+Integrate Motion with Reka
 
 Motion+
 

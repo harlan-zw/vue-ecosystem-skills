@@ -19,7 +19,7 @@ total: 32
 - [Vue <motion /> component | Motion](./docs/vue-motion-component.md): Vue
 - [MotionConfig — Configure Motion for Vue | Motion](./docs/vue-motion-config.md): Vue
 - [Motion values — Composables for Vue animations | Motion](./docs/vue-motion-value.md): Vue
-- [Integration Motion for Vue with Radix | Motion](./docs/vue-radix.md): Vue
+- [Integration Motion for Vue with Reka | Motion](./docs/vue-radix.md): Vue
 - [Reorder — Vue drag-to-reorder animation | Motion](./docs/vue-reorder.md): Vue
 - [Vue scroll animation — scroll-linked & parallax | Motion](./docs/vue-scroll-animations.md): Vue
 - [Ticker — scrolling marquee animations in Vue | Motion](./docs/vue-ticker.md): Vue

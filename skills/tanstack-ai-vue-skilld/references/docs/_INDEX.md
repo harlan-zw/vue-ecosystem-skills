@@ -1,5 +1,5 @@
 ---
-total: 227
+total: 228
 ---
 
 # Docs Index
@@ -18,6 +18,12 @@ total: 227
 
 - [@tanstack/ai-client](./api/ai-client.md): Framework-agnostic headless client for managing chat state and streaming.
 - [@tanstack/ai](./api/ai.md): The core AI library for TanStack AI.
+
+## architecture (1)
+
+- [Approval Flow Processing Architecture](./architecture/approval-flow-processing.md): The approval flow allows tools marked with needsApproval: true to pause
+execution until the user explicitly approves or denies the action. This
+cre...
 
 ## community-adapters (5)
 
