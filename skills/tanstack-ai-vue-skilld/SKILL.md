@@ -3,8 +3,8 @@ name: tanstack-ai-vue-skilld
 description: "Vue hooks for TanStack AI. ALWAYS use when writing code importing \"@tanstack/ai-vue\". Consult for debugging, best practices, or modifying @tanstack/ai-vue, tanstack/ai-vue, tanstack ai-vue, tanstack ai vue, ai."
 metadata:
   version: 0.6.2
-  generated_at: 2026-03-08
-  references_synced_at: 2026-03-08
+  generated_at: 2026-03-09
+  references_synced_at: 2026-03-09
 ---
 
 # TanStack/ai `@tanstack/ai-vue`
@@ -14,8 +14,6 @@ metadata:
 **Version:** 0.6.2 (Mar 2026)
 **Deps:** @tanstack/ai-client@0.5.2
 **Tags:** latest: 0.6.2 (Mar 2026)
-
-**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
 ## API Changes
 
 This section documents version-specific API changes for @tanstack/ai-vue v0.6.1 (current v0.x series). This library is pre-1.0 — all v0.x releases are in scope.

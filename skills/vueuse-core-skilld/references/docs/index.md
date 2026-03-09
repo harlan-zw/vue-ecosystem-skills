@@ -1,81 +1,56 @@
 ---
-title: VueUse
-meta:
-  "og:description": "Collection of essential Vue Composition Utilities"
-  "og:title": VueUse
-  author: "Anthony Fu"
-  description: "Collection of essential Vue Composition Utilities"
+layout: home
+sidebar: false
+
+hero:
+  name: VueUse
+  text: Collection of Vue Composition Utilities
+  tagline: Collection of Essential Vue Composition Utilities
+  image:
+    src: /favicon.svg
+    alt: VueUse
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /guide/
+    - theme: alt
+      text: Functions
+      link: /functions
+    - theme: alt
+      text: Add-ons
+      link: /add-ons
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/vueuse/vueuse
+
+features:
+  - title: Feature Rich
+    details: 200+ functions for you to choose from
+    icon: 
+  - title: Built for Vue 3
+    details: Designed for Vue 3 to take full advantage of its latest capabilities
+    icon: 
+  - title: Fully tree shakeable
+    details: Only take what you want
+    icon: 
+  - title: Type Strong
+    details: Written in TypeScript, with full TS docs
+    icon: 
+  - title: Flexible
+    details: Passing refs as arguments, fully customizable, configurable event filters and targets
+    icon: 
+  - title: No bundler required
+    details: Usable via CDN, without any bundlers
+    icon: 
+  - title: SSR Friendly
+    details: Works perfectly with server-side rendering/generation
+    icon: 
+  - title: Interactive demos
+    details: Documentation of functions also come with interactive demos!
+    icon: 
+  - title: Add-ons
+    details: Support various add-ons like Router, Firebase, RxJS, etc.
+    icon: 
 ---
 
-# VueUseCollection of Vue Composition Utilities
-
-Collection of Essential Vue Composition Utilities
-
-Get Started
-
-Functions
-
-Add-ons
-
-View on GitHub
-
-
-
-
-
-## Feature Rich
-
-200+ functions for you to choose from
-
-
-
-## Built for Vue 3
-
-Designed for Vue 3 to take full advantage of its latest capabilities
-
-
-
-## Fully tree shakeable
-
-Only take what you want
-
-
-
-## Type Strong
-
-Written in TypeScript, with full TS docs
-
-
-
-## Flexible
-
-Passing refs as arguments, fully customizable, configurable event filters and targets
-
-
-
-## No bundler required
-
-Usable via CDN, without any bundlers
-
-
-
-## SSR Friendly
-
-Works perfectly with server-side rendering/generation
-
-
-
-## Interactive demos
-
-Documentation of functions also come with interactive demos!
-
-
-
-## Add-ons
-
-Support various add-ons like Router, Firebase, RxJS, etc.
-
-## Anthony's Sponsors
-
-The development of VueUse is supported by the following sponsors.
-
+<Home />

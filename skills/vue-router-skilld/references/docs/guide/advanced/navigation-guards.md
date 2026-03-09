@@ -1,11 +1,7 @@
+---
+url: /guide/advanced/navigation-guards.md
+---
 # Navigation Guards
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/route-guards"
-  title="Learn how to add navigation guards"
-/>
-
-<RuleKitLink />
 
 As the name suggests, the navigation guards provided by Vue router are primarily used to guard navigations either by redirecting it or canceling it. There are a number of ways to hook into the route navigation process: globally, per-route, or in-component.
 
@@ -27,13 +23,13 @@ Global before guards are called in creation order, whenever a navigation is trig
 
 Every guard function receives two arguments:
 
-- **`to`**: the target route location [in a normalized format](../../api/#RouteLocationNormalized) being navigated to.
-- **`from`**: the current route location [in a normalized format](../../api/#RouteLocationNormalized) being navigated away from.
+* **`to`**: the target route location [in a normalized format](../../api/#RouteLocationNormalized) being navigated to.
+* **`from`**: the current route location [in a normalized format](../../api/#RouteLocationNormalized) being navigated away from.
 
 And can optionally return any of the following values:
 
-- `false`: cancel the current navigation. If the browser URL was changed (either manually by the user or via back button), it will be reset to that of the `from` route.
-- A [Route Location](../../api/#RouteLocationRaw): Redirect to a different location by passing a route location as if you were calling `router.push()`, which allows you to pass options like `replace: true` or `name: 'home'`. The current navigation is dropped and a new one is created with the same `from`.
+* `false`: cancel the current navigation. If the browser URL was changed (either manually by the user or via back button), it will be reset to that of the `from` route.
+* A [Route Location](../../api/#RouteLocationRaw): Redirect to a different location by passing a route location as if you were calling `router.push()`, which allows you to pass options like `replace: true` or `name: 'home'`. The current navigation is dropped and a new one is created with the same `from`.
 
   ```js
   router.beforeEach(async (to, from) => {
@@ -65,7 +61,7 @@ router.beforeEach(async (to, from) => {
 
 ### Optional third argument `next`
 
-In previous versions of Vue Router, it was also possible to use a _third argument_ `next`, this was a common source of mistakes and went through an RFC to remove it. However, it is still supported, meaning you can pass a third argument to any navigation guard. In that case, **you must call `next` exactly once** in any given pass through a navigation guard. It can appear more than once, but only if the logical paths have no overlap, otherwise the hook will never be resolved or produce errors. Here is **a bad example** of redirecting the user to `/login` if they are not authenticated:
+In previous versions of Vue Router, it was also possible to use a *third argument* `next`, this was a common source of mistakes and went through an RFC to remove it. However, it is still supported, meaning you can pass a third argument to any navigation guard. In that case, **you must call `next` exactly once** in any given pass through a navigation guard. It can appear more than once, but only if the logical paths have no overlap, otherwise the hook will never be resolved or produce errors. Here is **a bad example** of redirecting the user to `/login` if they are not authenticated:
 
 ```js
 // BAD
@@ -110,8 +106,6 @@ router.beforeResolve(async to => {
 
 `router.beforeResolve` is the ideal spot to fetch data or do any other operation that you want to avoid doing if the user cannot enter a page.
 
-
-
 ## Global After Hooks
 
 You can also register global after hooks, however unlike guards, these hooks do not get a `next` function and cannot affect the navigation:
@@ -121,8 +115,6 @@ router.afterEach((to, from) => {
   sendToAnalytics(to.fullPath)
 })
 ```
-
-
 
 They are useful for analytics, changing the title of the page, accessibility features like announcing the page and many other things.
 
@@ -229,9 +221,9 @@ Finally, you can directly define route navigation guards inside route components
 
 You can add the following options to route components:
 
-- `beforeRouteEnter`
-- `beforeRouteUpdate`
-- `beforeRouteLeave`
+* `beforeRouteEnter`
+* `beforeRouteUpdate`
+* `beforeRouteLeave`
 
 ```vue
 <script>
@@ -267,7 +259,7 @@ beforeRouteEnter (to, from, next) {
 }
 ```
 
-Note that `beforeRouteEnter` is the only guard that supports passing a callback to `next`. For `beforeRouteUpdate` and `beforeRouteLeave`, `this` is already available, so passing a callback is unnecessary and therefore _not supported_:
+Note that `beforeRouteEnter` is the only guard that supports passing a callback to `next`. For `beforeRouteUpdate` and `beforeRouteLeave`, `this` is already available, so passing a callback is unnecessary and therefore *not supported*:
 
 ```js
 beforeRouteUpdate (to, from) {

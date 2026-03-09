@@ -1,9 +1,7 @@
+---
+url: /guide/advanced/meta.md
+---
 # Route Meta Fields
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/route-meta-fields"
-  title="Learn how to use route meta fields"
-/>
 
 Sometimes, you might want to attach arbitrary information to routes like： transition names, or roles to control who can access the route, etc. This can be achieved through the `meta` property which accepts an object of properties and can be accessed on the route location and navigation guards. You can define `meta` properties like this:
 
@@ -32,8 +30,6 @@ const routes = [
 
 So how do we access this `meta` field?
 
-
-
 First, each route object in the `routes` configuration is called a **route record**. Route records may be nested. Therefore when a route is matched, it can potentially match more than one route record.
 
 For example, with the above route config, the URL `/posts/new` will match both the parent route record (`path: '/posts'`) and the child route record (`path: 'new'`).
@@ -55,8 +51,6 @@ router.beforeEach((to, from) => {
   }
 })
 ```
-
-<RuleKitLink />
 
 ## TypeScript
 
