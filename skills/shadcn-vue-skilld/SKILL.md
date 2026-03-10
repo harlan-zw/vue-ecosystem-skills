@@ -3,8 +3,8 @@ name: shadcn-vue-skilld
 description: "Add components to your apps. ALWAYS use when writing code importing \"shadcn-vue\". Consult for debugging, best practices, or modifying shadcn-vue, shadcn vue."
 metadata:
   version: 2.4.3
-  generated_at: 2026-03-09
-  references_synced_at: 2026-03-09
+  generated_at: 2026-03-10
+  references_synced_at: 2026-03-10
 ---
 
 # unovue/shadcn-vue `shadcn-vue`

@@ -3,8 +3,8 @@ name: vue-skilld
 description: "The progressive JavaScript framework for building modern web UI. ALWAYS use when editing or working with *.vue files or code importing \"vue\". Consult for debugging, best practices, or modifying vue, core."
 metadata:
   version: 3.6.0-beta.7
-  generated_at: 2026-03-09
-  references_synced_at: 2026-03-09
+  generated_at: 2026-03-10
+  references_synced_at: 2026-03-10
 ---
 
 # vuejs/core `vue`
@@ -13,7 +13,7 @@ metadata:
 
 **Version:** 3.6.0-beta.7 (Feb 2026)
 **Deps:** @vue/shared@3.6.0-beta.7, @vue/compiler-dom@3.6.0-beta.7, @vue/runtime-dom@3.6.0-beta.7, @vue/runtime-vapor@3.6.0-beta.7, @vue/server-renderer@3.6.0-beta.7, @vue/compiler-sfc@3.6.0-beta.7
-**Tags:** csp: 1.0.28-csp (Sep 2016), legacy: 2.7.16 (Dec 2023), v2-latest: 2.7.16 (Dec 2023), rc: 3.5.0-rc.1 (Aug 2024), alpha: 3.6.0-alpha.7 (Dec 2025), beta: 3.6.0-beta.7 (Feb 2026), latest: 3.5.29 (Feb 2026)
+**Tags:** csp: 1.0.28-csp (Sep 2016), legacy: 2.7.16 (Dec 2023), v2-latest: 2.7.16 (Dec 2023), rc: 3.5.0-rc.1 (Aug 2024), alpha: 3.6.0-alpha.7 (Dec 2025), latest: 3.5.30 (Mar 2026), beta: 3.6.0-beta.7 (Feb 2026)
 
 **References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
 ## API Changes

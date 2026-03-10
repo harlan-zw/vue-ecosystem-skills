@@ -1,6 +1,3 @@
----
-url: /data-loaders/nuxt.md
----
 # Nuxt
 
 To use Data Loaders in Nuxt, create a new plugin file in the `plugins` directory of your Nuxt project and setup the Data Loaders plugin like usual:
@@ -26,11 +23,11 @@ export default defineNuxtPlugin({
 
 The two required options are:
 
-* `router`: the Vue Router instance
-* `isSSR`: a boolean indicating if the app is running on the server side
+- `router`: the Vue Router instance
+- `isSSR`: a boolean indicating if the app is running on the server side
 
 ## No module?
 
 > "Why do I need to write the plugin myself instead of using a Module?"
 
-The Data Loader plugin has options that are not serializable (e.g. `selectNavigationResult()` and `errors`). In order to support those within a module, we would have to pass them through the `app.config.ts`, splitting up the configuration and making it harder to maintain. A short plugin is easier to understand and closer to the *vanilla* version.
+The Data Loader plugin has options that are not serializable (e.g. `selectNavigationResult()` and `errors`). In order to support those within a module, we would have to pass them through the `app.config.ts`, splitting up the configuration and making it harder to maintain. A short plugin is easier to understand and closer to the _vanilla_ version.

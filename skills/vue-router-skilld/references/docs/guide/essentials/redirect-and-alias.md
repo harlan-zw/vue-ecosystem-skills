@@ -1,7 +1,9 @@
----
-url: /guide/essentials/redirect-and-alias.md
----
 # Redirect and Alias
+
+<VueSchoolLink
+  href="https://vueschool.io/lessons/vue-router-4-redirect-and-alias"
+  title="Learn how to use redirect and alias"
+/>
 
 ## Redirect
 
@@ -107,3 +109,5 @@ const routes = [
 ```
 
 **Note about SEO**: when using aliases, make sure to define canonical links.
+
+<RuleKitLink />

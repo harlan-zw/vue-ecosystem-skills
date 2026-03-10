@@ -1,11 +1,8 @@
----
-url: /data-loaders/defining-loaders.md
----
 # Defining Data Loaders
 
 In order to use data loaders, you need to define them first. Data loaders themselves are the composables returned by the different `defineLoader` functions. Each loader definition is specific to the `defineLoader` function used. For example, `defineBasicLoader` expects an async function as the first argument while `defineColadaLoader` expects an object with a `query` function. All loaders should allow to pass an async function that can throw errors, and call `reroute()` to control the navigation.
 
-Any composables returned by *any* `defineLoader` function share the same signature:
+Any composables returned by _any_ `defineLoader` function share the same signature:
 
 ```vue twoslash
 <script lang="ts">
@@ -35,7 +32,7 @@ This page will guide you through the **foundation** of defining data loaders, no
 
 ## The loader function
 
-The loader function is the *core* of data loaders. They are asynchronous functions that return the data you want to expose in the `data` property of the returned composable.
+The loader function is the _core_ of data loaders. They are asynchronous functions that return the data you want to expose in the `data` property of the returned composable.
 
 ### The `to` argument
 
@@ -85,6 +82,8 @@ export const useUserData = defineBasicLoader('/users/[id]', async to => {
 })
 ```
 
+
+
 ### Navigation control
 
 Since loaders happen within the context of a navigation, you can control the navigation by calling `reroute()`. This is similar to returning a value in a navigation guard. It throws internally, so execution stops immediately.
@@ -131,7 +130,7 @@ Data loaders are designed to be flexible and allow for customization. Despite be
 
 ### Non blocking loaders with `lazy`
 
-By default, loaders are *non-lazy*, meaning they will block the navigation until the data is fetched. But this behavior can be changed by setting the `lazy` option to `true`.
+By default, loaders are _non-lazy_, meaning they will block the navigation until the data is fetched. But this behavior can be changed by setting the `lazy` option to `true`.
 
 ```vue{10,16} twoslash
 <script lang="ts">
@@ -160,7 +159,7 @@ const { data: user, isLoading, error } = useUserData()
 
 ```
 
-This patterns is useful to avoid blocking the navigation while *non critical data* is being fetched. It will display the page earlier while lazy loaders are still loading and you are able to display loader indicators thanks to the `isLoading` property.
+This patterns is useful to avoid blocking the navigation while _non critical data_ is being fetched. It will display the page earlier while lazy loaders are still loading and you are able to display loader indicators thanks to the `isLoading` property.
 
 Since lazy loaders do not block the navigation, any thrown error will not abort the navigation nor appear in the `router.onError` handler. Instead, the error will be available in the `error` property.
 
@@ -244,7 +243,7 @@ You can read more about server side rendering in the [SSR](./ssr.md) section.
 
 The router needs to know what loaders should be ran with which page. This is achieved in two ways:
 
-* **Automatically**: when a loader is exported from a page component that is lazy loaded, the loader will be automatically connected to the page
+- **Automatically**: when a loader is exported from a page component that is lazy loaded, the loader will be automatically connected to the page
 
   ::: code-group
 
@@ -278,7 +277,7 @@ The router needs to know what loaders should be ran with which page. This is ach
 
   :::
 
-* **Manually**: by passing the defined loader into the `meta.loaders` property:
+- **Manually**: by passing the defined loader into the `meta.loaders` property:
 
   ::: code-group
 
@@ -314,6 +313,6 @@ The router needs to know what loaders should be ran with which page. This is ach
   
   ```
 
-### *Disconnecting* a loader from a page
+### _Disconnecting_ a loader from a page
 
 It is also possible **not to connect a loader to a page**. This allows you to delay the loading until the component is mounted. Usually you want to start loading the data as soon as possible but in some cases, it might be better to wait until the component is mounted. This can be achieved by not exporting the loader from the page component.

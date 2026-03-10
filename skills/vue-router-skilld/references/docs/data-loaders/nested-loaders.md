@@ -1,6 +1,3 @@
----
-url: /data-loaders/nested-loaders.md
----
 # Nested loaders
 
 Sometimes, requests depend on other fetched data (e.g. fetching additional user information). For these scenarios, we can simply import the other loaders and use them **within a different loader**:
@@ -29,18 +26,18 @@ export const useUserCommonFriends = defineBasicLoader(async route => {
 
 You will notice here that we have two different usages for `useUserData()`:
 
-* One that returns all the necessary information we need *synchronously* (not used here). This is the composable that we use in components
-* A second version that **only returns a promise of the data**. This is the version used within data loaders that enables sequential fetching.
+- One that returns all the necessary information we need _synchronously_ (not used here). This is the composable that we use in components
+- A second version that **only returns a promise of the data**. This is the version used within data loaders that enables sequential fetching.
 
 ## Nested invalidation
 
-Since `useUserCommonFriends()` loader calls `useUserData()`, if `useUserData()` is somehow *invalidated*, it will also automatically invalidate `useUserCommonFriends()`. This depends on the implementation of the loader and is not a requirement of the API.
+Since `useUserCommonFriends()` loader calls `useUserData()`, if `useUserData()` is somehow _invalidated_, it will also automatically invalidate `useUserCommonFriends()`. This depends on the implementation of the loader and is not a requirement of the API.
 
 ::: warning
-Two loaders cannot use each other as that would create a *dead lock*.
+Two loaders cannot use each other as that would create a _dead lock_.
 :::
 
-This can get complex with multiple pages exposing the same loader and other pages using some of their *already exported* loaders within other loaders. But it's not an issue, **the user shouldn't need to handle anything differently**, loaders are still only called once:
+This can get complex with multiple pages exposing the same loader and other pages using some of their _already exported_ loaders within other loaders. But it's not an issue, **the user shouldn't need to handle anything differently**, loaders are still only called once:
 
 ```ts twoslash
 import 'vue-router/auto-routes'
@@ -95,5 +92,5 @@ export const useUserCommonFriends = defineBasicLoader(async (route) => {
 })
 ```
 
-This allows nested loaders to be aware of their *parent loader*. This could probably be linted with an eslint plugin. It is similar to the problem `<script setup>` had before introducing the automatic `withAsyncContext()`. The same feature could be introduced (via a vite plugin) but will also have a performance cost. In the future, this *should* be solved with the async-context proposal (stage 2).
+This allows nested loaders to be aware of their _parent loader_. This could probably be linted with an eslint plugin. It is similar to the problem `<script setup>` had before introducing the automatic `withAsyncContext()`. The same feature could be introduced (via a vite plugin) but will also have a performance cost. In the future, this _should_ be solved with the async-context proposal (stage 2).
 :::

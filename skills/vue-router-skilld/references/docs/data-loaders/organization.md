@@ -1,6 +1,3 @@
----
-url: /data-loaders/organization.md
----
 # Loaders Organization
 
 While most examples show loaders defined in the same file as the page component, it's possible to define them in separate files and import them in the page component. This flexibility allows you to control not only the codebase organization but also **how chunks are split**.
@@ -43,6 +40,8 @@ const { data: pullRequests } = useProjectPullRequests()
 ```
 
 :::
+
+
 
 In the example above, the `useProjectIssues` loader is defined in a separate file and imported in two different pages, `pages/[projectId]/issues.vue` and `pages/[projectId]/insights.vue`. They both use the same data but present it in a different way so there is no reason to create two different loaders for issues. By extracting the loader into a separate file, we ensure an optimal chunk split.
 

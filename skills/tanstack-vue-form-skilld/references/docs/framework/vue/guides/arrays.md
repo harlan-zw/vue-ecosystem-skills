@@ -7,8 +7,7 @@ TanStack Form supports arrays as values in a form, including sub-object values i
 
 ## Basic Usage
 
-To use an array, you can use `field.state.value` on an array value in conjunction
-with `Index` from `solid-js`:
+To use an array, you can use `field.state.value` on an array value in conjunction with `v-for`:
 
 ```vue
 <script setup lang="ts">

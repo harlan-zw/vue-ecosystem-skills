@@ -1,18 +1,19 @@
 ---
-total: 228
+total: 229
 ---
 
 # Docs Index
 
-## adapters (7)
+## adapters (8)
 
 - [Anthropic](./adapters/anthropic.md): The Anthropic adapter provides access to Claude models, including Claude Sonnet 4.5, Claude Opus 4.5, and more.
 - [fal.ai](./adapters/fal.md): The fal.ai adapter provides access to 600+ models on the fal.ai platform for image generation and video generation. Unlike text-focused adapters, t...
 - [Google Gemini](./adapters/gemini.md): The Google Gemini adapter provides access to Google's Gemini models, including text generation, image generation with both Imagen and Gemini native...
 - [Grok (xAI)](./adapters/grok.md): The Grok adapter provides access to xAI's Grok models, including Grok 4.1, Grok 4, Grok 3, and image generation with Grok 2 Image.
+- [Groq](./adapters/groq.md): The Groq adapter provides access to Groq's fast inference API, featuring the world's fastest LLM inference.
 - [Ollama](./adapters/ollama.md): The Ollama adapter provides access to local models running via Ollama, allowing you to run AI models on your own infrastructure with full privacy a...
 - [OpenAI](./adapters/openai.md): The OpenAI adapter provides access to OpenAI's models, including GPT-4o, GPT-5, image generation (DALL-E), text-to-speech (TTS), and audio transcri...
-- [OpenRouter Adapter](./adapters/openrouter.md): The OpenRouter adapter provides access to 300+ AI models from various providers through a single unified API, including models from OpenAI, Anthrop...
+- [OpenRouter Adapter](./adapters/openrouter.md): OpenRouter is TanStack AI's first official AI partner and the recommended starting point for most projects. It provides access to 300+ models from ...
 
 ## api (2)
 

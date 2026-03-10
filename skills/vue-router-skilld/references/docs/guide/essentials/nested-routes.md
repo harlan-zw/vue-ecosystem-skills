@@ -1,7 +1,9 @@
----
-url: /guide/essentials/nested-routes.md
----
 # Nested Routes
+
+<VueSchoolLink
+  href="https://vueschool.io/lessons/nested-routes"
+  title="Learn about nested routes"
+/>
 
 Some applications' UIs are composed of components that are nested multiple levels deep. In this case, it is very common that the segments of a URL correspond to a certain structure of nested components, for example:
 
@@ -99,6 +101,8 @@ const routes = [
 
 A working demo of this example can be found here.
 
+<RuleKitLink />
+
 ## Nested Named Routes
 
 When dealing with [Named Routes](./named-routes.md), you usually **name the children routes**:
@@ -129,7 +133,7 @@ const routes = [
 ]
 ```
 
-## Omitting parent components&#x20;
+## Omitting parent components <Badge text="4.1+" />
 
 We can also take advantage of the parent-child relationship between routes without needing to nest route components. This can be useful for grouping together routes with a common path prefix, or when working with more advanced features, such as [per-route navigation guards](../advanced/navigation-guards#Per-Route-Guard) or [route meta fields](../advanced/meta).
 
