@@ -3,8 +3,8 @@ name: vee-validate-skilld
 description: "Painless forms for Vue.js. ALWAYS use when writing code importing \"vee-validate\". Consult for debugging, best practices, or modifying vee-validate, vee validate."
 metadata:
   version: 4.15.1
-  generated_at: 2026-03-12
-  references_synced_at: 2026-03-12
+  generated_at: 2026-03-13
+  references_synced_at: 2026-03-13
 ---
 
 # logaretm/vee-validate `vee-validate`
