@@ -3,8 +3,8 @@ name: vueuse-integrations-skilld
 description: "Integration wrappers for utility libraries. ALWAYS use when writing code importing \"@vueuse/integrations\". Consult for debugging, best practices, or modifying @vueuse/integrations, vueuse/integrations, vueuse integrations, vueuse."
 metadata:
   version: 14.2.1
-  generated_at: 2026-03-15
-  references_synced_at: 2026-03-15
+  generated_at: 2026-03-16
+  references_synced_at: 2026-03-16
 ---
 
 # vueuse/vueuse `@vueuse/integrations`

@@ -57,7 +57,9 @@ As `useScroll` returns motion values, we can compose this scroll info with other
   <Motion :style="{ scaleX }" />
 </template>
 
-> Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation! ~ Sam Selikoff, Motion for React Recipes
+> Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation!
+>
+> ~ Sam Selikoff, Motion for React Recipes
 
 ### [Element scroll](#element-scroll)
 
@@ -172,7 +174,9 @@ As `useScroll` returns motion values, we can compose this scroll info with other
   <Motion :style="{ scaleX }" />
 </template>
 
-> Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation! ~ Sam Selikoff, Motion for React Recipes
+> Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation!
+>
+> ~ Sam Selikoff, Motion for React Recipes
 
 ### [Element scroll](#element-scroll)
 
@@ -287,7 +291,9 @@ As `useScroll` returns motion values, we can compose this scroll info with other
   <Motion :style="{ scaleX }" />
 </template>
 
-> Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation! ~ Sam Selikoff, Motion for React Recipes
+> Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation!
+>
+> ~ Sam Selikoff, Motion for React Recipes
 
 ### [Element scroll](#element-scroll)
 

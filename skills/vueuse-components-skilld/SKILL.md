@@ -3,8 +3,8 @@ name: vueuse-components-skilld
 description: "Renderless components for VueUse. ALWAYS use when writing code importing \"@vueuse/components\". Consult for debugging, best practices, or modifying @vueuse/components, vueuse/components, vueuse components, vueuse."
 metadata:
   version: 14.2.1
-  generated_at: 2026-03-15
-  references_synced_at: 2026-03-15
+  generated_at: 2026-03-16
+  references_synced_at: 2026-03-16
 ---
 
 # vueuse/vueuse `@vueuse/components`

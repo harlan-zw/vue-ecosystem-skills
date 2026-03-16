@@ -3,8 +3,8 @@ name: tanstack-vue-virtual-skilld
 description: "Headless UI for virtualizing scrollable elements in Vue. ALWAYS use when writing code importing \"@tanstack/vue-virtual\". Consult for debugging, best practices, or modifying @tanstack/vue-virtual, tanstack/vue-virtual, tanstack vue-virtual, tanstack vue virtual, virtual."
 metadata:
   version: 3.13.22
-  generated_at: 2026-03-15
-  references_synced_at: 2026-03-15
+  generated_at: 2026-03-16
+  references_synced_at: 2026-03-16
 ---
 
 # TanStack/virtual `@tanstack/vue-virtual`

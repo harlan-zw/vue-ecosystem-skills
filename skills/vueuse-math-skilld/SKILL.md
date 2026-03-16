@@ -3,8 +3,8 @@ name: vueuse-math-skilld
 description: "Math functions for VueUse. ALWAYS use when writing code importing \"@vueuse/math\". Consult for debugging, best practices, or modifying @vueuse/math, vueuse/math, vueuse math, vueuse."
 metadata:
   version: 14.2.1
-  generated_at: 2026-03-15
-  references_synced_at: 2026-03-15
+  generated_at: 2026-03-16
+  references_synced_at: 2026-03-16
 ---
 
 # vueuse/vueuse `@vueuse/math`
