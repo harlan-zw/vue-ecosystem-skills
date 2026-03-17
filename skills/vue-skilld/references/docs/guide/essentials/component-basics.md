@@ -1,3 +1,6 @@
+---
+url: /guide/essentials/component-basics.md
+---
 # Components Basics {#components-basics}
 
 <ScrimbaLink href="https://scrimba.com/links/vue-component-basics" title="Free Vue.js Components Basics Lesson" type="scrimba">

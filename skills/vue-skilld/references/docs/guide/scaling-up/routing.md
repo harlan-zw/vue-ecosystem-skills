@@ -1,3 +1,6 @@
+---
+url: /guide/scaling-up/routing.md
+---
 # Routing {#routing}
 
 ## Client-Side vs. Server-Side Routing {#client-side-vs-server-side-routing}

@@ -193,13 +193,6 @@ Loading...
 
 Note that depending on your SVG, it may require some additional tweaking to get the appearance you want. For example, custom nodes would require `stroke-width`, or `fill` attributes if not already defined. It may also be necessary to tweak your shape size to fit into the bounds of your configured `nodeSize`, like this example:
 
-- React
-- Angular
-- Svelte
-- Vue
-- Solid
-- TypeScript
-
 ```
 <VisGraph  nodeSize={50}   nodeShape="<image width='50' height='50' href='https://upload.wikimedia.org/wikipedia/commons/7/7e/Sphere_-_monochrome_simple.svg'/>"/>
 ```

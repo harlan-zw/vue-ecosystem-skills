@@ -1,19 +1,14 @@
 ---
-total: 119
+total: 93
 ---
 
 # Docs Index
 
-- [Vue.js - The Progressive JavaScript Framework](./index.md)
+## about (3)
 
-## about (6)
-
-- [Code Of Conduct](./about/coc.md): In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project an...
 - [Community Guide](./about/community-guide.md): Vue's community is growing incredibly fast and if you're reading this, there's a good chance you're ready to join it. So... welcome!
 - [Frequently Asked Questions](./about/faq.md): Vue is an independent, community-driven project. It was created by Evan You in 2014 as a personal side project. Today, Vue is actively maintained b...
-- [Vue.js Privacy Policy](./about/privacy.md): This Privacy Policy describes the Vue.js organization ("Vue", "we", "us" or "our") practices for handling your information in connection with this ...
 - [Releases](./about/releases.md): A full changelog of past releases is available on GitHub.
-- [Meet the Team](./about/team.md)
 
 ## api (29)
 
@@ -37,7 +32,7 @@ All APIs listed on this page must be called synchronously during the setup() pha
 - [Custom Elements API](./api/custom-elements.md): This method accepts the same argument as defineComponent, but instead returns a native Custom Element class constructor.
 - [Custom Renderer API](./api/custom-renderer.md): Creates a custom renderer. By providing platform-specific node creation and manipulation APIs, you can leverage Vue's core runtime to target non-DO...
 - [Global API: General](./api/general.md): Exposes the current version of Vue.
-- [API Reference](./api/index.md)
+- [index](./api/index.md)
 - [Options: Composition](./api/options-composition.md): Provide values that can be injected by descendant components.
 - [Options: Lifecycle](./api/options-lifecycle.md): :::info See also
 For shared usage of lifecycle hooks, see Guide - Lifecycle Hooks
@@ -57,18 +52,13 @@ To better understand the Reactivity APIs, it is recommended to read the followin
 - [Utility Types](./api/utility-types.md): :::info
 This page only lists a few commonly used utility types that may need explanation for their usage. For a full list of exported types, consul...
 
-## ecosystem (2)
+## ecosystem (1)
 
 - [Community Newsletters](./ecosystem/newsletters.md): There are many great newsletters / Vue-dedicated blogs from the community bringing you latest news and happenings in the Vue ecosystem. Here is a n...
-- [themes](./ecosystem/themes.md)
 
 ## error-reference (1)
 
 - [Production Error Code Reference](./error-reference/index.md): In production builds, the 3rd argument passed to the following error handler APIs will be a short code instead of the full information string:
-
-## examples (1)
-
-- [Examples](./examples/index.md)
 
 ## glossary (1)
 
@@ -90,9 +80,8 @@ This page only lists a few commonly used utility types that may need explanation
 - [TransitionGroup](./guide/built-ins/transition-group.md): <TransitionGroup> is a built-in component designed for animating the insertion, removal, and order change of elements or components that are render...
 - [Transition](./guide/built-ins/transition.md): Vue offers two built-in components that can help work with transitions and animations in response to changing state:
 
-## guide/components (8)
+## guide/components (7)
 
-- [Async Components](./guide/components/async.md): In large applications, we may need to divide the app into smaller chunks and only load a component from the server when it's needed. To make that p...
 - [Fallthrough Attributes](./guide/components/attrs.md): A "fallthrough attribute" is an attribute or v-on event listener that is passed to a component, but is not explicitly declared in the receiving com...
 - [Component Events](./guide/components/events.md): A component can emit custom events directly in template expressions (e.g. in a v-on handler) using the built-in $emit method:
 - [Props](./guide/components/props.md): Vue components require explicit props declaration so that Vue knows what external props passed to the component should be treated as fallthrough at...
@@ -160,17 +149,6 @@ This section assumes basic knowledge of Composition API. If you have been learni
 While Vue does support TypeScript usage with Options API, it is recommended to use Vue with TypeScript via Composition API as it offers simp...
 - [Using Vue with TypeScript](./guide/typescript/overview.md): A type system like TypeScript can detect many common errors via static analysis at build time. This reduces the chance of runtime errors in product...
 
-## partners (3)
-
-- [[partnerId]](./partners/[partnerId].md)
-- [all](./partners/all.md)
-- [Vue Partners](./partners/index.md)
-
-## sponsor (1)
-
-- [Become a Vue.js Sponsor](./sponsor/index.md): Vue.js is an MIT licensed open source project and completely free to use.
-The tremendous amount of effort needed to maintain such a large ecosystem...
-
 ## style-guide (5)
 
 - [Style Guide](./style-guide/index.md): ::: warning Note
@@ -195,64 +173,4 @@ This Vue.js Style Guide is outdated and needs to be reviewed. If you have any qu
 
 ## tutorial (1)
 
-- [Tutorial](./tutorial/index.md)
-
-## tutorial/src/step-1 (1)
-
-- [Getting Started](./tutorial/src/step-1/description.md): Welcome to the Vue tutorial!
-
-## tutorial/src/step-10 (1)
-
-- [Watchers](./tutorial/src/step-10/description.md): Sometimes we may need to perform "side effects" reactively - for example, logging a number to the console when it changes. We can achieve this with...
-
-## tutorial/src/step-11 (1)
-
-- [Components](./tutorial/src/step-11/description.md): So far, we've only been working with a single component. Real Vue applications are typically created with nested components.
-
-## tutorial/src/step-12 (1)
-
-- [Props](./tutorial/src/step-12/description.md): A child component can accept input from the parent via props. First, it needs to declare the props it accepts:
-
-## tutorial/src/step-13 (1)
-
-- [Emits](./tutorial/src/step-13/description.md): In addition to receiving props, a child component can also emit events to the parent:
-
-## tutorial/src/step-14 (1)
-
-- [Slots](./tutorial/src/step-14/description.md): In addition to passing data via props, the parent component can also pass down template fragments to the child via slots:
-
-## tutorial/src/step-15 (1)
-
-- [You Did It!](./tutorial/src/step-15/description.md): You have finished the tutorial!
-
-## tutorial/src/step-2 (1)
-
-- [Declarative Rendering](./tutorial/src/step-2/description.md): What you see in the editor is a Vue Single-File Component (SFC). An SFC is a reusable self-contained block of code that encapsulates HTML, CSS and ...
-
-## tutorial/src/step-3 (1)
-
-- [Attribute Bindings](./tutorial/src/step-3/description.md): In Vue, mustaches are only used for text interpolation. To bind an attribute to a dynamic value, we use the v-bind directive:
-
-## tutorial/src/step-4 (1)
-
-- [Event Listeners](./tutorial/src/step-4/description.md): We can listen to DOM events using the v-on directive:
-
-## tutorial/src/step-5 (1)
-
-- [Form Bindings](./tutorial/src/step-5/description.md): Using v-bind and v-on together, we can create two-way bindings on form input elements:
-
-## tutorial/src/step-6 (1)
-
-- [Conditional Rendering](./tutorial/src/step-6/description.md): We can use the v-if directive to conditionally render an element:
-
-## tutorial/src/step-7 (1)
-
-- [List Rendering](./tutorial/src/step-7/description.md): We can use the v-for directive to render a list of elements based on a source array:
-
-## tutorial/src/step-8 (1)
-
-- [Computed Property](./tutorial/src/step-8/description.md): Let's keep building on top of the todo list from the last step. Here, we've already added a toggle functionality to each todo. This is done by addi...
-
-## tutorial/src/step-9 (1)
-
-- [Lifecycle and Template Refs](./tutorial/src/step-9/description.md): So far, Vue has been handling all the DOM updates for us, thanks to reactivity and declarative rendering. However, inevitably there will be cases w...
+- [index](./tutorial/index.md)

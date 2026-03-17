@@ -10,14 +10,6 @@ meta:
 
 # Blog
 
-## **Subscribe **
-
-Stay up-to-date with news from TresJS
-
-RSS Feed
-
-Nov 18, 2025
-
 Engineering
 
 ## Building Better: Our Migration to tsdown**Building Better: Our Migration to tsdown**
@@ -25,8 +17,6 @@ Engineering
 How we modernized the TresJS build system by migrating from Vite library mode to tsdown, reducing bundle sizes and simplifying our toolchain.
 
  Building Better: Our Migration to tsdown
-
-Oct 1, 2025
 
 Announcement
 

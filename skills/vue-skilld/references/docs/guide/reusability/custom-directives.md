@@ -1,3 +1,6 @@
+---
+url: /guide/reusability/custom-directives.md
+---
 # Custom Directives {#custom-directives}
 
 

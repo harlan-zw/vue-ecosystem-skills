@@ -1,3 +1,6 @@
+---
+url: /style-guide/rules-essential.md
+---
 # Priority A Rules: Essential {#priority-a-rules-essential}
 
 ::: warning Note

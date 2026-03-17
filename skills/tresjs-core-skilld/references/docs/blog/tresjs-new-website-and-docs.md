@@ -10,7 +10,6 @@ meta:
 
 Oct 1, 2025
 
-[
 ## New look, new docs, new website
 
 

@@ -1,12 +1,15 @@
+---
+url: /data-loaders/error-handling.md
+---
 # Error handling
 
-By default, all errors thrown in a loader are considered _unexpected errors_: they will abort the navigation, just like in a navigation guard. Because they abort the navigation, they will not appear in the `error` property of the loader. Instead, they will be intercepted by Vue Router's error handling with `router.onError()`.
+By default, all errors thrown in a loader are considered *unexpected errors*: they will abort the navigation, just like in a navigation guard. Because they abort the navigation, they will not appear in the `error` property of the loader. Instead, they will be intercepted by Vue Router's error handling with `router.onError()`.
 
-However, if the loader is **not navigation-aware**, the error cannot be intercepted by Vue Router and will be kept in the `error` property of the loader. This is the case for _lazy loaders_ and [_reloading data_](./reloading-data.md).
+However, if the loader is **not navigation-aware**, the error cannot be intercepted by Vue Router and will be kept in the `error` property of the loader. This is the case for *lazy loaders* and [*reloading data*](./reloading-data.md).
 
 ## Defining expected Errors
 
-To be able to intercept errors in non-lazy loaders, we can specify a list of error classes that are considered _expected errors_. This allows blocking loader to **not abort the navigation** and instead keep the error in the `error` property of the loader and let the page locally display the error state.
+To be able to intercept errors in non-lazy loaders, we can specify a list of error classes that are considered *expected errors*. This allows blocking loader to **not abort the navigation** and instead keep the error in the `error` property of the loader and let the page locally display the error state.
 
 ```ts{3-10,14,18} twoslash
 import { defineBasicLoader } from 'vue-router/experimental'
@@ -34,7 +37,7 @@ export const useUserData = defineBasicLoader(
 )
 ```
 
-You can also specify _expected errors_ globally for all loaders by providing the `errors` option to the `DataLoaderPlugin`.
+You can also specify *expected errors* globally for all loaders by providing the `errors` option to the `DataLoaderPlugin`.
 
 ```ts{4} twoslash
 import { createApp } from 'vue'
@@ -132,9 +135,9 @@ TODO: this hasn't been implemented yet
 
 When you use both, global and local error handling, the local error handling has a higher priority and will override the global error handling. This is how the local and global errors are checked:
 
-- if local `errors` is `false`: abort the navigation -> `data` is not `undefined`
-- if local `errors` is `true`: rely on the globally defined `errors` option -> `data` is possibly `undefined`
-- else: rely on the local `errors` option -> `data` is possibly `undefined`
+* if local `errors` is `false`: abort the navigation -> `data` is not `undefined`
+* if local `errors` is `true`: rely on the globally defined `errors` option -> `data` is possibly `undefined`
+* else: rely on the local `errors` option -> `data` is possibly `undefined`
 
 ## TypeScript
 

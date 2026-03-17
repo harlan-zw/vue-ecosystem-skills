@@ -1,3 +1,6 @@
+---
+url: /api/component-instance.md
+---
 # Component Instance {#component-instance}
 
 :::info

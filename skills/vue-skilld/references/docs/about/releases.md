@@ -1,5 +1,5 @@
 ---
-outline: deep
+url: /about/releases.md
 ---
 
 

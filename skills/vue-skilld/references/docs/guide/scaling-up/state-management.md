@@ -1,3 +1,6 @@
+---
+url: /guide/scaling-up/state-management.md
+---
 # State Management {#state-management}
 
 ## What is State Management? {#what-is-state-management}

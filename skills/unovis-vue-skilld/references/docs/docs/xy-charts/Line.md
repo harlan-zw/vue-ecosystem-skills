@@ -415,13 +415,6 @@ You can customize the appearance of of the interpolated line with the following 
 import { Line } from '@unovis/ts'...const events = {  [Line.selectors.line]: {    mouseover: (data: DataRecord[]) => {},    mouseleave: (data: DataRecord[]) => {},    ...  }}
 ```
 
-- React
-- Angular
-- Svelte
-- Vue
-- Solid
-- TypeScript
-
 ```
 <VisLine x={x} y={y} events={events}/>
 ```

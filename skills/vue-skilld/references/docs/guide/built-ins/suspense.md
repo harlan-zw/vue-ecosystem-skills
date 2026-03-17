@@ -1,5 +1,5 @@
 ---
-outline: deep
+url: /guide/built-ins/suspense.md
 ---
 
 # Suspense {#suspense}

@@ -1,9 +1,7 @@
+---
+url: /guide/advanced/lazy-loading.md
+---
 # Lazy Loading Routes
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/lazy-loading-routes-vue-cli-only"
-  title="Learn about lazy loading routes"
-/>
 
 When building apps with a bundler, the JavaScript bundle can become quite large, and thus affect the page load time. It would be more efficient if we can split each route's components into separate chunks, and only load them when the route is visited.
 
@@ -37,8 +35,6 @@ const UserDetails = () =>
 In general, it's a good idea **to always use dynamic imports** for all your routes.
 
 When using a bundler like Vite or webpack, this will automatically benefit from code splitting.
-
-<RuleKitLink />
 
 ## Relationship to async components
 

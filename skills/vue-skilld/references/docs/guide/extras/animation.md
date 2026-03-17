@@ -1,3 +1,6 @@
+---
+url: /guide/extras/animation.md
+---
 
 
 # Animation Techniques {#animation-techniques}

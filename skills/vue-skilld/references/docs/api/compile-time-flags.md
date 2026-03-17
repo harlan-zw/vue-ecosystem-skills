@@ -1,5 +1,5 @@
 ---
-outline: deep
+url: /api/compile-time-flags.md
 ---
 
 # Compile-Time Flags {#compile-time-flags}

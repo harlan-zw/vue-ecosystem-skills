@@ -8,14 +8,6 @@ meta:
   description: "Build Interactive 3D experiences with Vue"
 ---
 
-# Build Interactive 3D experiences with Vue
-
-TresJS is a **declarative, component-driven approach** layer on top of Three.js and WebGL that makes creative coding intuitive and fun.
-
-**Get Started** **Playground**
-
-~ npx create-tres@latest
-
 Loading interactive scenes...
 
 ## Built with  Tres

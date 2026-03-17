@@ -1,3 +1,6 @@
+---
+url: /guide/essentials/conditional.md
+---
 # Conditional Rendering {#conditional-rendering}
 
 <div class="options-api">

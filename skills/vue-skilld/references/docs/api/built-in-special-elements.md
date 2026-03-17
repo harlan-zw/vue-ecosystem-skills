@@ -1,3 +1,6 @@
+---
+url: /api/built-in-special-elements.md
+---
 # Built-in Special Elements {#built-in-special-elements}
 
 :::info Not Components

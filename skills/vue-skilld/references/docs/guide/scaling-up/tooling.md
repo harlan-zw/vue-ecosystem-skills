@@ -1,3 +1,6 @@
+---
+url: /guide/scaling-up/tooling.md
+---
 
 
 # Tooling {#tooling}

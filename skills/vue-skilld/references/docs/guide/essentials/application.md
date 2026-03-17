@@ -1,3 +1,6 @@
+---
+url: /guide/essentials/application.md
+---
 # Creating a Vue Application {#creating-a-vue-application}
 
 ## The Application Instance {#the-application-instance}

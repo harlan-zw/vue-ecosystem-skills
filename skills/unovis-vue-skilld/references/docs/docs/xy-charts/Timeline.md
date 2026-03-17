@@ -171,13 +171,6 @@ Loading...
 
 Use the `rowHeight` property to adjust the size of each row.
 
-- React
-- Angular
-- Svelte
-- Vue
-- Solid
-- TypeScript
-
 ```
 <VisTimeline x={x} rowHeight={50}/>
 ```

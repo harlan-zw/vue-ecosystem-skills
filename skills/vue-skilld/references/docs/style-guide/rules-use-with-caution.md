@@ -1,3 +1,6 @@
+---
+url: /style-guide/rules-use-with-caution.md
+---
 # Priority D Rules: Use with Caution {#priority-d-rules-use-with-caution}
 
 ::: warning Note

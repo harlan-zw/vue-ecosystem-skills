@@ -1,9 +1,7 @@
+---
+url: /guide/essentials/history-mode.md
+---
 # Different History modes
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/history-mode"
-  title="Learn about the differences between Hash Mode and HTML5 Mode"
-/>
 
 The `history` option when creating the router instance allows us to choose among different history modes.
 
@@ -60,7 +58,7 @@ const router = createRouter({
 })
 ```
 
-While it's not recommended, you can use this mode inside Browser applications but note **there will be no history**, meaning you won't be able to go _back_ or _forward_.
+While it's not recommended, you can use this mode inside Browser applications but note **there will be no history**, meaning you won't be able to go *back* or *forward*.
 
 ## Example Server Configurations
 
@@ -191,7 +189,7 @@ Create a `_redirects` file that is included with your deployed files:
 
 In vue-cli, nuxt, and vite projects, this file usually goes under a folder named `static` or `public`.
 
-You can read more about the syntax on Netlify documentation. You can also create a `netlify.toml` to combine _redirections_ with other Netlify features.
+You can read more about the syntax on Netlify documentation. You can also create a `netlify.toml` to combine *redirections* with other Netlify features.
 
 ### Vercel
 
@@ -202,8 +200,6 @@ Create a `vercel.json` file under the root directory of your project with the fo
   "rewrites": [{ "source": "/:path*", "destination": "/index.html" }]
 }
 ```
-
-<RuleKitLink />
 
 ## Caveat
 

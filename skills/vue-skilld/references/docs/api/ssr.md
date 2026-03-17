@@ -1,3 +1,6 @@
+---
+url: /api/ssr.md
+---
 # Server-Side Rendering API {#server-side-rendering-api}
 
 ## renderToString() {#rendertostring}

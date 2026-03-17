@@ -1,5 +1,5 @@
 ---
-outline: deep
+url: /guide/extras/reactivity-in-depth.md
 ---
 
 

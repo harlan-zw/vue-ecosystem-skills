@@ -268,13 +268,6 @@ const groupedBar = new GroupedBar<DataRecord>({ x, y })
 
 Loading...
 
-- React
-- Angular
-- Svelte
-- Vue
-- Solid
-- TypeScript
-
 ```
 <VisGroupedBar x={x} y={y} groupMaxWidth={25}/>
 ```
@@ -450,13 +443,6 @@ const groupedBar = new GroupedBar<DataRecord>({ x, y })
 ```
 
 Loading...
-
-- React
-- Angular
-- Svelte
-- Vue
-- Solid
-- TypeScript
 
 ```
 <VisGroupedBar x={x} y={y} dataStep={0.1}/>

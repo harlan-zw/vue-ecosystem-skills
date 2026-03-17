@@ -1,9 +1,7 @@
+---
+url: /guide/essentials/named-views.md
+---
 # Named Views
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/vue-router-4-named-views"
-  title="Learn how to use named views"
-/>
 
 Sometimes you need to display multiple views at the same time instead of nesting them, e.g. creating a layout with a `sidebar` view and a `main` view. This is where named views come in handy. Instead of having one single outlet in your view, you can have multiple and give each of them a name. A `router-view` without a name will be given `default` as its name.
 
@@ -53,11 +51,11 @@ It is possible to create complex layouts using named views with nested views. Wh
 +-----------------------------------+                  +------------------------------+
 ```
 
-- `Nav` is just a regular component
-- `UserSettings` is the parent view component
-- `UserEmailsSubscriptions`, `UserProfile`, `UserProfilePreview` are nested view components
+* `Nav` is just a regular component
+* `UserSettings` is the parent view component
+* `UserEmailsSubscriptions`, `UserProfile`, `UserProfilePreview` are nested view components
 
-**Note**: _Let's forget about how the HTML/CSS should look like to represent such layout and focus on the components used._
+**Note**: *Let's forget about how the HTML/CSS should look like to represent such layout and focus on the components used.*
 
 The `<template>` section for `UserSettings` component in the above layout would look something like this:
 
@@ -94,5 +92,3 @@ Then you can achieve the layout above with this route configuration:
 ```
 
 A working demo of this example can be found here.
-
-<RuleKitLink />

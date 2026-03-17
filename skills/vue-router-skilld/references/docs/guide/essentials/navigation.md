@@ -1,13 +1,8 @@
 ---
-sidebarDepth: 0
+url: /guide/essentials/navigation.md
 ---
 
 # Programmatic Navigation
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/vue-router-4-programmatic-navigation"
-  title="Learn how to navigate programmatically"
-/>
 
 Aside from using `<router-link>` to create anchor tags for declarative navigation, we can do this programmatically using the router's instance methods.
 
@@ -60,7 +55,7 @@ When specifying `params`, make sure to either provide a `string` or `number` (or
 
 Since the prop `to` accepts the same kind of object as `router.push`, the exact same rules apply to both of them.
 
-`router.push` and all the other navigation methods return a _Promise_ that allows us to wait till the navigation is finished and to know if it succeeded or failed. We will talk more about that in [Navigation Handling](../advanced/navigation-failures.md).
+`router.push` and all the other navigation methods return a *Promise* that allows us to wait till the navigation is finished and to know if it succeeded or failed. We will talk more about that in [Navigation Handling](../advanced/navigation-failures.md).
 
 ## Replace current location
 
@@ -79,11 +74,6 @@ router.replace({ path: '/home' })
 ```
 
 ## Traverse history
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/go-back"
-  title="Learn how to use Vue Router to go back"
-/>
 
 This method takes a single integer as parameter that indicates by how many steps to go forward or go backward in the history stack, similar to `window.history.go(n)`.
 
@@ -111,5 +101,3 @@ You may have noticed that `router.push`, `router.replace` and `router.go` are co
 Therefore, if you are already familiar with Browser History APIs, manipulating history will feel familiar when using Vue Router.
 
 It is worth mentioning that Vue Router navigation methods (`push`, `replace`, `go`) work consistently no matter the `history` option passed when creating the router instance.
-
-<RuleKitLink />

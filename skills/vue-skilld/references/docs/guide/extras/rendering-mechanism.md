@@ -1,5 +1,5 @@
 ---
-outline: deep
+url: /guide/extras/rendering-mechanism.md
 ---
 
 # Rendering Mechanism {#rendering-mechanism}

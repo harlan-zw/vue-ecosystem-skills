@@ -1,10 +1,11 @@
-# Typed Routes <Badge type="tip" text="v4.4.0+" />
+---
+url: /guide/advanced/typed-routes.md
+---
+# Typed Routes&#x20;
 
-<RuleKitLink />
 
 
-
-It's possible to configure the router to have a _map_ of typed routes. While this can be done manually, it is recommended to use the unplugin-vue-router plugin to generate the routes and the types automatically from a file based routing system.
+It's possible to configure the router to have a *map* of typed routes. While this can be done manually, it is recommended to use the [built-in file-based routing plugin](/file-based-routing/) to generate the routes and the types automatically from a file based routing system.
 
 ## Manual Configuration
 
@@ -72,6 +73,6 @@ declare module 'vue-router' {
 
 ::: tip
 
-This is indeed tedious and error-prone. That's why it's recommended to use unplugin-vue-router to generate the routes and the types automatically from a file-based routing system.
+This is indeed tedious and error-prone. That's why it's recommended to use the built-in [file-based routing](/file-based-routing/) to generate the routes and the types automatically.
 
 :::

@@ -1,9 +1,10 @@
+---
+url: /guide/migration/v4-to-v5.md
+---
 # Migrating to Vue Router 5
 
-<RuleKitLink />
-
-> [!TIP]
-> Vue Router 5 is a transition release that merges unplugin-vue-router (file-based routing) into the core package. **If you're using Vue Router 4 without unplugin-vue-router, there are no breaking changes** - you can upgrade without any code modifications. The only exception is that the _iife_ build no longer includes `@vue/devtools-api` because it has been upgraded to v8 and does not expose an IIFE build itself. You can track that change in this issue.
+> \[!TIP]
+> Vue Router 5 is a transition release that merges unplugin-vue-router (file-based routing) into the core package. **If you're using Vue Router 4 without unplugin-vue-router, there are no breaking changes** - you can upgrade without any code modifications. The only exception is that the *iife* build no longer includes `@vue/devtools-api` because it has been upgraded to v8 and does not expose an IIFE build itself. You can track that change in this issue.
 >
 > Vue Router 6 will be ESM-only and remove deprecated APIs. v5 gives you time to prepare for that transition.
 
@@ -20,10 +21,6 @@ pnpm update vue-router@5
 If you were using unplugin-vue-router for file-based routing, migration is mostly import path changes.
 
 ### Migration Checklist (TLDR)
-
-
-
-<MigrationChecklist />
 
 ### 1. Update Dependencies
 

@@ -14,68 +14,6 @@ meta:
 
 Get Started__ Give a Star__
 
-
-
-__
-
-__
-
-__
-
-__
-
-__
-
-__
-
-__
-
-
-
-[\[email protected\]](https://primevue.org/cdn-cgi/l/email-protection)
-
-**Overview**
-
-**Welcome to PrimeVue**
-
-**Crypto Analytics**
-
-**Transactions**
-
-| Id | Name | Coin | Date | Process | Amount |
-| --- | --- | --- | --- | --- | --- |
-| #1254 | AY Amy Yelsner | __ | May 5th | Buy | 3.005 BTC |
-| #2355 | AF Anna Fali | __ | Mar 17th | Buy | 0.050 ETH |
-| #1235 | SS Stepen Shaw | __ | May 24th | Sell | 3.050 BTC |
-| #2355 | AF Anna Fali | __ | Mar 17th | Sell | 0.050 ETH |
-| #2355 | AF Anna Fali | __ | Mar 17th | Sell | 0.050 ETH |
-
-**My Wallet**
-
-**BTC **(15%)
-
-**27.215**
-
-**ETH **(5%)
-
-**4.367**
-
-**GBP **(25%)
-
-**£ 147.562,32**
-
-**EUR **(11%)
-
-**€ 137.457,25**
-
-**USD **(29%)
-
-**$ 133.364,12**
-
-**XAU **(29%)
-
-**200 g**
-
 Features
 
 PrimeVue is the most complete solution for your UI requirements.
@@ -185,8 +123,6 @@ Verona Preview
 Freya Preview
 
 Atlantis Preview
-
-
 
 Apollo Preview
 

@@ -1,3 +1,6 @@
+---
+url: /guide/extras/web-components.md
+---
 # Vue and Web Components {#vue-and-web-components}
 
 Web Components is an umbrella term for a set of web native APIs that allows developers to create reusable custom elements.

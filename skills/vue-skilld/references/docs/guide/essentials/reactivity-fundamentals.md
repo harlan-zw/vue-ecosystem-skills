@@ -1,5 +1,5 @@
 ---
-outline: deep
+url: /guide/essentials/reactivity-fundamentals.md
 ---
 
 # Reactivity Fundamentals {#reactivity-fundamentals}

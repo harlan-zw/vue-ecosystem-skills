@@ -10,7 +10,6 @@ meta:
 
 Nov 18, 2025
 
-
 ## Building Better: Our Migration to tsdown
 
 
@@ -19,7 +18,7 @@ Nov 18, 2025
 
 @alvarosabu
 
-As part of our continuous effort to improve the TresJS ecosystem, we've made a significant change to how we build and distribute our packages. With the [**release of v5.1.1**, we've migrated our entire build system from Vite's library mode to **tsdown**—a modern TypeScript bundler built on **Rolldown**.
+As part of our continuous effort to improve the TresJS ecosystem, we've made a significant change to how we build and distribute our packages. With the **release of v5.1.1**, we've migrated our entire build system from Vite's library mode to **tsdown**—a modern TypeScript bundler built on **Rolldown**.
 
 This wasn't just a tooling change for the sake of change. Let me explain why we did it and what it means for you.
 

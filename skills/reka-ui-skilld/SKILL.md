@@ -3,8 +3,8 @@ name: reka-ui-skilld
 description: "Vue port for Radix UI Primitives. ALWAYS use when writing code importing \"reka-ui\". Consult for debugging, best practices, or modifying reka-ui, reka ui."
 metadata:
   version: 2.9.2
-  generated_at: 2026-03-16
-  references_synced_at: 2026-03-16
+  generated_at: 2026-03-17
+  references_synced_at: 2026-03-17
 ---
 
 # unovue/reka-ui `reka-ui`

@@ -1,5 +1,5 @@
 ---
-outline: deep
+url: /style-guide/index.md
 ---
 
 # Style Guide {#style-guide}

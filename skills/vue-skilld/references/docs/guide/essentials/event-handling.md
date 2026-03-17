@@ -1,3 +1,6 @@
+---
+url: /guide/essentials/event-handling.md
+---
 # Event Handling {#event-handling}
 
 <div class="options-api">

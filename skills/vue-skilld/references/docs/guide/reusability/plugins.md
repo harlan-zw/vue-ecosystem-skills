@@ -1,3 +1,6 @@
+---
+url: /guide/reusability/plugins.md
+---
 # Plugins {#plugins}
 
 ## Introduction {#introduction}

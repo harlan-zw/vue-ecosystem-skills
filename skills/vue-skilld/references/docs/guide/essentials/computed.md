@@ -1,3 +1,6 @@
+---
+url: /guide/essentials/computed.md
+---
 # Computed Properties {#computed-properties}
 
 <div class="options-api">

@@ -378,13 +378,6 @@ const stackedBar = new StackedBar<DataRecord>({ x, y })
 
 Loading...
 
-- React
-- Angular
-- Svelte
-- Vue
-- Solid
-- TypeScript
-
 ```
 <VisStackedBar x={x} y={y} dataStep={0.1}/>
 ```

@@ -1,9 +1,7 @@
+---
+url: /guide/essentials/route-matching-syntax.md
+---
 # Routes' Matching Syntax
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/vue-router-4-advanced-routes-matching-syntax"
-  title="Learn how to use advanced route routes' matching syntax"
-/>
 
 Most applications will use static routes like `/about` and dynamic routes like `/users/:userId` like we just saw in [Dynamic Route Matching](./dynamic-matching.md), but Vue Router has much more to offer!
 
@@ -125,16 +123,14 @@ Note that `*` technically also marks a parameter as optional but `?` parameters 
 
 If the route segment contains more than **just an optional parameter**, it won't match a path **without the trailing slash**. For example:
 
-- `/users/:uid?-:name?` won't match `/users`, only `/users/-` or even `/users/-/`
-- `/users/:uid(\\d+)?:name?` won't match `/users`, only `/users/`, `/users/2`, `/users/2/`, etc
+* `/users/:uid?-:name?` won't match `/users`, only `/users/-` or even `/users/-/`
+* `/users/:uid(\\d+)?:name?` won't match `/users`, only `/users/`, `/users/2`, `/users/2/`, etc
 
 You can play around with the matching syntax in the playground
 
 ## Debugging
 
 If you need to dig how your routes are transformed into a regex to understand why a route isn't being matched or, to report a bug, you can use the path ranker tool. It supports sharing your routes through the URL.
-
-<RuleKitLink />
 
 ## Avoiding slow regex
 
@@ -147,7 +143,7 @@ const routes = [
 ]
 ```
 
-In practice, use these _match everything_ params only **in the very end of the URL**. If you need them in the middle of the path, **do not make them repeatable**:
+In practice, use these *match everything* params only **in the very end of the URL**. If you need them in the middle of the path, **do not make them repeatable**:
 
 ```ts
 const routes = [

@@ -1,3 +1,6 @@
+---
+url: /api/reactivity-advanced.md
+---
 # Reactivity API: Advanced {#reactivity-api-advanced}
 
 ## shallowRef() {#shallowref}

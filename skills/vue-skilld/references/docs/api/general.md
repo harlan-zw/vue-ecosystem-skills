@@ -1,3 +1,6 @@
+---
+url: /api/general.md
+---
 # Global API: General {#global-api-general}
 
 ## version {#version}

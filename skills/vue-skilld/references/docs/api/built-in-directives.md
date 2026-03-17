@@ -1,3 +1,6 @@
+---
+url: /api/built-in-directives.md
+---
 # Built-in Directives {#built-in-directives}
 
 ## v-text {#v-text}

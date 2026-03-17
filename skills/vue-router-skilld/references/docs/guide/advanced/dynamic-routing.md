@@ -1,9 +1,7 @@
+---
+url: /guide/advanced/dynamic-routing.md
+---
 # Dynamic Routing
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/vue-router-4-dynamic-routing"
-  title="Learn how to add routes at runtime"
-/>
 
 Adding routes to your router is usually done via the `routes` option but in some situations, you might want to add or remove routes while the application is already running. Applications with extensible interfaces like Vue CLI UI can use this to make the application grow.
 
@@ -36,8 +34,6 @@ router.replace(router.currentRoute.value.fullPath)
 
 Remember you can `await router.replace()` if you need to wait for the new route to be displayed.
 
-<RuleKitLink />
-
 ## Adding routes inside navigation guards
 
 If you decide to add or remove routes inside of a navigation guard, you should not call `router.replace()` but trigger a redirection by returning the new location:
@@ -60,7 +56,7 @@ Because we are redirecting, we are replacing the ongoing navigation, effectively
 
 There are few different ways to remove existing routes:
 
-- By adding a route with a conflicting name. If you add a route that has the same name as an existing route, it will remove the route first and then add the route:
+* By adding a route with a conflicting name. If you add a route that has the same name as an existing route, it will remove the route first and then add the route:
 
   ```js
   router.addRoute({ path: '/about', name: 'about', component: About })
@@ -69,7 +65,7 @@ There are few different ways to remove existing routes:
   router.addRoute({ path: '/other', name: 'about', component: Other })
   ```
 
-- By calling the callback returned by `router.addRoute()`:
+* By calling the callback returned by `router.addRoute()`:
 
   ```js
   const removeRoute = router.addRoute(routeRecord)
@@ -78,7 +74,7 @@ There are few different ways to remove existing routes:
 
   This is useful when the routes do not have a name
 
-- By using `router.removeRoute()` to remove a route by its name:
+* By using `router.removeRoute()` to remove a route by its name:
 
   ```js
   router.addRoute({ path: '/about', name: 'about', component: About })
@@ -92,7 +88,7 @@ Whenever a route is removed, **all of its aliases and children** are removed wit
 
 ## Adding nested routes
 
-To add nested routes to an existing route, you can pass the _name_ of the route as its first parameter to `router.addRoute()`. This will effectively add the route as if it was added through `children`:
+To add nested routes to an existing route, you can pass the *name* of the route as its first parameter to `router.addRoute()`. This will effectively add the route as if it was added through `children`:
 
 ```js
 router.addRoute({ name: 'admin', path: '/admin', component: Admin })
@@ -114,5 +110,5 @@ router.addRoute({
 
 Vue Router gives you two functions to look at existing routes:
 
-- [`router.hasRoute()`](/api/interfaces/Router.md#hasRoute): check if a route exists.
-- [`router.getRoutes()`](/api/interfaces/Router.md#getRoutes): get an array with all the route records.
+* [`router.hasRoute()`](/api/interfaces/Router.md#hasRoute): check if a route exists.
+* [`router.getRoutes()`](/api/interfaces/Router.md#getRoutes): get an array with all the route records.

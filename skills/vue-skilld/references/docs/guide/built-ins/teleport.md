@@ -1,3 +1,6 @@
+---
+url: /guide/built-ins/teleport.md
+---
 # Teleport {#teleport}
 
  <VueSchoolLink href="https://vueschool.io/lessons/vue-3-teleport" title="Free Vue.js Teleport Lesson"/>

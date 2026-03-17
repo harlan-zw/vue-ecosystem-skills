@@ -1,3 +1,6 @@
+---
+url: /api/utility-types.md
+---
 # Utility Types {#utility-types}
 
 :::info

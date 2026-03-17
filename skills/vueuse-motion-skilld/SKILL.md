@@ -3,8 +3,8 @@ name: vueuse-motion-skilld
 description: " Vue Composables putting your components in motion. ALWAYS use when writing code importing \"@vueuse/motion\". Consult for debugging, best practices, or modifying @vueuse/motion, vueuse/motion, vueuse motion, motion."
 metadata:
   version: 3.0.3
-  generated_at: 2026-03-16
-  references_synced_at: 2026-03-16
+  generated_at: 2026-03-17
+  references_synced_at: 2026-03-17
 ---
 
 # vueuse/motion `@vueuse/motion`

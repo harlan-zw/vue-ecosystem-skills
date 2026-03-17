@@ -12,12 +12,6 @@ Unhead wraps your document template, improving reactive SSR JavaScript framework
 
 **Get Started ** ** Install Unhead **
 
-**Switch to TypeScript** **Switch to Vue** **Switch to React** **Switch to Svelte** **Switch to Solid.js** **Switch to Angular** **Switch to Nuxt**
-
-## Hello useHead()
-
-Unhead aims to provide bullet-proof primitives for a minimal yet powerful API surface.
-
 ### ** Titles that just work**
 
 ```
@@ -63,10 +57,6 @@ useHead({
 })
 ```
 
-## **Built For Reactive Lifecycles **
-
-All side effects are tracked so that unmounting a component will revert its head modifications and reactive updates can be made at any time.
-
 ```
 useHead({
   title: 'Subscribe now!',
@@ -88,10 +78,6 @@ useHead({
 <!DOCTYPEhtml><htmlclass="light"><head><title>Hello World</title></head><body></body></html>
 
 Component Not Mounted
-
-## Optimized SEO Tags
-
-Nail your SEO with foolproof flat meta config and the simplest Schema.org you've ever worked with.
 
 ### **Flat SEO Meta**
 
@@ -130,10 +116,6 @@ useSchemaOrg([
   }),
 ])
 ```
-
-## Making Websites Faster
-
-Unhead ships to be tree shaken with client and server export paths.
 
 ### Optimized Head tag ordering
 

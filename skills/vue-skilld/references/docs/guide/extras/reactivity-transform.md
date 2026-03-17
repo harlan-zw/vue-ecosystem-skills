@@ -1,3 +1,6 @@
+---
+url: /guide/extras/reactivity-transform.md
+---
 # Reactivity Transform {#reactivity-transform}
 
 :::danger Removed Experimental Feature

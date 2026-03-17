@@ -3,8 +3,8 @@ name: vue-router-skilld
 description: "ALWAYS use when writing code importing \"vue-router\". Consult for debugging, best practices, or modifying vue-router, vue router, router."
 metadata:
   version: 5.0.3
-  generated_at: 2026-03-16
-  references_synced_at: 2026-03-16
+  generated_at: 2026-03-17
+  references_synced_at: 2026-03-17
 ---
 
 # vuejs/router `vue-router`

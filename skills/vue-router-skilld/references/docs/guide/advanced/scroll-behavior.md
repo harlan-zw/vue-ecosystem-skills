@@ -1,9 +1,7 @@
+---
+url: /guide/advanced/scroll-behavior.md
+---
 # Scroll Behavior
-
-<VueSchoolLink
-  href="https://vueschool.io/lessons/scroll-behavior"
-  title="Learn how to customize scroll behavior"
-/>
 
 When using client-side routing, we may want to scroll to top when navigating to a new route, or preserve the scrolling position of history entries just like real page reload does. Vue Router allows you to achieve these and even better, allows you to completely customize the scroll behavior on route navigation.
 
@@ -22,8 +20,6 @@ const router = createRouter({
 ```
 
 The `scrollBehavior` function receives the `to` and `from` route objects, like [Navigation Guards](./navigation-guards.md). The third argument, `savedPosition`, is only available if this is a `popstate` navigation (triggered by the browser's back/forward buttons).
-
-<RuleKitLink />
 
 The function can return a `ScrollToOptions` position object:
 

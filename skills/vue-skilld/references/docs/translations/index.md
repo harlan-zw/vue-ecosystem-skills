@@ -1,5 +1,5 @@
 ---
-aside: false
+url: /translations/index.md
 ---
 
 # Translations {#translations}
