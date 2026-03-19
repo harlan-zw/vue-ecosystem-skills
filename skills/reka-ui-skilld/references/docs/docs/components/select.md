@@ -547,7 +547,7 @@ import { ref } from 'vue'
     <SelectRoot>…</SelectRoot>
   </Label>
 
-  
+  <!-- or -->
 
   <Label for="country">Country</Label>
   <SelectRoot>
@@ -600,7 +600,7 @@ export { default as SelectItem } from 'SelectItem.vue'
 ```
 
 ```vue
-
+<!-- Select.vue -->
 <script setup lang="ts">
 import type { SelectRootEmits, SelectRootProps } from 'reka-ui'
 import { CheckIcon, ChevronDownIcon, ChevronUpIcon, } from '@radix-icons/vue'
@@ -639,7 +639,7 @@ const forward = useForwardPropsEmits(props, emits)
 ```
 
 ```vue
-
+<!-- SelectItem.vue -->
 <script setup lang="ts">
 import type { SelectItemProps } from 'reka-ui'
 import { CheckIcon } from '@radix-icons/vue'

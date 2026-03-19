@@ -36,15 +36,15 @@ If you can be used object syntax, you need to specify as the object key the foll
 **Examples**
 
 ```html
-
+<!-- string syntax: literal -->
 <p v-t="'foo.bar'"></p>
 
-
+<!-- string syntax: binding via data or computed props -->
 <p v-t="msg"></p>
 
-
+<!-- object syntax: literal -->
 <p v-t="{ path: 'hi', locale: 'ja', args: { name: 'kazupon' } }"></p>
 
-
+<!-- object syntax: binding via data or computed props -->
 <p v-t="{ path: greeting, args: { name: fullName } }"></p>
 ```

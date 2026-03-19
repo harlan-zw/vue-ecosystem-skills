@@ -107,14 +107,14 @@ Read more about headings
   <section aria-labelledby="section-title-1">
     <h2 id="section-title-1"> Section Title </h2>
     <h3>Section Subtitle</h3>
-    
+    <!-- Content -->
   </section>
   <section aria-labelledby="section-title-2">
     <h2 id="section-title-2"> Section Title </h2>
     <h3>Section Subtitle</h3>
-    
+    <!-- Content -->
     <h3>Section Subtitle</h3>
-    
+    <!-- Content -->
   </section>
 </main>
 ```
@@ -393,11 +393,11 @@ You can also use an input to create buttons:
 
 ```vue-html
 <form action="/dataCollectionLocation" method="post" autocomplete="on">
-  
+  <!-- Buttons -->
   <button type="button">Cancel</button>
   <button type="submit">Submit</button>
 
-  
+  <!-- Input buttons -->
   <input type="button" value="Cancel" />
   <input type="submit" value="Submit" />
 </form>

@@ -26,7 +26,7 @@ It leverages Vue's Provide / Inject to provide a powerful way of extending and c
 Here's a simple example of how to use `injectContext` with a Reka UI Accordion component:
 
 ```vue
-
+<!-- CustomAccordionContent.vue -->
 <script setup>
 import { injectAccordionItemContext, injectAccordionRootContext } from 'reka-ui'
 

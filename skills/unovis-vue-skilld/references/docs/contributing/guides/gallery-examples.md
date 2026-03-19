@@ -94,7 +94,7 @@ cd packages/solidnpm run gallery
 1. Add the example component's selector to the `Component` decorator's `template` field:
 
 ```
-@Component({  selector: 'app-component',  template: \`    ...      \`})
+@Component({  selector: 'app-component',  template: \`    ...    <!-- your angular selector -->  \`})
 ```
 
 1. From the terminal, run the command

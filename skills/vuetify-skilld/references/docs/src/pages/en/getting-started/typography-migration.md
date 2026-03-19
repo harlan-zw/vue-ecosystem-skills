@@ -52,12 +52,12 @@ If you want to keep text sizes as close as possible to the previous MD2 sizes, u
 Replace legacy class names with MD3 equivalents:
 
 ```html
-
+<!-- Before -->
 <h1 class="text-h1">Title</h1>
 <p class="text-body-1">Content</p>
 <span class="text-caption">Small text</span>
 
-
+<!-- After -->
 <h1 class="text-display-large">Title</h1>
 <p class="text-body-large">Content</p>
 <span class="text-body-small">Small text</span>

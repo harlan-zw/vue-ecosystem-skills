@@ -204,7 +204,7 @@ or
 ```html { data-resource="~/layouts/default.vue" }
 <template>
   <v-app>
-    
+    <!-- .... -->
   </v-app>
 </template>
 ```
@@ -266,7 +266,7 @@ Rememeber to include additional script for Vue.js. See full example below:
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    
+    <!-- ... -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@{{ version }]/dist/vuetify.min.css" />
   </head>
   <body>

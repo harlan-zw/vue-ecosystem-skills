@@ -147,7 +147,7 @@ In practice, depending on how you handle the error, you will add a type guard in
 
 ```vue-html
 <template>
-  
+  <!-- ... -->
   <p v-if="isMyError(error)">{{ error.message }}</p>
 </template>
 ```

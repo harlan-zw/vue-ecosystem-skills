@@ -185,11 +185,11 @@ import { BreadcrumbEllipsis } from "@/components/ui/breadcrumb"
 <template>
   <Breadcrumb>
     <BreadcrumbList>
-      
+      <!-- ... -->
       <BreadcrumbItem>
         <BreadcrumbEllipsis />
       </BreadcrumbItem>
-    
+    <!-- ... -->
     </BreadcrumbList>
   </Breadcrumb>
 </template>

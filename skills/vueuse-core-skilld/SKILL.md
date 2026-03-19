@@ -3,17 +3,19 @@ name: vueuse-core-skilld
 description: "Collection of essential Vue Composition Utilities. ALWAYS use when writing code importing \"@vueuse/core\". Consult for debugging, best practices, or modifying @vueuse/core, vueuse/core, vueuse core, vueuse."
 metadata:
   version: 14.2.1
-  generated_at: 2026-03-18
-  references_synced_at: 2026-03-18
+  generated_at: 2026-03-19
+  references_synced_at: 2026-03-19
 ---
 
 # vueuse/vueuse `@vueuse/core`
 
 > Collection of essential Vue Composition Utilities
 
-**Version:** 14.2.1 (Feb 2026)
+**Version:** 14.2.1
 **Deps:** @types/web-bluetooth@^0.0.21, @vueuse/metadata@14.2.1, @vueuse/shared@14.2.1
-**Tags:** vue2: 2.0.35 (Jul 2020), vue3: 3.0.35 (Jul 2020), demi: 4.0.0-alpha.0 (Jul 2020), alpha: 14.0.0-alpha.3 (Sep 2025), beta: 14.0.0-beta.1 (Sep 2025), latest: 14.2.1 (Feb 2026)
+**Tags:** vue2: 2.0.35, vue3: 3.0.35, demi: 4.0.0-alpha.0, alpha: 14.0.0-alpha.3, beta: 14.0.0-beta.1, latest: 14.2.1
+
+**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
 ## API Changes
 
 This section documents version-specific API changes — prioritize recent major/minor releases.

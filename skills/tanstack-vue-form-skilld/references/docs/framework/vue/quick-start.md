@@ -6,7 +6,7 @@ title: Quick Start
 The bare minimum to get started with TanStack Form is to create a form and add a field. Keep in mind that this example does not include any validation or error handling... yet.
 
 ```vue
-
+<!-- App.vue -->
 <script setup>
 import { useForm } from '@tanstack/vue-form'
 

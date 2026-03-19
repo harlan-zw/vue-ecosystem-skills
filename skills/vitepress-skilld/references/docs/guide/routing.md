@@ -84,11 +84,11 @@ src/getting-started.md  -->  /getting-started.html
 You can use both absolute and relative paths when linking between pages. Note that although both `.md` and `.html` extensions will work, the best practice is to omit file extensions so that VitePress can generate the final URLs based on your config.
 
 ```md
-
+<!-- Do -->
 [Getting Started](./getting-started)
 [Getting Started](../guide/getting-started)
 
-
+<!-- Don't -->
 [Getting Started](./getting-started.md)
 [Getting Started](./getting-started.html)
 ```
@@ -447,5 +447,5 @@ export default {
 Then, use the following special syntax to render the content as part of the Markdown file itself:
 
 ```md
-
+<!-- @content -->
 ```

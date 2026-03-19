@@ -26,7 +26,7 @@ You'll notice that when switched back, the previous changed state would have bee
 Creating fresh component instance on switch is normally useful behavior, but in this case, we'd really like the two component instances to be preserved even when they are inactive. To solve this problem, we can wrap our dynamic component with the `<KeepAlive>` built-in component:
 
 ```vue-html
-
+<!-- Inactive components will be cached! -->
 <KeepAlive>
   <component :is="activeComponent" />
 </KeepAlive>
@@ -56,17 +56,17 @@ When used in [in-DOM templates](/guide/essentials/component-basics#in-dom-templa
 By default, `<KeepAlive>` will cache any component instance inside. We can customize this behavior via the `include` and `exclude` props. Both props can be a comma-delimited string, a `RegExp`, or an array containing either types:
 
 ```vue-html
-
+<!-- comma-delimited string -->
 <KeepAlive include="a,b">
   <component :is="view" />
 </KeepAlive>
 
-
+<!-- regex (use `v-bind`) -->
 <KeepAlive :include="/a|b/">
   <component :is="view" />
 </KeepAlive>
 
-
+<!-- Array (use `v-bind`) -->
 <KeepAlive :include="['a', 'b']">
   <component :is="view" />
 </KeepAlive>

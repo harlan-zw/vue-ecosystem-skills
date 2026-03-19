@@ -59,25 +59,25 @@ The theme instance has 3 functions to change the theme:
   <v-app>
     <v-main>
       <v-container>
-        
+        <!-- Toggle between Light / Dark -->
         <v-btn
           @click="theme.toggle()"
           text="Toggle Light / Dark"
         ></v-btn>
 
-        
+        <!-- Change to a specific theme -->
         <v-btn
           @click="theme.change('dark')"
           text="Change to Dark"
         ></v-btn>
 
-        
+        <!-- Cycle between all themes -->
         <v-btn
           @click="theme.cycle()"
           text="Cycle All Themes"
         ></v-btn>
 
-        
+        <!-- Cycle between specific themes -->
         <v-btn
           @click="theme.cycle(['custom', 'light', 'system'])"
           text="Cycle Specific Themes"
@@ -102,7 +102,7 @@ You should keep in mind that most of the Vuetify components support the **theme*
 <template>
   <v-app>
     <v-card theme="dark">
-      
+      <!-- button uses dark theme -->
       <v-btn>foo</v-btn>
     </v-card>
   </v-app>
@@ -114,11 +114,11 @@ You can use the `<v-theme-provider>` component to dynamically apply different th
 ```html
 <template>
   <v-app>
-    
+    <!-- uses the current default theme -->
     <v-card>...</v-card>
 
     <v-theme-provider theme="high-contrast">
-      
+      <!-- uses the high-contrast theme -->
       <v-card>...</v-card>
       <v-btn>...</v-btn>
     </v-theme-provider>
@@ -326,10 +326,10 @@ interface ThemeInstance {
 Pages with the `script-src` or `style-src` CSP rules enabled may require a **nonce** to be specified for embedded style tags.
 
 ```html
-
+<!-- Use with script-src -->
 Content-Security-Policy: script-src 'self' 'nonce-dQw4w9WgXcQ'
 
-
+<!-- Use with style-src -->
 Content-Security-Policy: style-src 'self' 'nonce-dQw4w9WgXcQ'
 ```
 

@@ -72,7 +72,7 @@ However, there could be rare cases where the data must be passed as a DOM proper
 ```vue-html
 <my-element :user.prop="{ name: 'jack' }"></my-element>
 
-
+<!-- shorthand equivalent -->
 <my-element .user="{ name: 'jack' }"></my-element>
 ```
 
@@ -444,7 +444,7 @@ onMounted(() => {
 </script>
 
 <template>
-  
+  <!-- Now we can use the element, with type checking: -->
   <some-element
     ref="el"
     :foo="456"
@@ -489,7 +489,7 @@ declare module 'vue' {
 </script>
 
 <template>
-  
+  <!-- ... same as before, use the element in the template ... -->
 </template>
 ```
 

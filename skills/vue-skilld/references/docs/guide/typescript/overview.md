@@ -136,7 +136,7 @@ export default defineComponent({
 </script>
 
 <template>
-  
+  <!-- type checking and auto-completion enabled -->
   {{ count.toFixed(2) }}
 </template>
 ```
@@ -152,7 +152,7 @@ const count = ref(1)
 </script>
 
 <template>
-  
+  <!-- type checking and auto-completion enabled -->
   {{ count.toFixed(2) }}
 </template>
 ```
@@ -169,7 +169,7 @@ let x: string | number = 1
 </script>
 
 <template>
-  
+  <!-- error because x could be a string -->
   {{ x.toFixed(2) }}
 </template>
 ```

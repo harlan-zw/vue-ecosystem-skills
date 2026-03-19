@@ -15,7 +15,7 @@ For example, we may have a `<FancyButton>` component that supports usage like th
 
 ```vue-html{2}
 <FancyButton>
-  Click me! 
+  Click me! <!-- slot content -->
 </FancyButton>
 ```
 
@@ -23,7 +23,7 @@ The template of `<FancyButton>` looks like this:
 
 ```vue-html{2}
 <button class="fancy-btn">
-  <slot></slot> 
+  <slot></slot> <!-- slot outlet -->
 </button>
 ```
 
@@ -120,7 +120,7 @@ We might want the text "Submit" to be rendered inside the `<button>` if the pare
 ```vue-html{3}
 <button type="submit">
   <slot>
-    Submit 
+    Submit <!-- fallback content -->
   </slot>
 </button>
 ```
@@ -167,13 +167,13 @@ There are times when it's useful to have multiple slot outlets in a single compo
 ```vue-html
 <div class="container">
   <header>
-    
+    <!-- We want header content here -->
   </header>
   <main>
-    
+    <!-- We want main content here -->
   </main>
   <footer>
-    
+    <!-- We want footer content here -->
   </footer>
 </div>
 ```
@@ -203,7 +203,7 @@ To pass a named slot, we need to use a `<template>` element with the `v-slot` di
 ```vue-html
 <BaseLayout>
   <template v-slot:header>
-    
+    <!-- content for the header slot -->
   </template>
 </BaseLayout>
 ```
@@ -241,7 +241,7 @@ When a component accepts both a default slot and named slots, all top-level non-
     <h1>Here might be a page title</h1>
   </template>
 
-  
+  <!-- implicit default slot -->
   <p>A paragraph for the main content.</p>
   <p>And another one.</p>
 
@@ -338,7 +338,7 @@ Try it in the Playground
     ...
   </template>
 
-  
+  <!-- with shorthand -->
   <template #[dynamicSlotName]>
     ...
   </template>
@@ -356,7 +356,7 @@ However, there are cases where it could be useful if a slot's content can make u
 In fact, we can do exactly that - we can pass attributes to a slot outlet just like passing props to a component:
 
 ```vue-html
-
+<!-- <MyComponent> template -->
 <div>
   <slot :text="greetingMessage" :count="1"></slot>
 </div>
@@ -447,7 +447,7 @@ Note the `name` of a slot won't be included in the props because it is reserved 
 If you are mixing named slots with the default scoped slot, you need to use an explicit `<template>` tag for the default slot. Attempting to place the `v-slot` directive directly on the component will result in a compilation error. This is to avoid any ambiguity about the scope of the props of the default slot. For example:
 
 ```vue-html
-
+<!-- <MyComponent> template -->
 <div>
   <slot :message="hello"></slot>
   <slot name="footer" />
@@ -455,11 +455,11 @@ If you are mixing named slots with the default scoped slot, you need to use an e
 ```
 
 ```vue-html
-
+<!-- This template won't compile -->
 <MyComponent v-slot="{ message }">
   <p>{{ message }}</p>
   <template #footer>
-    
+    <!-- message belongs to the default slot, and is not available here -->
     <p>{{ message }}</p>
   </template>
 </MyComponent>
@@ -469,7 +469,7 @@ Using an explicit `<template>` tag for the default slot helps to make it clear t
 
 ```vue-html
 <MyComponent>
-  
+  <!-- Use explicit default slot -->
   <template #default="{ message }">
     <p>{{ message }}</p>
   </template>

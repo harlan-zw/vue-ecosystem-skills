@@ -295,7 +295,7 @@ export default {
   <p class="text-xs font-italic mb-2">
     This button is not part of the above form:
   </p>
-  
+  <!-- 👀 Look, this is not part of the form. -->
   <FormKit type="button" @click="submitForm">Signup for newsletter</FormKit>
 </template>
 ```
@@ -345,7 +345,7 @@ function submitHandler() {
   <p class="text-xs font-italic mb-2">
     This button is not part of the above form:
   </p>
-  
+  <!-- 👀 Look, this is not part of the form. -->
   <FormKit type="button" @click="submitForm">Submit request</FormKit>
 </template>
 ```
@@ -360,7 +360,7 @@ To disable all the inputs in a given form, including the submit button, you can 
 
 ```vue
 <template>
-  
+  <!-- try removing the "disabled" attribute below -->
   <FormKit type="form" disabled>
     <FormKit
       label="Username"
@@ -924,7 +924,7 @@ function submitApplication() {
     incomplete-message="Sorry. The application was not submitted because not all fields are filled out correctly."
     @submit="submitApplication"
   >
-    
+    <!-- 👀 notice the summary is inside the form -->
     <FormKitSummary />
 
     <h2 class="text-xl font-bold my-4">Personal Information</h2>
@@ -1239,7 +1239,7 @@ async function submitHandler(_data, node) {
 
 <template>
   <FormKit type="form" @submit="submitHandler">
-    <FormKitMessages /> 
+    <FormKitMessages /> <!-- 👀 form messages will appear here -->
     <FormKit
       type="text"
       label="Your Name"
@@ -1373,7 +1373,7 @@ When an input is unmounted from a form — for example when using `v-if` — its
       label="Include a beverage?"
       help="Select a beverage, then uncheck me to see if data is preserved."
     />
-    
+    <!-- Try adding/removing preserve -->
     <FormKit
       v-if="value.beverage"
       preserve

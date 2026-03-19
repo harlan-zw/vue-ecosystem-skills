@@ -51,7 +51,7 @@ const form = useForm({
 <template>
   <p v-if="isLoading">Loading..</p>
   <form v-else @submit.prevent.stop="form.handleSubmit">
-    
+    <!-- ... -->
   </form>
 </template>
 ```

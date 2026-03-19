@@ -159,7 +159,7 @@ const formKitConfig: FormKitOptions = {
 
 <template>
   <FormKitProvider :config="formKitConfig">
-    
+    <!-- your FormKit components (can be deeply nested) -->
   </FormKitProvider>
 </template>
 

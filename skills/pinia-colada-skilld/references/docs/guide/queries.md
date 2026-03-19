@@ -305,12 +305,12 @@ const {
     Loading...
   </div>
   <div v-else-if="state.status === 'error'">
-    
+    <!-- ✅ error type excludes `null` -->
     Error fetching user info: {{ state.error.message }}
   </div>
-  
+  <!-- no need to check for the last possible status: 'success' -->
   <div v-else>
-    
+    <!-- ✅ data type excludes `undefined` -->
     {{ state.data.name }}
   </div>
 </template>
@@ -337,7 +337,7 @@ const { data, status, error } = useQuery({
 <template>
   <div v-if="status === 'pending'">Loading...</div>
   <div v-else-if="status === 'error'">Error fetching user info: {{ error.message }}</div>
-  
+  <!-- no need to check for the last possible status: 'success' -->
   <div v-else>
     {{ data.name }}
   </div>
@@ -373,10 +373,10 @@ const {
     Loading...
   </div>
   <div v-else-if="status === 'error'">
-    
+    <!-- Not type safe but valid at runtime -->
     Error fetching user info: {{ error!.message }}
   </div>
-  
+  <!-- Unnecessary check for `undefined` -->
   <div v-else-if="data">
     {{ data.name }}
   </div>

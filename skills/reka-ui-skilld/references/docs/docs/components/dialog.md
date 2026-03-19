@@ -115,7 +115,7 @@ const open = ref(false)
             }
           "
         >
-          
+          <!-- some inputs -->
           <button type="submit">
             Submit
           </button>
@@ -259,7 +259,7 @@ import { DialogContent, DialogOverlay, DialogPortal, DialogRoot, DialogTrigger }
       <DialogOverlay />
       <DialogContent>
         <form>
-          
+          <!-- some inputs -->
           <button type="submit" @click="close">
             Submit
           </button>
@@ -309,7 +309,7 @@ export { DialogRoot as Dialog, DialogTrigger } from 'reka-ui'
 ```
 
 ```vue
-
+<!-- DialogContent.vue -->
 <script setup lang="ts">
 import type { DialogContentEmits, DialogContentProps } from 'reka-ui'
 import { Cross2Icon } from '@radix-icons/vue'

@@ -220,7 +220,7 @@ With FormKit's repeater, you are not restricted to our default controls. You can
 #### repeater-controls.vue
 
 ```vue
-
+<!-- Imports hidden for brevity -->
   <FormKit #default="{ value }" v-model="values" type="group">
     <FormKit
       id="repeater"

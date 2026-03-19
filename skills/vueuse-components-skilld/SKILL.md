@@ -3,17 +3,19 @@ name: vueuse-components-skilld
 description: "Renderless components for VueUse. ALWAYS use when writing code importing \"@vueuse/components\". Consult for debugging, best practices, or modifying @vueuse/components, vueuse/components, vueuse components, vueuse."
 metadata:
   version: 14.2.1
-  generated_at: 2026-03-18
-  references_synced_at: 2026-03-18
+  generated_at: 2026-03-19
+  references_synced_at: 2026-03-19
 ---
 
 # vueuse/vueuse `@vueuse/components`
 
 > Renderless components for VueUse
 
-**Version:** 14.2.1 (Feb 2026)
+**Version:** 14.2.1
 **Deps:** @vueuse/shared@14.2.1, @vueuse/core@14.2.1
-**Tags:** next: 5.0.0 (Jun 2021), alpha: 14.0.0-alpha.3 (Sep 2025), beta: 14.0.0-beta.1 (Sep 2025), latest: 14.2.1 (Feb 2026)
+**Tags:** next: 5.0.0, alpha: 14.0.0-alpha.3, beta: 14.0.0-beta.1, latest: 14.2.1
+
+**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
 ## API Changes
 
 This section documents version-specific API changes for `@vueuse/components` — prioritize recent major/minor releases.

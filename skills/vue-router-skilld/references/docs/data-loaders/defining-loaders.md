@@ -157,7 +157,7 @@ const { data: user, isLoading, error } = useUserData()
 //            ^?
 </script>
 
-
+<!-- ... -->
 ```
 
 This patterns is useful to avoid blocking the navigation while *non critical data* is being fetched. It will display the page earlier while lazy loaders are still loading and you are able to display loader indicators thanks to the `isLoading` property.
@@ -273,7 +273,7 @@ The router needs to know what loaders should be ran with which page. This is ach
   <script lang="ts" setup>
   const { data: settings } = useSettings()
   </script>
-  
+  <!-- ...rest of the component -->
   ```
 
   :::
@@ -311,7 +311,7 @@ The router needs to know what loaders should be ran with which page. This is ach
   <script lang="ts" setup>
   const { data: settings } = useSettings()
   </script>
-  
+  <!-- ...rest of the component -->
   ```
 
 ### *Disconnecting* a loader from a page

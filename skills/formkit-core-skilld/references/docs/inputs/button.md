@@ -13,7 +13,7 @@ The easiest way to set the `label` of a button is with the `label` prop:
 #### button-base.vue
 
 ```vue
-
+<!-- Set button text with label prop -->
 <FormKit
   type="button"
   label="Checkout my label"
@@ -30,7 +30,7 @@ The default slot can also be used to add text and UI to the button:
 #### button-default-slot.vue
 
 ```vue
-
+<!-- The default slot can also set the button label -->
   <FormKit
     type="button"
     help="You can use the default slot."

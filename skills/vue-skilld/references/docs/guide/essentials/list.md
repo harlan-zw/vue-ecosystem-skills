@@ -110,7 +110,7 @@ Notice how the `v-for` value matches the function signature of the `forEach` cal
   {{ message }}
 </li>
 
-
+<!-- with index alias -->
 <li v-for="({ message }, index) in items">
   {{ message }} {{ index }}
 </li>
@@ -226,7 +226,10 @@ Similar to template `v-if`, you can also use a `<template>` tag with `v-for` to 
 When they exist on the same node, `v-if` has a higher priority than `v-for`. That means the `v-if` condition will not have access to variables from the scope of the `v-for`:
 
 ```vue-html
-
+<!--
+This will throw an error because property "todo"
+is not defined on instance.
+-->
 <li v-for="todo in todos" v-if="!todo.isComplete">
   {{ todo.name }}
 </li>
@@ -262,7 +265,7 @@ To give Vue a hint so that it can track each node's identity, and thus reuse and
 
 ```vue-html
 <div v-for="item in items" :key="item.id">
-  
+  <!-- content -->
 </div>
 ```
 

@@ -22,7 +22,7 @@ function increment() {
 }
 </script>
 
-
+<!-- view -->
 <template>{{ count }}</template>
 ```
 
@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-
+<!-- view -->
 <template>{{ count }}</template>
 ```
 

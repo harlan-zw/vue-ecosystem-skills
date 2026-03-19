@@ -31,7 +31,7 @@ const form = useForm({
           :name="`people[${i}].name`"
         >
           <template v-slot="{ field: subField, state }">
-            
+            <!-- ... -->
           </template>
         </form.Field>
       </div>

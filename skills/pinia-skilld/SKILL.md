@@ -3,17 +3,17 @@ name: pinia-skilld
 description: "Intuitive, type safe and flexible Store for Vue. ALWAYS use when writing code importing \"pinia\". Consult for debugging, best practices, or modifying pinia."
 metadata:
   version: 3.0.4
-  generated_at: 2026-03-18
-  references_synced_at: 2026-03-18
+  generated_at: 2026-03-19
+  references_synced_at: 2026-03-19
 ---
 
 # vuejs/pinia `pinia`
 
 > Intuitive, type safe and flexible Store for Vue
 
-**Version:** 3.0.4 (Nov 2025)
+**Version:** 3.0.4
 **Deps:** @vue/devtools-api@^7.7.7
-**Tags:** next: 2.0.0-rc.10 (Sep 2021), beta: 2.1.8-beta.0 (Apr 2024), latest: 3.0.4 (Nov 2025)
+**Tags:** next: 2.0.0-rc.10, beta: 2.1.8-beta.0, latest: 3.0.4
 
 **References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
 ## API Changes

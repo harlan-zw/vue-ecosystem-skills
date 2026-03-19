@@ -372,7 +372,7 @@ const open = ref(false)
 
 <template>
   <SidebarProvider :open="open" @update:open="open = $event">
-    
+    <!-- ... -->
   </SidebarProvider>
 </template>
 ```
@@ -383,7 +383,7 @@ The `SidebarProvider` component supports keyboard shortcuts to toggle the sideba
 
 ```vue showLineNumbers
 <SidebarProvider>
-  
+  <!-- ... -->
 </SidebarProvider>
 ```
 
@@ -393,7 +393,7 @@ To persist the sidebar state, you can use the `storageKey` prop on the `SidebarP
 
 ```vue showLineNumbers
 <SidebarProvider storage-key="sidebar">
-  
+  <!-- ... -->
 </SidebarProvider>
 ```
 
@@ -403,7 +403,7 @@ To persist the sidebar state, you can use the `storageKey` prop on the `SidebarP
   storage-key="sidebar"
   class="flex min-h-screen"
 >
-  
+  <!-- ... -->
 </SidebarProvider>
 ```
 
@@ -429,7 +429,7 @@ Use the `side` prop to set the side of the sidebar.
 
 ```vue showLineNumbers
 <Sidebar side="left">
-  
+  <!-- ... -->
 </Sidebar>
 ```
 
@@ -438,23 +438,23 @@ Use the `side` prop to set the side of the sidebar.
 Use the `variant` prop to set the variant of the sidebar.
 
 ```vue showLineNumbers
-
+<!-- Default variant -->
 <Sidebar variant="sidebar">
-  
+  <!-- ... -->
 </Sidebar>
 ```
 
 ```vue showLineNumbers
-
+<!-- Floating variant -->
 <Sidebar variant="floating">
-  
+  <!-- ... -->
 </Sidebar>
 ```
 
 ```vue showLineNumbers
-
+<!-- Inset variant -->
 <Sidebar variant="inset">
-  
+  <!-- ... -->
 </Sidebar>
 ```
 
@@ -464,13 +464,13 @@ Use the `collapsible` prop to make the sidebar collapsible.
 
 ```vue showLineNumbers
 <Sidebar collapsible="icon">
-  
+  <!-- ... -->
 </Sidebar>
 ```
 
 ```vue showLineNumbers
 <Sidebar collapsible="offcanvas">
-  
+  <!-- ... -->
 </Sidebar>
 ```
 
@@ -577,7 +577,7 @@ Used to group sidebar menu items.
   <SidebarGroup>
     <SidebarGroupLabel>Application</SidebarGroupLabel>
     <SidebarGroupContent>
-      
+      <!-- SidebarMenu -->
     </SidebarGroupContent>
   </SidebarGroup>
 </SidebarContent>
@@ -599,7 +599,7 @@ To make a `SidebarGroup` collapsible, wrap it in a `Collapsible` component.
     <CollapsibleContent>
       <SidebarGroupContent>
         <SidebarMenu>
-          
+          <!-- Menu items -->
         </SidebarMenu>
       </SidebarGroupContent>
     </CollapsibleContent>

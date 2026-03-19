@@ -18,7 +18,7 @@ If your component represents your entire form and your project only requires a s
 
 ```vue
 <template>
-  
+  <!-- using section-key class props -->
   <FormKit
     type="text"
     label="Section-key class props"
@@ -29,7 +29,7 @@ If your component represents your entire form and your project only requires a s
     input-class="w-full h-10 px-3 border-none text-base text-gray-700 placeholder-gray-400"
     help-class="text-xs text-gray-500"
   />
-  
+  <!-- using the classes prop -->
   <FormKit
     type="text"
     label="Classes prop"

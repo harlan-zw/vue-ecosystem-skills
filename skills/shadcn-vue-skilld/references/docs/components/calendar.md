@@ -107,7 +107,7 @@ const defaultPlaceholder = toCalendar(today(getLocalTimeZone()))
     v-model:placeholder="placeholder"
     locale="fa-IR"
   />
-  
+  <!-- or -->
   <Calendar
     v-model="date"
     :default-placeholder="placeholder"

@@ -217,13 +217,13 @@ Check out the full [Mutations Guide](./guide/mutations.md) for more details.
 **Before (Nuxt):** Pass data down via props from page components
 
 ```vue
-
+<!-- pages/products.vue -->
 <script lang="ts" setup>
 const { data: products } = await useFetch('/api/products')
 </script>
 
 <template>
-  
+  <!-- Must pass products to every child that needs it -->
   <ProductList :products="products" />
   <ProductSummary :products="products" />
 </template>
@@ -232,7 +232,7 @@ const { data: products } = await useFetch('/api/products')
 **After (Pinia Colada):** Any component can access the same cached data
 
 ```vue
-
+<!-- components/ProductList.vue -->
 <script lang="ts" setup>
 // Same key = same cached data, no props needed
 const { data: products } = useQuery({
@@ -243,7 +243,7 @@ const { data: products } = useQuery({
 ```
 
 ```vue
-
+<!-- components/ProductSummary.vue -->
 <script lang="ts" setup>
 import { useQuery } from '@pinia/colada'
 

@@ -666,7 +666,7 @@ export const useUserData = defineLoader(...)
 Then, in a page component, export it:
 
 ```vue
-
+<!-- src/pages/users/[id].vue -->
 <script>
 export { useUserData } from '~/loaders/user.ts'
 </script>
@@ -678,7 +678,7 @@ export { useUserData } from '~/loaders/user.ts'
 The page component might not even use `useUserData()` but we can still use it anywhere else:
 
 ```vue
-
+<!-- src/components/NavBar.vue -->
 <script setup>
 import { useUserData } from '~/loaders/user.ts'
 
@@ -837,8 +837,8 @@ Using Suspense is probably the first alternative that comes to mind and it has b
 One could imagine being able to write something like:
 
 ```vue
-
-
+<!-- src/pages/users.vue = /users -->
+<!-- Displays a list of all users -->
 <script setup>
 const userList = shallowRef(await fetchUserList())
 
@@ -852,8 +852,8 @@ function reload() {
 Or when params are involved in the data fetching:
 
 ```vue
-
-
+<!-- src/pages/users.[id].vue = /users/:id -->
+<!-- Displays a list of all users -->
 <script setup>
 const route = useRoute()
 const user = shallowRef(await fetchUserData(route.params.id))

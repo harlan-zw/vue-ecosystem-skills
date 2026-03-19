@@ -15,7 +15,7 @@ The easiest way to set the `label` of a `submit` button is with the `label` prop
 #### submit-base.vue
 
 ```vue
-
+<!-- Set submit text with label prop -->
 <FormKit
   type="submit"
   label="Checkout my label"
@@ -32,7 +32,7 @@ The default slot can also be used to add text and UI to the button:
 #### submit-default-slot.vue
 
 ```vue
-
+<!-- The default slot can also set the submit label -->
   <FormKit
     type="submit"
     help="You can use the default slot."

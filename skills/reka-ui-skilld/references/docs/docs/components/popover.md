@@ -293,7 +293,7 @@ export { PopoverRoot as Popover, PopoverTrigger } from 'reka-ui'
 ```
 
 ```vue
-
+<!-- PopoverContent.vue -->
 <script setup lang="ts">
 import type { PopoverContentEmits, PopoverContentProps } from 'reka-ui'
 import { PopoverContent, PopoverPortal, useForwardPropsEmits } from 'reka-ui'

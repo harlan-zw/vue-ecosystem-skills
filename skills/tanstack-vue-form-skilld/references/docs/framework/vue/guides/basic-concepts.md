@@ -59,7 +59,7 @@ Example:
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field name="fullName">
     <template v-slot="{ field }">
       <input
@@ -70,7 +70,7 @@ Example:
       />
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -150,7 +150,7 @@ Example:
 
 ```vue
 <template>
-    
+    <!-- ... -->
     <form.Field
         name="firstName"
         :validators="{
@@ -175,7 +175,7 @@ Example:
             <FieldInfo :field="field" />
         </template>
     </form.Field>
-    
+    <!-- ... -->
 </template>
 ```
 
@@ -213,7 +213,7 @@ const onChangeFirstName = z.string().refine(
 </script>
 
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="firstName"
     :validators="{
@@ -234,7 +234,7 @@ const onChangeFirstName = z.string().refine(
       <FieldInfo :state="state" />
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -251,7 +251,7 @@ const firstName = form.useStore((state) => state.values.firstName)
 </script>
 
 <template>
-  
+  <!-- ... -->
   <form.Subscribe>
     <template v-slot="{ canSubmit, isSubmitting }">
       <button type="submit" :disabled="!canSubmit">
@@ -259,7 +259,7 @@ const firstName = form.useStore((state) => state.values.firstName)
       </button>
     </template>
   </form.Subscribe>
-  
+  <!-- ... -->
 </template>
 ```
 

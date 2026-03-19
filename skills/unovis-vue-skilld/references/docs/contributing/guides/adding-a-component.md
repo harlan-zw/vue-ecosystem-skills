@@ -224,7 +224,7 @@ and navigate to localhost:9300.
 The files for our components generally follow this structure:
 
 ```
-## Basic ConfigurationThe minimal/most basic way your component can be used.## CSS VariablesA list of CSS variables and their default values## EventsSupported events## Component PropsA prop table generated from your JSDocs
+## Basic ConfigurationThe minimal/most basic way your component can be used.<!--  This section should contain descriptions of  how to use the properties in your config--->## CSS VariablesA list of CSS variables and their default values## EventsSupported events## Component PropsA prop table generated from your JSDocs
 ```
 
 ### Resources [](#resources "Direct link to Resources")

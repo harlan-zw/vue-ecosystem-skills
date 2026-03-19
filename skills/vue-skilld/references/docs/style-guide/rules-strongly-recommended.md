@@ -326,12 +326,12 @@ Unfortunately, HTML doesn't allow custom elements to be self-closing - only offi
 <h3>Bad</h3>
 
 ```vue-html
-
+<!-- In Single-File Components, string templates, and JSX -->
 <MyComponent></MyComponent>
 ```
 
 ```vue-html
-
+<!-- In in-DOM templates -->
 <my-component/>
 ```
 
@@ -341,12 +341,12 @@ Unfortunately, HTML doesn't allow custom elements to be self-closing - only offi
 <h3>Good</h3>
 
 ```vue-html
-
+<!-- In Single-File Components, string templates, and JSX -->
 <MyComponent/>
 ```
 
 ```vue-html
-
+<!-- In in-DOM templates -->
 <my-component></my-component>
 ```
 
@@ -370,17 +370,17 @@ Also note that if you've already invested heavily in kebab-case, consistency wit
 <h3>Bad</h3>
 
 ```vue-html
-
+<!-- In Single-File Components and string templates -->
 <mycomponent/>
 ```
 
 ```vue-html
-
+<!-- In Single-File Components and string templates -->
 <myComponent/>
 ```
 
 ```vue-html
-
+<!-- In in-DOM templates -->
 <MyComponent></MyComponent>
 ```
 
@@ -390,19 +390,19 @@ Also note that if you've already invested heavily in kebab-case, consistency wit
 <h3>Good</h3>
 
 ```vue-html
-
+<!-- In Single-File Components and string templates -->
 <MyComponent/>
 ```
 
 ```vue-html
-
+<!-- In in-DOM templates -->
 <my-component></my-component>
 ```
 
 OR
 
 ```vue-html
-
+<!-- Everywhere -->
 <my-component></my-component>
 ```
 
@@ -640,7 +640,7 @@ Complex expressions in your templates make them less declarative. We should stri
 <h3>Good</h3>
 
 ```vue-html
-
+<!-- In a template -->
 {{ normalizedFullName }}
 ```
 

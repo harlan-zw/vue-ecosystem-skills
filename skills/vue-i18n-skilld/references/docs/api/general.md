@@ -865,7 +865,7 @@ The message values are the argument values passed from translation function, suc
 vue-i18n `$t` (or `t`) case:
 
 ```html
-<p>{{ $t('greeting', { name: 'DIO' }) }}</p> 
+<p>{{ $t('greeting', { name: 'DIO' }) }}</p> <!-- `{ name: 'DIO' }` is message values -->
 ```
 
 `@intlify/core` (`@intlify/core-base`) `translate` case:

@@ -127,7 +127,7 @@ const {
     </div>
     <div v-else-if="productList.data">
       <div v-for="product in productList.data" :key="product.id">
-        
+        <!-- we could add a prefetch here : @mouseover="prefetch(product.id)" -->
         <ProductItem :product="product" />
       </div>
     </div>

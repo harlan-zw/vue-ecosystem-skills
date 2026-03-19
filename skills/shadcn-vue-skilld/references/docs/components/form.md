@@ -48,7 +48,7 @@ The `<Form />` component is a wrapper around the `vee-validate` library. It prov
       <FormItem>
         <FormLabel />
         <FormControl>
-        
+        <!-- any Form Input component or native input elements -->
         </FormControl>
         <FormDescription />
         <FormMessage />
@@ -374,4 +374,18 @@ import {
 
 ::
 
+<!-- ## Extras
 
+This example shows how to add motion to your forms with Formkit AutoAnimate
+
+**Note:** You need to install `@formkit/auto-animate` to use this feature:
+
+```bash
+npm install @formkit/auto-animate
+```
+
+::component-preview
+---
+name: InputFormAutoAnimate
+---
+:: -->

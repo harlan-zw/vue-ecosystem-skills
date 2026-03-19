@@ -222,7 +222,7 @@ export { default as Slider } from 'Slider.vue'
 ```
 
 ```vue
- 
+ <!-- Slider.vue -->
 <script setup lang="ts">
 import type { SliderRootEmits, SliderRootProps } from 'reka-ui'
 import { SliderRange, SliderRoot, SliderThumb, SliderTrack, useForwardPropsEmits } from 'reka-ui'

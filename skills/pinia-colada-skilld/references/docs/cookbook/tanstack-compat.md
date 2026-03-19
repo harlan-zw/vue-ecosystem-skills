@@ -87,13 +87,13 @@ const { data, isSuccess, isError, isFetching, isStale, error } = useQuery({
 
 <template>
   <div class="user-profile">
-    
+    <!-- Loading state -->
     <LoadingSpinner v-if="isFetching && !data" />
 
-    
+    <!-- Error state -->
     <ErrorMessage v-else-if="isError" :error="error" />
 
-    
+    <!-- Success state -->
     <template v-else-if="isSuccess">
       <StaleIndicator v-if="isStale" />
       <UserCard :user="data" />
@@ -115,10 +115,10 @@ const { data, isLoadingError, isRefetchError, error, refetch } = useQuery({
 </script>
 
 <template>
-  
+  <!-- Initial load failed - show full error page -->
   <ErrorPage v-if="isLoadingError" :error="error" @retry="refetch" />
 
-  
+  <!-- Refetch failed - show data with error banner -->
   <template v-else>
     <ErrorBanner v-if="isRefetchError" :error="error" @dismiss="/* ... */" />
     <PostList :posts="data" />

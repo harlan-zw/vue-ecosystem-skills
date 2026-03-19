@@ -453,7 +453,7 @@ As result, the below:
 
 ```html
 <p>hello
-
+<!--<br> exists but is rendered as html and not a string-->
 world</p>
 ```
 

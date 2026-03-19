@@ -17,10 +17,10 @@ User component names should always be multi-word, except for root `App` componen
 <h3>Bad</h3>
 
 ```vue-html
-
+<!-- in pre-compiled templates -->
 <Item />
 
-
+<!-- in in-DOM templates -->
 <item></item>
 ```
 
@@ -30,10 +30,10 @@ User component names should always be multi-word, except for root `App` componen
 <h3>Good</h3>
 
 ```vue-html
-
+<!-- in pre-compiled templates -->
 <TodoItem />
 
-
+<!-- in in-DOM templates -->
 <todo-item></todo-item>
 ```
 
@@ -377,7 +377,7 @@ Beyond the `scoped` attribute, using unique class names can help ensure that 3rd
   <button class="button button-close">×</button>
 </template>
 
-
+<!-- Using the `scoped` attribute -->
 <style scoped>
 .button {
   border: none;
@@ -395,7 +395,7 @@ Beyond the `scoped` attribute, using unique class names can help ensure that 3rd
   <button :class="[$style.button, $style.buttonClose]">×</button>
 </template>
 
-
+<!-- Using CSS modules -->
 <style module>
 .button {
   border: none;
@@ -413,7 +413,7 @@ Beyond the `scoped` attribute, using unique class names can help ensure that 3rd
   <button class="c-Button c-Button--close">×</button>
 </template>
 
-
+<!-- Using the BEM convention -->
 <style>
 .c-Button {
   border: none;

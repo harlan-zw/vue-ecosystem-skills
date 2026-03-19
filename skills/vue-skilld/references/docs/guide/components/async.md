@@ -1,3 +1,6 @@
+---
+url: /guide/components/async.md
+---
 # Async Components {#async-components}
 
 ## Basic Usage {#basic-usage}

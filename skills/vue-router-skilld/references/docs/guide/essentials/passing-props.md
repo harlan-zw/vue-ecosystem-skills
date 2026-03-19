@@ -27,7 +27,7 @@ We can remove the direct dependency on `$route` in `User.vue` by declaring a pro
 ::: code-group
 
 ```vue [Composition API]
-
+<!-- User.vue -->
 <script setup>
 defineProps({
   id: String,
@@ -40,7 +40,7 @@ defineProps({
 ```
 
 ```vue [Options API]
-
+<!-- User.vue -->
 <script>
 export default {
   props: {

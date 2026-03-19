@@ -29,7 +29,7 @@ import { TreeItem, TreeRoot, TreeVirtualizer } from 'reka-ui'
   <TreeRoot>
     <TreeItem />
 
-    
+    <!-- or with virtual -->
     <TreeVirtualizer>
       <TreeItem />
     </TreeVirtualizer>

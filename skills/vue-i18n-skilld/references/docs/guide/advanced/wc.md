@@ -52,7 +52,7 @@ const i18n = createI18n<false>({
 provide(I18nInjectionKey, i18n)
 </script>
 
-
+<!-- template to slot the content -->
 <template>
   <slot />
 </template>

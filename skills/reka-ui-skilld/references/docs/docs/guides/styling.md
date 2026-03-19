@@ -39,7 +39,7 @@ import { AccordionRoot, AccordionItem, ... } from "reka-ui";
 <template>
   <AccordionRoot>
     <AccordionItem class="AccordionItem" value="item-1" />
-    
+    <!-- ... -->
   </AccordionRoot>
 </template>
 
@@ -75,7 +75,7 @@ import { DropdownMenuRoot, DropdownMenuItem, ... } from "reka-ui";
 
 <template>
   <DropdownMenuRoot>
-    
+    <!-- ... -->
     <DropdownMenuPortal>
       <DropdownMenuContent class="DropdownMenuContent">
         <DropdownMenuItem class="DropdownMenuItem">An item</DropdownMenuItem>
@@ -111,7 +111,7 @@ import { AccordionRoot, AccordionItem, ... } from "reka-ui";
 <template>
   <AccordionRoot>
     <AccordionItem class="border border-gray-400 rounded-2xl" value="item-1" />
-    
+    <!-- ... -->
   </AccordionRoot>
 </template>
 ```
@@ -134,7 +134,7 @@ import { AccordionRoot, AccordionItem, ... } from "reka-ui";
       "
       value="item-1"
     />
-    
+    <!-- ... -->
   </AccordionRoot>
 </template>
 ```

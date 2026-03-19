@@ -227,9 +227,9 @@ We will use the v-app-bar component, which is a Vuetify component used to displa
 ```html { resource="app.vue" }
 <template>
   <v-app>
-    
+    <!-- Toolbar at the top of the screen -->
     <v-app-bar color="primary" height="48">
-      
+      <!-- Title of the application with adjusted margin and font size -->
       <v-app-bar-title class="text-h6 ms-3">
         <v-icon icon="mdi-apps"></v-icon>
 
@@ -237,7 +237,7 @@ We will use the v-app-bar component, which is a Vuetify component used to displa
       </v-app-bar-title>
     </v-app-bar>
 
-    
+    <!-- Main content of the application -->
     <v-main>
       <NuxtPage />
     </v-main>
@@ -289,9 +289,9 @@ The app.vue file is therefore modified:
 ```html { resource="app.vue" }
 <template>
   <v-app>
-    
+    <!-- Toolbar at the top of the screen -->
     <v-app-bar color="primary" height="48">
-    
+    <!-- Title of the application with adjusted margin and font size -->
       <v-app-bar-title class="text-h6 ms-3">
         <v-icon icon="mdi-apps"></v-icon>
 
@@ -299,12 +299,12 @@ The app.vue file is therefore modified:
       </v-app-bar-title>
     </v-app-bar>
 
-    
+    <!-- Main content of the application -->
     <v-main>
       <NuxtPage />
     </v-main>
 
-    
+    <!-- Smaller footer at the bottom of the screen -->
     <v-footer color="secondary" height="30">
       <v-container class="text-center text-caption">
         © {{ new Date().getFullYear() }} My Application - All Rights Reserved
@@ -327,9 +327,9 @@ Let's add the app attribute to both our v-app-bar and v-footer components:
 ```html { resource="app.vue" }
 <template>
   <v-app>
-    
+    <!-- Toolbar at the top of the screen -->
     <v-app-bar color="primary" height="48">
-      
+      <!-- Title of the application with adjusted margin and font size -->
       <v-app-bar-title class="text-h6 ms-3">
         <v-icon icon="mdi-apps"></v-icon>
 
@@ -337,12 +337,12 @@ Let's add the app attribute to both our v-app-bar and v-footer components:
       </v-app-bar-title>
     </v-app-bar>
 
-    
+    <!-- Main content of the application -->
     <v-main>
       <NuxtPage />
     </v-main>
 
-    
+    <!-- Smaller footer at the bottom of the screen -->
     <v-footer app color="secondary" height="30">
       <v-container class="text-center text-caption">
         © {{ new Date().getFullYear() }} My Application - All Rights Reserved
@@ -375,9 +375,9 @@ The app.vue component is modified to integrate the navigation menu:
 ```html { resource="app.vue" }
 <template>
   <v-app>
-  
+  <!-- Toolbar at the top of the screen -->
   <v-app-bar color="primary" height="48">
-    
+    <!-- Title of the application with adjusted margin and font size -->
     <v-app-bar-title class="text-h6 ms-3">
       <v-icon icon="mdi-apps"></v-icon>
 
@@ -385,10 +385,10 @@ The app.vue component is modified to integrate the navigation menu:
     </v-app-bar-title>
   </v-app-bar>
 
-  
+  <!-- Navigation drawer for menu actions -->
   <v-navigation-drawer v-model="drawer">
     <v-list>
-      
+      <!-- Menu items in the drawer with icons -->
       <v-list-item
         @click="navigateTo('/')"
         title="Home"
@@ -409,12 +409,12 @@ The app.vue component is modified to integrate the navigation menu:
     </v-list>
   </v-navigation-drawer>
 
-  
+  <!-- Main content of the application -->
   <v-main>
     <NuxtPage />
   </v-main>
 
-  
+  <!-- Smaller footer at the bottom of the screen -->
   <v-footer app color="secondary" height="30">
     <v-container class="text-center text-caption">
       © {{ new Date().getFullYear() }} My Application - All Rights Reserved
@@ -466,19 +466,19 @@ We therefore insert buttons in the form of icons into the application's toolbar.
 ```html
 <template>
   <v-app>
-    
+    <!-- Toolbar at the top of the screen -->
     <v-app-bar color="primary" height="48">
-      
+      <!-- Title of the application with adjusted margin and font size -->
       <v-app-bar-title class="text-h6 ms-3">
         <v-icon icon="mdi-apps" @click="drawer = !drawer"></v-icon>
 
         <span class="ms-1">My Application</span>
       </v-app-bar-title>
 
-      
+      <!-- Spacer to push the following elements to the right -->
       <v-spacer />
 
-      
+      <!-- Menu icons on the right side of the toolbar -->
       <v-btn icon="mdi-home" @click="navigateTo('/')"></v-btn>
 
       <v-btn icon="mdi-cube-outline" @click="navigateTo('/products')"></v-btn>
@@ -486,10 +486,10 @@ We therefore insert buttons in the form of icons into the application's toolbar.
       <v-btn icon="mdi-email" @click="navigateTo('/contact')"></v-btn>
     </v-app-bar>
 
-    
+    <!-- Navigation drawer for menu actions -->
     <v-navigation-drawer v-model="drawer">
       <v-list>
-        
+        <!-- Menu items in the drawer with icons -->
         <v-list-item
           @click="navigateTo('/')"
           title="Home"
@@ -512,12 +512,12 @@ We therefore insert buttons in the form of icons into the application's toolbar.
       </v-list>
     </v-navigation-drawer>
 
-    
+    <!-- Main content of the application -->
     <v-main>
       <NuxtPage />
     </v-main>
 
-    
+    <!-- Smaller footer at the bottom of the screen -->
     <v-footer app color="secondary" height="30">
       <v-container class="text-caption text-center">
         © {{ new Date().getFullYear() }} My Application - All Rights Reserved

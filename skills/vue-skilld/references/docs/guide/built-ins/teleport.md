@@ -189,7 +189,7 @@ In Vue 3.5 and above, we can use the `defer` prop to defer the target resolving 
 ```vue-html
 <Teleport defer to="#late-div">...</Teleport>
 
-
+<!-- somewhere later in the template -->
 <div id="late-div"></div>
 ```
 

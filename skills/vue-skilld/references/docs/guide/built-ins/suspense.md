@@ -75,10 +75,10 @@ The `<Suspense>` component has two slots: `#default` and `#fallback`. Both slots
 
 ```vue-html
 <Suspense>
-  
+  <!-- component with nested async dependencies -->
   <Dashboard />
 
-  
+  <!-- loading state via #fallback slot -->
   <template #fallback>
     Loading...
   </template>
@@ -117,10 +117,10 @@ The following example shows how to nest these components so that they all behave
     <Transition mode="out-in">
       <KeepAlive>
         <Suspense>
-          
+          <!-- main content -->
           <component :is="Component"></component>
 
-          
+          <!-- loading state -->
           <template #fallback>
             Loading...
           </template>
@@ -154,7 +154,7 @@ In order to solve that, we could have a nested suspense to handle the patch for 
 ```vue-html
 <Suspense>
   <component :is="DynamicAsyncOuter">
-    <Suspense suspensible> 
+    <Suspense suspensible> <!-- this -->
       <component :is="DynamicAsyncInner" />
     </Suspense>
   </component>

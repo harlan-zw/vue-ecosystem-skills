@@ -175,7 +175,7 @@ In SFCs, it's recommended to use `PascalCase` tag names for child components to 
 If you are authoring your templates directly in a DOM (e.g. as the content of a native `<template>` element), the template will be subject to the browser's native HTML parsing behavior. In such cases, you will need to use `kebab-case` and explicit closing tags for components:
 
 ```vue-html
-
+<!-- if this template is written in the DOM -->
 <button-counter></button-counter>
 <button-counter></button-counter>
 <button-counter></button-counter>
@@ -354,7 +354,7 @@ Which can be used in the template to control the font size of all blog posts:
 Now let's add a button to the `<BlogPost>` component's template:
 
 ```vue{5} [BlogPost.vue]
-
+<!-- omitting <script> -->
 <template>
   <div class="blog-post">
     <h4>{{ title }}</h4>
@@ -375,7 +375,7 @@ The button doesn't do anything yet - we want clicking the button to communicate 
 Then the child component can emit an event on itself by calling the built-in [**`$emit`** method](/api/component-instance#emit), passing the name of the event:
 
 ```vue{5} [BlogPost.vue]
-
+<!-- omitting <script> -->
 <template>
   <div class="blog-post">
     <h4>{{ title }}</h4>
@@ -521,7 +521,7 @@ The above is made possible by Vue's `<component>` element with the special `is` 
 <div class="options-api">
 
 ```vue-html
-
+<!-- Component changes when currentTab changes -->
 <component :is="currentTab"></component>
 ```
 
@@ -529,7 +529,7 @@ The above is made possible by Vue's `<component>` element with the special `is` 
 <div class="composition-api">
 
 ```vue-html
-
+<!-- Component changes when currentTab changes -->
 <component :is="tabs[currentTab]"></component>
 ```
 
@@ -572,7 +572,7 @@ const BlogPost = {
 ```
 
 ```vue-html
-
+<!-- kebab-case in HTML -->
 <blog-post post-title="hello!" @update-post="onUpdatePost"></blog-post>
 ```
 
@@ -595,7 +595,7 @@ In in-DOM templates, however, we must always include explicit closing tags:
 This is because the HTML spec only allows a few specific elements to omit closing tags, the most common being `<input>` and `<img>`. For all other elements, if you omit the closing tag, the native HTML parser will think you never terminated the opening tag. For example, the following snippet:
 
 ```vue-html
-<my-component /> 
+<my-component /> <!-- we intend to close the tag here... -->
 <span>hello</span>
 ```
 
@@ -604,7 +604,7 @@ will be parsed as:
 ```vue-html
 <my-component>
   <span>hello</span>
-</my-component> 
+</my-component> <!-- but the browser will close it here. -->
 ```
 
 ### Element Placement Restrictions {#element-placement-restrictions}

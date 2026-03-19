@@ -48,7 +48,7 @@ app
 Globally registered components can be used in the template of any component within this application:
 
 ```vue-html
-
+<!-- this will work in any component inside the app -->
 <ComponentA/>
 <ComponentB/>
 <ComponentC/>

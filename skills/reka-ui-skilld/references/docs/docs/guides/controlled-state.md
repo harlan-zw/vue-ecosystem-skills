@@ -94,20 +94,20 @@ An **uncontrolled** component manages its own state internally, without requirin
 ### 1. Forgetting `@update:modelValue`
 
 ```vue
-
+<!-- ❌ Incorrect: -->
 <SwitchRoot :modelValue="isActive" />
 
-
+<!-- ✅ Correct: -->
 <SwitchRoot :modelValue="isActive" @update:modelValue="(val) => isActive = val" />
 ```
 
 ### 2. Using `modelValue` Instead of `defaultValue`
 
 ```vue
-
+<!-- ❌ Incorrect: -->
 <SwitchRoot :modelValue="true" />
 
-
+<!-- ✅ Correct: -->
 <SwitchRoot defaultValue="true" />
 ```
 

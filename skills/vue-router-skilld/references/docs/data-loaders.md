@@ -42,7 +42,7 @@ app.mount('#app')
 
 ## Quick start
 
-There are different data loaders implementation, the simplest one is the [Basic Loader](./basic/) which always reruns data fetching. A more efficient one, is the [Colada Loader](./colada/) which uses @pinia/colada under the hood. In the following examples, we will be using the *basic loader*.
+There are different data loader implementations. The simplest one is the [Basic Loader](./basic/) which always reruns data fetching. A more efficient one is the [Colada Loader](./colada/) which uses @pinia/colada under the hood. In the following examples, we will be using the *basic loader*.
 
 Loaders are composables defined through a `defineLoader` function like `defineBasicLoader` or `defineColadaLoader`. They are *used* in the component `setup` to extract the needed information.
 

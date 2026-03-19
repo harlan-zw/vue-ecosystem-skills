@@ -205,7 +205,11 @@ When registering the `@formkit/vue` plugin (or using `@formkit/nuxt` with a `for
 #### vue-plugin-props.vue
 
 ```vue
-
+<!--
+    👀 The validation prop is not set here but both
+    inputs are receiving the validation prop 
+    from the formkit.config file.
+   -->
   <FormKit
     label="Username"
     validation-visibility="live"
@@ -259,7 +263,7 @@ What does this mean in practice? When you combine the tree like structure of for
 #### validation-visibility.vue
 
 ```vue
-
+<!-- config is passed down to descendant inputs: -->
   <FormKit
     type="form"
     @submit="() => false"
@@ -278,7 +282,7 @@ What does this mean in practice? When you combine the tree like structure of for
       :validation-messages="{ date_between: 'Only for those born in the 90s.' }"
       help="Enter your date of birth"
     />
-    
+    <!-- We override validation-visibility for the input below: -->
     <FormKit
       type="tel"
       label="Phone Number"

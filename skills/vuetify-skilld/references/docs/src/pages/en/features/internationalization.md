@@ -96,10 +96,10 @@ Using the `v-locale-provider` component it is possible to scope a portion of you
 ```html { resource="src/App.vue" }
 <template>
   <v-app>
-    <v-select></v-select> 
+    <v-select></v-select> <!-- Will use default locale -->
 
     <v-locale-provider locale="ja">
-      <v-select></v-select> 
+      <v-select></v-select> <!-- Will use ja locale -->
     </v-locale-provider>
   </v-app>
 </template>
@@ -113,10 +113,10 @@ The following example demonstrates how to force RTL for a specific section of yo
 
 ```html { resource="src/App.vue" }
 <v-app>
-  <v-card>...</v-card> 
+  <v-card>...</v-card> <!-- default locale used here -->
 
   <v-locale-provider rtl>
-    <v-card>...<v-card> 
+    <v-card>...<v-card> <!-- default locale used here, but with RTL active -->
   </v-locale-provider>
 </v-app>
 ```

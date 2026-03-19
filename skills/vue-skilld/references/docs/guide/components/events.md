@@ -16,7 +16,7 @@ url: /guide/components/events.md
 A component can emit custom events directly in template expressions (e.g. in a `v-on` handler) using the built-in `$emit` method:
 
 ```vue-html
-
+<!-- MyComponent -->
 <button @click="$emit('someEvent')">Click Me</button>
 ```
 

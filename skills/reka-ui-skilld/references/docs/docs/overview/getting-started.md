@@ -18,7 +18,7 @@ Install the component from your command line.
 Import and structure the parts.
 
 ```vue twoslash
-
+<!-- Popover.vue -->
 <script setup lang="ts">
 import { PopoverArrow, PopoverClose, PopoverContent, PopoverPortal, PopoverRoot, PopoverTrigger } from 'reka-ui'
 </script>

@@ -36,7 +36,7 @@ const routes = [
 
 ```vue-html
 <router-view v-slot="{ Component, route }">
-  
+  <!-- Use a custom transition or fallback to `fade` -->
   <transition :name="route.meta.transition || 'fade'">
     <component :is="Component" />
   </transition>
@@ -48,7 +48,7 @@ const routes = [
 It is also possible to determine the transition to use dynamically based on the relationship between the target route and current route. Using a very similar snippet to the one just before:
 
 ```vue-html
-
+<!-- use a dynamic transition name -->
 <router-view v-slot="{ Component, route }">
   <transition :name="route.meta.transition">
     <component :is="Component" />

@@ -25,7 +25,7 @@ Web accessibility **(a11y for short)**, is the inclusive practice of ensuring th
 Vuetify uses activator slots for many components such as `v-menu`, `v-dialog` and more. In some instances these activator elements should have specific a11y attributes that associate them with their corresponding content. In order to achieve this, we pass down the necessary a11y options through the slots scope.
 
 ```html
-
+<!-- Vue Template HTML Markup -->
 
 <template>
   <v-menu>
@@ -56,7 +56,7 @@ Vuetify uses activator slots for many components such as `v-menu`, `v-dialog` an
 When the activator element is rendered, it will now contain the bound a11y attributes:
 
 ```html
-
+<!-- Rendered `v-btn` HTML Output -->
 
 <button
   aria-expanded="false"

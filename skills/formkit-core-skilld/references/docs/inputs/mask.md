@@ -392,7 +392,7 @@ Groups are a way to to treat multiple mask characters as a single unit. You crea
 
 ```
 <FormKit mask="id{-a#a}" type="mask" />
-
+<!-- "-a#a" is the group -->
 
 ```
 
@@ -426,7 +426,7 @@ You can string group options together:
     help="Id number in the format: id-b4b-b4b-b4b-b4b"
   />
 
-  
+  <!-- "-a#a" is the group, "repeat" and "placeholder" are the options -->
 ```
 
 > **Warning:** Groups cannot be used in select mode. An exception will be thrown.

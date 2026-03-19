@@ -42,11 +42,11 @@ Template:
 
 ```html
 <div id="app">
-  
+  <!-- ... -->
   <i18n-t keypath="term" tag="label" for="tos">
     <a :href="url" target="_blank">{{ $t('tos') }}</a>
   </i18n-t>
-  
+  <!-- ... -->
 </div>
 ```
 
@@ -82,11 +82,11 @@ The following output:
 
 ```html
 <div id="app">
-  
+  <!-- ... -->
   <label for="tos">
     I accept xxx <a href="/term" target="_blank">Term of Service</a>.
   </label>
-  
+  <!-- ... -->
 </div>
 ```
 
@@ -112,7 +112,7 @@ Template:
 
 ```html
 <div id="app">
-  
+  <!-- ... -->
   <i18n-t keypath="info" tag="p">
     <template v-slot:limit>
       <span>{{ changeLimit }}</span>
@@ -121,7 +121,7 @@ Template:
       <a :href="changeUrl">{{ $t('change') }}</a>
     </template>
   </i18n-t>
-  
+  <!-- ... -->
 </div>
 ```
 
@@ -159,11 +159,11 @@ Outputs:
 
 ```html
 <div id="app">
-  
+  <!-- ... -->
   <p>
     You can <a href="/change">change your flight</a> until <span>15</span> minutes from departure.
   </p>
-  
+  <!-- ... -->
 </div>
 ```
 
@@ -171,7 +171,7 @@ You can also use the following slots shorthand in templates:
 
 ```html
 <div id="app">
-  
+  <!-- ... -->
   <i18n-t keypath="info" tag="p">
     <template #limit>
       <span>{{ changeLimit }}</span>
@@ -180,7 +180,7 @@ You can also use the following slots shorthand in templates:
       <a :href="changeUrl">{{ $t('change') }}</a>
     </template>
   </i18n-t>
-  
+  <!-- ... -->
 </div>
 ```
 
@@ -196,13 +196,13 @@ Template:
 
 ```html
 <div id="app">
-  
+  <!-- ... -->
   <i18n-t keypath="message.plural" locale="en" :plural="count">
     <template #n>
       <b>{{ count }}</b>
     </template>
   </i18n-t>
-  
+  <!-- ... -->
 </div>
 ```
 
@@ -238,9 +238,9 @@ The following output:
 
 ```html
 <div id="app" data-v-app="">
-  
+  <!-- ... -->
   <b>2</b> bananas
-  
+  <!-- ... -->
 </div>
 ```
 

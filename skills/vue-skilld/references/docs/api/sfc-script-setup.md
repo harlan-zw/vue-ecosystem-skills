@@ -533,10 +533,10 @@ You can use `@vue-generic` the directive to pass in explicit types, for when the
 
 ```vue
 <template>
-  
+  <!-- @vue-generic {import('@/api').Actor} -->
   <ApiSelect v-model="peopleIds" endpoint="/api/actors" id-prop="actorId" />
 
-  
+  <!-- @vue-generic {import('@/api').Genre} -->
   <ApiSelect v-model="genreIds" endpoint="/api/genres" id-prop="genreId" />
 </template>
 ```

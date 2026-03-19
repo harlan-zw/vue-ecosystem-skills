@@ -74,8 +74,8 @@ Quite often there will be parts in a template that do not contain any dynamic bi
 
 ```vue-html{2-3}
 <div>
-  <div>foo</div> 
-  <div>bar</div> 
+  <div>foo</div> <!-- cached -->
+  <div>bar</div> <!-- cached -->
   <div>{{ dynamic }}</div>
 </div>
 ```
@@ -91,13 +91,13 @@ In addition, when there are enough consecutive static elements, they will be con
 For a single element with dynamic bindings, we can also infer a lot of information from it at compile time:
 
 ```vue-html
-
+<!-- class binding only -->
 <div :class="{ active }"></div>
 
-
+<!-- id and value bindings only -->
 <input :id="id" :value="value">
 
-
+<!-- text children only -->
 <div>{{ dynamic }}</div>
 ```
 
@@ -150,11 +150,11 @@ Conceptually, a "block" is a part of the template that has stable inner structur
 Each block tracks any descendant nodes (not just direct children) that have patch flags. For example:
 
 ```vue-html{3,5}
-<div> 
-  <div>...</div>         
-  <div :id="id"></div>   
-  <div>                  
-    <div>{{ bar }}</div> 
+<div> <!-- root block -->
+  <div>...</div>         <!-- not tracked -->
+  <div :id="id"></div>   <!-- tracked -->
+  <div>                  <!-- not tracked -->
+    <div>{{ bar }}</div> <!-- tracked -->
   </div>
 </div>
 ```
@@ -172,9 +172,9 @@ When this component needs to re-render, it only needs to traverse the flattened 
 `v-if` and `v-for` directives will create new block nodes:
 
 ```vue-html
-<div> 
+<div> <!-- root block -->
   <div>
-    <div v-if> 
+    <div v-if> <!-- if block -->
       ...
     </div>
   </div>

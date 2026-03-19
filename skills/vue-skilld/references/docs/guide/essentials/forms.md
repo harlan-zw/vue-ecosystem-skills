@@ -96,10 +96,10 @@ Try it in the Playground
 Note that interpolation inside `<textarea>` won't work. Use `v-model` instead.
 
 ```vue-html
-
+<!-- bad -->
 <textarea>{{ text }}</textarea>
 
-
+<!-- good -->
 <textarea v-model="text"></textarea>
 ```
 
@@ -365,13 +365,13 @@ Try it in the Playground
 For radio, checkbox and select options, the `v-model` binding values are usually static strings (or booleans for checkbox):
 
 ```vue-html
-
+<!-- `picked` is a string "a" when checked -->
 <input type="radio" v-model="picked" value="a" />
 
-
+<!-- `toggle` is either true or false -->
 <input type="checkbox" v-model="toggle" />
 
-
+<!-- `selected` is a string "abc" when the first option is selected -->
 <select v-model="selected">
   <option value="abc">ABC</option>
 </select>
@@ -416,7 +416,7 @@ The `true-value` and `false-value` attributes don't affect the input's `value` a
 
 ```vue-html
 <select v-model="selected">
-  
+  <!-- inline object literal -->
   <option :value="{ number: 123 }">123</option>
 </select>
 ```
@@ -430,7 +430,7 @@ The `true-value` and `false-value` attributes don't affect the input's `value` a
 By default, `v-model` syncs the input with the data after each `input` event (with the exception of IME composition as [stated above](#vmodel-ime-tip)). You can add the `lazy` modifier to instead sync after `change` events:
 
 ```vue-html
-
+<!-- synced after "change" instead of "input" -->
 <input v-model.lazy="msg" />
 ```
 

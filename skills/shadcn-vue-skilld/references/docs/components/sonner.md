@@ -87,7 +87,7 @@ import { Toaster } from '@/components/ui/sonner'
 <template>
   <div>
     <main>
-      
+      <!-- Your app content -->
     </main>
     <Toaster />
   </div>

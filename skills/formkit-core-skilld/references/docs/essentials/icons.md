@@ -341,7 +341,7 @@ import { FormKitIcon } from '@formkit/vue'
 </script>
 
 <template>
-  
+  <!-- :html -->
   <FormKit
     label="I'm using FontAwesome icons"
     prefix-icon="atom"
@@ -363,7 +363,7 @@ import { FormKitIcon } from '@formkit/vue'
       class="text-slate-800 dark:text-slate-300 [&_svg]:fill-current"
     />
   </div>
-  
+  <!--  -->
 </template>
 ```
 
@@ -396,7 +396,7 @@ import { FormKitIcon } from '@formkit/vue'
 </script>
 
 <template>
-  
+  <!-- :html -->
   <FormKit
     label="I'm using Heroicons icons"
     prefix-icon="variable"
@@ -413,7 +413,7 @@ import { FormKitIcon } from '@formkit/vue'
   <div class="w-32">
     <FormKitIcon icon="qrcode" class="text-slate-800 dark:text-slate-300" />
   </div>
-  
+  <!--  -->
 </template>
 ```
 

@@ -88,7 +88,7 @@
 
 
 
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/react-core.d02d43e6423cbcac.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/react-core.014e3a1ebc051a2d.module.css" />
 
 
 
@@ -128,12 +128,11 @@
 
 
 
-
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.fd4c5c5e02474e43.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/749.b9793e2a9b579501.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/9061.734552f7707a2552.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/43690.8490bedc058e0c8b.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/code-view.e8eb4fdd16b5fa14.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.4dcb3969e4eef817.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/45638.8593205942cafbc2.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/85362.7d9f63f6573c0672.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/43690.1f8ee4e7d63ebfc8.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/code-view.319431541113bf69.module.css" />
 
   
 
@@ -141,8 +140,8 @@
 
 
 
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.fd4c5c5e02474e43.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/notifications-subscriptions-menu.4bf8bb2c07491699.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.4dcb3969e4eef817.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/notifications-subscriptions-menu.a8c204ecbb40199a.module.css" />
 
 
   <title>vue-data-ui/README.md at master · graphieros/vue-data-ui · GitHub</title>
@@ -269,8 +268,8 @@
     <span style="width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar left-0 top-0 color-bg-accent-emphasis"></span>
 </span>      
       
-      <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.fd4c5c5e02474e43.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/keyboard-shortcuts-dialog.e1c052a83f8fe45a.module.css" />
+      <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.4dcb3969e4eef817.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/keyboard-shortcuts-dialog.c5ace5ffcc3a46ba.module.css" />
 
 <react-partial
   partial-name="keyboard-shortcuts-dialog"
@@ -336,14 +335,14 @@
           </a>
               <div class="AppHeader-appearanceSettings">
     <react-partial-anchor>
-      <button data-target="react-partial-anchor.anchor" id="icon-button-715f723c-290b-4a36-b5a8-c3c0f8ee7901" aria-labelledby="tooltip-028910dd-a7dd-468b-8826-3512c41dfffe" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
+      <button data-target="react-partial-anchor.anchor" id="icon-button-2d321455-7aad-4196-860c-8693ca258aa5" aria-labelledby="tooltip-d4a43739-018c-4ad8-8b2a-adffcf46f4a0" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
     <path d="M15 2.75a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Zm-8.5.75v1.25a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0V2H1.75a.75.75 0 0 0 0 1.5H6.5Zm1.25 5.25a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5h6ZM15 8a.75.75 0 0 1-.75.75H11.5V10a.75.75 0 1 1-1.5 0V6a.75.75 0 0 1 1.5 0v1.25h2.75A.75.75 0 0 1 15 8Zm-9 5.25v-2a.75.75 0 0 0-1.5 0v1.25H1.75a.75.75 0 0 0 0 1.5H4.5v1.25a.75.75 0 0 0 1.5 0v-2Zm9 0a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Z"></path>
 </svg>
-</button><tool-tip id="tooltip-028910dd-a7dd-468b-8826-3512c41dfffe" for="icon-button-715f723c-290b-4a36-b5a8-c3c0f8ee7901" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
+</button><tool-tip id="tooltip-d4a43739-018c-4ad8-8b2a-adffcf46f4a0" for="icon-button-2d321455-7aad-4196-860c-8693ca258aa5" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
 
       <template data-target="react-partial-anchor.template">
-        <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.fd4c5c5e02474e43.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/appearance-settings.d4867685eaf5dc6b.module.css" />
+        <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.4dcb3969e4eef817.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/appearance-settings.c7f5f7147cffc623.module.css" />
 
 <react-partial
   partial-name="appearance-settings"
@@ -367,8 +366,8 @@
 
     <div class="HeaderMenu js-header-menu height-fit position-lg-relative d-lg-flex flex-column flex-auto top-0">
       <div class="HeaderMenu-wrapper d-flex flex-column flex-self-start flex-lg-row flex-auto rounded rounded-lg-0">
-            <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.fd4c5c5e02474e43.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/marketing-navigation.d4901ea68abe8db7.module.css" />
+            <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.4dcb3969e4eef817.module.css" />
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/marketing-navigation.d11e438e7c4246d8.module.css" />
 
 <react-partial
   partial-name="marketing-navigation"
@@ -387,7 +386,7 @@
                 
 
 
-<qbsearch-input class="search-input" data-scope="repo:graphieros/vue-data-ui" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="SV4hKrxb4ETJiz27rsH7g3-kCgZWXW9v3yaOfQaKlN6FSv8HGDyDVnb_IXFKVdinVfE9wpCY_akIRoawLgNNGQ" data-max-custom-scopes="10" data-header-redesign-enabled="false" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="graphieros/vue-data-ui" data-current-org="" data-current-owner="graphieros" data-logged-in="false" data-copilot-chat-enabled="false" data-nl-search-enabled="false" data-retain-scroll-position="true">
+<qbsearch-input class="search-input" data-scope="repo:graphieros/vue-data-ui" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="dr9N4E_r7fYlxBO8oR9JB9qFxBYzpIKzcV9A6PkW_MGBlwpKnqDis20rzWA4Gn_MCxDu7zj7Njphi06lGhBPdQ" data-max-custom-scopes="10" data-header-redesign-enabled="false" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="graphieros/vue-data-ui" data-current-org="" data-current-owner="graphieros" data-logged-in="false" data-copilot-chat-enabled="false" data-nl-search-enabled="false" data-retain-scroll-position="true">
   <div
     class="search-input-container search-with-dialog position-relative d-flex flex-row flex-items-center tmp-mr-4 rounded"
     data-action="click:qbsearch-input#searchInputContainerClicked"
@@ -428,39 +427,7 @@
           data-target="qbsearch-input.queryBuilderContainer"
           hidden
         >
-          </option>
-          <div class="d-flex flex-row color-fg-muted tmp-px-3 text-small color-bg-default search-feedback-prompt">
-            <a target="_blank" href="https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax" data-view-component="true" class="Link color-fg-accent text-normal ml-2">Search syntax tips</a>            <div class="d-flex flex-1"></div>
-          </div>
-        </div>
-</div>
-
-    </div>
-</modal-dialog></div>
-  </div>
-  <div data-action="click:qbsearch-input#retract" class="dark-backdrop position-fixed" hidden data-target="qbsearch-input.darkBackdrop"></div>
-  <div class="color-fg-default">
-    
-<dialog-helper>
-  <dialog data-target="qbsearch-input.feedbackDialog" data-action="close:qbsearch-input#handleDialogClose cancel:qbsearch-input#handleDialogClose" id="feedback-dialog" aria-modal="true" aria-labelledby="feedback-dialog-title" aria-describedby="feedback-dialog-description" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-medium Overlay--motion-scaleFade Overlay--disableScroll">
-    <div data-view-component="true" class="Overlay-header">
-  <div class="Overlay-headerContentWrap">
-    <div class="Overlay-titleWrap">
-      <h1 class="Overlay-title " id="feedback-dialog-title">
-        Provide feedback
-      </h1>
-        
-    </div>
-    <div class="Overlay-actionWrap">
-      <button data-close-dialog-id="feedback-dialog" aria-label="Close" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg></button>
-    </div>
-  </div>
-  
-</div>
-      <scrollable-region data-labelled-by="feedback-dialog-title">
-        <div data-view-component="true" class="Overlay-body">        </option></div>
+          </option></div>
       </scrollable-region>
       <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd">          <button data-close-dialog-id="feedback-dialog" type="button" data-view-component="true" class="btn">    Cancel
 </button>
@@ -493,558 +460,7 @@
         <div data-view-component="true" class="Overlay-body">        <div data-target="custom-scopes.customScopesModalDialogFlash"></div>
 
         <div hidden class="create-custom-scope-form" data-target="custom-scopes.createCustomScopeForm">
-        </option>        </div>
-
-        <div data-target="custom-scopes.manageCustomScopesForm">
-          <div data-target="custom-scopes.list"></div>
-        </div>
-
-</div>
-      </scrollable-region>
-      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd Overlay-footer--divided">          <button data-action="click:custom-scopes#customScopesCancel" type="button" data-view-component="true" class="btn">    Cancel
-</button>
-          <button form="custom-scopes-dialog-form" data-action="click:custom-scopes#customScopesSubmit" data-target="custom-scopes.customScopesSubmitButton" type="submit" data-view-component="true" class="btn-primary btn">    Create saved search
-</button>
-</div>
-</dialog></dialog-helper>
-    </custom-scopes>
-  </div>
-</qbsearch-input>
-
-
-            <div class="position-relative HeaderMenu-link-wrap d-lg-inline-block">
-              <a
-                href="/login?return_to=https%3A%2F%2Fgithub.com%2Fgraphieros%2Fvue-data-ui%2Fblob%2Fmaster%2FREADME.md"
-                class="HeaderMenu-link HeaderMenu-link--sign-in HeaderMenu-button flex-shrink-0 no-underline d-none d-lg-inline-flex border border-lg-0 rounded px-2 py-1"
-                style="margin-left: 12px;"
-                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/graphieros/vue-data-ui/blob/master/README.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c46aeaba2f82bc3ff9d8e6f9ca7211357d81876a599318156f87f6ea55d14a99"
-                data-analytics-event="{&quot;category&quot;:&quot;Marketing nav&quot;,&quot;action&quot;:&quot;click to go to homepage&quot;,&quot;label&quot;:&quot;ref_page:Marketing;ref_cta:Sign in;ref_loc:Header&quot;}"
-              >
-                Sign in
-              </a>
-            </div>
-
-              <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fblob%2Fshow&amp;source=header-repo&amp;source_repo=graphieros%2Fvue-data-ui"
-                class="HeaderMenu-link HeaderMenu-link--sign-up HeaderMenu-button flex-shrink-0 d-flex d-lg-inline-flex no-underline border color-border-default rounded px-2 py-1"
-                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/graphieros/vue-data-ui/blob/master/README.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c46aeaba2f82bc3ff9d8e6f9ca7211357d81876a599318156f87f6ea55d14a99"
-                data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/<user-name>/<repo-name>/blob/show;ref_cta:Sign up;ref_loc:header logged out&quot;}"
-              >
-                Sign up
-              </a>
-
-                <div class="AppHeader-appearanceSettings">
-    <react-partial-anchor>
-      <button data-target="react-partial-anchor.anchor" id="icon-button-3380229b-1f48-478e-b3cf-544963849f27" aria-labelledby="tooltip-56c09d5e-a2b3-4201-85c1-80b8bb8a5c90" type="button" disabled="disabled" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium AppHeader-button HeaderMenu-link border cursor-wait">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-sliders Button-visual">
-    <path d="M15 2.75a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Zm-8.5.75v1.25a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0V2H1.75a.75.75 0 0 0 0 1.5H6.5Zm1.25 5.25a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5h6ZM15 8a.75.75 0 0 1-.75.75H11.5V10a.75.75 0 1 1-1.5 0V6a.75.75 0 0 1 1.5 0v1.25h2.75A.75.75 0 0 1 15 8Zm-9 5.25v-2a.75.75 0 0 0-1.5 0v1.25H1.75a.75.75 0 0 0 0 1.5H4.5v1.25a.75.75 0 0 0 1.5 0v-2Zm9 0a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Z"></path>
-</svg>
-</button><tool-tip id="tooltip-56c09d5e-a2b3-4201-85c1-80b8bb8a5c90" for="icon-button-3380229b-1f48-478e-b3cf-544963849f27" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Appearance settings</tool-tip>
-
-      <template data-target="react-partial-anchor.template">
-        <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.fd4c5c5e02474e43.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/appearance-settings.d4867685eaf5dc6b.module.css" />
-
-<react-partial
-  partial-name="appearance-settings"
-  data-ssr="false"
-  data-attempted-ssr="false"
-  data-react-profiling="false"
->
-  
-  
-  <div data-target="react-partial.reactRoot"></div>
-</react-partial>
-
-
-      </template>
-    </react-partial-anchor>
-  </div>
-
-          <button type="button" class="sr-only js-header-menu-focus-trap d-block d-lg-none">Resetting focus</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div hidden="hidden" data-view-component="true" class="js-stale-session-flash stale-session-flash flash flash-warn flash-full">
-  
-        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
-    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-        <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
-        <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
-        <span class="js-stale-session-flash-switched" hidden>You switched accounts on another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
-
-    <button id="icon-button-8e146506-bd10-45d1-b502-c1dff0e6aa01" aria-labelledby="tooltip-8f07bf67-145b-4786-91f8-78a8003f374e" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-</button><tool-tip id="tooltip-8f07bf67-145b-4786-91f8-78a8003f374e" for="icon-button-8e146506-bd10-45d1-b502-c1dff0e6aa01" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Dismiss alert</tool-tip>
-
-
-  
-</div>
-    </div>
-
-  <div id="start-of-content" class="show-on-focus"></div>
-
-
-
-
-
-
-
-
-    <div id="js-flash-container" class="flash-container" data-turbo-replace>
-
-
-
-
-  <template class="js-flash-template">
-    
-<div class="flash flash-full   {{ className }}">
-  <div >
-    <button autofocus class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-    </button>
-    <div aria-atomic="true" role="alert" class="js-flash-alert">
-      
-      <div>{{ message }}</div>
-
-    </div>
-  </div>
-</div>
-  </template>
-</div>
-
-
-    
-
-
-
-
-
-
-  <div
-    class="application-main "
-    data-commit-hovercards-enabled
-    data-discussion-hovercards-enabled
-    data-issue-and-pr-hovercards-enabled
-    data-project-hovercards-enabled
-  >
-        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
-    <main id="js-repo-pjax-container" >
-      
-      
-
-
-
-
-
-
-  
-
-  <div id="repository-container-header"  class="tmp-pt-3 hide-full-screen" style="background-color: var(--page-header-bgColor, var(--color-page-header-bg));" data-turbo-replace>
-
-      <div class="d-flex flex-nowrap flex-justify-end tmp-mb-3  tmp-px-3 tmp-px-lg-5" style="gap: 1rem;">
-
-        <div class="flex-auto min-width-0 width-fit">
-            
-  <div class=" d-flex flex-wrap flex-items-center wb-break-word f3 text-normal">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo color-fg-muted mr-2">
-    <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-</svg>
-    
-    <span class="author flex-self-stretch" itemprop="author">
-      <a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/users/graphieros/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/graphieros">
-        graphieros
-</a>    </span>
-    <span class="mx-1 flex-self-stretch color-fg-muted">/</span>
-    <strong itemprop="name" class="mr-2 flex-self-stretch">
-      <a data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" href="/graphieros/vue-data-ui">vue-data-ui</a>
-    </strong>
-
-    <span></span><span class="Label Label--secondary v-align-middle mr-1">Public</span>
-  </div>
-
-
-        </div>
-
-        <div id="repository-details-container" class="flex-shrink-0" data-turbo-replace style="max-width: 70%;">
-            <ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;">
-    
-        <li>
-          <include-fragment src="/graphieros/vue-data-ui/sponsor_button" data-nonce="v2:1ad8da2e-2c6b-b9f9-455a-eabaddf9d940" data-view-component="true">
-  
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>
-        </li>
-
-      
-
-  <li>
-            <a href="/login?return_to=%2Fgraphieros%2Fvue-data-ui" rel="nofollow" id="repository-details-watch-button" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/graphieros/vue-data-ui/blob/master/README.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="ae10a5ac5177e706132601186ee47f40ed5240e4252aea6f1b6cdcd301a543c2" aria-label="You must be signed in to change notification settings" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bell mr-2">
-    <path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path>
-</svg>Notifications
-</a>    <tool-tip id="tooltip-11fdf607-66c2-4abc-9a53-e20f24441802" for="repository-details-watch-button" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">You must be signed in to change notification settings</tool-tip>
-
-  </li>
-
-  <li>
-          <a icon="repo-forked" id="fork-button" href="/login?return_to=%2Fgraphieros%2Fvue-data-ui" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:670239797,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/graphieros/vue-data-ui/blob/master/README.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f16e077e569ba9756bf5db919d61b8e2f19d3d9d4a5c594627fccdd5333afbde" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
-    <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
-</svg>Fork
-    <span id="repo-network-counter" data-pjax-replace="true" data-turbo-replace="true" title="119" data-view-component="true" class="Counter">119</span>
-</a>
-  </li>
-
-  <li>
-        <div data-view-component="true" class="BtnGroup d-flex">
-        <a href="/login?return_to=%2Fgraphieros%2Fvue-data-ui" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:670239797,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/graphieros/vue-data-ui/blob/master/README.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="b0296f4a76efa675f1c83da2a0463e93ffbfa7c66c5d49d29a8fd36533600b7f" aria-label="You must be signed in to star a repository" data-view-component="true" class="tooltipped tooltipped-sw btn-sm btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star v-align-text-bottom d-inline-block mr-2">
-    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-</svg><span data-view-component="true" class="d-inline">
-          Star
-</span>          <span id="repo-stars-counter-star" aria-label="2253 users starred this repository" data-singular-suffix="user starred this repository" data-plural-suffix="users starred this repository" data-turbo-replace="true" title="2,253" data-view-component="true" class="Counter js-social-count">2.3k</span>
-</a></div>
-  </li>
-
-</ul>
-
-        </div>
-      </div>
-
-        <div id="responsive-meta-container" data-turbo-replace>
-</div>
-
-
-          <nav data-pjax="#js-repo-pjax-container" aria-label="Repository" data-view-component="true" class="js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden UnderlineNav px-3 px-md-4 px-lg-5">
-
-  <ul data-view-component="true" class="UnderlineNav-body list-style-none">
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="code-tab" href="/graphieros/vue-data-ui" data-tab-item="i0code-tab" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments repo_attestations /graphieros/vue-data-ui" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g c" data-command-id="repositories:go-to-code" data-react-nav="code-view" data-react-nav-anchor="code-view-repo-link" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Code&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" aria-current="page" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item selected">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline">
-    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-        <span data-content="Code">Code</span>
-          <span id="code-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="Not available" data-view-component="true" class="Counter"></span>
-
-
-    
-</a></li>
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="issues-tab" href="/graphieros/vue-data-ui/issues" data-tab-item="i1issues-tab" data-selected-links="repo_issues repo_labels repo_milestones /graphieros/vue-data-ui/issues" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g i" data-command-id="repositories:go-to-issues" data-react-nav="issues-react" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Issues&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline">
-    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
-</svg>
-        <span data-content="Issues">Issues</span>
-          <span id="issues-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="1" data-view-component="true" class="Counter">1</span>
-
-
-    
-</a></li>
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="pull-requests-tab" href="/graphieros/vue-data-ui/pulls" data-tab-item="i2pull-requests-tab" data-selected-links="repo_pulls checks /graphieros/vue-data-ui/pulls" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g p" data-command-id="repositories:go-to-pull-requests" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Pull requests&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline">
-    <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path>
-</svg>
-        <span data-content="Pull requests">Pull requests</span>
-          <span id="pull-requests-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="0" hidden="hidden" data-view-component="true" class="Counter">0</span>
-
-
-    
-</a></li>
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="discussions-tab" href="/graphieros/vue-data-ui/discussions" data-tab-item="i3discussions-tab" data-selected-links="repo_discussions /graphieros/vue-data-ui/discussions" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g g" data-command-id="repositories:go-to-discussions" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Discussions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-comment-discussion UnderlineNav-octicon d-none d-sm-inline">
-    <path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"></path>
-</svg>
-        <span data-content="Discussions">Discussions</span>
-          <span id="discussions-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="Not available" data-view-component="true" class="Counter"></span>
-
-
-    
-</a></li>
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="actions-tab" href="/graphieros/vue-data-ui/actions" data-tab-item="i4actions-tab" data-selected-links="repo_actions /graphieros/vue-data-ui/actions" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g a" data-command-id="repositories:go-to-actions" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Actions&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline">
-    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"></path>
-</svg>
-        <span data-content="Actions">Actions</span>
-          <span id="actions-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="Not available" data-view-component="true" class="Counter"></span>
-
-
-    
-</a></li>
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="projects-tab" href="/graphieros/vue-data-ui/projects" data-tab-item="i5projects-tab" data-selected-links="repo_projects new_repo_project repo_project /graphieros/vue-data-ui/projects" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g b" data-command-id="repositories:go-to-projects" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Projects&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-table UnderlineNav-octicon d-none d-sm-inline">
-    <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"></path>
-</svg>
-        <span data-content="Projects">Projects</span>
-          <span id="projects-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="Not available" data-view-component="true" class="Counter"></span>
-
-
-    
-</a></li>
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="wiki-tab" href="/graphieros/vue-data-ui/wiki" data-tab-item="i6wiki-tab" data-selected-links="repo_wiki /graphieros/vue-data-ui/wiki" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g w" data-command-id="repositories:go-to-wiki" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Wiki&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline">
-    <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path>
-</svg>
-        <span data-content="Wiki">Wiki</span>
-          <span id="wiki-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="Not available" data-view-component="true" class="Counter"></span>
-
-
-    
-</a></li>
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="security-tab" href="/graphieros/vue-data-ui/security" data-tab-item="i7security-tab" data-selected-links="security overview alerts policy token_scanning code_scanning /graphieros/vue-data-ui/security" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-hotkey="g s" data-command-id="repositories:go-to-security" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Security&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline">
-    <path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-        <span data-content="Security">Security</span>
-          <span id="security-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="0" hidden="hidden" data-view-component="true" class="Counter">0</span>
-
-
-    
-</a></li>
-      <li data-view-component="true" class="d-inline-flex">
-  <a id="insights-tab" href="/graphieros/vue-data-ui/pulse" data-tab-item="i8insights-tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people community /graphieros/vue-data-ui/pulse" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" data-command-id="repositories:go-to-insights" data-analytics-event="{&quot;category&quot;:&quot;Underline navbar&quot;,&quot;action&quot;:&quot;Click tab&quot;,&quot;label&quot;:&quot;Insights&quot;,&quot;target&quot;:&quot;UNDERLINE_NAV.TAB&quot;}" data-view-component="true" class="UnderlineNav-item no-wrap js-responsive-underlinenav-item js-selected-navigation-item">
-    
-              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline">
-    <path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
-</svg>
-        <span data-content="Insights">Insights</span>
-          <span id="insights-repo-tab-count" data-pjax-replace="" data-turbo-replace="" title="Not available" data-view-component="true" class="Counter"></span>
-
-
-    
-</a></li>
-</ul>
-    <div style="visibility:hidden;" data-view-component="true" class="UnderlineNav-actions js-responsive-underlinenav-overflow position-absolute pr-3 pr-md-4 pr-lg-5 right-0">      <action-menu data-select-variant="none" data-view-component="true">
-  <focus-group direction="vertical" mnemonics retain>
-    <button id="action-menu-c82aac8b-ebbc-4525-b9db-ae4337eabe04-button" popovertarget="action-menu-c82aac8b-ebbc-4525-b9db-ae4337eabe04-overlay" aria-controls="action-menu-c82aac8b-ebbc-4525-b9db-ae4337eabe04-list" aria-haspopup="true" aria-labelledby="tooltip-54e3d164-9f43-4248-8afd-6592c7c9b725" type="button" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--medium UnderlineNav-item">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
-    <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-</svg>
-</button><tool-tip id="tooltip-54e3d164-9f43-4248-8afd-6592c7c9b725" for="action-menu-c82aac8b-ebbc-4525-b9db-ae4337eabe04-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Additional navigation options</tool-tip>
-
-
-<anchored-position data-target="action-menu.overlay" id="action-menu-c82aac8b-ebbc-4525-b9db-ae4337eabe04-overlay" anchor="action-menu-c82aac8b-ebbc-4525-b9db-ae4337eabe04-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
-  <div data-view-component="true" class="Overlay Overlay--size-auto">
-    
-      <div data-view-component="true" class="Overlay-body Overlay-body--paddingNone">          <action-list>
-  <div data-view-component="true">
-    <ul aria-labelledby="action-menu-c82aac8b-ebbc-4525-b9db-ae4337eabe04-button" id="action-menu-c82aac8b-ebbc-4525-b9db-ae4337eabe04-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
-        <li hidden="hidden" data-menu-item="i0code-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-877ab933-9ef5-4a57-9746-766b6bbddf1f" href="/graphieros/vue-data-ui" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
-    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Code
-</span>      
-</a>
-  
-</li>
-        <li hidden="hidden" data-menu-item="i1issues-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-72aeec29-42be-41f2-b525-9c6747e85a00" href="/graphieros/vue-data-ui/issues" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened">
-    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Issues
-</span>      
-</a>
-  
-</li>
-        <li hidden="hidden" data-menu-item="i2pull-requests-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-bd52cae2-6151-4409-a11a-8c230cd6103d" href="/graphieros/vue-data-ui/pulls" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request">
-    <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Pull requests
-</span>      
-</a>
-  
-</li>
-        <li hidden="hidden" data-menu-item="i3discussions-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-e91a99e4-4dec-4487-8551-75baceb42cdb" href="/graphieros/vue-data-ui/discussions" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-comment-discussion">
-    <path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Discussions
-</span>      
-</a>
-  
-</li>
-        <li hidden="hidden" data-menu-item="i4actions-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-f2066cd5-995c-4278-b37d-9e5e0b9d8ccb" href="/graphieros/vue-data-ui/actions" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play">
-    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Actions
-</span>      
-</a>
-  
-</li>
-        <li hidden="hidden" data-menu-item="i5projects-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-1a6ed035-1bdf-453c-95a3-fbb6745d80f1" href="/graphieros/vue-data-ui/projects" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-table">
-    <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Projects
-</span>      
-</a>
-  
-</li>
-        <li hidden="hidden" data-menu-item="i6wiki-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-e6a574a4-591a-4a4b-93f2-ee8b74dd2f07" href="/graphieros/vue-data-ui/wiki" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book">
-    <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Wiki
-</span>      
-</a>
-  
-</li>
-        <li hidden="hidden" data-menu-item="i7security-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-10dc657d-ac8b-427e-988e-8b06f4f788f8" href="/graphieros/vue-data-ui/security" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield">
-    <path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Security
-</span>      
-</a>
-  
-</li>
-        <li hidden="hidden" data-menu-item="i8insights-tab" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
-    
-    
-    <a tabindex="-1" id="item-3c8ab484-1a57-4bce-8ed5-8e7611a43ac0" href="/graphieros/vue-data-ui/pulse" role="menuitem" data-view-component="true" class="ActionListContent ActionListContent--visual16">
-        <span class="ActionListItem-visual ActionListItem-visual--leading">
-          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-graph">
-    <path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
-</svg>
-        </span>
-      
-        <span data-view-component="true" class="ActionListItem-label">
-          Insights
-</span>      
-</a>
-  
-</li>
-</ul>    
-</div></action-list>
-
-
-</div>
-      
-</div></anchored-position>  </focus-group>
-</action-menu></div>
-</nav>
-
-  </div>
-  
-
-
-
-<turbo-frame id="repo-content-turbo-frame" target="_top" data-turbo-action="advance" class="">
-    <div id="repo-content-pjax-container" class="repository-content " >
-    
-
-
-
-    
-      
-    
-
-
-
-
-
-
-
-
-<react-app
-  app-name="code-view"
-  initial-path="/graphieros/vue-data-ui/blob/master/README.md"
-  style="display: block; min-height: calc(100vh - 64px);"
-  data-attempted-ssr="true"
-  data-ssr="true"
-  data-lazy="false"
-  data-alternate="false"
-  data-data-router-enabled="true"
-  data-react-profiling="false"
->
-  
-  </div>
+         </div></div></div></div></div></div><div class="ScrollMarksContainer-module__scrollMarksContainer__Eu7uU" id="find-result-marks-container"></div><button hidden="" data-testid="" data-hotkey-scope="read-only-cursor-text-area"></button><button hidden=""></button></div>   </div>
 </react-app>
 
 

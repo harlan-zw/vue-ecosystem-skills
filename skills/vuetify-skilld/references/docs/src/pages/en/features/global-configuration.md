@@ -157,7 +157,7 @@ Now, use `<v-btn-primary>` in a template and apply a custom class:
 When compiled, the resulting HTML will contain both the globally defined classes and the custom one:
 
 ```html
-
+<!-- Example HTML Output -->
 <button class="v-btn v-btn--primary text-none foobar">Fizzbuzz</button>
 ```
 
@@ -281,7 +281,7 @@ When `<MyComponent1>` is used in a template, it uses the default value assigned 
 
 ```html
 <template>
-  <MyComponent1 /> 
+  <MyComponent1 /> <!-- I am bar -->
 </template>
 ```
 
@@ -340,10 +340,10 @@ Finally, add both new components to a template and inspect the output:
 <template>
   <v-app>
     <v-main>
-      <MyComponent1 /> 
+      <MyComponent1 /> <!-- I am bar -->
 
       <MyComponent2>
-        <MyComponent1 /> 
+        <MyComponent1 /> <!-- I am baz -->
       </MyComponent2>
     </v-main>
   </v-app>

@@ -17,7 +17,7 @@ Here is an example:
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -40,7 +40,7 @@ Here is an example:
       }}</em>
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -48,7 +48,7 @@ In the example above, the validation is done at each keystroke (`onChange`). If,
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -58,8 +58,8 @@ In the example above, the validation is done at each keystroke (`onChange`). If,
   >
     <template v-slot="{ field }">
       <label :for="field.name">Age:</label>
-      
-      
+      <!-- We always need to implement onChange, so that TanStack Form receives the changes -->
+      <!-- Listen to the onBlur event on the field -->
       <input
         :id="field.name"
         :name="field.name"
@@ -74,7 +74,7 @@ In the example above, the validation is done at each keystroke (`onChange`). If,
       }}</em>
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -82,7 +82,7 @@ So you can control when the validation is done by implementing the desired callb
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -93,8 +93,8 @@ So you can control when the validation is done by implementing the desired callb
   >
     <template v-slot="{ field }">
       <label :for="field.name">Age:</label>
-      
-      
+      <!-- We always need to implement onChange, so that TanStack Form receives the changes -->
+      <!-- Listen to the onBlur event on the field -->
       <input
         :id="field.name"
         :name="field.name"
@@ -109,7 +109,7 @@ So you can control when the validation is done by implementing the desired callb
       }}</em>
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -121,7 +121,7 @@ Once you have your validation in place, you can map the errors from an array to 
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -130,13 +130,13 @@ Once you have your validation in place, you can map the errors from an array to 
     }"
   >
     <template v-slot="{ field }">
-      
+      <!-- ... -->
       <em role="alert" v-if="!field.state.meta.isValid">{{
         field.state.meta.errors.join(', ')
       }}</em>
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -144,7 +144,7 @@ Or use the `errorMap` property to access the specific error you're looking for:
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -153,13 +153,13 @@ Or use the `errorMap` property to access the specific error you're looking for:
     }"
   >
     <template v-slot="{ field }">
-      
+      <!-- ... -->
       <em role="alert" v-if="field.state.meta.errorMap['onChange']">{{
         field.state.meta.errorMap['onChange']
       }}</em>
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -173,9 +173,9 @@ It's worth mentioning that our `errors` array and the `errorMap` matches the typ
   }"
 >
   <template v-slot="{ field }">
-      
-      
-	  
+      <!-- ... -->
+      <!-- errorMap.onChange is type `{isOldEnough: false} | undefined` -->
+	  <!-- meta.errors is type `Array<{isOldEnough: false} | undefined>` -->
       <em v-if="!field.state.meta.errorMap['onChange']?.isOldEnough">The user is not old enough</em>
   </template>
 </form.Field>
@@ -215,13 +215,13 @@ const formErrorMap = form.useStore((state) => state.errorMap)
 </script>
 
 <template>
-  
+  <!-- ... -->
   <div v-if="formErrorMap.onChange">
     <em role="alert">
       There was an error on the form: {{ formErrorMap.onChange }}
     </em>
   </div>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -265,7 +265,7 @@ const form = useForm({
 </script>
 
 <template>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -294,7 +294,7 @@ const form = useForm({
 > </script>
 >
 > <template>
->   
+>   <!-- ... -->
 >   <form.Field
 >     name="age"
 >     :validators="{
@@ -302,7 +302,7 @@ const form = useForm({
 >     }"
 >   >
 >     <template v-slot="{ field }">
->       
+>       <!-- ... -->
 >     </template>
 >   </form.Field>
 > </template>
@@ -327,7 +327,7 @@ const onChangeAge = async ({ value }) => {
 </script>
 
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -351,7 +351,7 @@ const onChangeAge = async ({ value }) => {
       }}</em>
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -370,7 +370,7 @@ const onBlurAgeAsync = async ({ value }) => {
 </script>
 
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -396,7 +396,7 @@ const onBlurAgeAsync = async ({ value }) => {
       }}</em>
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -410,7 +410,7 @@ Instead, we enable an easy method for debouncing your `async` calls by adding a 
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :async-debounce-ms="500"
@@ -421,10 +421,10 @@ Instead, we enable an easy method for debouncing your `async` calls by adding a 
     }"
   >
     <template v-slot="{ field }">
-      
+      <!-- ... -->
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -432,7 +432,7 @@ This will debounce every async call with a 500ms delay. You can even override th
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :async-debounce-ms="500"
@@ -447,10 +447,10 @@ This will debounce every async call with a 500ms delay. You can even override th
     }"
   >
     <template v-slot="{ field }">
-      
+      <!-- ... -->
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -485,7 +485,7 @@ const form = useForm({
 </script>
 
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -493,10 +493,10 @@ const form = useForm({
     }"
   >
     <template v-slot="{ field }">
-      
+      <!-- ... -->
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -504,7 +504,7 @@ Async validations on form and field level are supported as well:
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -522,10 +522,10 @@ Async validations on form and field level are supported as well:
     }"
   >
     <template v-slot="{ field }">
-      
+      <!-- ... -->
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -533,7 +533,7 @@ If you need even more control over your Standard Schema validation, you can comb
 
 ```vue
 <template>
-  
+  <!-- ... -->
   <form.Field
     name="age"
     :validators="{
@@ -549,10 +549,10 @@ If you need even more control over your Standard Schema validation, you can comb
     }"
   >
     <template v-slot="{ field }">
-      
+      <!-- ... -->
     </template>
   </form.Field>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -570,9 +570,9 @@ const form = useForm(/* ... */)
 </script>
 
 <template>
-  
+  <!-- ... -->
 
-  
+  <!-- Dynamic submit button -->
   <form.Subscribe>
     <template v-slot="{ canSubmit, isSubmitting }">
       <button type="submit" :disabled="!canSubmit">
@@ -580,7 +580,7 @@ const form = useForm(/* ... */)
       </button>
     </template>
   </form.Subscribe>
-  
+  <!-- ... -->
 </template>
 ```
 

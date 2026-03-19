@@ -76,10 +76,10 @@ Attributes that start with `:` may look a bit different from normal HTML, but it
 If the attribute has the same name as the variable name of the JavaScript value being bound, the syntax can be further shortened to omit the attribute value:
 
 ```vue-html
-
+<!-- same as :id="id" -->
 <div :id></div>
 
-
+<!-- this also works -->
 <div v-bind:id></div>
 ```
 
@@ -161,10 +161,10 @@ Each binding can only contain **one single expression**. An expression is a piec
 Therefore, the following will **NOT** work:
 
 ```vue-html
-
+<!-- this is a statement, not an expression: -->
 {{ var a = 1 }}
 
-
+<!-- flow control won't work either, use ternary expressions -->
 {{ if (ok) { return message } }}
 ```
 
@@ -207,7 +207,7 @@ Some directives can take an "argument", denoted by a colon after the directive n
 ```vue-html
 <a v-bind:href="url"> ... </a>
 
-
+<!-- shorthand -->
 <a :href="url"> ... </a>
 ```
 
@@ -218,7 +218,7 @@ Another example is the `v-on` directive, which listens to DOM events:
 ```vue-html
 <a v-on:click="doSomething"> ... </a>
 
-
+<!-- shorthand -->
 <a @click="doSomething"> ... </a>
 ```
 
@@ -229,10 +229,13 @@ Here, the argument is the event name to listen to: `click`. `v-on` has a corresp
 It is also possible to use a JavaScript expression in a directive argument by wrapping it with square brackets:
 
 ```vue-html
-
+<!--
+Note that there are some constraints to the argument expression,
+as explained in the "Dynamic Argument Value Constraints" and "Dynamic Argument Syntax Constraints" sections below.
+-->
 <a v-bind:[attributeName]="url"> ... </a>
 
-
+<!-- shorthand -->
 <a :[attributeName]="url"> ... </a>
 ```
 
@@ -243,7 +246,7 @@ Similarly, you can use dynamic arguments to bind a handler to a dynamic event na
 ```vue-html
 <a v-on:[eventName]="doSomething"> ... </a>
 
-
+<!-- shorthand -->
 <a @[eventName]="doSomething"> ... </a>
 ```
 
@@ -258,7 +261,7 @@ Dynamic arguments are expected to evaluate to a string, with the exception of `n
 Dynamic argument expressions have some syntax constraints because certain characters, such as spaces and quotes, are invalid inside HTML attribute names. For example, the following is invalid:
 
 ```vue-html
-
+<!-- This will trigger a compiler warning. -->
 <a :['foo' + bar]="value"> ... </a>
 ```
 

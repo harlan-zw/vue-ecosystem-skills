@@ -22,7 +22,7 @@ A *param* is denoted by a colon `:`. When a route is matched, the value of its *
 ```vue
 <template>
   <div>
-    
+    <!-- The current route is accessible as $route in the template -->
     User {{ $route.params.id }}
   </div>
 </template>

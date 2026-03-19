@@ -44,7 +44,7 @@ CSS variable and data attributes names have been updated to use the `reka` prefi
 
   ```vue
   <template>
-    <ComboboxRoot :filter-function="customFilter" />  
+    <ComboboxRoot :filter-function="customFilter" />  <!-- [!code --] -->
   </template>
   ```
 
@@ -54,9 +54,9 @@ CSS variable and data attributes names have been updated to use the `reka` prefi
 
   ```vue
   <template>
-    <ComboboxRoot v-model:search-term="search" :display-value="(v) => v.name" /> 
+    <ComboboxRoot v-model:search-term="search" :display-value="(v) => v.name" /> <!-- [!code --] -->
     <ComboboxRoot>
-      <ComboboxInput v-model="search" :display-value="(v) => v.name" /> 
+      <ComboboxInput v-model="search" :display-value="(v) => v.name" /> <!-- [!code ++] -->
     </ComboboxRoot>
   </template>
   ```
@@ -71,8 +71,8 @@ CSS variable and data attributes names have been updated to use the `reka` prefi
 
 ```vue
 <template>
-  <CheckboxRoot v-model:checked="value" /> 
-  <CheckboxRoot v-model="value" /> 
+  <CheckboxRoot v-model:checked="value" /> <!-- [!code --] -->
+  <CheckboxRoot v-model="value" /> <!-- [!code ++] -->
 </template>
 ```
 
@@ -84,11 +84,11 @@ CSS variable and data attributes names have been updated to use the `reka` prefi
 
 ```vue
 <template>
-  <DropdownMenuCheckboxItem v-model:checked="value" /> 
-  <DropdownMenuCheckboxItem v-model="value" /> 
+  <DropdownMenuCheckboxItem v-model:checked="value" /> <!-- [!code --] -->
+  <DropdownMenuCheckboxItem v-model="value" /> <!-- [!code ++] -->
 
-  <DropdownMenuCheckboxItem checked /> 
-  <DropdownMenuCheckboxItem :model-value="true" /> 
+  <DropdownMenuCheckboxItem checked /> <!-- [!code --] -->
+  <DropdownMenuCheckboxItem :model-value="true" /> <!-- [!code ++] -->
 </template>
 ```
 
@@ -98,7 +98,7 @@ CSS variable and data attributes names have been updated to use the `reka` prefi
 
   ```vue
   <template>
-    <PaginationRoot :items-per-page="10" />  
+    <PaginationRoot :items-per-page="10" />  <!-- [!code ++] -->
   </template>
   ```
 
@@ -116,11 +116,11 @@ CSS variable and data attributes names have been updated to use the `reka` prefi
   </script>
 
   <template>
-    <CalendarPrev step="year" /> 
-    <CalendarPrev :prev-page="(date: DateValue) => pagingFunc(date, -1)" /> 
+    <CalendarPrev step="year" /> <!-- [!code --] -->
+    <CalendarPrev :prev-page="(date: DateValue) => pagingFunc(date, -1)" /> <!-- [!code ++] -->
 
-    <CalendarNext step="year" /> 
-    <CalendarNext :next-page="(date: DateValue) => pagingFunc(date, 1)" /> 
+    <CalendarNext step="year" /> <!-- [!code --] -->
+    <CalendarNext :next-page="(date: DateValue) => pagingFunc(date, 1)" /> <!-- [!code ++] -->
   </template>
   ```
 
@@ -131,7 +131,7 @@ CSS variable and data attributes names have been updated to use the `reka` prefi
   ```vue
   <template>
     <SelectValue>
-       
+      <!-- render the content similar to `SelectItem` --> <!-- [!code ++] -->
     </SelectValue>
   </template>
   ```

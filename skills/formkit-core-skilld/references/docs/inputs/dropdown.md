@@ -410,7 +410,7 @@ const frameworks = [
     popover
     value="vue"
   >
-    
+    <!--SELECTION SLOT-->
     <template #selection="{ option, classes }">
       <div class="flex items-center">
         <img :src="option.asset" alt="optionAvatar" class="w-5 mr-2" />
@@ -419,7 +419,7 @@ const frameworks = [
         </span>
       </div>
     </template>
-    
+    <!---->
   </FormKit>
 
   <FormKit
@@ -432,7 +432,7 @@ const frameworks = [
     selection-appearance="tags"
     :value="['vue', 'angular']"
   >
-    
+    <!--TAG SLOT-->
     <template #tag="{ handlers, option, classes }">
       <div :class="classes.tag">
         <img :src="option.asset" class="w-4 mr-1 bg-white rounded" />
@@ -461,7 +461,7 @@ const frameworks = [
         </span>
       </div>
     </template>
-    
+    <!--/TAG SLOT-->
   </FormKit>
 </template>
 ```

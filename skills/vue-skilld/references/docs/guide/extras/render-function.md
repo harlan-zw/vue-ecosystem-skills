@@ -226,10 +226,10 @@ const vnode = h('button', ['Hello'])
 </script>
 
 <template>
-  
+  <!-- Via <component /> -->
   <component :is="vnode">Hi</component>
 
-  
+  <!-- Or directly as element -->
   <vnode />
   <vnode>Hi</vnode>
 </template>

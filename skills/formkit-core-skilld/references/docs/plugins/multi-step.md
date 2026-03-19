@@ -41,20 +41,20 @@ export default config
   <FormKit type="form" :actions="false">
     <FormKit type="multi-step" tab-style="tab">
       <FormKit type="step" name="personalInfo">
-        
+        <!-- component for example brevity. -->
         <StepOne />
       </FormKit>
 
       <FormKit type="step" name="references">
-        
+        <!-- component for example brevity. -->
         <StepTwo />
       </FormKit>
 
       <FormKit type="step" name="Supplemental">
-        
+        <!-- component for example brevity. -->
         <StepThree />
 
-        
+        <!-- using step slot for submit button-->
         <template #stepNext>
           <FormKit type="submit" />
         </template>
@@ -159,7 +159,7 @@ Using these inputs together is as simple as wrapping any markup you want to have
 ```
 <FormKit type="multi-step">
   <FormKit type="step" name="stepOne">
-    
+    <!-- content for stepOne goes here! -->
   </FormKit>
 </FormKit>
 
@@ -179,17 +179,17 @@ The `multi-step` input ships with two available tab styles.
 #### tab-style.vue
 
 ```vue
-
+<!-- default tab style -->
   <FormKit type="multi-step" tab-style="tab">
     <MultiStepContent />
   </FormKit>
 
-  
+  <!-- progress tab style -->
   <FormKit type="multi-step" tab-style="progress">
     <MultiStepContent />
   </FormKit>
 
-  
+  <!-- progress tab style w/ hidden labels -->
   <FormKit type="multi-step" tab-style="progress" :hide-progress-labels="true">
     <MultiStepContent />
   </FormKit>
@@ -293,17 +293,17 @@ By default the `multi-step` input will allow advancing to later steps even if th
 ```vue
 <FormKit type="multi-step" :allow-incomplete="false">
     <FormKit type="step" name="personalInfo">
-      
+      <!-- component for example brevity. -->
       <StepOne />
     </FormKit>
 
     <FormKit type="step" name="references">
-      
+      <!-- component for example brevity. -->
       <StepTwo />
     </FormKit>
 
     <FormKit type="step" name="Supplemental">
-      
+      <!-- component for example brevity. -->
       <StepThree />
     </FormKit>
   </FormKit>
@@ -406,7 +406,7 @@ You can either:
 #### valid-step-icon.vue
 
 ```vue
-
+<!-- on multi-step we set all icons to 'star' -->
   <FormKit type="multi-step" valid-step-icon="star" tab-style="progress">
     <FormKit type="step" name="stepOne">
       <FormKit type="text" label="Name" />
@@ -414,7 +414,7 @@ You can either:
     <FormKit type="step" name="stepTwo">
       <FormKit type="textarea" label="Your story" />
     </FormKit>
-    
+    <!-- on this step we set the icon to 'submit' -->
     <FormKit type="step" valid-step-icon="submit" name="stepThree">
       <FormKit type="textarea" label="Something else" />
     </FormKit>
@@ -458,14 +458,14 @@ The `stepNext` and `stepPrevious` sections have access to the `incrementStep` ha
 #### step-actions.vue
 
 ```vue
-
+<!-- we'll get rid of the default form actions -->
   <FormKit type="form" :actions="false">
     <FormKit type="multi-step" tab-style="tab">
       <FormKit type="step" name="personalInfo">
         <FormKit type="text" label="Name" prefix-icon="avatarMan" />
 
         <template #stepNext="{ handlers, node }">
-          
+          <!-- incrementStep returns a callable function -->
           <FormKit
             type="button"
             @click="handlers.incrementStep(1)()"
@@ -483,14 +483,18 @@ The `stepNext` and `stepPrevious` sections have access to the `incrementStep` ha
         />
 
         <template #stepPrevious="{ handlers, node }">
-          
+          <!-- incrementStep returns a callable function -->
           <FormKit
             type="button"
             @click="handlers.incrementStep(-1)()"
             label="Custom Previous"
           />
         </template>
-        
+        <!--
+        normally there is no stepNext section rendered
+        on the last step of a multi-step. But we can
+        supply our own.
+         -->
         <template #stepNext>
           <FormKit type="submit" />
         </template>

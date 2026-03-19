@@ -18,15 +18,15 @@ But Reka UI's slot behave differently, it would merge all the assigned attribute
 Say we want to assign an `id` attribute to whatever component/element that was rendered, but Native slot will convert it into a scoped slot, and you will need to assign that id manually.
 
 ```vue
-
-
+<!-- Native Slot -->
+<!-- Comp.vue -->
 <template>
   <slot id="reka-01">
     ...
   </slot>
 </template>
 
-
+<!-- parent template -->
 <template>
   <Comp v-slot="slotProps">
     <button :id="slotProps.id">...<button>
@@ -44,22 +44,22 @@ This would be troublesome if you want to ensure some attributes are being passed
 Alternatively, If you use `Slot` from Reka UI, the attributes assigned to the Slot component will be inherited by the immediate child element, but you will no longer have access to the `Scoped Slot`,
 
 ```vue
-
+<!-- Reka UI Slot -->
 <script setup lang="ts">
 import { Slot } from 'reka-ui'
 </script>
 
-
+<!-- Comp.vue -->
 <template>
   <Slot id="reka-01">
     ...
   </Slot>
 </template>
 
-
+<!-- parent template -->
 <template>
   <Comp>
-    
+    <!-- id will be inherited -->
     <button>...<button>
   <Comp>
 <template>

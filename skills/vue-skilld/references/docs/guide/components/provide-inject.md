@@ -253,7 +253,7 @@ When using reactive provide / inject values, **it is recommended to keep any mut
 There may be times when we need to update the data from an injector component. In such cases, we recommend providing a function that is responsible for mutating the state:
 
 ```vue{7-9,13}
-
+<!-- inside provider component -->
 <script setup>
 import { provide, ref } from 'vue'
 
@@ -271,7 +271,7 @@ provide('location', {
 ```
 
 ```vue{5}
-
+<!-- in injector component -->
 <script setup>
 import { inject } from 'vue'
 

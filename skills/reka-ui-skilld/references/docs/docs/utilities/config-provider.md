@@ -57,7 +57,7 @@ We expose a temporary workaround to allow current Nuxt (with version >3.10) proj
 > Inspired by Headless UI
 
 ```vue
-
+<!-- in Nuxt's app.vue -->
 <script setup lang="ts">
 import { ConfigProvider } from 'reka-ui'
 

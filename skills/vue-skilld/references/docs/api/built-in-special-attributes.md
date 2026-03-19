@@ -53,7 +53,7 @@ Denotes a [template ref](/guide/essentials/template-refs).
   In Options API, the reference will be registered under the component's `this.$refs` object:
 
   ```vue-html
-  
+  <!-- stored as this.$refs.p -->
   <p ref="p">hello</p>
   ```
 

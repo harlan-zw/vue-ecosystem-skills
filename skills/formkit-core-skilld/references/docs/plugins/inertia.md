@@ -48,7 +48,7 @@ You could also also define the handler directly in your template:
   @submit="(fields, node) => form.post('/login')(fields, node)"
   :plugins="[form.plugin]"
 >
-  
+  <!-- The rest of your form -->
 </FormKit>
 
 ```
@@ -66,7 +66,7 @@ The functions support all visit options from Inertia, such as `preserveState`, `
   })(fields, node)"
   :plugins="[form.plugin]"
 >
-  
+  <!-- The rest of your form -->
 </FormKit>
 
 ```
@@ -79,7 +79,7 @@ To cancel a form submission, use the `cancel()` method.
   @submit="(fields, node) => form.post('/login')(fields, node)"
   :plugins="[form.plugin]"
 >
-  
+  <!-- The rest of your form -->
 </FormKit>
 
 <FormKit type="button" @click="form.cancel()" label="Cancel" />

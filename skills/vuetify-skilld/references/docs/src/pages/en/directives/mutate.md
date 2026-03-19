@@ -36,10 +36,10 @@ By default, `v-mutate` enables `.attr`, `.char`, `.child`, and `.sub` unless you
 ```html { resource="Component.vue" }
 <template>
   <div>
-    
+    <!-- attr, char, child, and sub are true -->
     <div v-mutate="..." />
 
-    
+    <!-- child is true, attr, char, and child are false -->
     <div v-mutate.child="...">
   </div>
 </template>
@@ -59,7 +59,7 @@ In addition to the _modifier_ syntax, the `v-mutate` directive is configurable v
       }"
     />
 
-    
+    <!-- is the same as -->
 
     <div v-mutate.child.sub="onMutate" />
   </div>

@@ -128,7 +128,7 @@ Beware that `src` imports follow the same path resolution rules as webpack modul
 - You can import resources from npm dependencies:
 
 ```vue
-
+<!-- import a file from the installed "todomvc-app-css" npm package -->
 <style src="todomvc-app-css/index.css" />
 ```
 
@@ -148,4 +148,4 @@ While using aliases in `src`, don't start with `~`, anything after it is interpr
 
 ## Comments {#comments}
 
-Inside each block you shall use the comment syntax of the language being used (HTML, CSS, JavaScript, Pug, etc.). For top-level comments, use HTML comment syntax: ``
+Inside each block you shall use the comment syntax of the language being used (HTML, CSS, JavaScript, Pug, etc.). For top-level comments, use HTML comment syntax: `<!-- comment contents here -->`

@@ -74,7 +74,7 @@ Due to FormKit's config inheritance, you can set `validation-visibility` at a `f
 #### validation-visibility.vue
 
 ```vue
-
+<!-- config is passed down to descendant inputs: -->
   <FormKit
     type="form"
     @submit="() => false"
@@ -93,7 +93,7 @@ Due to FormKit's config inheritance, you can set `validation-visibility` at a `f
       :validation-messages="{ date_between: 'Only for those born in the 90s.' }"
       help="Enter your date of birth"
     />
-    
+    <!-- We override validation-visibility for the input below: -->
     <FormKit
       type="tel"
       label="Phone Number"
@@ -200,7 +200,8 @@ The force hint ensures a validation rule will run even if a rule that is defined
     validation-visibility="live"
     help="Enter less than 5 characters to see both rules appear."
   />
-  
+  <!-- By default, the "email" validation rule would
+        not run if the "length" rule was failing. -->
 ```
 
 ### Optional ?
@@ -680,7 +681,7 @@ Checks that the input’s value is over a given length, or between two length va
 #### rule-length.vue
 
 ```vue
-
+<!-- Between 2 lengths -->
   <FormKit
     type="password"
     label="Password"
@@ -689,7 +690,7 @@ Checks that the input’s value is over a given length, or between two length va
     validation-visibility="live"
     value="123"
   />
-  
+  <!-- Greater than a minimum -->
   <FormKit
     type="text"
     label="Name"
@@ -698,7 +699,7 @@ Checks that the input’s value is over a given length, or between two length va
     validation-visibility="live"
     value="1"
   />
-  
+  <!-- Less than a maximum -->
   <FormKit
     type="text"
     label="Username"
@@ -1353,7 +1354,7 @@ If you would like to render an input’s validation messages outside of the `<Fo
 #### normal-input.vue
 
 ```vue
-
+<!-- :html -->
 <script setup>
 import { ref } from 'vue'
 import { FormKitMessages } from '@formkit/vue'
@@ -1370,11 +1371,11 @@ const input = ref()
       label="Dinosaur name"
       placeholder="Stegosaurus"
     />
-    
+    <!-- 👀 messages will be rendered here instead -->
     <FormKitMessages :node="input?.node" />
   </div>
 </template>
-
+<!-- :html -->
 
 <style scoped>
 .flex {

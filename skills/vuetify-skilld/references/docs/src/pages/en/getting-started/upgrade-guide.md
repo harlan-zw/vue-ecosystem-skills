@@ -538,7 +538,7 @@ Offset classes have been renamed from `.offset-*` to `.v-col-offset-*` for names
 
 ```diff
 - <v-col offset="3" offset-md="2">
-+ <v-col offset="3" offset-md="2">  
++ <v-col offset="3" offset-md="2">  <!-- Props still work the same -->
 ```
 
 The component props (`offset`, `offset-sm`, etc.) continue to work unchanged, but if you were using the CSS classes directly, update them:

@@ -223,7 +223,7 @@ You can also specify custom transition classes by passing the following props to
 These will override the conventional class names. This is especially useful when you want to combine Vue's transition system with an existing CSS animation library, such as Animate.css:
 
 ```vue-html
-
+<!-- assuming Animate.css is included on the page -->
 <Transition
   name="custom-classes"
   enter-active-class="animate__animated animate__tada"
@@ -336,7 +336,7 @@ You can hook into the transition process with JavaScript by listening to events 
   @after-leave="onAfterLeave"
   @leave-cancelled="onLeaveCancelled"
 >
-  
+  <!-- ... -->
 </Transition>
 ```
 
@@ -470,12 +470,12 @@ Transitions can be reused through Vue's component system. To create a reusable t
 </script>
 
 <template>
-  
+  <!-- wrap the built-in Transition component -->
   <Transition
     name="my-transition"
     @enter="onEnter"
     @leave="onLeave">
-    <slot></slot> 
+    <slot></slot> <!-- pass down slot content -->
   </Transition>
 </template>
 
@@ -569,7 +569,7 @@ Try it in the Playground
 
 ```vue-html
 <Transition :name="transitionName">
-  
+  <!-- ... -->
 </Transition>
 ```
 

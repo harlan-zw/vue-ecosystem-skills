@@ -241,17 +241,17 @@ Caches dynamically toggled components wrapped inside.
   Using `include` / `exclude`:
 
   ```vue-html
-  
+  <!-- comma-delimited string -->
   <KeepAlive include="a,b">
     <component :is="view"></component>
   </KeepAlive>
 
-  
+  <!-- regex (use `v-bind`) -->
   <KeepAlive :include="/a|b/">
     <component :is="view"></component>
   </KeepAlive>
 
-  
+  <!-- Array (use `v-bind`) -->
   <KeepAlive :include="['a', 'b']">
     <component :is="view"></component>
   </KeepAlive>
@@ -318,7 +318,7 @@ Renders its slot content to another part of the DOM.
   ```vue-html
   <Teleport defer to="#late-div">...</Teleport>
 
-  
+  <!-- somewhere later in the template -->
   <div id="late-div"></div>
   ```
 

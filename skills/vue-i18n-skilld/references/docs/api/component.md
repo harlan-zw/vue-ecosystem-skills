@@ -225,11 +225,11 @@ See the following items for property about details
 
 ```html
 <div id="app">
-  
+  <!-- ... -->
   <i18n keypath="term" tag="label" for="tos">
     <a :href="url" target="_blank">{{ $t('tos') }}</a>
   </i18n>
-  
+  <!-- ... -->
 </div>
 ```
 

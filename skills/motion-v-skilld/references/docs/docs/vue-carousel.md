@@ -96,29 +96,29 @@ import { Carousel } from "motion-plus-vue"
  </Carousel>
 
 <Carousel>
-  <Box src="sonic3" title="Sonic 3" />  
-  <div>Some text</div>                   
-  123                                    
+  <Box src="sonic3" title="Sonic 3" />  <!-- This will be one Carousel item -->
+  <div>Some text</div>                   <!-- This will be another Carousel item -->
+  123                                    <!-- This will be a third Carousel item -->
 </Carousel>
 <
 
 <Carousel>
-  <Box src="sonic3" title="Sonic 3" />  
-  <div>Some text</div>                   
-  123                                    
+  <Box src="sonic3" title="Sonic 3" />  <!-- This will be one Carousel item -->
+  <div>Some text</div>                   <!-- This will be another Carousel item -->
+  123                                    <!-- This will be a third Carousel item -->
 </Carousel>
 <
 
 <Carousel>
-  <Box src="sonic3" title="Sonic 3" />  
-  <div>Some text</div>                   
-  123                                    
+  <Box src="sonic3" title="Sonic 3" />  <!-- This will be one Carousel item -->
+  <div>Some text</div>                   <!-- This will be another Carousel item -->
+  123                                    <!-- This will be a third Carousel item -->
 </Carousel>
 <
 
 <Carousel>
   <Box src="sonic3" title="Sonic 3" />
-  
+  <!-- This Fragment and its children will be treated as a single Carousel item -->
   <Fragment>
     <div>Some text</div>
     123
@@ -127,7 +127,7 @@ import { Carousel } from "motion-plus-vue"
 
 <Carousel>
   <Box src="sonic3" title="Sonic 3" />
-  
+  <!-- This Fragment and its children will be treated as a single Carousel item -->
   <Fragment>
     <div>Some text</div>
     123
@@ -136,7 +136,7 @@ import { Carousel } from "motion-plus-vue"
 
 <Carousel>
   <Box src="sonic3" title="Sonic 3" />
-  
+  <!-- This Fragment and its children will be treated as a single Carousel item -->
   <Fragment>
     <div>Some text</div>
     123

@@ -38,7 +38,7 @@ While you’re free to use FormKit inputs by themselves, you’ll usually want t
 
 ```
 <FormKit type="form">
-  
+  <!-- ... your form inputs -->
 </FormKit>
 
 ```
@@ -227,7 +227,8 @@ We discuss validation in more detail on its [own documentation page](/essentials
     label="Username"
     validation="required|alpha|length:10"
   />
-  
+  <!-- The input above has 3 validation rules:
+      "required", "alpha", and "length" -->
 ```
 
 ## Debouncing
@@ -453,7 +454,8 @@ For example, by default FormKit uses an unordered list (`<ul>` and `<li>`) to ou
     validation="required|length:5"
     validation-visibility="live"
   />
-  
+  <!-- Remove the :sections-schema prop to see validation
+        messages revert to their default HTML. -->
 ```
 
 ### Unwrapping or removing HTML tags
@@ -478,7 +480,8 @@ For accessibility and flexibility, FormKit uses several wrapper elements like th
     label="Terms and conditions"
     help="Do you accept our terms and conditions?"
   />
-  
+  <!-- Remove the "inner" property of the schema object
+      and see the inner wrapper reappear. -->
 ```
 
 ### Schema logic

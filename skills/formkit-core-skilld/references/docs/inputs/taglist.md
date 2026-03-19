@@ -147,7 +147,7 @@ async function searchMovies({ search }) {
     #default="{ value }"
     :actions="false"
   >
-    
+    <!--Setting the `options` prop to async function `loadHorrorMovies`-->
     <FormKit
       name="movie"
       type="taglist"
@@ -328,7 +328,7 @@ async function searchMovies({ search }) {
 </script>
 
 <template>
-  
+  <!--Setting the `options` prop to async function `loadHorrorMovies`-->
   <FormKit
     name="movie"
     type="taglist"
@@ -385,7 +385,7 @@ import carBrands from './_examples___data__car-brands.js'
       :value="['audi', 'bmw']"
       multiple
     >
-      
+      <!--TAG SLOT-->
       <template #tag="{ handlers, option, classes }">
         <div :class="classes.tag">
           <img :src="option.logo" class="w-5 mr-2 bg-white" />
@@ -413,7 +413,7 @@ import carBrands from './_examples___data__car-brands.js'
           </button>
         </div>
       </template>
-      
+      <!--/TAG SLOT-->
     </FormKit>
     <pre wrap>{{ value }}</pre>
   </FormKit>
@@ -687,7 +687,7 @@ async function searchMovies({ search, page, hasNextPage }) {
       multiple
       popover
     >
-      
+      <!--HERE WE ARE DEFINING OUR TAG SLOT-->
       <template #tag="{ handlers, option, classes }">
         <div :class="classes.tag">
           <img
@@ -719,7 +719,7 @@ async function searchMovies({ search, page, hasNextPage }) {
           </button>
         </div>
       </template>
-      
+      <!---->
     </FormKit>
     <pre wrap>{{ value }}</pre>
   </FormKit>

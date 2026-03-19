@@ -135,7 +135,34 @@ In this case, error message can be redefined as second parameter:
 </v-form>
 ```
 
+<!--
+## Aliases
 
+Rules can also be used in inputs using the alias names syntax:
+
+```html { resource="src/App.vue" }
+<v-form>
+  <v-text-field
+    label="Username"
+    :rules="['$required']"
+  ></v-text-field>
+</v-form>
+```
+
+RuleBuilders parameters can also be passed using an Array:
+
+```html { resource="src/App.vue" }
+<v-form>
+  <v-text-field
+    label="Username"
+    :rules="[
+      ['$required', 'This field is mandatory'],
+      ['$maxLength', 10, 'You can\'t write over 10 characters']
+    ]"
+  ></v-text-field>
+</v-form>
+```
+-->
 
 ## Custom rules
 

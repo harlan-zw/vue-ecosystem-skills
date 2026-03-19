@@ -104,7 +104,7 @@ A "meta component" for rendering dynamic components or elements.
   </script>
 
   <template>
-    
+    <!-- This won't work as 'input' is a native HTML element -->
     <component :is="tag" v-model="username" />
   </template>
   ```

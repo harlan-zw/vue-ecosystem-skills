@@ -13,7 +13,7 @@ A "fallthrough attribute" is an attribute or `v-on` event listener that is passe
 When a component renders a single root element, fallthrough attributes will be automatically added to the root element's attributes. For example, given a `<MyButton>` component with the following template:
 
 ```vue-html
-
+<!-- template of <MyButton> -->
 <button>Click Me</button>
 ```
 
@@ -36,7 +36,7 @@ Here, `<MyButton>` did not declare `class` as an accepted prop. Therefore, `clas
 If the child component's root element already has existing `class` or `style` attributes, it will be merged with the `class` and `style` values that are inherited from the parent. Suppose we change the template of `<MyButton>` in the previous example to:
 
 ```vue-html
-
+<!-- template of <MyButton> -->
 <button class="btn">Click Me</button>
 ```
 
@@ -61,7 +61,7 @@ The `click` listener will be added to the root element of `<MyButton>`, i.e. the
 If a component renders another component as its root node, for example, we refactored `<MyButton>` to render a `<BaseButton>` as its root:
 
 ```vue-html
-
+<!-- template of <MyButton/> that simply renders another component -->
 <BaseButton />
 ```
 

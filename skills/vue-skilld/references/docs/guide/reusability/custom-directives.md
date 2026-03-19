@@ -268,9 +268,9 @@ When used on components, custom directives will always apply to a component's ro
 ```
 
 ```vue-html
+<!-- template of MyComponent -->
 
-
-<div> 
+<div> <!-- v-demo directive will be applied here -->
   <span>My component content</span>
 </div>
 ```

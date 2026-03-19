@@ -17,7 +17,7 @@ Update the element's text content.
 
   ```vue-html
   <span v-text="msg"></span>
-  
+  <!-- same as -->
   <span>{{msg}}</span>
   ```
 
@@ -206,40 +206,40 @@ Attach an event listener to the element.
 - **Example**
 
   ```vue-html
-  
+  <!-- method handler -->
   <button v-on:click="doThis"></button>
 
-  
+  <!-- dynamic event -->
   <button v-on:[event]="doThis"></button>
 
-  
+  <!-- inline statement -->
   <button v-on:click="doThat('hello', $event)"></button>
 
-  
+  <!-- shorthand -->
   <button @click="doThis"></button>
 
-  
+  <!-- shorthand dynamic event -->
   <button @[event]="doThis"></button>
 
-  
+  <!-- stop propagation -->
   <button @click.stop="doThis"></button>
 
-  
+  <!-- prevent default -->
   <button @click.prevent="doThis"></button>
 
-  
+  <!-- prevent default without expression -->
   <form @submit.prevent></form>
 
-  
+  <!-- chain modifiers -->
   <button @click.stop.prevent="doThis"></button>
 
-  
+  <!-- key modifier using keyAlias -->
   <input @keyup.enter="onEnter" />
 
-  
+  <!-- the click event will be triggered at most once -->
   <button v-on:click.once="doThis"></button>
 
-  
+  <!-- object syntax -->
   <button v-on="{ mousedown: doThis, mouseup: doThat }"></button>
   ```
 
@@ -248,7 +248,7 @@ Attach an event listener to the element.
   ```vue-html
   <MyComponent @my-event="handleThis" />
 
-  
+  <!-- inline statement -->
   <MyComponent @my-event="handleThis(123, $event)" />
   ```
 
@@ -287,43 +287,43 @@ Dynamically bind one or more attributes, or a component prop to an expression.
 - **Example**
 
   ```vue-html
-  
+  <!-- bind an attribute -->
   <img v-bind:src="imageSrc" />
 
-  
+  <!-- dynamic attribute name -->
   <button v-bind:[key]="value"></button>
 
-  
+  <!-- shorthand -->
   <img :src="imageSrc" />
 
-  
+  <!-- same-name shorthand (3.4+), expands to :src="src" -->
   <img :src />
 
-  
+  <!-- shorthand dynamic attribute name -->
   <button :[key]="value"></button>
 
-  
+  <!-- with inline string concatenation -->
   <img :src="'/path/to/images/' + fileName" />
 
-  
+  <!-- class binding -->
   <div :class="{ red: isRed }"></div>
   <div :class="[classA, classB]"></div>
   <div :class="[classA, { classB: isB, classC: isC }]"></div>
 
-  
+  <!-- style binding -->
   <div :style="{ fontSize: size + 'px' }"></div>
   <div :style="[styleObjectA, styleObjectB]"></div>
 
-  
+  <!-- binding an object of attributes -->
   <div v-bind="{ id: someProp, 'other-attr': otherProp }"></div>
 
-  
+  <!-- prop binding. "prop" must be declared in the child component. -->
   <MyComponent :prop="someThing" />
 
-  
+  <!-- pass down parent props in common with a child component -->
   <MyComponent v-bind="$props" />
 
-  
+  <!-- XLink -->
   <svg><a :xlink:special="foo"></a></svg>
   ```
 
@@ -332,7 +332,7 @@ Dynamically bind one or more attributes, or a component prop to an expression.
   ```vue-html
   <div :someProperty.prop="someObject"></div>
 
-  
+  <!-- equivalent to -->
   <div .someProperty="someObject"></div>
   ```
 
@@ -390,7 +390,7 @@ Denote named slots or scoped slots that expect to receive props.
 - **Example**
 
   ```vue-html
-  
+  <!-- Named slots -->
   <BaseLayout>
     <template v-slot:header>
       Header content
@@ -405,7 +405,7 @@ Denote named slots or scoped slots that expect to receive props.
     </template>
   </BaseLayout>
 
-  
+  <!-- Named slot that receives props -->
   <InfiniteScroll>
     <template v-slot:item="slotProps">
       <div class="item">
@@ -414,7 +414,7 @@ Denote named slots or scoped slots that expect to receive props.
     </template>
   </InfiniteScroll>
 
-  
+  <!-- Default slot that receive props, with destructuring -->
   <Mouse v-slot="{ x, y }">
     Mouse position: {{ x }}, {{ y }}
   </Mouse>
@@ -450,16 +450,16 @@ Render the element and component once only, and skip future updates.
   On subsequent re-renders, the element/component and all its children will be treated as static content and skipped. This can be used to optimize update performance.
 
   ```vue-html
-  
+  <!-- single element -->
   <span v-once>This will never change: {{msg}}</span>
-  
+  <!-- the element have children -->
   <div v-once>
     <h1>Comment</h1>
     <p>{{msg}}</p>
   </div>
-  
+  <!-- component -->
   <MyComponent v-once :comment="msg"></MyComponent>
-  
+  <!-- `v-for` directive -->
   <ul>
     <li v-for="i in list" v-once>{{i}}</li>
   </ul>

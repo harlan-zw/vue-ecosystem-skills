@@ -184,7 +184,7 @@ const timeRange = ref({
 
 <template>
   <div class="space-y-4">
-    
+    <!-- Hour and minute only -->
     <div>
       <label class="block text-sm font-medium mb-2">Hour and Minute</label>
       <TimeRangeFieldRoot v-model="timeRange" granularity="minute">
@@ -200,7 +200,7 @@ const timeRange = ref({
       </TimeRangeFieldRoot>
     </div>
 
-    
+    <!-- Hour only -->
     <div>
       <label class="block text-sm font-medium mb-2">Hour Only</label>
       <TimeRangeFieldRoot v-model="timeRange" granularity="hour">
@@ -212,7 +212,7 @@ const timeRange = ref({
       </TimeRangeFieldRoot>
     </div>
 
-    
+    <!-- Hour, minute, and second -->
     <div>
       <label class="block text-sm font-medium mb-2">Hour, Minute, and Second</label>
       <TimeRangeFieldRoot v-model="timeRange" granularity="second">
@@ -251,7 +251,7 @@ const timeRange = ref({
 
 <template>
   <div class="space-y-4">
-    
+    <!-- 24-hour format (default) -->
     <div>
       <label class="block text-sm font-medium mb-2">24-hour format</label>
       <TimeRangeFieldRoot v-model="timeRange" hour-cycle="h23">
@@ -267,7 +267,7 @@ const timeRange = ref({
       </TimeRangeFieldRoot>
     </div>
 
-    
+    <!-- 12-hour format with AM/PM -->
     <div>
       <label class="block text-sm font-medium mb-2">12-hour format</label>
       <TimeRangeFieldRoot v-model="timeRange" hour-cycle="h12">
@@ -285,7 +285,7 @@ const timeRange = ref({
       </TimeRangeFieldRoot>
     </div>
 
-    
+    <!-- French locale -->
     <div>
       <label class="block text-sm font-medium mb-2">French locale</label>
       <TimeRangeFieldRoot v-model="timeRange" locale="fr">

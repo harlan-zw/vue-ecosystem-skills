@@ -140,7 +140,32 @@ When using the loader plugin, there are a few scenarios which will require manua
 
 When using dynamic components the plugin is unable to parse which vuetify components are being rendered. This commonly occurs when using the built-in Vue `<component>`. More information about dynamic components can be found in the official Vue documentation.
 
+<!--
+`v-data-iterator` can use any component via the content-tag prop. This component must be registered [globally](#markup-js-a-la-carte-manual):
 
+```html
+<template>
+  <v-data-iterator content-tag="v-layout">
+    ...
+  </v-data-iterator>
+</template>
+```
+
+```js
+// src/plugins/vuetify.js
+
+import Vue from 'vue'
+import Vuetify, { VLayout } from 'vuetify/lib'
+
+Vue.use(Vuetify, {
+  components: { VLayout },
+})
+
+const opts = {}
+
+export default new Vuetify(opts)
+```
+-->
 
 Dynamic components using `<component>` can just be imported in setup components:
 

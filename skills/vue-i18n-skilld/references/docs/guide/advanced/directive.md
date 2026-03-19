@@ -38,9 +38,9 @@ Templates:
 
 ```html
 <div id="string-syntax">
-  
+  <!-- string literal -->
   <p v-t="'hello'"></p>
-  
+  <!-- keypath binding via data -->
   <p v-t="path"></p>
 </div>
 ```
@@ -100,11 +100,11 @@ Templates:
 
 ```html
 <div id="object-syntax">
-  
+  <!-- literal -->
   <p v-t="{ path: 'message.hi', args: { name: 'kazupon' } }"></p>
-  
+  <!-- data binding via data -->
   <p v-t="{ path: byePath, locale: 'en' }"></p>
-  
+  <!-- pluralization -->
   <p v-t="{ path: 'message.apple', plural: appleCount }"></p>
 </div>
 ```

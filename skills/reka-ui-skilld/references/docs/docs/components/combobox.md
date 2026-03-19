@@ -542,7 +542,7 @@ export { default as CommandItem } from 'CommandItem.vue'
 ```
 
 ```vue
-
+<!-- Command.vue -->
 <script setup lang="ts">
 import type { ComboboxRootEmits, ComboboxRootProps } from 'reka-ui'
 import { CheckIcon, ChevronDownIcon, ChevronUpIcon, } from '@radix-icons/vue'
@@ -579,7 +579,7 @@ const forward = useForwardPropsEmits(props, emits)
 ```
 
 ```vue
-
+<!-- ComboboxItem.vue -->
 <script setup lang="ts">
 import type { ComboboxItemProps } from 'reka-ui'
 import { CheckIcon } from '@radix-icons/vue'

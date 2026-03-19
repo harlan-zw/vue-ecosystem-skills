@@ -93,19 +93,19 @@ The work happening right now is a foundational step toward that vision. We're ta
   <v-app>
     <v-main>
       <v-container>
-        
+        <!-- Change to a specific theme -->
         <v-btn @click="theme.change('dark')">Change to Dark</v-btn>
 
-        
+        <!-- Toggle between Light / Dark -->
         <v-btn @click="theme.toggle()">Toggle Light / Dark</v-btn>
 
-        
+        <!-- Toggle between specific themes -->
         <v-btn @click="theme.toggle(['custom', 'light'])">Toggle Custom / Light</v-btn>
 
-        
+        <!-- Cycle between all themes -->
         <v-btn @click="theme.cycle()">Cycle All Themes</v-btn>
 
-        
+        <!-- Cycle between specific themes -->
         <v-btn @click="theme.cycle(['custom', 'light', 'utopia'])">Cycle Specific Themes</v-btn>
       </v-container>
     </v-main>

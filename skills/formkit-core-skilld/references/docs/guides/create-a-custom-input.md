@@ -59,7 +59,7 @@ const otp = createInput(OneTimePassword)
     />
   </FormKit>
 
-  
+  <!-- This is just to help us visualize the data in our form: -->
   <pre wrap>{{ values }}</pre>
 </template>
 ```
@@ -114,7 +114,7 @@ const otp = createInput(OneTimePassword)
     />
   </FormKit>
 
-  
+  <!-- This is just to help us visualize the data in our form: -->
   <pre wrap>{{ values }}</pre>
 </template>
 ```
@@ -192,7 +192,7 @@ const otp = createInput(OneTimePassword, {
     />
   </FormKit>
 
-  
+  <!-- This is just to help us visualize the data in our form: -->
   <pre wrap>{{ values }}</pre>
 </template>
 ```
@@ -291,7 +291,7 @@ const otp = createInput(OneTimePassword, {
     />
   </FormKit>
 
-  
+  <!-- This is just to help us visualize the data in our form: -->
   <pre wrap>{{ values }}</pre>
 </template>
 ```
@@ -451,7 +451,7 @@ const otp = createInput(OneTimePassword, {
     />
   </FormKit>
 
-  
+  <!-- This is just to help us visualize the data in our form: -->
   <pre wrap>{{ values }}</pre>
 </template>
 ```

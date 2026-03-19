@@ -29,7 +29,7 @@ import { ListboxContent, ListboxFilter, ListboxGroup, ListboxGroupLabel, Listbox
         <ListboxItemIndicator />
       </ListboxItem>
 
-      
+      <!-- or with group -->
       <ListboxGroup>
         <ListboxGroupLabel />
         <ListboxItem>
@@ -37,7 +37,7 @@ import { ListboxContent, ListboxFilter, ListboxGroup, ListboxGroupLabel, Listbox
         </ListboxItem>
       </ListboxGroup>
 
-      
+      <!-- or with virtual -->
       <ListboxVirtualizer>
         <ListboxItem>
           <ListboxItemIndicator />

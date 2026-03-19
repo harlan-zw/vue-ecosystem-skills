@@ -54,7 +54,7 @@ Use `happy-dom` or `jsdom` as your Vitest environment since components need a DO
 Example component:
 
 ```vue
-
+<!-- ContactList.vue -->
 <script setup lang="ts">
 import { useQuery } from '@pinia/colada'
 
@@ -130,7 +130,7 @@ it('handles errors', async () => {
 Example component:
 
 ```vue
-
+<!-- CreateContact.vue -->
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useMutation } from '@pinia/colada'

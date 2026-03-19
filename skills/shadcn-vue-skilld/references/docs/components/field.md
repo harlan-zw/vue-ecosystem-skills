@@ -76,7 +76,7 @@ The `Field` family is designed for composing accessible forms. A typical field i
     <FieldLabel for="input-id">
       Label
     </FieldLabel>
-    
+    <!-- Input, Select, Switch, etc. -->
     <FieldDescription>Optional helper text.</FieldDescription>
     <FieldError>Validation message.</FieldError>
   </Field>
@@ -237,7 +237,7 @@ Container that renders a semantic `fieldset` with spacing presets.
   <FieldSet>
     <FieldLegend>Delivery</FieldLegend>
     <FieldGroup>
-      
+      <!-- Fields -->
     </FieldGroup>
   </FieldSet>
 </template>
@@ -271,8 +271,8 @@ Layout wrapper that stacks `Field` components and enables container queries for 
 ```vue
 <template>
   <FieldGroup class="@container/field-group flex flex-col gap-6">
-    <Field></Field>
-    <Field></Field>
+    <Field><!-- Fields --></Field>
+    <Field><!-- Fields --></Field>
   </FieldGroup>
 </template>
 ```

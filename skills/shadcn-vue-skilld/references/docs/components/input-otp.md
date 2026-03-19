@@ -114,7 +114,7 @@ import { REGEXP_ONLY_DIGITS_AND_CHARS } from 'vue-input-otp'
   >
     <InputOTPGroup>
       <InputOTPSlot :index="0" />
-      
+      <!-- ... -->
     </InputOTPGroup>
   </InputOTP>
 </template>

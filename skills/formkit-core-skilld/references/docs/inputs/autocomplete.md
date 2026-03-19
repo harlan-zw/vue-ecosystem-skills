@@ -137,7 +137,7 @@ async function searchMovies({ search }) {
 </script>
 
 <template>
-  
+  <!--Setting the `options` prop to async function `loadHorrorMovies`-->
   <FormKit
     name="movie"
     type="autocomplete"
@@ -348,7 +348,7 @@ async function searchMovies({ search }) {
 
 <template>
   <FormKit type="form" #default="{ value }" :actions="false">
-    
+    <!--Setting the `options` prop to async function `loadHorrorMovies`-->
     <FormKit
       name="movie"
       type="autocomplete"
@@ -404,7 +404,7 @@ import carBrands from './_examples___data__car-brands.js'
     selection-appearance="option"
     popover
   >
-    
+    <!--OPTION SLOT-->
     <template #option="{ option, classes }">
       <div :class="classes.option">
         <img :src="option.logo" :alt="option.label + ' logo'" />
@@ -413,7 +413,7 @@ import carBrands from './_examples___data__car-brands.js'
         </span>
       </div>
     </template>
-    
+    <!--/OPTION SLOT-->
   </FormKit>
 </template>
 
@@ -507,7 +507,7 @@ If you only want to customize the display of the selected option, set the select
     selection-appearance="option"
     value="audi"
   >
-    
+    <!--SELECTION SLOT-->
     <template #selection="{ option, classes }">
       <div :class="classes.selection">
         <div :class="`${classes.option} flex items-center`">
@@ -522,7 +522,7 @@ If you only want to customize the display of the selected option, set the select
         </div>
       </div>
     </template>
-    
+    <!--/SELECTION SLOT-->
   </FormKit>
   <FormKit
     type="autocomplete"
@@ -534,7 +534,7 @@ If you only want to customize the display of the selected option, set the select
     multiple
     :value="['toyota', 'honda']"
   >
-    
+    <!--SELECTION SLOT-->
     <template #selection="{ option, classes }">
       <div :class="`${classes.selection} !p-0`">
         <div :class="`${classes.option} flex items-center`">
@@ -549,7 +549,7 @@ If you only want to customize the display of the selected option, set the select
         </div>
       </div>
     </template>
-    
+    <!--/SELECTION SLOT-->
   </FormKit>
 ```
 

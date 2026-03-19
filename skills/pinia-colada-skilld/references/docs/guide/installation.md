@@ -58,7 +58,7 @@ import { PiniaColadaDevtools } from '@pinia/colada-devtools'
 
 <template>
   <main>
-    
+    <!-- Your app content here -->
   </main>
 
   <PiniaColadaDevtools  />

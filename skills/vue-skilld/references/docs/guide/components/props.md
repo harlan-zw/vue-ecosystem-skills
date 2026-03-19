@@ -235,10 +235,10 @@ So far, you've seen props passed as static values, like in:
 You've also seen props assigned dynamically with `v-bind` or its `:` shortcut, such as in:
 
 ```vue-html
-
+<!-- Dynamically assign the value of a variable -->
 <BlogPost :title="post.title" />
 
-
+<!-- Dynamically assign the value of a complex expression -->
 <BlogPost :title="post.title + ' by ' + post.author.name" />
 ```
 
@@ -249,44 +249,44 @@ In the two examples above, we happen to pass string values, but _any_ type of va
 #### Number {#number}
 
 ```vue-html
-
-
+<!-- Even though `42` is static, we need v-bind to tell Vue that -->
+<!-- this is a JavaScript expression rather than a string.       -->
 <BlogPost :likes="42" />
 
-
+<!-- Dynamically assign to the value of a variable. -->
 <BlogPost :likes="post.likes" />
 ```
 
 #### Boolean {#boolean}
 
 ```vue-html
-
+<!-- Including the prop with no value will imply `true`. -->
 <BlogPost is-published />
 
-
-
+<!-- Even though `false` is static, we need v-bind to tell Vue that -->
+<!-- this is a JavaScript expression rather than a string.          -->
 <BlogPost :is-published="false" />
 
-
+<!-- Dynamically assign to the value of a variable. -->
 <BlogPost :is-published="post.isPublished" />
 ```
 
 #### Array {#array}
 
 ```vue-html
-
-
+<!-- Even though the array is static, we need v-bind to tell Vue that -->
+<!-- this is a JavaScript expression rather than a string.            -->
 <BlogPost :comment-ids="[234, 266, 273]" />
 
-
+<!-- Dynamically assign to the value of a variable. -->
 <BlogPost :comment-ids="post.commentIds" />
 ```
 
 #### Object {#object}
 
 ```vue-html
-
-
+<!-- Even though the object is static, we need v-bind to tell Vue that -->
+<!-- this is a JavaScript expression rather than a string.             -->
 <BlogPost
   :author="{
     name: 'Veronica',
@@ -294,7 +294,7 @@ In the two examples above, we happen to pass string values, but _any_ type of va
   }"
  />
 
-
+<!-- Dynamically assign to the value of a variable. -->
 <BlogPost :author="post.author" />
 ```
 
@@ -696,10 +696,10 @@ export default {
 The component can be used like this:
 
 ```vue-html
-
+<!-- equivalent of passing :disabled="true" -->
 <MyComponent disabled />
 
-
+<!-- equivalent of passing :disabled="false" -->
 <MyComponent />
 ```
 
