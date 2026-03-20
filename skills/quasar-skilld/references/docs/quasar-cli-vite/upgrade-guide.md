@@ -19,7 +19,7 @@ api.compatibleWith(
 
 ### Notable breaking changes
 
-* Minimum Node.js version is now 20 (mainly due to Vite 7)
+* Minimum Node.js version is now 22 (mainly due to Vite 8)
 * We have shifted towards an ESM style for the whole Quasar project folder, so many default project files now require ESM code (although using `.cjs` as an extension for these files is supported, but you will most likely need to rename the extension should you not wish to change anything). One example is the `/quasar.config.js` file which now it's assumed to be ESM too (so change from `.js` to `.cjs` should you still want a CommonJs file).
 * The "test" cmd was removed due to latest updates for @quasar/testing-* packages. See here
 * The "clean" cmd has been re-designed. Type "quasar clean -h" in your upgraded Quasar project folder for more info.
@@ -36,10 +36,10 @@ api.compatibleWith(
 
 Some of the work below has already been backported to the old @quasar/app-vite v1, but posting here for reader's awareness.
 
-* feat(app-vite): upgrade to Vite 7
+* feat(app-vite): upgrade to Vite 8
 * feat(app-vite): ability to run multiple quasar dev/build commands simultaneously (example: can run "quasar dev -m capacitor" and "quasar dev -m ssr" and "quasar dev -m capacitor -T ios" simultaneously)
 * feat(app-vite): Better TS typings overall
-* refactor(app-vite): port CLI to ESM format (major effort! especially to support Vite 7 and SSR)
+* refactor(app-vite): port CLI to ESM format (major effort! especially to support Vite 8 and SSR)
 * feat(app-vite): support for quasar.config file in multiple formats (.js, .mjs, .ts, .cjs)
 * feat(app-vite): Improve quasarConfOptions, generate types for it, improve docs (fix: #14069) (#15945)
 * feat(app-vite): reload app if one of the imports from quasar.config file changes
@@ -96,7 +96,7 @@ When asked to "Pick Quasar App CLI variant", answer with: "Quasar App CLI with V
 Preparations:
 
 * If using the global installation of Quasar CLI (`@quasar/cli`), make sure that you have the latest one. This is due to the support of quasar.config file in multiple formats.
-* Again, we highlight that the minimum supported version of Node.js is now v20 (always use the LTS versions of Node.js - the higher the version the better).
+* Again, we highlight that the minimum supported version of Node.js is now v22 (always use the LTS versions of Node.js - the higher the version the better).
 
 * Edit your `/package.json` on the `@quasar/app-vite` entry and assign it `^2.0.0`:
   ```diff /package.json
@@ -472,7 +472,8 @@ $ bun add register-service-worker@^1.0.0
 Edit your `/src-pwa/custom-service-worker.js` file:
 
 ```diff /src-pwa/custom-service-worker.js
-if (process.env.MODE !== 'ssr' || process.env.PROD) {
+- if (process.env.MODE !== 'ssr' || process.env.PROD) {
++ if (process.env.PROD) {
   registerRoute(
     new NavigationRoute(
       createHandlerBoundToURL(process.env.PWA_FALLBACK_HTML),
@@ -792,7 +793,7 @@ For TS devs, you should also make a small change to your /src-ssr/middlewares fi
 + import { type Request, type Response } from 'express';
 // ...
 - app.get(resolve.urlPath('*'), (req, res) => {
-+ app.get(resolve.urlPath('*'), (req: Request, res: Response) => {
++ app.get(resolve.urlPath('{*path}'), (req: Request, res: Response) => {
 ```
 
 There are some additions to the `/quasar.config` file too:

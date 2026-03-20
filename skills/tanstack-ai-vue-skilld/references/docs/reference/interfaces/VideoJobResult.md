@@ -5,7 +5,7 @@ title: VideoJobResult
 
 # Interface: VideoJobResult
 
-Defined in: types.ts:1073
+Defined in: types.ts:1090
 
 **`Experimental`**
 
@@ -21,7 +21,7 @@ Result of creating a video generation job.
 jobId: string;
 ```
 
-Defined in: types.ts:1075
+Defined in: types.ts:1092
 
 **`Experimental`**
 
@@ -35,7 +35,7 @@ Unique job identifier for polling status
 model: string;
 ```
 
-Defined in: types.ts:1077
+Defined in: types.ts:1094
 
 **`Experimental`**
 

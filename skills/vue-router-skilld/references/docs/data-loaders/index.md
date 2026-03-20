@@ -17,6 +17,7 @@ This is achieved by extracting the loading logic **outside** of the component `s
 
 Install the `DataLoaderPlugin` **before the `router`**.
 
+
 ```ts{12-15} twoslash
 // @errors: 2769 2345
 import { createApp } from 'vue'
@@ -39,7 +40,7 @@ app.mount('#app')
 
 ## Quick start
 
-There are different data loaders implementation, the most simple one is the [Basic Loader](./basic/) which always reruns data fetching. A more efficient one, is the [Colada Loader](./colada/) which uses @pinia/colada under the hood. In the following examples, we will be using the _basic loader_.
+There are different data loader implementations. The simplest one is the [Basic Loader](./basic/) which always reruns data fetching. A more efficient one is the [Colada Loader](./colada/) which uses @pinia/colada under the hood. In the following examples, we will be using the _basic loader_.
 
 Loaders are composables defined through a `defineLoader` function like `defineBasicLoader` or `defineColadaLoader`. They are _used_ in the component `setup` to extract the needed information.
 

@@ -18,7 +18,7 @@ Currently, it is recommended to use Composition API with `<script setup>`. Check
 
 ```html
 <template>
-  
+  <!-- you define your Vue template here -->
 </template>
 
 <script setup>
@@ -37,7 +37,7 @@ But you can still use Composition API without `<script setup>` or Options API if
 
 ```html
 <template>
-  
+  <!-- you define your Vue template here -->
 </template>
 
 <script>
@@ -62,13 +62,13 @@ For the `<style>` tag, you can also use whatever CSS preprocessor you want. Sass
 You can specify you want your chosen preprocessor to handle the CSS code that you're writing:
 
 ```html
-
+<!-- notice lang="sass" -->
 <style lang="sass">
 .some-div
   font-size: 15px
 </style>
 
-
+<!-- notice lang="scss" -->
 <style lang="scss">
 .some-div {
   font-size: 15px;
@@ -204,7 +204,7 @@ Both forms are valid and can be used, except for UMD where you must explicitly c
 
 ```html
 <div class="col" />
-
+<!-- equivalent to: -->
 <div class="col"></div>
 ```
 
@@ -255,7 +255,10 @@ If, on the other hand, you know this Boolean value is not going to change, you c
 <template>
   <q-bogus infinite />
 
-  
+  <!--
+    the following is perfectly valid,
+    but it's a longer version
+  -->
   <q-bogus :infinite="true" />
 </template>
 ```
@@ -265,10 +268,17 @@ As you can imagine, Strings are required as a value for this type of property.
 
 ```html
 <template>
-  
+  <!--
+    direct assignment, no need for
+    a variable in our scope
+  -->
   <q-bogus size="24px" />
 
-  
+  <!--
+    we can also bind it to a variable
+    in our scope so we can dynamically
+    change it
+  -->
   <q-bogus :size="mySize" />
 </template>
 
@@ -291,10 +301,13 @@ export default {
 
 ```html
 <template>
-  
+  <!--
+    Case 1. Direct assignment.
+    Notice the colon (":") before property name.
+  -->
   <q-bogus :speed="50" />
 
-  
+  <!-- Case 2. Assignment through a scope variable -->
   <q-bogus :speed="myNumber" />
 </template>
 
@@ -317,10 +330,10 @@ export default {
 
 ```html
 <template>
-  
+  <!-- Case 1. Direct assignment. -->
   <q-bogus :columns="{key: 'value', anotherKey: 'another value'}" />
 
-  
+  <!-- Case 2. Assignment through a scope variable -->
   <q-bogus :columns="myColumns" />
 </template>
 
@@ -344,10 +357,10 @@ export default {
 
 ```html
 <template>
-  
+  <!-- Case 1. Direct assignment. -->
   <q-bogus :offset="[10, 20]" />
 
-  
+  <!-- Case 2. Assignment through a scope variable -->
   <q-bogus :offset="myOffset" />
 </template>
 
@@ -375,7 +388,10 @@ In order for you to access these methods, you will need to set a Vue reference o
 
 ```html
 <template>
-  
+  <!--
+    Notice ref="myRef". We will use the name
+    assigned to "ref" in the script part below
+  -->
   <q-bogus ref="myRef" />
 </template>
 
@@ -406,7 +422,10 @@ And here is the same example, but with Options API:
 
 ```html
 <template>
-  
+  <!--
+    Notice ref="myRef". We will use the name
+    assigned to "ref" in the script part below
+  -->
   <q-bogus ref="myRef" />
 </template>
 

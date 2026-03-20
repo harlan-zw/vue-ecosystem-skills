@@ -1,6 +1,3 @@
----
-url: /cookbook/cache-persistence.md
----
 # Cache Persistence
 
 Persist your query cache to storage so users don't start with empty state on page reload.

@@ -1,6 +1,3 @@
----
-url: /data-loaders/reloading-data.md
----
 # Reloading data
 
 Very often, it is required to reload the data (e.g. fetch the latest data) without navigating. Since Vue Router considers that a duplicated navigation, we cannot just `router.push()` and expect navigation guards to run again to fetch the latest data. To overcome this, data loaders expose a convenient `reload` method that can be invoked to manually rerun the loader **without navigating**. This has some extra implications we will cover in this page.

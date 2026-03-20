@@ -1,5 +1,5 @@
 ---
-url: /guide/extras/composition-api-faq.md
+outline: deep
 ---
 
 # Composition API FAQ {#composition-api-faq}

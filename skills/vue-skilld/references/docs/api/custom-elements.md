@@ -1,6 +1,3 @@
----
-url: /api/custom-elements.md
----
 # Custom Elements API {#custom-elements-api}
 
 ## defineCustomElement() {#definecustomelement}

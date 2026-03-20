@@ -1,6 +1,3 @@
----
-url: /api/options-composition.md
----
 # Options: Composition {#options-composition}
 
 ## provide {#provide}

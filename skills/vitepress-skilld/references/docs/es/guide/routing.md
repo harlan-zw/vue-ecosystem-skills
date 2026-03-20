@@ -84,11 +84,11 @@ src/getting-started.md  -->  /getting-started.html
 Puede usar tanto paths absolutos como relativos al vincular páginas. Note que, incluso si ambas extensiones `.md` y `.html` funcionan, funcionem, la práctica recomendada es omitir las extensiones de archivo para que VitePress pueda generar las URLs finales con base en su configuración.
 
 ```md
-
+<!-- Hacer -->
 [Getting Started](./getting-started)
 [Getting Started](../guide/getting-started)
 
-
+<!-- No hacer -->
 [Getting Started](./getting-started.md)
 [Getting Started](./getting-started.html)
 ```
@@ -367,5 +367,5 @@ export default {
 En seguida, use la siguiente sintaxis especial para presentar el contenido como parte del propio archivo Markdown:
 
 ```md
-
+<!-- @content -->
 ```

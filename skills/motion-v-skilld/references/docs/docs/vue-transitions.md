@@ -1,14 +1,102 @@
----
-title: "Vue transitions — Configure Motion animations | Motion"
-meta:
-  "og:description": "Define animation behavior with Motion for Vue's transition prop. Choose time-based or physics-based animations. Customize duration, easing, delay, and repeat."
-  "og:title": "Vue transitions — Configure Motion animations | Motion"
-  "twitter:description": "Define animation behavior with Motion for Vue's transition prop. Choose time-based or physics-based animations. Customize duration, easing, delay, and repeat."
-  "twitter:title": "Vue transitions — Configure Motion animations | Motion"
-  description: "Define animation behavior with Motion for Vue's transition prop. Choose time-based or physics-based animations. Customize duration, easing, delay, and repeat."
----
+Vue transitions — Configure Motion animations | Motion
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+AI Kit
+
+
+
+Motion+
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+
+
+Motion+
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+AI Kit
+
+
+
+Motion+
+
+Documentation
+
+<h2>JS</h2> <h2>React</h2> Vue Studio
+
+<h3>Get started</h3> <h3>Examples</h3>
+
+### Animation
+
+- Overview
+- Directive
+- Gesture
+- Layout
+- Scroll
+- Transition options
+
+### Components
+
+- motion
+- AnimatePresence
+- LayoutGroup
+- LazyMotion
+- MotionConfig
+- Reorder
+
+### Premium APIs
+
+- AnimateNumber
+- Cursor
+- Ticker
+- Typewriter
+
+### Motion values
+
+- Overview
+- useMotionTemplate
+- useMotionValueEvent
+- useScroll
+- useSpring
+- useTime
+- useTransform
+- useVelocity
+
+### Hooks
+
+- useAnimate
+- useAnimationFrame
+- useDragControls
+- useInView
+- useReducedMotion
+
+### Integrations
+
+- Reka
 
 Vue
+
+Copy page
 
 # Transition options
 
@@ -102,6 +190,8 @@ Duration-based spring animations are set via a `duration` and `bounce`. These do
 
 #### [Spring visualiser](#spring-visualiser)
 
+Time Physics
+
 DurationBounceUse visual duration
 
 ### [Tween](#tween)
@@ -226,7 +316,6 @@ Stiffness of the spring. Higher values will create more sudden movement.
 />
 
 > _I never really understood how_`_damping_`_,_`_mass_`_ and_`_stiffness_`_ influence a spring animation, so I made a__tool for myself__ to visualise it._~ Emil Kowalski, Animations on the Web
-
 #### [`velocity`](#velocity)
 
 **Default:** Current value velocity
@@ -561,6 +650,8 @@ Duration-based spring animations are set via a `duration` and `bounce`. These do
 
 #### [Spring visualiser](#spring-visualiser)
 
+Time Physics
+
 DurationBounceUse visual duration
 
 ### [Tween](#tween)
@@ -685,7 +776,6 @@ Stiffness of the spring. Higher values will create more sudden movement.
 />
 
 > _I never really understood how_`_damping_`_,_`_mass_`_ and_`_stiffness_`_ influence a spring animation, so I made a__tool for myself__ to visualise it._~ Emil Kowalski, Animations on the Web
-
 #### [`velocity`](#velocity)
 
 **Default:** Current value velocity
@@ -1020,6 +1110,8 @@ Duration-based spring animations are set via a `duration` and `bounce`. These do
 
 #### [Spring visualiser](#spring-visualiser)
 
+Time Physics
+
 DurationBounceUse visual duration
 
 ### [Tween](#tween)
@@ -1144,7 +1236,6 @@ Stiffness of the spring. Higher values will create more sudden movement.
 />
 
 > _I never really understood how_`_damping_`_,_`_mass_`_ and_`_stiffness_`_ influence a spring animation, so I made a__tool for myself__ to visualise it._~ Emil Kowalski, Animations on the Web
-
 #### [`velocity`](#velocity)
 
 **Default:** Current value velocity
@@ -1435,7 +1526,50 @@ animations.dev
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 
@@ -1453,7 +1587,50 @@ Upgrade
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 
@@ -1471,7 +1648,50 @@ Upgrade
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 

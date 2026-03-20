@@ -48,7 +48,7 @@ outline: deep
 
     - نوشته شده توسط {{ $params.author }} در تاریخ {{ $params.date }}
 
-    
+    <!-- @content -->
     ```
 
 ## راهنماهای ادغام {#integration-guides}

@@ -1,6 +1,3 @@
----
-url: /guide/essentials/class-and-style.md
----
 # Class and Style Bindings {#class-and-style-bindings}
 
 A common need for data binding is manipulating an element's class list and inline styles. Since `class` and `style` are both attributes, we can use `v-bind` to assign them a string value dynamically, much like with other attributes. However, trying to generate those values using string concatenation can be annoying and error-prone. For this reason, Vue provides special enhancements when `v-bind` is used with `class` and `style`. In addition to strings, the expressions can also evaluate to objects or arrays.
@@ -204,14 +201,14 @@ When you use the `class` attribute on a component with a single root element, th
 For example, if we have a component named `MyComponent` with the following template:
 
 ```vue-html
-
+<!-- child component template -->
 <p class="foo bar">Hi!</p>
 ```
 
 Then add some classes when using it:
 
 ```vue-html
-
+<!-- when using the component -->
 <MyComponent class="baz boo" />
 ```
 
@@ -236,7 +233,7 @@ When `isActive` is truthy, the rendered HTML will be:
 If your component has multiple root elements, you would need to define which element will receive this class. You can do this using the `$attrs` component property:
 
 ```vue-html
-
+<!-- MyComponent template using $attrs -->
 <p :class="$attrs.class">Hi!</p>
 <span>This is a child component</span>
 ```

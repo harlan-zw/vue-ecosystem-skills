@@ -29,7 +29,7 @@ This component will *NOT* work as-is within the UMD version of Quasar. Browsers 
 ```html
 <q-markup-table>
   <template>
-    
+    <!-- your content -->
   </template>
 </q-markup-table>
 ```

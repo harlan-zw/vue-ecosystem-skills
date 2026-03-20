@@ -10,7 +10,7 @@ If you are a more advanced Vue developer, we invite you to start off by [decidin
 :::
 
 ## Prerequisites
-Make sure that you have Node.js >=20 (or any newer **LTS Node.js version**) and NPM v6+ or Yarn v1 (classic) or PNPM v8+ or Bun installed on your machine. Please do not use any odd versions of Node, as these are considered experimental.
+Make sure that you have Node.js >=22 (or any newer **LTS Node.js version**) and NPM v6+ or Yarn v1 (classic) or PNPM v8+ or Bun installed on your machine. Please do not use any odd versions of Node, as these are considered experimental.
 
 ## Step 1: Create a Project
 Navigate to the folder above where you want your project to be. Quasar will later prompt you for the name of the project folder and create that folder within this.

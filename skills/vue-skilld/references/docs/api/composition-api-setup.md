@@ -1,6 +1,3 @@
----
-url: /api/composition-api-setup.md
----
 # Composition API: setup() {#composition-api-setup}
 
 ## Basic Usage {#basic-usage}

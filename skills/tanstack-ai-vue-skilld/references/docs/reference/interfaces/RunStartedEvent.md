@@ -5,7 +5,7 @@ title: RunStartedEvent
 
 # Interface: RunStartedEvent
 
-Defined in: types.ts:763
+Defined in: types.ts:764
 
 Emitted when a run starts.
 This is the first event in any streaming response.
@@ -22,7 +22,7 @@ This is the first event in any streaming response.
 optional model: string;
 ```
 
-Defined in: types.ts:750
+Defined in: types.ts:751
 
 Model identifier for multi-model support
 
@@ -38,7 +38,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:752
+Defined in: types.ts:753
 
 Original provider event for debugging/advanced use cases
 
@@ -54,7 +54,7 @@ Original provider event for debugging/advanced use cases
 runId: string;
 ```
 
-Defined in: types.ts:766
+Defined in: types.ts:767
 
 Unique identifier for this run
 
@@ -66,7 +66,7 @@ Unique identifier for this run
 optional threadId: string;
 ```
 
-Defined in: types.ts:768
+Defined in: types.ts:769
 
 Optional thread/conversation ID
 
@@ -78,7 +78,7 @@ Optional thread/conversation ID
 timestamp: number;
 ```
 
-Defined in: types.ts:748
+Defined in: types.ts:749
 
 #### Inherited from
 
@@ -92,7 +92,7 @@ Defined in: types.ts:748
 type: "RUN_STARTED";
 ```
 
-Defined in: types.ts:764
+Defined in: types.ts:765
 
 #### Overrides
 

@@ -1,6 +1,3 @@
----
-url: /api/application.md
----
 # Application API {#application-api}
 
 ## createApp() {#createapp}

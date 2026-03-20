@@ -87,7 +87,7 @@ export const useTodos = createGlobalState(
 ```
 
 ```vue
-
+<!-- app.vue -->
 <script setup lang="ts">
 // @include: store
 // ---cut---

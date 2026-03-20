@@ -1,6 +1,3 @@
----
-url: /api/custom-renderer.md
----
 # Custom Renderer API {#custom-renderer-api}
 
 ## createRenderer() {#createrenderer}

@@ -1,10 +1,9 @@
----
-url: /guide/migration/v4-to-v5.md
----
 # Migrating to Vue Router 5
 
-> \[!TIP]
-> Vue Router 5 is a transition release that merges unplugin-vue-router (file-based routing) into the core package. **If you're using Vue Router 4 without unplugin-vue-router, there are no breaking changes** - you can upgrade without any code modifications. The only exception is that the *iife* build no longer includes `@vue/devtools-api` because it has been upgraded to v8 and does not expose an IIFE build itself. You can track that change in this issue.
+<RuleKitLink />
+
+> [!TIP]
+> Vue Router 5 is a transition release that merges unplugin-vue-router (file-based routing) into the core package. **If you're using Vue Router 4 without unplugin-vue-router, there are no breaking changes** - you can upgrade without any code modifications. The only exception is that the _iife_ build no longer includes `@vue/devtools-api` because it has been upgraded to v8 and does not expose an IIFE build itself. You can track that change in this issue.
 >
 > Vue Router 6 will be ESM-only and remove deprecated APIs. v5 gives you time to prepare for that transition.
 
@@ -22,6 +21,10 @@ If you were using unplugin-vue-router for file-based routing, migration is mostl
 
 ### Migration Checklist (TLDR)
 
+
+
+<MigrationChecklist />
+
 ### 1. Update Dependencies
 
 ```bash
@@ -32,6 +35,7 @@ pnpm update vue-router@5
 ### 2. Update Imports
 
 **Vite plugin:**
+
 
 ```ts
 import VueRouter from 'unplugin-vue-router/vite' // [!code --]
@@ -54,6 +58,7 @@ VueRouter.rollup({
 
 **Data loaders:**
 
+
 ```ts
 import { defineBasicLoader } from 'unplugin-vue-router/data-loaders/basic' // [!code --]
 import { defineColadaLoader } from 'unplugin-vue-router/data-loaders/pinia-colada' // [!code --]
@@ -63,6 +68,7 @@ import { defineColadaLoader } from 'vue-router/experimental/pinia-colada' // [!c
 ```
 
 **Unplugin utilities (for custom integrations):**
+
 
 ```ts
 import {
@@ -78,12 +84,14 @@ import {
 
 **Types:**
 
+
 ```ts
 import type { Options, EditableTreeNode } from 'unplugin-vue-router' // [!code --]
 import type { Options, EditableTreeNode } from 'vue-router/unplugin' // [!code ++]
 ```
 
 **Volar plugins:**
+
 
 ```jsonc
 // tsconfig.json
@@ -99,6 +107,7 @@ import type { Options, EditableTreeNode } from 'vue-router/unplugin' // [!code +
   },
 }
 ```
+
 
 ```jsonc
 // tsconfig.json
@@ -119,6 +128,7 @@ import type { Options, EditableTreeNode } from 'vue-router/unplugin' // [!code +
 
 It's recommended to move the generated types file inside `src/` and rename it to `route-map.d.ts`, as it's automatically included by most setups:
 
+
 ```ts
 // vite.config.ts
 export default defineConfig({
@@ -133,11 +143,13 @@ export default defineConfig({
 
 Remove the old client types reference. These were either added to an `env.d.ts`:
 
+
 ```ts
 /// <reference types="unplugin-vue-router/client" /> // [!code --]
 ```
 
 or to your `tsconfig.json`:
+
 
 ```jsonc
 {

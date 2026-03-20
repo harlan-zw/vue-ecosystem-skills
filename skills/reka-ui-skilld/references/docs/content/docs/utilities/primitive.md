@@ -49,7 +49,7 @@ const props = withDefaults(defineProps<PrimitiveProps>(), {
 </script>
 
 <template>
-  
+  <!-- Now this element will be rendered as `span` by default -->
   <Primitive v-bind="props">
     ...
   </Primitive>

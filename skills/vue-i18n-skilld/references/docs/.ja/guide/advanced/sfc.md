@@ -315,7 +315,7 @@ On inlined `i18n` custom blocks that have specified the `lang` attribute, the `d
 For example, in order to configure `yml` format on all your inlined `i18n` custom blocks on all your SFC:
 
 ```html
-
+<!-- custom block equivalent to &lt;i18n lang="yml"> -->
 <i18n>
 en:
   hello: Hello
@@ -417,7 +417,7 @@ If you are using one of `@intlify/vite-plugin-vue-i18n` plugin on your project, 
 For example, in order to configure `global` scope on all your `i18n` custom blocks on all your SFC:
 
 ```html
-
+<!-- custom block equivalent to &lt;i18n lang="yml" global> -->
 <i18n lang="yml">
 en:
   hello: Hello
@@ -429,7 +429,7 @@ es:
 or
 
 ```html
-
+<!-- custom block equivalent to &lt;i18n src="./locales/myMessages.json" global> -->
 <i18n src="./locales/myMessages.json5">
 </i18n>
 ```

@@ -59,7 +59,7 @@ const childProps = reactivePick(props, 'color', 'font')
 
 <template>
   <div>
-    
+    <!-- only passes "color" and "font" props to child -->
     <ChildComp v-bind="childProps" />
   </div>
 </template>

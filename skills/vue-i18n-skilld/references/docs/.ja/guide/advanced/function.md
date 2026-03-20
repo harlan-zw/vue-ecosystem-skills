@@ -81,10 +81,7 @@ Here is the example of greeting:
 ```js
 const messages = {
   en: {
-    greeting: ({ named }) => `hello, ${named('name')}!`
-  }
-}
-```
+    greeting: ({ named }) => `hello, ${named('name')}``
 
 Template:
 
@@ -111,10 +108,7 @@ Here is the example of greeting:
 ```js
 const messages = {
   en: {
-    greeting: ({ list }) => `hello, ${list(0)}!`
-  }
-}
-```
+    greeting: ({ list }) => `hello, ${list(0)}``
 
 Template:
 
@@ -144,10 +138,7 @@ const messages = {
   en: {
     the_world: 'the world',
     dio: 'DIO:',
-    linked: ({ linked }) => `${linked('message.dio')} ${linked('message.the_world')} !!!!`
-  }
-}
-```
+    linked: ({ linked }) => `${linked('message.dio')} ${linked('message.the_world')} !!!``
 
 Template:
 

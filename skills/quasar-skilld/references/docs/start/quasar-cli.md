@@ -24,7 +24,7 @@ You will also be able to use the command line, so it will be almost identical to
 ## TL;DR
 
 ::: tip Requirements:
-* Node.js v20+
+* Node.js v22+
 * Yarn v1 (classic), PNPM, NPM or Bun
 :::
 
@@ -54,7 +54,7 @@ Pick `Quasar CLI with Vite` if you want:
 ## Installation / Project Scaffolding
 
 ::: tip Requirements:
-* Node.js v12+ for Quasar CLI with Webpack, Node.js v20+ for Quasar CLI with Vite.
+* Node.js v20+ for Quasar CLI with Webpack, Node.js v22+ for Quasar CLI with Vite.
 * Yarn v1 (classic), PNPM, or NPM.
 :::
 

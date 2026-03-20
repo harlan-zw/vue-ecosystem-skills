@@ -111,7 +111,7 @@ Since User layout wraps inner pages, they need an injection point. This is suppl
   <q-layout>
     ...
 
-    
+    <!-- this is where the Pages are injected -->
     <q-page-container>
       <router-view></router-view>
     </q-page-container>
@@ -222,7 +222,10 @@ Please notice a few things:
   <q-layout>
     ...
     <q-page-container>
-      
+      <!--
+        This is where your pages will get
+        injected into your Layout
+      -->
       <router-view />
     </q-page-container>
     ...

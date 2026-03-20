@@ -116,8 +116,8 @@ Nous utilisons Jest pour cet exemple, qui ne réinitialise pas le DOM à chaque 
 La prochaine étape consiste à remplir le champ "nom d'utilisateur". Malheureusement, nous ne pouvons pas utiliser `wrapper.find('input')`. Pourquoi&nbsp;? Un rapide `console.log(wrapper.html())` nous montre que&nbsp;:
 
 ```html
-
-
+<!--teleport starts here-->
+<!--teleport ends here-->
 ```
 
 Nous voyons certains commentaires utilisés par Vue pour gérer `<Teleport>` - mais pas de `<input>` ici. C'est parce que le composant `<Signup>` (et son HTML) ne sont plus affichés à l'intérieur de `<Navbar>` - il a été téléporté à l'extérieur.

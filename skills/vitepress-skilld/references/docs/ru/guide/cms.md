@@ -50,7 +50,7 @@ outline: deep
 
    - Автор: {{ $params.author }}, {{ $params.date }}
 
-   
+   <!-- @content -->
    ```
 
 ## Руководства по интеграции {#integration-guides}

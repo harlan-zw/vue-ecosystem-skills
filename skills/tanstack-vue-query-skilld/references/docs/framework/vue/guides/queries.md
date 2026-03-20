@@ -28,7 +28,7 @@ const { isPending, isError, data, error } = useQuery({
 <template>
   <span v-if="isPending">Loading...</span>
   <span v-else-if="isError">Error: {{ error.message }}</span>
-  
+  <!-- We can assume by this point that `isSuccess === true` -->
   <ul v-else-if="data">
     <li v-for="todo in data" :key="todo.id">{{ todo.title }}</li>
   </ul>
@@ -51,7 +51,7 @@ const { status, data, error } = useQuery({
 <template>
   <span v-if="status === 'pending'">Loading...</span>
   <span v-else-if="status === 'error'">Error: {{ error.message }}</span>
-  
+  <!-- also status === 'success', but "else" logic works, too -->
   <ul v-else-if="data">
     <li v-for="todo in data" :key="todo.id">{{ todo.title }}</li>
   </ul>

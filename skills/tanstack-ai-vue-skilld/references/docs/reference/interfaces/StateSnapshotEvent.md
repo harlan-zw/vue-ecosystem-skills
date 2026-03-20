@@ -5,7 +5,7 @@ title: StateSnapshotEvent
 
 # Interface: StateSnapshotEvent
 
-Defined in: types.ts:903
+Defined in: types.ts:919
 
 Emitted to provide a full state snapshot.
 
@@ -21,7 +21,7 @@ Emitted to provide a full state snapshot.
 optional model: string;
 ```
 
-Defined in: types.ts:750
+Defined in: types.ts:751
 
 Model identifier for multi-model support
 
@@ -37,7 +37,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:752
+Defined in: types.ts:753
 
 Original provider event for debugging/advanced use cases
 
@@ -53,7 +53,7 @@ Original provider event for debugging/advanced use cases
 state: Record<string, unknown>;
 ```
 
-Defined in: types.ts:906
+Defined in: types.ts:922
 
 The complete state object
 
@@ -65,7 +65,7 @@ The complete state object
 timestamp: number;
 ```
 
-Defined in: types.ts:748
+Defined in: types.ts:749
 
 #### Inherited from
 
@@ -79,7 +79,7 @@ Defined in: types.ts:748
 type: "STATE_SNAPSHOT";
 ```
 
-Defined in: types.ts:904
+Defined in: types.ts:920
 
 #### Overrides
 

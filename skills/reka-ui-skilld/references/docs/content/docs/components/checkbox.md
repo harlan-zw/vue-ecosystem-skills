@@ -45,7 +45,7 @@ import { CheckboxGroupRoot, CheckboxIndicator, CheckboxRoot } from 'reka-ui'
     <CheckboxIndicator />
   </CheckboxRoot>
 
-  
+  <!-- or with array support -->
   <CheckboxGroupRoot>
     <CheckboxRoot>
       <CheckboxIndicator />
@@ -122,21 +122,21 @@ const permission = ref(0)
 </script>
 
 <template>
-  
+  <!-- String values -->
   <CheckboxRoot v-model="acceptTerms" true-value="yes" false-value="no">
     <CheckboxIndicator>
       <Icon icon="radix-icons:check" />
     </CheckboxIndicator>
   </CheckboxRoot>
-  <span>Value: {{ acceptTerms }}</span> 
+  <span>Value: {{ acceptTerms }}</span> <!-- "yes" or "no" -->
 
-  
+  <!-- Number values -->
   <CheckboxRoot v-model="permission" :true-value="1" :false-value="0">
     <CheckboxIndicator>
       <Icon icon="radix-icons:check" />
     </CheckboxIndicator>
   </CheckboxRoot>
-  <span>Value: {{ permission }}</span> 
+  <span>Value: {{ permission }}</span> <!-- 1 or 0 -->
 </template>
 ```
 

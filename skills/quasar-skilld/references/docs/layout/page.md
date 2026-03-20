@@ -27,7 +27,7 @@ A QPage must be encapsulated by QPageContainer, which in turn must be a child of
   ...
   <q-page-container>
     <q-page>
-      
+      <!-- page content -->
     </q-page>
   </q-page-container>
   ...
@@ -37,7 +37,7 @@ A QPage must be encapsulated by QPageContainer, which in turn must be a child of
 Usually, the QPageContainer is part of the Layout template (where it contains a `<router-view />` child only), and its content goes into separate vue files under `/src/pages`. If you haven't already, please read [Routing with Layouts and Pages](/layout/routing-with-layouts-and-pages).
 
 ```html
-
+<!-- vue file for Layout: -->
 <q-layout>
   ...
   <q-page-container>
@@ -46,9 +46,9 @@ Usually, the QPageContainer is part of the Layout template (where it contains a 
   ...
 </q-layout>
 
-
+<!-- vue file for a Page: -->
 <q-page padding>
-  
+  <!-- page content -->
 </q-page>
 ```
 

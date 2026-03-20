@@ -1,6 +1,3 @@
----
-url: /guide/essentials/list.md
----
 # List Rendering {#list-rendering}
 
 <div class="options-api">

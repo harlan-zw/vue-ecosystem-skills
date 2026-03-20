@@ -1,6 +1,3 @@
----
-url: /api/options-lifecycle.md
----
 # Options: Lifecycle {#options-lifecycle}
 
 :::info See also

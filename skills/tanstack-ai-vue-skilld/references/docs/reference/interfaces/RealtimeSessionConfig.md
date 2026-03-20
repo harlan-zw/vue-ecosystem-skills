@@ -5,31 +5,11 @@ title: RealtimeSessionConfig
 
 # Interface: RealtimeSessionConfig
 
-Defined in: realtime/types.ts
+Defined in: realtime/types.ts:30
 
-Configuration for a realtime session. Passed to the provider to configure model behavior, voice, tools, and VAD settings.
+Configuration for a realtime session
 
 ## Properties
-
-### model?
-
-```ts
-optional model: string;
-```
-
-Model to use for the session.
-
-***
-
-### voice?
-
-```ts
-optional voice: string;
-```
-
-Voice to use for audio output.
-
-***
 
 ### instructions?
 
@@ -37,77 +17,45 @@ Voice to use for audio output.
 optional instructions: string;
 ```
 
-System instructions for the assistant.
+Defined in: realtime/types.ts:36
 
-***
-
-### tools?
-
-```ts
-optional tools: Array<RealtimeToolConfig>;
-```
-
-Tools available in the session.
-
-***
-
-### vadMode?
-
-```ts
-optional vadMode: 'server' | 'semantic' | 'manual';
-```
-
-Voice activity detection mode.
-
-***
-
-### vadConfig?
-
-```ts
-optional vadConfig: VADConfig;
-```
-
-Detailed VAD configuration (threshold, padding, silence duration).
-
-***
-
-### outputModalities?
-
-```ts
-optional outputModalities: Array<'audio' | 'text'>;
-```
-
-Output modalities for responses (e.g., `['audio', 'text']`).
-
-***
-
-### temperature?
-
-```ts
-optional temperature: number;
-```
-
-Temperature for generation (provider-specific range, e.g., 0.6-1.2 for OpenAI).
+System instructions for the assistant
 
 ***
 
 ### maxOutputTokens?
 
 ```ts
-optional maxOutputTokens: number | 'inf';
+optional maxOutputTokens: number | "inf";
 ```
 
-Maximum number of tokens in a response.
+Defined in: realtime/types.ts:48
+
+Maximum number of tokens in a response
 
 ***
 
-### semanticEagerness?
+### model?
 
 ```ts
-optional semanticEagerness: 'low' | 'medium' | 'high';
+optional model: string;
 ```
 
-Eagerness level for semantic VAD.
+Defined in: realtime/types.ts:32
+
+Model to use for the session
+
+***
+
+### outputModalities?
+
+```ts
+optional outputModalities: ("text" | "audio")[];
+```
+
+Defined in: realtime/types.ts:44
+
+Output modalities for responses (e.g., ['audio', 'text'], ['text'])
 
 ***
 
@@ -117,4 +65,78 @@ Eagerness level for semantic VAD.
 optional providerOptions: Record<string, any>;
 ```
 
-Provider-specific options.
+Defined in: realtime/types.ts:52
+
+Provider-specific options
+
+***
+
+### semanticEagerness?
+
+```ts
+optional semanticEagerness: "low" | "high" | "medium";
+```
+
+Defined in: realtime/types.ts:50
+
+Eagerness level for semantic VAD ('low', 'medium', 'high')
+
+***
+
+### temperature?
+
+```ts
+optional temperature: number;
+```
+
+Defined in: realtime/types.ts:46
+
+Temperature for generation (provider-specific range, e.g., 0.6-1.2 for OpenAI)
+
+***
+
+### tools?
+
+```ts
+optional tools: RealtimeToolConfig[];
+```
+
+Defined in: realtime/types.ts:38
+
+Tools available in the session
+
+***
+
+### vadConfig?
+
+```ts
+optional vadConfig: VADConfig;
+```
+
+Defined in: realtime/types.ts:42
+
+VAD configuration
+
+***
+
+### vadMode?
+
+```ts
+optional vadMode: "server" | "manual" | "semantic";
+```
+
+Defined in: realtime/types.ts:40
+
+VAD mode
+
+***
+
+### voice?
+
+```ts
+optional voice: string;
+```
+
+Defined in: realtime/types.ts:34
+
+Voice to use for audio output

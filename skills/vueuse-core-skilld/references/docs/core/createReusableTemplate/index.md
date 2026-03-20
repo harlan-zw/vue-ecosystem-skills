@@ -14,10 +14,10 @@ It's common to have the need to reuse some part of the template. For example:
 ```vue
 <template>
   <dialog v-if="showInDialog">
-    
+    <!-- something complex -->
   </dialog>
   <div v-else>
-    
+    <!-- something complex -->
   </div>
 </template>
 ```
@@ -39,7 +39,7 @@ const [DefineTemplate, ReuseTemplate] = createReusableTemplate()
 
 <template>
   <DefineTemplate>
-    
+    <!-- something complex -->
   </DefineTemplate>
 
   <dialog v-if="showInDialog">
@@ -130,13 +130,13 @@ const [DefineBar, ReuseBar] = createReusableTemplate<{ items: string[] }>()
 
 <template>
   <DefineFoo v-slot="{ msg }">
-    
+    <!-- `msg` is typed as `string` -->
     <div>Hello {{ msg.toUpperCase() }}</div>
   </DefineFoo>
 
   <ReuseFoo msg="World" />
 
-  
+  <!-- @ts-expect-error Type Error! -->
   <ReuseFoo :msg="1" />
 </template>
 ```
@@ -220,7 +220,7 @@ const [DefineTemplate, ReuseTemplate] = createReusableTemplate()
 <template>
   <DefineTemplate v-slot="{ $slots, otherProp }">
     <div some-layout>
-      
+      <!-- To render the slot -->
       <component :is="$slots.default" />
     </div>
   </DefineTemplate>
@@ -255,16 +255,16 @@ const [DefineTemplate, ReuseTemplate] = createReusableTemplate<{
   </DefineTemplate>
 
   <ReuseTemplate :value="true" />
-  
+  <!-- boolean: true -->
 
   <ReuseTemplate :value="false" />
-  
+  <!-- boolean: false -->
 
   <ReuseTemplate value />
-  
+  <!-- string: -->
 
   <ReuseTemplate />
-  
+  <!-- undefined: -->
 </template>
 ```
 

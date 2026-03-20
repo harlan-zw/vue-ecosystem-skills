@@ -77,7 +77,7 @@ function onElementVisibility(state) {
     {{ isVisible ? 'inside' : 'outside' }}
   </div>
 
-  
+  <!-- with options -->
   <div ref="target">
     <div v-element-visibility="[onElementVisibility, { scrollTarget: target }]">
       {{ isVisible ? 'inside' : 'outside' }}

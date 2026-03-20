@@ -46,7 +46,9 @@ Example on capturing panning on custom directions. For this, use modifiers: `up`
 When you want to handle mouse events too, use the `mouse` modifier:
 
 ```html
-
+<!--
+  directive will also be triggered by mouse actions
+-->
 <div v-touch-pan.mouse="userHasPanned">...</div>
 ```
 
@@ -62,11 +64,15 @@ When you want to inhibit TouchPan, you can do so by stopping propagation of the 
 
 ```html
 <div v-touch-pan.mouse="userHasHold">
-  
+  <!-- ...content -->
   <div @touchstart.stop @mousedown.stop>
-    
+    <!--
+      TouchPan will not apply here because
+      we are calling stopPropagation() on touchstart
+      and mousedown events
+    -->
   </div>
-  
+  <!-- ...content -->
 </div>
 ```
 

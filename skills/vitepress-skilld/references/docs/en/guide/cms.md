@@ -48,7 +48,7 @@ Since each CMS will work differently, here we can only provide a generic workflo
 
     - by {{ $params.author }} on {{ $params.date }}
 
-    
+    <!-- @content -->
     ```
 
 ## Integration Guides

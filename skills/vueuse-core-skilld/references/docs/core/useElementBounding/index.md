@@ -64,7 +64,7 @@ const options = {
 
 <template>
   <textarea v-element-bounding="onBounding" />
-  
+  <!-- with options -->
   <textarea v-element-bounding="[onBounding, options]" />
 </template>
 ```

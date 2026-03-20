@@ -25,10 +25,14 @@ Root-relative URLs (e.g. `/logo.png` -- where '/' is your publicPath) or `logo.p
 Quasar has some smart algorithms behind the curtains which ensure that no matter what you build (SPA, PWA, Cordova, Electron), your statics are correctly referenced *if and only if* they do not use a relative path.
 
 ```html
-
+<!-- Good! -->
 <img src="logo.png">
 
-
+<!--
+  BAD! Works until you change vue router
+  mode (hash/history) or your public path.
+  Don't!
+-->
 <img src="/logo.png">
 ```
 
@@ -46,7 +50,7 @@ Please note that whenever you bind "src" to a variable in your Vue scope, it mus
 
 ```html
 <template>
-  
+  <!-- imageSrc MUST reference a file from /public -->
   <img :src="imageSrc">
 </template>
 

@@ -1,6 +1,3 @@
----
-url: /guide/built-ins/transition-group.md
----
 
 
 # TransitionGroup {#transitiongroup}

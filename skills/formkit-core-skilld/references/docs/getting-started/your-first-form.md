@@ -790,53 +790,7 @@ const createCharacter = async (fields) => {
         validation="max_sum"
         :validation-messages="{
           max_sum: ({ name, args }) =>
-            `${name} has exceeded the max budget of 20. Your character can't be that strong!`,
-        }"
-        #default="{ id, messages, fns, classes }"
-      >
-        <FormKit
-          type="range"
-          name="strength"
-          id="strength"
-          label="Strength"
-          value="5"
-          min="1"
-          max="10"
-          step="1"
-          help="How many strength points should this character have?"
-        />
-
-        <FormKit
-          type="range"
-          name="skill"
-          id="skill"
-          label="Skill"
-          value="5"
-          min="1"
-          max="10"
-          step="1"
-          help="How many skill points should this character have?"
-        />
-
-        <FormKit
-          type="range"
-          name="dexterity"
-          id="dexterity"
-          label="Dexterity"
-          value="5"
-          min="1"
-          max="10"
-          step="1"
-          help="How many dexterity points should this character have?"
-        />
-
-        <!-- By default groups do not show validation messages, so we need to add it manually -->
-        <ul :class="classes.messages" v-if="fns.length(messages)">
-          <li
-            v-for="message in messages"
-            :key="message.key"
-            :class="classes.message"
-            :id="`${id}-${message.key}`"
+            `${name} has exceeded the max budget of 20. Your character can't be that strong${id}-${message.key}`"
             :data-message-type="message.type"
           >
             {{ message.value }}
@@ -927,53 +881,7 @@ So, let's grab the context object of the `group` input and extract the `value`: 
         validation="max_sum"
         :validation-messages="{
           max_sum: ({ name, args }) =>
-            `${name} has exceeded the max budget of 20. Your character can't be that strong!`,
-        }"
-        #default="{ value, id, messages, fns, classes }"
-      >
-        <FormKit
-          type="range"
-          name="strength"
-          id="strength"
-          label="Strength"
-          value="5"
-          min="1"
-          max="10"
-          step="1"
-          help="How many strength points should this character have?"
-        />
-
-        <FormKit
-          type="range"
-          name="skill"
-          id="skill"
-          label="Skill"
-          value="5"
-          min="1"
-          max="10"
-          step="1"
-          help="How many skill points should this character have?"
-        />
-
-        <FormKit
-          type="range"
-          name="dexterity"
-          id="dexterity"
-          label="Dexterity"
-          value="5"
-          min="1"
-          max="10"
-          step="1"
-          help="How many dexterity points should this character have?"
-        />
-
-        <!-- By default groups do not show validation messages, so we need to add it manually -->
-        <ul :class="classes.messages" v-if="fns.length(messages)">
-          <li
-            v-for="message in messages"
-            :key="message.key"
-            :class="classes.message"
-            :id="`${id}-${message.key}`"
+            `${name} has exceeded the max budget of 20. Your character can't be that strong${id}-${message.key}`"
             :data-message-type="message.type"
           >
             {{ message.value }}

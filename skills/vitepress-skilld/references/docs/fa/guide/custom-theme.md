@@ -79,7 +79,7 @@ export پیشفرض تنها قراردادی برای یک تم سفارشی ا
 <template>
   <h1>طرح سفارشی!</h1>
 
-  
+  <!-- اینجا محتوای markdown نمایش داده میشود -->
   <Content />
 </template>
 ```
@@ -148,7 +148,7 @@ const { page, frontmatter } = useData()
 
   <NotFound v-if="page.isNotFound" />
   <Home v-if="frontmatter.layout === 'home'" />
-  <Page v-else /> 
+  <Page v-else /> <!-- <Page /> با `<Content />` را نمایش میدهد -->
 </template>
 ```
 

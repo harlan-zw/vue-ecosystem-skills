@@ -67,7 +67,7 @@ function onMouseInElement({ x, y, sourceType, elementX, elementY, elementPositio
 
 <template>
   <textarea v-mouse-in-element="onMouseInElement" />
-  
+  <!-- with options -->
   <textarea v-mouse-in-element="[onMouseInElement, options]" />
 </template>
 ```

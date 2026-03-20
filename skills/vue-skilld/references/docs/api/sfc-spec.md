@@ -1,6 +1,3 @@
----
-url: /api/sfc-spec.md
----
 # SFC Syntax Specification {#sfc-syntax-specification}
 
 ## Overview {#overview}

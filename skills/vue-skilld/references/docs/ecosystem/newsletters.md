@@ -1,6 +1,3 @@
----
-url: /ecosystem/newsletters.md
----
 # Community Newsletters {#community-newsletters}
 
 There are many great newsletters / Vue-dedicated blogs from the community bringing you latest news and happenings in the Vue ecosystem. Here is a non-exhaustive list of active ones that we have come across:

@@ -450,7 +450,7 @@ To use this with Quasar through QIcon (make sure that you are referencing the co
 
 ```html
 <q-icon name="svguse:icons.svg#icon-1">
-
+<!-- or -->
 <q-btn-dropdown label="Custom Content" dropdown-icon="svguse:icons.svg#icon-2" />
 ```
 
@@ -488,7 +488,7 @@ You can also make an icon point to an image URL instead of relying on any webfon
 <q-icon name="img:https://cdn.quasar.dev/logo-v2/svg/logo.svg" />
 <q-btn icon="img:https://cdn.quasar.dev/logo-v2/svg/logo.svg" ... />
 
-
+<!-- reference from /public: -->
 <q-icon name="img:my/path/to/some.svg" />
 ```
 

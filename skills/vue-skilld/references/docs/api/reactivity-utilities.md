@@ -1,6 +1,3 @@
----
-url: /api/reactivity-utilities.md
----
 # Reactivity API: Utilities {#reactivity-api-utilities}
 
 ## isRef() {#isref}

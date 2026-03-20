@@ -88,14 +88,18 @@ To enable RTL UIs in UMD you need to include the RTL equivalent CSS tag for your
 <html>
   <head>
     ...
-    
+    <!-- Replace "2.0.0" (below) with your Quasar version. -->
     <link href="https://cdn.jsdelivr.net/npm/quasar@2/dist/quasar.rtl.prod.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
     ...
 
-    
+    <!--
+      We also need an RTL Quasar language pack; let's take Hebrew as an example;
+      include this after Quasar JS tag;
+      Replace "2.0.0" (below) with your Quasar version.
+    -->
     <script src="https://cdn.jsdelivr.net/npm/quasar@2/dist/lang/he.umd.prod.js"></script>
     <script>
       Quasar.Lang.set(Quasar.Lang.he)
@@ -185,13 +189,19 @@ Sometimes you'll need to make exceptions for whole DOM elements / components. In
 
 ```html
 <div dir="rtl">
-  
+  <!--
+    this DIV and all its content will use RTL mode
+    regardless of Quasar language pack RTL settings
+  -->
 </div>
 ```
 
 Or, if you need your RTL UI to use left-to-right (ltr) mode for a DOM element / component:
 ```html
 <div dir="ltr">
-  
+  <!--
+    this DIV and all its content will use non-RTL mode
+    regardless of Quasar language pack RTL settings
+  -->
 </div>
 ```

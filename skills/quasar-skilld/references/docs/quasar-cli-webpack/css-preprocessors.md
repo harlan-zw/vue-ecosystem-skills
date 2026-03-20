@@ -13,7 +13,7 @@ You won't need to install any additional packages or extend the Webpack configur
 Your Vue files can contain Sass/SCSS code through the `<style>` tag.
 
 ```html
-
+<!-- Notice lang="sass" -->
 <style lang="sass">
 div
   color: #444
@@ -22,7 +22,7 @@ div
 ```
 
 ```html
-
+<!-- Notice lang="scss" -->
 <style lang="scss">
 div {
   color: #444;

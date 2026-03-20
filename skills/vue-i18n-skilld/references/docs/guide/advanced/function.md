@@ -1,6 +1,3 @@
----
-url: /guide/advanced/function.md
----
 # Messages Functions
 
 Vue I18n recommends using the string base on list, named, and literal format as locale messages when translating messages.
@@ -9,10 +6,10 @@ However, sometimes string-based message format syntax is difficult to resolve.
 
 For example, suppose you want to handle the following message in French:
 
-* Manger de la soupe
-* Manger une pomme
-* Manger du pain
-* Manger de l’orge
+- Manger de la soupe
+- Manger une pomme
+- Manger du pain
+- Manger de l’orge
 
 As you can see, the article preceding the noun will vary based on gender and phonetics.
 
@@ -84,10 +81,7 @@ Here is the example of greeting:
 ```js
 const messages = {
   en: {
-    greeting: ({ named }) => `hello, ${named('name')}!`
-  }
-}
-```
+    greeting: ({ named }) => `hello, ${named('name')}``
 
 Template:
 
@@ -114,10 +108,7 @@ Here is the example of greeting:
 ```js
 const messages = {
   en: {
-    greeting: ({ list }) => `hello, ${list(0)}!`
-  }
-}
-```
+    greeting: ({ list }) => `hello, ${list(0)}``
 
 Template:
 
@@ -133,6 +124,7 @@ Output is the below:
 
 You need to specify the index that resolves the value specified with the list of `$t` or `t`.
 
+
 ## Linked messages
 
 Vue I18n supports [linked messages](../essentials/syntax#linked-messages) as a string-based message format. Vue I18n interpolate the parameter values with `$t` or `t`, and it can be output it.
@@ -146,10 +138,7 @@ const messages = {
   en: {
     the_world: 'the world',
     dio: 'DIO:',
-    linked: ({ linked }) => `${linked('message.dio')} ${linked('message.the_world')} !!!!`
-  }
-}
-```
+    linked: ({ linked }) => `${linked('message.dio')} ${linked('message.the_world')} !!!``
 
 Template:
 

@@ -122,9 +122,7 @@ Append a call-to-action to your Open Graph descriptions:
 ::code-block
 ```ts [Input]
 InferSeoMetaPlugin({
-  ogDescription: description => `${description} Learn more now!`
-})
-```
+  ogDescription: description => `${description} Learn more now``
 ::
 
 ## Related

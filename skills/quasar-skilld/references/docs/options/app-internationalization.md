@@ -158,13 +158,13 @@ Here is an example displaying the main use cases:
 ```html
 <template>
   <q-page>
-    
+    <!-- text interpolation, reactive -->
     {{ $t('hello') }}
 
-    
+    <!-- prop/attr binding, reactive -->
     <q-btn :label="$t('hello')" />
 
-    
+    <!-- v-html directive usage -->
     <span v-html="content"></span>
   </q-page>
 </template>
@@ -213,7 +213,7 @@ export default {
 
 ```html Some Vue file
 <template>
-  
+  <!-- ...... -->
   <q-select
     v-model="locale"
     :options="localeOptions"
@@ -225,7 +225,7 @@ export default {
     options-dense
     style="min-width: 150px"
   />
-  
+  <!-- ...... -->
 </template>
 
 <script setup>

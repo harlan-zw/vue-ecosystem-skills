@@ -111,7 +111,7 @@ event listener:
     @page-size-change="fetchData"
     @page-count-change="onPageCountChange"
   >
-    
+    <!-- your code -->
   </UseOffsetPagination>
 </template>
 ```
@@ -135,7 +135,7 @@ or props event callback:
     :on-page-size-change="fetchData"
     :on-page-count-change="onPageCountChange"
   >
-    
+    <!-- your code -->
   </UseOffsetPagination>
 </template>
 ```

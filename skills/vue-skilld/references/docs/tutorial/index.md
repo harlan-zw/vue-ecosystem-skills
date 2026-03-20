@@ -1,5 +1,10 @@
 ---
-url: /tutorial/index.md
+page: true
+title: Tutorial
+sidebar: false
+aside: false
+footer: false
+returnToTop: false
 ---
 
 

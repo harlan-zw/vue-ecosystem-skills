@@ -1,6 +1,3 @@
----
-url: /guide/typescript/options-api.md
----
 # TypeScript with Options API {#typescript-with-options-api}
 
 > This page assumes you've already read the overview on [Using Vue with TypeScript](./overview).

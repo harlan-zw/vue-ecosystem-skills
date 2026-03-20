@@ -48,7 +48,7 @@ Como cada CMS funcionará de forma diferente, aqui podemos fornecer apenas um fl
 
     - por {{ $params.author }} em {{ $params.date }}
 
-    
+    <!-- @content -->
     ```
 
 ## Guias de Integração {#integration-guides}

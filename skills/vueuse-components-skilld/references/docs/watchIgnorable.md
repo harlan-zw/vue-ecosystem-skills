@@ -19,27 +19,7 @@ const source = shallowRef('foo')
 
 const { stop, ignoreUpdates } = watchIgnorable(
   source,
-  v => console.log(`Changed to ${v}!`),
-)
-
-source.value = 'bar'
-await nextTick() // logs: Changed to bar!
-
-ignoreUpdates(() => {
-  source.value = 'foobar'
-})
-await nextTick() // (nothing happened)
-
-source.value = 'hello'
-await nextTick() // logs: Changed to hello!
-
-ignoreUpdates(() => {
-  source.value = 'ignored'
-})
-source.value = 'logged'
-
-await nextTick() // logs: Changed to logged!
-```
+  v => console.log(`Changed to ${v}``
 
 ## WatchOptionFlush timing
 
@@ -58,28 +38,11 @@ const source = shallowRef('foo')
 
 const { ignorePrevAsyncUpdates } = watchIgnorable(
   source,
-  v => console.log(`Changed to ${v}!`),
-)
-
-source.value = 'bar'
-await nextTick() // logs: Changed to bar!
-
-source.value = 'good'
-source.value = 'by'
-ignorePrevAsyncUpdates()
-
-await nextTick() // (nothing happened)
-
-source.value = 'prev'
-ignorePrevAsyncUpdates()
-source.value = 'after'
-
-await nextTick() // logs: Changed to after!
-```
+  v => console.log(`Changed to ${v}``
 
 ## Recommended Readings
 
-- Ignorable Watch - by @patak-dev
+- [Ignorable Watch](https://patak.dev/vue/ignorable-watch.html) - by [@patak-dev](https://github.com/patak-dev)
 
 ## Type Declarations
 

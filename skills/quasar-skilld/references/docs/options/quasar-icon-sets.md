@@ -68,7 +68,7 @@ This will enable you to use both MDI & Fontawesome webfonts in your app, and all
 Include the Quasar Icon Set tag for your Quasar version and also tell Quasar to use it. Example:
 
 ```html
-
+<!-- include this after Quasar JS tag -->
 <script src="https://cdn.jsdelivr.net/npm/quasar@v2/dist/icon-set/fontawesome-v6.umd.prod.js"></script>
 <script>
   Quasar.IconSet.set(Quasar.IconSet.fontawesomeV6)

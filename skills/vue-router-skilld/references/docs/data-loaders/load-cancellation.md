@@ -1,6 +1,3 @@
----
-url: /data-loaders/load-cancellation.md
----
 # Cancelling a data loader
 
 Data loaders receive an `AbortSignal` that can be passed to `fetch` and other Web APIs to cancel ongoing requests when the navigation is cancelled. If the navigation is cancelled because of errors or a new navigation, the signal aborts, causing any request using it to abort as well.

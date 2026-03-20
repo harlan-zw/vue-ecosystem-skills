@@ -143,7 +143,7 @@ Use the `autoSaveId` prop to save the layout data into `localStorage`.
 By default, Splitter uses `localStorage` to persist layouts. With server rendering, this can cause a flicker when the default layout (rendered on the server) is replaced with the persisted layout (in `localStorage`). The way to avoid this flicker is to also persist the layout with a cookie like so:
 
 ```vue line=3,,8-9,11,15
-
+<!-- with Nuxt -->
 <script setup lang="ts">
 const layout = useCookie<number[]>('splitter:layout')
 </script>

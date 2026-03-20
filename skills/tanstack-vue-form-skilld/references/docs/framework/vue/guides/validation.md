@@ -308,13 +308,7 @@ const form = useForm({
 > </template>
 > ```
 >
-> Will only show `'Must be odd!` even if the 'Too young!' error is returned by the form-level validation.
-
-## Asynchronous Functional Validation
-
-While we suspect most validations will be synchronous, there are many instances where a network call or some other async operation would be useful to validate against.
-
-To do this, we have dedicated `onChangeAsync`, `onBlurAsync`, and other methods that can be used to validate against:
+> Will only show `'Must be oddonChangeAsync`, `onBlurAsync`, and other methods that can be used to validate against:
 
 ```vue
 <script setup lang="ts">

@@ -26,7 +26,7 @@ In the child component, it can render the slot content from the parent using the
 <div class="sfc">
 
 ```vue-html
-
+<!-- in child template -->
 <slot/>
 ```
 
@@ -34,7 +34,7 @@ In the child component, it can render the slot content from the parent using the
 <div class="html">
 
 ```vue-html
-
+<!-- in child template -->
 <slot></slot>
 ```
 

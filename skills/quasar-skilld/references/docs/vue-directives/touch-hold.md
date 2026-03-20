@@ -44,11 +44,15 @@ When you want to inhibit TouchHold, you can do so by stopping propagation of the
 
 ```html
 <div v-touch-hold.mouse="userHasHold">
-  
+  <!-- ...content -->
   <div @touchstart.stop @mousedown.stop>
-    
+    <!--
+      TouchHold will not apply here because
+      we are calling stopPropagation() on touchstart
+      and mousedown events
+    -->
   </div>
-  
+  <!-- ...content -->
 </div>
 ```
 

@@ -1,5 +1,5 @@
 ---
-url: /guide/scaling-up/ssr.md
+outline: deep
 ---
 
 # Server-Side Rendering (SSR) {#server-side-rendering-ssr}

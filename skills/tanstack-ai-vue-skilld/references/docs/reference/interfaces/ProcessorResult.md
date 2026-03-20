@@ -5,7 +5,7 @@ title: ProcessorResult
 
 # Interface: ProcessorResult
 
-Defined in: activities/chat/stream/types.ts:51
+Defined in: activities/chat/stream/types.ts:69
 
 Result from processing a stream
 
@@ -17,7 +17,7 @@ Result from processing a stream
 content: string;
 ```
 
-Defined in: activities/chat/stream/types.ts:52
+Defined in: activities/chat/stream/types.ts:70
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: activities/chat/stream/types.ts:52
 optional finishReason: string | null;
 ```
 
-Defined in: activities/chat/stream/types.ts:55
+Defined in: activities/chat/stream/types.ts:73
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: activities/chat/stream/types.ts:55
 optional thinking: string;
 ```
 
-Defined in: activities/chat/stream/types.ts:53
+Defined in: activities/chat/stream/types.ts:71
 
 ***
 
@@ -47,4 +47,4 @@ Defined in: activities/chat/stream/types.ts:53
 optional toolCalls: ToolCall[];
 ```
 
-Defined in: activities/chat/stream/types.ts:54
+Defined in: activities/chat/stream/types.ts:72

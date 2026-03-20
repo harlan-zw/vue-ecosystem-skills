@@ -9,7 +9,7 @@ title: StreamChunk
 type StreamChunk = AGUIEvent;
 ```
 
-Defined in: types.ts:952
+Defined in: types.ts:969
 
 Chunk returned by the SDK during streaming chat completions.
 Uses the AG-UI protocol event format.

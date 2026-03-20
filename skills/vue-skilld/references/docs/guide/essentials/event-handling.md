@@ -1,6 +1,3 @@
----
-url: /guide/essentials/event-handling.md
----
 # Event Handling {#event-handling}
 
 <div class="options-api">
@@ -72,8 +69,7 @@ For example:
 const name = ref('Vue.js')
 
 function greet(event) {
-  alert(`Hello ${name.value}!`)
-  // `event` is the native DOM event
+  alert(`Hello ${name.value}event` is the native DOM event
   if (event) {
     alert(event.target.tagName)
   }
@@ -92,8 +88,7 @@ data() {
 methods: {
   greet(event) {
     // `this` inside methods points to the current active instance
-    alert(`Hello ${this.name}!`)
-    // `event` is the native DOM event
+    alert(`Hello ${this.name}event` is the native DOM event
     if (event) {
       alert(event.target.tagName)
     }

@@ -42,11 +42,15 @@ When you want to inhibit TouchSwipe, you can do so by stopping propagation of th
 
 ```html
 <div v-touch-swipe.mouse="userSwiped">
-  
+  <!-- ...content -->
   <div @touchstart.stop @mousedown.stop>
-    
+    <!--
+      TouchSwipe will not apply here because
+      we are calling stopPropagation() on touchstart
+      and mousedown events
+    -->
   </div>
-  
+  <!-- ...content -->
 </div>
 ```
 

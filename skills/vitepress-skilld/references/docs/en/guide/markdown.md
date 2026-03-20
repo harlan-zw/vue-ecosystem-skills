@@ -42,12 +42,12 @@ For example, given the following directory structure:
 And providing you are in `foo/one.md`:
 
 ```md
-[Home](/) 
-[foo](/foo/) 
-[foo heading](./#heading) 
-[bar - three](../bar/three) 
-[bar - three](../bar/three.md) 
-[bar - four](../bar/four.html) 
+[Home](/) <!-- sends the user to the root index.md -->
+[foo](/foo/) <!-- sends the user to index.html of directory foo -->
+[foo heading](./#heading) <!-- anchors user to a heading in the foo index file -->
+[bar - three](../bar/three) <!-- you can omit extension -->
+[bar - three](../bar/three.md) <!-- you can append .md -->
+[bar - four](../bar/four.html) <!-- or you can append .html -->
 ```
 
 ### Page Suffix
@@ -677,11 +677,11 @@ You can also specify the language inside the braces (`{}`) like this:
 ```md
 <<< @/snippets/snippet.cs{c#}
 
-
+<!-- with line highlighting: -->
 
 <<< @/snippets/snippet.cs{1,2,4-6 c#}
 
-
+<!-- with line numbers: -->
 
 <<< @/snippets/snippet.cs{1,2,4-6 c#:line-numbers}
 ```
@@ -755,11 +755,11 @@ You can also [import snippets](#import-code-snippets) in code groups:
 ```md
 ::: code-group
 
-
+<!-- filename is used as title by default -->
 
 <<< @/snippets/snippet.js
 
-
+<!-- you can provide a custom one too -->
 
 <<< @/snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [snippet with region]
 
@@ -793,7 +793,7 @@ For example, you can include a relative markdown file using this:
 
 ## Basics
 
-
+<!--@include: ./parts/basics.md-->
 ```
 
 **Part file** (`parts/basics.md`)
@@ -829,7 +829,7 @@ It also supports selecting a line range:
 
 ## Basics
 
-
+<!--@include: ./parts/basics.md{3,}-->
 ```
 
 **Part file** (`parts/basics.md`)
@@ -865,20 +865,20 @@ You can also use a VS Code region to only include the corresponding part of the 
 
 ## Basics
 
-
-
+<!--@include: ./parts/basics.md#basic-usage{,2}-->
+<!--@include: ./parts/basics.md#basic-usage{5,}-->
 ```
 
 **Part file** (`parts/basics.md`)
 
 ```md
-
+<!-- #region basic-usage -->
 ## Usage Line 1
 
 ## Usage Line 2
 
 ## Usage Line 3
-
+<!-- #endregion basic-usage -->
 ```
 
 **Equivalent code**

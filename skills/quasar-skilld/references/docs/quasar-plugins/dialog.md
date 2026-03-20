@@ -172,9 +172,12 @@ We will be using the [useDialogPluginComponent](/vue-composables/use-dialog-plug
 <template>
   <q-dialog ref="dialogRef" @hide="onDialogHide">
     <q-card class="q-dialog-plugin">
-      
+      <!--
+        ...content
+        ... use q-card-section for it?
+      -->
 
-      
+      <!-- buttons example -->
       <q-card-actions align="right">
         <q-btn color="primary" label="OK" @click="onOKClick" />
         <q-btn color="primary" label="Cancel" @click="onDialogCancel" />
@@ -233,12 +236,15 @@ We will be using the [useDialogPluginComponent](/vue-composables/use-dialog-plug
 
 ```html
 <template>
-  
+  <!-- notice dialogRef here -->
   <q-dialog ref="dialogRef" @hide="onDialogHide">
     <q-card class="q-dialog-plugin">
-      
+      <!--
+        ...content
+        ... use q-card-section for it?
+      -->
 
-      
+      <!-- buttons example -->
       <q-card-actions align="right">
         <q-btn color="primary" label="OK" @click="onOKClick" />
         <q-btn color="primary" label="Cancel" @click="onCancelClick" />
@@ -314,9 +320,12 @@ emits: {
 <template>
   <q-dialog ref="dialog" @hide="onDialogHide">
     <q-card class="q-dialog-plugin">
-      
+      <!--
+        ...content
+        ... use q-card-section for it?
+      -->
 
-      
+      <!-- buttons example -->
       <q-card-actions align="right">
         <q-btn color="primary" label="OK" @click="onOKClick" />
         <q-btn color="primary" label="Cancel" @click="onCancelClick" />

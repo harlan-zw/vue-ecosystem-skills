@@ -1,5 +1,5 @@
 ---
-url: /guide/introduction.md
+footer: false
 ---
 
 # Introduction {#introduction}

@@ -1,7 +1,9 @@
----
-url: /guide/advanced/composition-api.md
----
 # Vue Router and the Composition API
+
+<VueSchoolLink
+  href="https://vueschool.io/lessons/router-and-the-composition-api"
+  title="Learn how to use Vue Router with the Composition API"
+/>
 
 The introduction of Vue's Composition API opened up new possibilities, but to be able to get the full potential out of Vue Router, we will need to use a few new functions to replace access to `this` and in-component navigation guards.
 
@@ -29,6 +31,8 @@ function pushWithQuery(query) {
 ```
 
 The `route` object is a reactive object. In most scenarios, you should **avoid watching the whole `route`** object. Instead, you can directly watch the properties you are expecting to change:
+
+<RuleKitLink />
 
 ```vue
 <script setup>

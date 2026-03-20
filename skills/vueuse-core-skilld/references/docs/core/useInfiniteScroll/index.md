@@ -92,7 +92,7 @@ function canLoadMore() {
     </div>
   </div>
 
-  
+  <!-- with options -->
   <div v-infinite-scroll="[onLoadMore, { distance: 10, canLoadMore }]">
     <div v-for="item in data" :key="item">
       {{ item }}

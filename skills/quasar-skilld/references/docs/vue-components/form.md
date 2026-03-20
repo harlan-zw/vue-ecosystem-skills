@@ -98,7 +98,7 @@ If you are using the native `action` and `method` attributes on a QForm, please 
 ```html
 <q-form action="https://some-url.com" method="post">
   <q-input name="firstname" ...>
-  
+  <!-- ... -->
 </q-form>
 ```
 
@@ -109,7 +109,7 @@ If you are using the native `action` and `method` attributes on a QForm, please 
 ```html
 <q-form action="https://some-url.com" method="post" @submit.prevent="onSubmit">
   <q-input name="firstname" ...>
-  
+  <!-- ... -->
 </q-form>
 ```
 

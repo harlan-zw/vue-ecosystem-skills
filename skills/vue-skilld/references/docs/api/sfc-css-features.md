@@ -1,6 +1,3 @@
----
-url: /api/sfc-css-features.md
----
 # SFC CSS Features {#sfc-css-features}
 
 ## Scoped CSS {#scoped-css}

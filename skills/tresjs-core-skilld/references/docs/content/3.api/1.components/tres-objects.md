@@ -56,10 +56,10 @@ Pass arguments to the Three.js constructor using the `args` prop:
 
 ```vue
 <template>
-  
+  <!-- Creates: new THREE.BoxGeometry(2, 2, 2) -->
   <TresBoxGeometry :args="[2, 2, 2]" />
 
-  
+  <!-- Creates: new THREE.PerspectiveCamera(75, 1, 0.1, 1000) -->
   <TresPerspectiveCamera :args="[75, 1, 0.1, 1000]" />
 </template>
 ```
@@ -98,10 +98,10 @@ Nesting components inside others is how you compose Three.js objects in TresJS. 
 ```vue
 <template>
   <TresMesh>
-    
+    <!-- Becomes: mesh.geometry = new THREE.BoxGeometry() -->
     <TresBoxGeometry />
 
-    
+    <!-- Becomes: mesh.material = new THREE.MeshBasicMaterial({ color: 'red' }) -->
     <TresMeshBasicMaterial color="red" />
   </TresMesh>
 </template>

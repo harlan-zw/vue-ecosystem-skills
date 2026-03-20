@@ -18,7 +18,7 @@ devDependencies: {
 - "@quasar/app-webpack": "^4.0.0"
 + "@quasar/app-vite": "^2.0.0"
 
-+ "postcss": "^8.4.14"
++ "postcss": "^8.5.8"
 + "postcss-rtlcss": "^5.4.0" // if using RTL support
 
 - eslint-webpack-plugin
@@ -87,9 +87,10 @@ The following props are detailed in the [quasar.config file](/quasar-cli-vite/qu
 
 build: {
 - esbuildTarget: {
+-   browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
 + target: {
-    browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
-    node: 'node20'
++   browser: 'baseline-widely-available',
+    node: 'node22'
   },
 
 - webpackTranspile

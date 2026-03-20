@@ -54,7 +54,7 @@ export default defineComponent({
 })
 </script>
 
-
+<!-- template to slot the content -->
 <template>
   <slot />
 </template>

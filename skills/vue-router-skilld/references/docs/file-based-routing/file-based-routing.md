@@ -1,6 +1,3 @@
----
-url: /file-based-routing/file-based-routing.md
----
 # File Conventions
 
 The file-based routing is as close as possible to Nuxt.
@@ -22,17 +19,17 @@ src/pages/
 
 This will generate the following routes:
 
-* `/`: -> renders the `index.vue` component
-* `/about`: -> renders the `about.vue` component
-* `/users`: -> renders the `users/index.vue` component
-* `/users/:id`: -> renders the `users/[id].vue` component. `id` becomes a route param.
+- `/`: -> renders the `index.vue` component
+- `/about`: -> renders the `about.vue` component
+- `/users`: -> renders the `users/index.vue` component
+- `/users/:id`: -> renders the `users/[id].vue` component. `id` becomes a route param.
 
 ### Index Routes
 
 Any `index.vue` (**must be all lowercase**) file will generate an empty path (similar to `index.html` files):
 
-* `src/pages/index.vue`: generates a `/` route
-* `src/pages/users/index.vue`: generates a `/users` route
+- `src/pages/index.vue`: generates a `/` route
+- `src/pages/users/index.vue`: generates a `/users` route
 
 ### Nested Routes
 
@@ -79,7 +76,7 @@ Note the folder and file's name `users/` could be any valid naming like `my-[id]
 
 #### Nested routes without nesting layouts
 
-Sometimes you might want to add *nesting to the URL* in the form of slashes but you don't want it to impact your UI hierarchy. Consider the following folder structure:
+Sometimes you might want to add _nesting to the URL_ in the form of slashes but you don't want it to impact your UI hierarchy. Consider the following folder structure:
 
 ```text
 src/pages/
@@ -163,9 +160,9 @@ Note that by default a non named route is named `default` and that you don't nee
 
 ## Dynamic Routes
 
-You can add route params by wrapping the *param name* with brackets, e.g. `src/pages/users/[id].vue` will create a route with the following path: `/users/:id`. Note you can add a param in the middle in between static segments: `src/pages/users_[id].vue` -> `/users_:id`. You can even add multiple params: `src/pages/product_[skuId]_[seoDescription].vue`.
+You can add route params by wrapping the _param name_ with brackets, e.g. `src/pages/users/[id].vue` will create a route with the following path: `/users/:id`. Note you can add a param in the middle in between static segments: `src/pages/users_[id].vue` -> `/users_:id`. You can even add multiple params: `src/pages/product_[skuId]_[seoDescription].vue`.
 
-You can create **optional params** by wrapping the *param name* with an extra pair of brackets, e.g. `src/pages/users/[[id]].vue` will create a route with the following path: `/users/:id?`.
+You can create **optional params** by wrapping the _param name_ with an extra pair of brackets, e.g. `src/pages/users/[[id]].vue` will create a route with the following path: `/users/:id?`.
 
 You can create **repeatable params** by adding a plus character (`+`) after the closing bracket, e.g. `src/pages/articles/[slugs]+.vue` will create a route with the following path: `/articles/:slugs+`.
 
@@ -185,7 +182,7 @@ VueRouter({
 })
 ```
 
-You can also provide a path prefix for each of these folders, it will be used *as is*, and **cannot start with a `/`** but can contain any params you want or even **not finish with a `/`**:
+You can also provide a path prefix for each of these folders, it will be used _as is_, and **cannot start with a `/`** but can contain any params you want or even **not finish with a `/`**:
 
 ```ts
 import VueRouter from 'vue-router/vite'
@@ -215,11 +212,11 @@ VueRouter({
 })
 ```
 
-Note that the provided folders must be separate and one *route folder* cannot contain another specified *route folder*. If you need further customization, give [definePage()](./extending-routes#definepage) a try.
+Note that the provided folders must be separate and one _route folder_ cannot contain another specified _route folder_. If you need further customization, give [definePage()](./extending-routes#definepage) a try.
 
 ## Custom extensions
 
-While most of the time you will be using `.vue` files, you can also specify custom extensions to be considered as pages. You can for example use *markdown* files as pages:
+While most of the time you will be using `.vue` files, you can also specify custom extensions to be considered as pages. You can for example use _markdown_ files as pages:
 
 ```ts
 import VueRouter from 'vue-router/vite'

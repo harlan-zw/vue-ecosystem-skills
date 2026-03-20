@@ -1,7 +1,6 @@
----
-url: /installation.md
----
 # Installation
+
+<VueMasteryLogoLink></VueMasteryLogoLink>
 
 ## Package managers
 
@@ -55,8 +54,14 @@ Projects using package managers will typically use ES modules to access Vue Rout
 
 ## Direct Download / CDN
 
-<https://unpkg.com/vue-router@4>
+https://unpkg.com/vue-router@4
+
+
 
 Unpkg.com provides npm-based CDN links. The above link will always point to the latest release on npm. You can also use a specific version/tag via URLs like `https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js`.
 
+
+
 This will expose Vue Router via a global `VueRouter` object, e.g. `VueRouter.createRouter(...)`.
+
+<RuleKitLink />

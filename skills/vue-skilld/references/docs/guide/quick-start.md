@@ -1,5 +1,5 @@
 ---
-url: /guide/quick-start.md
+footer: false
 ---
 
 

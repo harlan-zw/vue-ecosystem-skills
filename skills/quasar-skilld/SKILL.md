@@ -3,8 +3,8 @@ name: quasar-skilld
 description: "Build high-performance VueJS user interfaces (SPA, PWA, SSR, Mobile and Desktop) in record time. ALWAYS use when writing code importing \"quasar\". Consult for debugging, best practices, or modifying quasar."
 metadata:
   version: 2.18.7
-  generated_at: 2026-03-19
-  references_synced_at: 2026-03-19
+  generated_at: 2026-03-20
+  references_synced_at: 2026-03-20
 ---
 
 # quasarframework/quasar `quasar`

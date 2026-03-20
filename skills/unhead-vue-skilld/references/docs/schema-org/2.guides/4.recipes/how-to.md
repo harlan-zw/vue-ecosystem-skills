@@ -201,7 +201,7 @@ For the best user experience, your HTML structure should match your schema. Here
       <p>Cut the wood panels to the proper dimensions.</p>
     </div>
 
-    
+    <!-- Additional steps... -->
   </div>
 </div>
 ```

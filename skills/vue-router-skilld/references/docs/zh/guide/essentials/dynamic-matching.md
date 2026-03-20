@@ -24,7 +24,7 @@ _路径参数_ 用冒号 `:` 表示。当一个路由被匹配时，它的 _para
 ```vue
 <template>
   <div>
-    
+    <!-- 当前路由可以通过 $route 在模板中访问 -->
     User {{ $route.params.id }}
   </div>
 </template>

@@ -1,6 +1,3 @@
----
-url: /about/faq.md
----
 # Frequently Asked Questions {#frequently-asked-questions}
 
 ## Who maintains Vue? {#who-maintains-vue}

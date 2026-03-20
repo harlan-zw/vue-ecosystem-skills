@@ -30,7 +30,7 @@ If you are building a website, you can also skip configuring the quasar.config f
 <head>
   ...
 
-  
+  <!-- CDN example for Animate.css -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -66,7 +66,7 @@ Notice the string `animated` in front of the actual animation class name.
   enter-active-class="animated fadeIn"
   leave-active-class="animated fadeOut"
 >
-  
+  <!-- Wrapping only one DOM element, defined by QBtn -->
   <q-btn
     color="secondary"
     icon="mail"
@@ -218,7 +218,7 @@ Example:
   enter-active-class="animated fadeIn slower delay-5s repeat-2"
   leave-active-class="animated fadeOut"
 >
-  
+  <!-- Wrapping only one DOM element, defined by QBtn -->
   <q-btn
     color="secondary"
     icon="mail"
@@ -236,7 +236,7 @@ You can also group components or DOM elements in a transition so that the same e
   enter-active-class="animated fadeIn"
   leave-active-class="animated fadeOut"
 >
-  
+  <!-- We wrap a "p" tag and a QBtn -->
   <p key="text">
      Lorem Ipsum
   </p>

@@ -1,6 +1,3 @@
----
-url: /guide/essentials/watchers.md
----
 # Watchers {#watchers}
 
 ## Basic Example {#basic-example}

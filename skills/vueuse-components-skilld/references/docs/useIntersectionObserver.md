@@ -57,7 +57,7 @@ function onIntersectionObserver([entry]: IntersectionObserverEntry[]) {
     </div>
   </div>
 
-  
+  <!-- with options -->
   <div ref="root">
     <p>
       Scroll me down!

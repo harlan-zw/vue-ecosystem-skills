@@ -209,7 +209,7 @@ export default viteSSR(App, { routes: [] }, ({ app, initialState }) => {
 Then, call VueQuery from any component using Vue's `onServerPrefetch`:
 
 ```html
-
+<!-- MyComponent.vue -->
 <template>
   <div>
     <button @click="refetch">Refetch</button>

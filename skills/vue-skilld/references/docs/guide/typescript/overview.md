@@ -1,5 +1,5 @@
 ---
-url: /guide/typescript/overview.md
+outline: deep
 ---
 
 # Using Vue with TypeScript {#using-vue-with-typescript}

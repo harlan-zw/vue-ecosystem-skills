@@ -140,7 +140,7 @@ const messages = {
 
 `en`ロケールは階層構造のオブジェクトを持ちます。
 
-`message`は、`message.the_world`と`message.dio`を持ちます。`message.linked`は、`@:message.dio @:message.the_world !!!!`を持ち、`message.dio`と`message.the_world`でロケールのメッセージキーにリンクしています。
+`message`は、`message.the_world`と`message.dio`を持ちます。`message.linked`は、`@:message.dio @:message.the_world !!!message.dio`と`message.the_world`でロケールのメッセージキーにリンクしています。
 
 以下は、テンプレートでの`$t`の使用例です。
 
@@ -378,6 +378,6 @@ const messages = {
 
 ```html
 <p>hello
-
+<!--<br>は存在しますが、文字列でなくhtmlとして描画されます-->
 world</p>
 ```

@@ -90,21 +90,21 @@ By using the UMD version, you'll have all of the components, directives and Quas
 You will notice that you won't be able to use the self-closing tag form of any of the components. You must close all components tags.
 
 ```html
-
+<!-- Incorrect usage: In docs, but for Quasar CLI usage -->
 <q-btn label="My Button" />
+<!-- ^^^ can't use it like this on UMD -->
 
-
-
+<!-- Correct usage: Instead, include a self-closing tag too: -->
 <q-btn label="My Button"></q-btn>
 ```
 
 ### Examples
 
 ```html
-
+<!-- components -->
 <q-btn label="My Button"></q-btn>
 
-
+<!-- directives -->
 <div v-ripple>...</div>
 ```
 

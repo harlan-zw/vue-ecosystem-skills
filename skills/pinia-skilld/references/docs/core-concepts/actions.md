@@ -45,16 +45,7 @@ export const useUsers = defineStore('users', {
     async registerUser(login, password) {
       try {
         this.userData = await api.post({ login, password })
-        showTooltip(`Welcome back ${this.userData.name}!`)
-      } catch (error) {
-        showTooltip(error)
-        // let the form component display the error
-        return error
-      }
-    },
-  },
-})
-```
+        showTooltip(`Welcome back ${this.userData.name}``
 
 You are also completely free to set whatever arguments you want and return anything. When calling actions, everything will be automatically inferred!
 
@@ -68,7 +59,7 @@ store.randomizeCounter()
 </script>
 
 <template>
-  
+  <!-- Even on the template -->
   <button @click="store.randomizeCounter()">Randomize</button>
 </template>
 ```

@@ -236,10 +236,10 @@ resetField({
 Note that it is unsafe to use this function as an event handler directly, check the following snippet:
 
 ```vue-html
-
+<!-- ⛔️ Unsafe -->
 <button @click="resetField">Reset</button>
 
-
+<!-- ✅  Safe -->
 <button @click="resetField()">Reset</button>
 ```
 

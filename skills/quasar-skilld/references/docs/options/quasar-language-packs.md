@@ -51,7 +51,7 @@ app.use(Quasar, {
   lang: langDe
 })
 <<| html Quasar UMD |>>
-
+<!-- include this after Quasar JS tag -->
 <script src="https://cdn.jsdelivr.net/npm/quasar@2/dist/lang/de.umd.prod.js"></script>
 <script>
   Quasar.Lang.set(Quasar.Lang.de)

@@ -251,7 +251,7 @@ An article Look at the source code will help you to get familiar with a Quasar c
 
 #### Development Setup
 
-You will need Node.js version **v20+** along pnpm. Read `package.json` and take notice of the scripts you can use.
+You will need Node.js version **v22+** along pnpm. Read `package.json` and take notice of the scripts you can use.
 
 After cloning the repo, run:
 

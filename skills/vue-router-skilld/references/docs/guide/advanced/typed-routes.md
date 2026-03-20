@@ -1,11 +1,10 @@
----
-url: /guide/advanced/typed-routes.md
----
-# Typed Routes&#x20;
+# Typed Routes <Badge type="tip" text="v4.4.0+" />
+
+<RuleKitLink />
 
 
 
-It's possible to configure the router to have a *map* of typed routes. While this can be done manually, it is recommended to use the [built-in file-based routing plugin](/file-based-routing/) to generate the routes and the types automatically from a file based routing system.
+It's possible to configure the router to have a _map_ of typed routes. While this can be done manually, it is recommended to use the [built-in file-based routing plugin](/file-based-routing/) to generate the routes and the types automatically from a file based routing system.
 
 ## Manual Configuration
 

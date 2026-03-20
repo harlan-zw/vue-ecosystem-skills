@@ -1,6 +1,3 @@
----
-url: /api/composition-api-dependency-injection.md
----
 # Composition API: <br>Dependency Injection {#composition-api-dependency-injection}
 
 ## provide() {#provide}

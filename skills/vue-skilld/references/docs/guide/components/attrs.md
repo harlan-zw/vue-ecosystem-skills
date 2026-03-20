@@ -1,5 +1,5 @@
 ---
-url: /guide/components/attrs.md
+outline: deep
 ---
 
 # Fallthrough Attributes {#fallthrough-attributes}

@@ -38,10 +38,10 @@ S - size
 ## Examples
 
 ```html
-
+<!-- small padding in all directions -->
 <div class="q-pa-sm">...</div>
 
-
+<!-- medium margin to top, small margin to right -->
 <q-card class="q-mt-md q-mr-sm">...</q-card>
 ```
 

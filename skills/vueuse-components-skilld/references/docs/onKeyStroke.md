@@ -109,7 +109,7 @@ function onUpdate(e: KeyboardEvent) {
 
 <template>
   <input v-on-key-stroke:c,v="onUpdate" type="text">
-  
+  <!-- with options -->
   <input v-on-key-stroke:c,v="[onUpdate, { eventName: 'keyup' }]" type="text">
 </template>
 ```

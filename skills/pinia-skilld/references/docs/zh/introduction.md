@@ -71,7 +71,7 @@ counter.increment()
 </script>
 
 <template>
-  
+  <!-- 直接从 store 中访问 state -->
   <div>Current Count: {{ counter.count }}</div>
 </template>
 ```

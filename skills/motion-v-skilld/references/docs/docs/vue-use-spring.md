@@ -1,14 +1,102 @@
----
-title: "useSpring — Vue spring animations | Motion"
-meta:
-  "og:description": "Discover Motion for Vue's useSpring hook. Create smooth spring animations for motion values. Learn to animate with .set(), track values &amp; customize transitions."
-  "og:title": "useSpring — Vue spring animations | Motion"
-  "twitter:description": "Discover Motion for Vue's useSpring hook. Create smooth spring animations for motion values. Learn to animate with .set(), track values &amp; customize transitions."
-  "twitter:title": "useSpring — Vue spring animations | Motion"
-  description: "Discover Motion for Vue's useSpring hook. Create smooth spring animations for motion values. Learn to animate with .set(), track values &amp; customize transitions."
----
+useSpring — Vue spring animations | Motion
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+AI Kit
+
+
+
+Motion+
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+
+
+Motion+
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+AI Kit
+
+
+
+Motion+
+
+Documentation
+
+<h2>JS</h2> <h2>React</h2> Vue Studio
+
+<h3>Get started</h3> <h3>Examples</h3>
+
+### Animation
+
+- Overview
+- Directive
+- Gesture
+- Layout
+- Scroll
+- Transition options
+
+### Components
+
+- motion
+- AnimatePresence
+- LayoutGroup
+- LazyMotion
+- MotionConfig
+- Reorder
+
+### Premium APIs
+
+- AnimateNumber
+- Cursor
+- Ticker
+- Typewriter
+
+### Motion values
+
+- Overview
+- useMotionTemplate
+- useMotionValueEvent
+- useScroll
+- useSpring
+- useTime
+- useTransform
+- useVelocity
+
+### Hooks
+
+- useAnimate
+- useAnimationFrame
+- useDragControls
+- useInView
+- useReducedMotion
+
+### Integrations
+
+- Reka
 
 Vue
+
+Copy page
 
 # useSpring
 
@@ -184,7 +272,50 @@ animations.dev
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 
@@ -202,7 +333,50 @@ Upgrade
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 
@@ -220,7 +394,50 @@ Upgrade
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 

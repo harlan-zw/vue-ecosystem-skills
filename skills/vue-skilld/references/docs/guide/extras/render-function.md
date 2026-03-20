@@ -1,5 +1,5 @@
 ---
-url: /guide/extras/render-function.md
+outline: deep
 ---
 
 # Render Functions & JSX {#render-functions-jsx}

@@ -5,7 +5,7 @@ title: ChunkRecording
 
 # Interface: ChunkRecording
 
-Defined in: activities/chat/stream/types.ts:73
+Defined in: activities/chat/stream/types.ts:91
 
 Recording format for replay testing
 
@@ -17,7 +17,7 @@ Recording format for replay testing
 chunks: object[];
 ```
 
-Defined in: activities/chat/stream/types.ts:78
+Defined in: activities/chat/stream/types.ts:96
 
 #### chunk
 
@@ -45,7 +45,7 @@ timestamp: number;
 optional model: string;
 ```
 
-Defined in: activities/chat/stream/types.ts:76
+Defined in: activities/chat/stream/types.ts:94
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: activities/chat/stream/types.ts:76
 optional provider: string;
 ```
 
-Defined in: activities/chat/stream/types.ts:77
+Defined in: activities/chat/stream/types.ts:95
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: activities/chat/stream/types.ts:77
 optional result: ProcessorResult;
 ```
 
-Defined in: activities/chat/stream/types.ts:83
+Defined in: activities/chat/stream/types.ts:101
 
 ***
 
@@ -75,7 +75,7 @@ Defined in: activities/chat/stream/types.ts:83
 timestamp: number;
 ```
 
-Defined in: activities/chat/stream/types.ts:75
+Defined in: activities/chat/stream/types.ts:93
 
 ***
 
@@ -85,4 +85,4 @@ Defined in: activities/chat/stream/types.ts:75
 version: "1.0";
 ```
 
-Defined in: activities/chat/stream/types.ts:74
+Defined in: activities/chat/stream/types.ts:92

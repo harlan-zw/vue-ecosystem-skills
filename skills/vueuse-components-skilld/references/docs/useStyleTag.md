@@ -48,7 +48,7 @@ useStyleTag('.foo { margin-top: 32px; }', { id: 'custom-id' })
 ```
 
 ```html
-
+<!-- injected to <head> -->
 <style id="custom-id">
   .foo {
     margin-top: 32px;
@@ -67,7 +67,7 @@ useStyleTag('.foo { margin-top: 32px; }', { media: 'print' })
 ```
 
 ```html
-
+<!-- injected to <head> -->
 <style id="vueuse_styletag_1" media="print">
   .foo {
     margin-top: 32px;

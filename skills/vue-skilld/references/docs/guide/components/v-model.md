@@ -1,6 +1,3 @@
----
-url: /guide/components/v-model.md
----
 # Component v-model {#component-v-model}
 
 <ScrimbaLink href="https://scrimba.com/links/vue-component-v-model" title="Free Vue.js Component v-model Lesson" type="scrimba">

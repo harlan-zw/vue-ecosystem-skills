@@ -38,7 +38,7 @@ const routes = [
 
 ```html
 <router-view v-slot="{ Component, route }">
-  
+  <!-- 使用任何自定义过渡和回退到 `fade` -->
   <transition :name="route.meta.transition || 'fade'">
     <component :is="Component" />
   </transition>
@@ -52,7 +52,7 @@ const routes = [
 也可以根据目标路由和当前路由之间的关系，动态地确定使用的过渡。使用和刚才非常相似的片段：
 
 ```html
-
+<!-- 使用动态过渡名称 -->
 <router-view v-slot="{ Component, route }">
   <transition :name="route.meta.transition">
     <component :is="Component" />

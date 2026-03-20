@@ -75,7 +75,7 @@ export default {
 <template>
   <h1>Custom Layout!</h1>
 
-  
+  <!-- 마크다운 내용은 여기에 렌더링됩니다 -->
   <Content />
 </template>
 ```
@@ -144,7 +144,7 @@ const { page, frontmatter } = useData()
 
   <NotFound v-if="page.isNotFound" />
   <Home v-if="frontmatter.layout === 'home'" />
-  <Page v-else /> 
+  <Page v-else /> <!-- <Page /> 는 <Content /> 를 렌더링합니다 -->
 </template>
 ```
 

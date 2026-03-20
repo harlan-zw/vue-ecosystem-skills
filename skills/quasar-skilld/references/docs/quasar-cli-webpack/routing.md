@@ -21,11 +21,9 @@ export default function ({ store /*, ssrContext */ }) {
   // ...
   const userStore = useUserStore(store)
 
-  Router.beforeEach((to, from, next) => {
+  Router.beforeEach((to, from) => {
     if (to.matched.some(record => record.meta.requiresAuth) && !userStore.isSignedIn) {
-      next({ name: 'account-signin', query: { next: to.fullPath } })
-    } else {
-      next()
+      return { name: 'account-signin', query: { next: to.fullPath } }
     }
   })
   // ...

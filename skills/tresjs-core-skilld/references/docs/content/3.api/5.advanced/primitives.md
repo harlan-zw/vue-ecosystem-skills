@@ -96,13 +96,13 @@ function customDispose(instance) {
 </script>
 
 <template>
-  
+  <!-- Default: no disposal -->
   <primitive :object="mesh" />
 
-  
+  <!-- Force disposal -->
   <primitive :object="mesh.geometry" :dispose="true" />
 
-  
+  <!-- Custom disposal -->
   <primitive :object="mesh" :dispose="customDispose" />
 </template>
 ```
@@ -129,7 +129,7 @@ const customMaterial = new MeshStandardMaterial({
 <template>
   <TresMesh>
     <TresBoxGeometry :args="[1, 1, 1]" />
-    
+    <!-- Attach the primitive as the mesh's material -->
     <primitive :object="customMaterial" attach="material" />
   </TresMesh>
 </template>
@@ -145,7 +145,7 @@ const customGeometry = new ConeGeometry(1, 2, 8)
 
 <template>
   <TresMesh>
-    
+    <!-- Attach the primitive as the mesh's geometry -->
     <primitive :object="customGeometry" attach="geometry" />
     <TresMeshBasicMaterial :color="0x00FF00" />
   </TresMesh>
@@ -170,7 +170,7 @@ const attachToTarget = (parent, self) => {
 
 <template>
   <TresDirectionalLight :position="[5, 5, 5]">
-    
+    <!-- Custom attachment -->
     <primitive :object="customLight" :attach="attachToTarget" />
   </TresDirectionalLight>
 </template>
@@ -217,7 +217,7 @@ useLoop().onBeforeRender(() => {
 </script>
 
 <template>
-  
+  <!-- These props are applied directly to the Three.js object -->
   <primitive
     :object="mesh"
     :position="[1, 2, 3]"
@@ -294,10 +294,10 @@ const meshWithOnlyGeometry = new Mesh(new BoxGeometry(1, 1, 1))
 
 <template>
   <primitive :object="meshWithOnlyGeometry">
-    
+    <!-- Add material as child -->
     <TresMeshBasicMaterial :color="0xFF0000" />
 
-    
+    <!-- Add additional objects as children -->
     <TresMesh :position="[0, 1.5, 0]">
       <TresSphereGeometry :args="[0.3, 16, 16]" />
       <TresMeshBasicMaterial :color="0x00FF00" />
@@ -323,10 +323,10 @@ const modelNode = computed(() => nodes.value.AkuAku)
 </script>
 
 <template>
-  
+  <!-- Use specific node from the model -->
   <primitive v-if="modelNode" :object="modelNode" />
 
-  
+  <!-- Or use the entire scene -->
   <primitive v-if="state.scene" :object="state.scene" />
 </template>
 ```
@@ -373,7 +373,7 @@ watchEffect(() => {
 
 <template>
   <TresGroup>
-    
+    <!-- Render different parts with different transformations -->
     <primitive v-if="chassis" :object="chassis" />
     <primitive v-if="wheels" :object="wheels" :rotation="[0, rotationY, 0]" />
     <primitive v-if="engine" :object="engine" @click="startEngine" />
@@ -434,16 +434,16 @@ You can override the default behavior using the `dispose` prop:
 
 ```vue
 <template>
-  
+  <!-- Default: Don't dispose primitive resources -->
   <primitive :object="mesh" />
 
-  
+  <!-- Explicitly disable disposal -->
   <primitive :object="mesh" :dispose="false" />
 
-  
+  <!-- Force disposal of the primitive and its resources -->
   <primitive :object="mesh" :dispose="true" />
 
-  
+  <!-- Custom disposal function -->
   <primitive :object="mesh" :dispose="customDispose" />
 </template>
 ```
@@ -542,7 +542,7 @@ const mesh = new Mesh(
 <template>
   <TresCanvas :custom-renderer-options="customRendererOptions">
     <TresPerspectiveCamera :position="[3, 3, 3]" />
-    
+    <!-- Use the custom prefixed primitive component -->
     <myprimitive :object="mesh" />
   </TresCanvas>
 </template>

@@ -1,16 +1,104 @@
----
-title: "Vue text animations with <Typewriter> | Motion"
-meta:
-  "og:description": "A customizable typewriter animation component for Vue that creates realistic typing animations with human-like variance, stylable cursors and accessibility."
-  "og:title": "Vue text animations with <Typewriter> | Motion"
-  "twitter:description": "A customizable typewriter animation component for Vue that creates realistic typing animations with human-like variance, stylable cursors and accessibility."
-  "twitter:title": "Vue text animations with <Typewriter> | Motion"
-  description: "A customizable typewriter animation component for Vue that creates realistic typing animations with human-like variance, stylable cursors and accessibility."
----
+Vue text animations with <Typewriter> | Motion
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+AI Kit
+
+
+
+Motion+
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+
+
+Motion+
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+AI Kit
+
+
+
+Motion+
+
+Documentation
+
+<h2>JS</h2> <h2>React</h2> Vue Studio
+
+<h3>Get started</h3> <h3>Examples</h3>
+
+### Animation
+
+- Overview
+- Directive
+- Gesture
+- Layout
+- Scroll
+- Transition options
+
+### Components
+
+- motion
+- AnimatePresence
+- LayoutGroup
+- LazyMotion
+- MotionConfig
+- Reorder
+
+### Premium APIs
+
+- AnimateNumber
+- Cursor
+- Ticker
+- Typewriter
+
+### Motion values
+
+- Overview
+- useMotionTemplate
+- useMotionValueEvent
+- useScroll
+- useSpring
+- useTime
+- useTransform
+- useVelocity
+
+### Hooks
+
+- useAnimate
+- useAnimationFrame
+- useDragControls
+- useInView
+- useReducedMotion
+
+### Integrations
+
+- Reka
 
 Vue
 
 Motion+ Exclusive
+
+Copy page
 
 # Typewriter
 
@@ -142,7 +230,50 @@ animations.dev
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 
@@ -160,7 +291,50 @@ Upgrade
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 
@@ -178,7 +352,50 @@ Upgrade
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 

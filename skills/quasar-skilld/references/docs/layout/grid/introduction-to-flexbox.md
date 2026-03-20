@@ -110,7 +110,11 @@ Another example with a visual representation below it:
   <div class="col">1</div>
   <div class="col">1</div>
   <div class="col">1</div>
-  
+  <!--
+     we have 3 children, so equivalent
+     to above would be to use `col-4`
+     on each of the children
+  -->
 </div>
 
 <div class="row">
@@ -132,13 +136,17 @@ This allows you, among other things, to dynamically stack rows vertically on sma
 <div class="row">
   <div class="col-2">...</div>
 
-  
+  <!-- 2 + 6 < 12, so next element is placed on same line -->
   <div class="col-6">...</div>
 
-  
+  <!-- 2 + 6 + 10 > 12, so next element wraps to next line -->
   <div class="col-10">...</div>
 
-  
+  <!--
+    10 + 3 > 12, so next element wraps to next line.
+    Note that we take into consideration the current line only
+    (with col-10 only, since it was wrapped to its own line).
+  -->
   <div class="col-3">...</div>
 </div>
 ```
@@ -207,7 +215,10 @@ Like previously mentioned, rows wrap content by default, so when 12 (or more) gr
 
 ```html
 <div class="row">
-  
+  <!--
+    more than 12 grid points together,
+    so second <div> will wrap on next line
+  -->
   <div class="col-8">col</div>
   <div class="col-8">col</div>
 </div>

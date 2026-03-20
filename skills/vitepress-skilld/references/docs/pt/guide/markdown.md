@@ -42,12 +42,12 @@ Por exemplo, dada a seguinte estrutura de diretórios:
 E supondo que você esteja em `foo/one.md`:
 
 ```md
-[Página Inicial](/) 
-[foo](/foo/) 
-[foo heading](./#heading) 
-[bar - three](../bar/three) 
-[bar - three](../bar/three.md) 
-[bar - four](../bar/four.html) 
+[Página Inicial](/) <!-- leva o usuário ao index.md raiz -->
+[foo](/foo/) <!-- leva o usuário ao index.html do diretório foo -->
+[foo heading](./#heading) <!-- ancora o usuário a um cabeçalho do arquivo índice foo -->
+[bar - three](../bar/three) <!-- você pode omitir a extensão -->
+[bar - three](../bar/three.md) <!-- você pode adicionar .md -->
+[bar - four](../bar/four.html) <!-- ou você pode adicionar .html -->
 ```
 
 ### Sufixo de Página {#page-suffix}
@@ -655,11 +655,11 @@ Você também pode especificar o idioma dentro das chaves (`{}`), assim:
 ```md
 <<< @/snippets/snippet.cs{c#}
 
-
+<!-- com destaque de linha: -->
 
 <<< @/snippets/snippet.cs{1,2,4-6 c#}
 
-
+<!-- com números de linha: -->
 
 <<< @/snippets/snippet.cs{1,2,4-6 c#:line-numbers}
 ```
@@ -733,11 +733,11 @@ Você também pode [importar _snippets_ de código](#import-code-snippets) em gr
 ```md
 ::: code-group
 
-
+<!-- nome de arquivo usado como título por padrão -->
 
 <<< @/snippets/snippet.js
 
-
+<!-- você pode fornecer um personalizado também -->
 
 <<< @/snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [snippet with region]
 
@@ -771,7 +771,7 @@ Por exemplo, você pode incluir um arquivo markdown relativo usando isto:
 
 ## Conceitos Básicos
 
-
+<!--@include: ./parts/basics.md-->
 ```
 
 **Arquivo da Parte** (`parts/basics.md`)
@@ -807,7 +807,7 @@ Também suporta a seleção de um intervalo de linhas:
 
 ## Conceitos Básicos
 
-
+<!--@include: ./parts/basics.md{3,}-->
 ```
 
 **Arquivo da Parte** (`parts/basics.md`)

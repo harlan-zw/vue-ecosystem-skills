@@ -75,7 +75,7 @@ export default {
 <template>
   <h1>Custom Layout!</h1>
 
-  
+  <!-- 此处将渲染 markdown 内容 -->
   <Content />
 </template>
 ```
@@ -144,7 +144,7 @@ const { page, frontmatter } = useData()
 
   <NotFound v-if="page.isNotFound" />
   <Home v-if="frontmatter.layout === 'home'" />
-  <Page v-else /> 
+  <Page v-else /> <!-- <Page /> renders <Content /> -->
 </template>
 ```
 

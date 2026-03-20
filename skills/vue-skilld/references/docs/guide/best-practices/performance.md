@@ -1,5 +1,5 @@
 ---
-url: /guide/best-practices/performance.md
+outline: deep
 ---
 
 # Performance {#performance}

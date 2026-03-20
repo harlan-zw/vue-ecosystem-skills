@@ -1,6 +1,3 @@
----
-url: /guide/reusability/plugins.md
----
 # Plugins {#plugins}
 
 ## Introduction {#introduction}
@@ -88,17 +85,7 @@ app.use(i18nPlugin, {
 })
 ```
 
-Now, our initial expression `$translate('greetings.hello')` will be replaced by `Bonjour!` at runtime.
-
-See also: [Augmenting Global Properties](/guide/typescript/options-api#augmenting-global-properties) <sup class="vt-badge ts" />
-
-:::tip
-Use global properties scarcely, since it can quickly become confusing if too many global properties injected by different plugins are used throughout an app.
-:::
-
-### Provide / Inject with Plugins {#provide-inject-with-plugins}
-
-Plugins also allow us to use `provide` to give plugin users access to a function or attribute. For example, we can allow the application to have access to the `options` parameter to be able to use the translations object.
+Now, our initial expression `$translate('greetings.hello')` will be replaced by `Bonjourprovide` to give plugin users access to a function or attribute. For example, we can allow the application to have access to the `options` parameter to be able to use the translations object.
 
 ```js{3} [plugins/i18n.js]
 export default {

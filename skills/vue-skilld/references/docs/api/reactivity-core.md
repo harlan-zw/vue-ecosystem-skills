@@ -1,6 +1,3 @@
----
-url: /api/reactivity-core.md
----
 # Reactivity API: Core {#reactivity-api-core}
 
 :::info See also

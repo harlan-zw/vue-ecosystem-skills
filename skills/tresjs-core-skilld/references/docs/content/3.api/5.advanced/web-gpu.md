@@ -57,7 +57,7 @@ const createWebGPURenderer = (ctx: TresRendererSetupContext) => {
     <TresPerspectiveCamera :position="[3, 3, 3]" />
     <TresBoxGeometry :args="[1, 1, 1]" />
     <TresMeshBasicMaterial color="hotpink" />
-    
+    <!-- Your 3D scene here -->
   </TresCanvas>
 </template>
 ```

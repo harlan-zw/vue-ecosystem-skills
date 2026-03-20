@@ -114,8 +114,9 @@ The following props are detailed in the [quasar.config file](/quasar-cli-vite/qu
 
 build: {
 - target: {
+-   browser: 'baseline-widely-available',
 + esbuildTarget: {
-    browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
++   browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
     node: 'node20'
   },
 

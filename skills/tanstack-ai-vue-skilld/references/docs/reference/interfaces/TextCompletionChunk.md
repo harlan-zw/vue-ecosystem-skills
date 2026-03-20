@@ -5,7 +5,7 @@ title: TextCompletionChunk
 
 # Interface: TextCompletionChunk
 
-Defined in: types.ts:956
+Defined in: types.ts:973
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: types.ts:956
 content: string;
 ```
 
-Defined in: types.ts:959
+Defined in: types.ts:976
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: types.ts:959
 optional finishReason: "length" | "stop" | "content_filter" | null;
 ```
 
-Defined in: types.ts:961
+Defined in: types.ts:978
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: types.ts:961
 id: string;
 ```
 
-Defined in: types.ts:957
+Defined in: types.ts:974
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: types.ts:957
 model: string;
 ```
 
-Defined in: types.ts:958
+Defined in: types.ts:975
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: types.ts:958
 optional role: "assistant";
 ```
 
-Defined in: types.ts:960
+Defined in: types.ts:977
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: types.ts:960
 optional usage: object;
 ```
 
-Defined in: types.ts:962
+Defined in: types.ts:979
 
 #### completionTokens
 

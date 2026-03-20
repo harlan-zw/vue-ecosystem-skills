@@ -37,7 +37,7 @@ You may access your form's values using the `values` scoped slot prop on the `Fo
     <Field name="email" type="email" />
     <Field name="password" type="password" />
 
-    
+    <!-- print form values -->
     <pre>{{ values }}</pre>
   </Form>
 </template>
@@ -496,7 +496,7 @@ This is an example of using the form actions object to reset the form:
 ```vue
 <template>
   <Form @submit="onSubmit" :validation-schema="schema">
-    
+    <!-- fields ... -->
   </Form>
 </template>
 
@@ -547,7 +547,7 @@ You can also use template `$refs` to reset the form whenever you need:
 ```vue
 <template>
   <Form ref="form" @submit="onSubmit" :validation-schema="schema">
-    
+    <!-- fields ... -->
 
     <button type="Submit">Submit</button>
   </Form>

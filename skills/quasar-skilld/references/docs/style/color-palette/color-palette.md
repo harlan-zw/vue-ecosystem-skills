@@ -33,10 +33,10 @@ Here's the list of colors provided out of the box. Within your app's `*.vue` fil
 Use `text-` or `bg-` prefixes as class names to change the color of text or the color of the background.
 
 ```html
-
+<!-- changing text color -->
 <p class="text-primary">....</p>
 
-
+<!-- changing background color -->
 <p class="bg-positive">...</p>
 ```
 
@@ -45,7 +45,7 @@ Use `text-` or `bg-` prefixes as class names to change the color of text or the 
 In your app's `*.vue` files you can use the colors as `$primary`, `$red-1`, and so on.
 
 ```html
-
+<!-- Notice lang="sass" -->
 <style lang="sass">
 div
   color: $red-1
@@ -54,7 +54,7 @@ div
 ```
 
 ```html
-
+<!-- Notice lang="scss" -->
 <style lang="scss">
 div {
   color: $red-1;

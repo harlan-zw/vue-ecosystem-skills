@@ -18,13 +18,7 @@ const source = shallowRef(0)
 
 const { trigger, ignoreUpdates } = watchTriggerable(
   source,
-  v => console.log(`Changed to ${v}!`),
-)
-
-source.value = 'bar'
-await nextTick() // logs: Changed to bar!
-
-// Execution of WatchCallback via `trigger` does not require waiting
+  v => console.log(`Changed to ${v}trigger` does not require waiting
 trigger() // logs: Changed to bar!
 ```
 

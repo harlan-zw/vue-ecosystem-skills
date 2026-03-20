@@ -32,12 +32,12 @@ const toggleDark = useToggle(isDark)
 By default, it uses Tailwind CSS favored dark mode, which enables dark mode when class `dark` is applied to the `html` tag, for example:
 
 ```html
-
+<!--light-->
 <html>
   ...
 </html>
 
-
+<!--dark-->
 <html class="dark">
   ...
 </html>
@@ -61,14 +61,14 @@ const isDark = useDark({
 will work like
 
 ```html
-
+<!--light-->
 <html>
   <body color-scheme="light">
     ...
   </body>
 </html>
 
-
+<!--dark-->
 <html>
   <body color-scheme="dark">
     ...

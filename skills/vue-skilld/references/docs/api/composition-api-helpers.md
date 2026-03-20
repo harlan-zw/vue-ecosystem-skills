@@ -1,6 +1,3 @@
----
-url: /api/composition-api-helpers.md
----
 # Composition API: Helpers {#composition-api-helpers}
 
 ## useAttrs() {#useattrs}

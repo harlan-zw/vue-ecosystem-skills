@@ -42,12 +42,12 @@ VitePress 带有内置的 Markdown 扩展。
 假设现在处于 `foo/one.md` 文件中：
 
 ```md
-[Home](/) 
-[foo](/foo/) 
-[foo heading](./#heading) 
-[bar - three](../bar/three) 
-[bar - three](../bar/three.md) 
-[bar - four](../bar/four.html) 
+[Home](/) <!-- 将用户导航至根目录下的 index.html -->
+[foo](/foo/) <!-- 将用户导航至目录 foo 下的 index.html -->
+[foo heading](./#heading) <!-- 将用户锚定到目录 foo 下的index文件中的一个标题上 -->
+[bar - three](../bar/three) <!-- 可以省略扩展名 -->
+[bar - three](../bar/three.md) <!-- 可以添加 .md -->
+[bar - four](../bar/four.html) <!-- 或者可以添加 .html -->
 ```
 
 ### 页面后缀 {#page-suffix}
@@ -655,11 +655,11 @@ const line4 = 'This is line 4'
 ```md
 <<< @/snippets/snippet.cs{c#}
 
-
+<!-- 带行高亮: -->
 
 <<< @/snippets/snippet.cs{1,2,4-6 c#}
 
-
+<!-- 带行号: -->
 
 <<< @/snippets/snippet.cs{1,2,4-6 c#:line-numbers}
 ```
@@ -733,11 +733,11 @@ export default config
 ```md
 ::: code-group
 
-
+<!-- 文件名默认用作标题 -->
 
 <<< @/snippets/snippet.js
 
-
+<!-- 也可以提供定制的代码组 -->
 
 <<< @/snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [snippet with region]
 
@@ -771,7 +771,7 @@ export default config
 
 ## Basics
 
-
+<!--@include: ./parts/basics.md-->
 ```
 
 **Part file** (`parts/basics.md`)
@@ -807,7 +807,7 @@ Can be created using `.foorc.json`.
 
 ## Basics
 
-
+<!--@include: ./parts/basics.md{3,}-->
 ```
 
 **Part file** (`parts/basics.md`)

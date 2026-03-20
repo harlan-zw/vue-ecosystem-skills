@@ -1,6 +1,3 @@
----
-url: /guide/built-ins/transition.md
----
 
 
 # Transition {#transition}

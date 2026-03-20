@@ -332,7 +332,7 @@ import {
       </NavigationMenuItem>
     </NavigationMenuList>
 
-    
+    <!-- NavigationMenuContent will be rendered here when active  -->
     <NavigationMenuViewport />
   </NavigationMenuRoot>
 </template>

@@ -1,14 +1,11 @@
----
-url: /data-loaders/navigation-aware.md
----
 # Navigation aware
 
 Since the data fetching happens within a navigation guard, it's possible to control the navigation like in regular navigation guards:
 
-* Thrown errors (or rejected Promises) cancel the navigation (same behavior as in a regular navigation guard) and are intercepted by Vue Router's error handling
-* By calling `reroute()`, you can redirect or cancel the navigation
+- Thrown errors (or rejected Promises) cancel the navigation (same behavior as in a regular navigation guard) and are intercepted by Vue Router's error handling
+- By calling `reroute()`, you can redirect or cancel the navigation
 
-Any other returned value is considered as the *resolved data* and will appear in the `data` property.
+Any other returned value is considered as the _resolved data_ and will appear in the `data` property.
 
 ## Controlling the navigation with `reroute()`
 
@@ -48,7 +45,7 @@ Since `reroute()` throws internally (its return type is `never`), you don't need
 
 ## Consistent updates
 
-During a navigation, data loaders are grouped together like a *pack*. If the navigation is canceled, none of the results are used. This avoids having partial data updates in a page and inconsistencies between the URL and the page content. On the other hand, if the navigation is successful, all the data loaders are resolved together and the data is only updated **once all the loaders are resolved**. This is true even for lazy loaders. This ensures that even if you have loaders that are really fast, the old data is not displayed until all the loaders are resolved and the new data is completely ready to be displayed.
+During a navigation, data loaders are grouped together like a _pack_. If the navigation is canceled, none of the results are used. This avoids having partial data updates in a page and inconsistencies between the URL and the page content. On the other hand, if the navigation is successful, all the data loaders are resolved together and the data is only updated **once all the loaders are resolved**. This is true even for lazy loaders. This ensures that even if you have loaders that are really fast, the old data is not displayed until all the loaders are resolved and the new data is completely ready to be displayed.
 
 ## Lazy loaders
 

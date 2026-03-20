@@ -9,7 +9,7 @@ title: generateMessageId
 function generateMessageId(): string;
 ```
 
-Defined in: activities/chat/messages.ts:436
+Defined in: activities/chat/messages.ts:434
 
 Generate a unique message ID
 

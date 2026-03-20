@@ -376,10 +376,10 @@ Here is a live demo where you can view and test all the global validators live
 The field under validation may only contain alphabetic characters.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="alpha" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ alpha: true }" />
 ```
 
@@ -388,10 +388,10 @@ The field under validation may only contain alphabetic characters.
 The field under validation may contain alphabetic characters, numbers, dashes, or underscores.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="alpha_dash" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ alpha_dash: true }" />
 ```
 
@@ -400,10 +400,10 @@ The field under validation may contain alphabetic characters, numbers, dashes, o
 The field under validation may contain alphabetic characters or numbers.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="alpha_num" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ alpha_num: true }" />
 ```
 
@@ -412,10 +412,10 @@ The field under validation may contain alphabetic characters or numbers.
 The field under validation may contain alphabetic characters or spaces.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="alpha_spaces" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ alpha_spaces: true }" />
 ```
 
@@ -424,13 +424,13 @@ The field under validation may contain alphabetic characters or spaces.
 The field under validation must have a numeric value bounded by a minimum value and a maximum value.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="between:1,10" />
 
-
+<!-- object format with shorthand array -->
 <Field name="field" :rules="{ between: [1, 10] }" />
 
-
+<!-- object format with named arguments -->
 <Field name="field" :rules="{ between: { min: 1, max: 10 } }" />
 ```
 
@@ -466,10 +466,10 @@ Any fields defined to have this rule must have a `<Form />` parent in their hier
 The field under validation must be numeric and have the specified number of digits.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="digits:3" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ digits: 3 }" />
 ```
 
@@ -482,13 +482,13 @@ The field under validation must be numeric and have the specified number of digi
 The file added to the field under validation must be an image (jpg,svg,jpeg,png,bmp,gif) having the exact specified dimension.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" type="file" rules="dimensions:120,120" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ dimensions: [120, 120] }" />
 
-
+<!-- object format with named arguments -->
 <Field name="field" :rules="{ dimensions: { width: 120, height: 120 } }" />
 ```
 
@@ -502,10 +502,10 @@ The file added to the field under validation must be an image (jpg,svg,jpeg,png,
 The field under validation must be a valid email.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="email" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ email: true }" />
 ```
 
@@ -514,10 +514,10 @@ The field under validation must be a valid email.
 The field under validation must have a value that is not in the specified list. **Uses double equals** for checks.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="not_one_of:1,3" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ not_one_of: [1, 3] }" />
 ```
 
@@ -528,10 +528,10 @@ The field under validation must have a value that is not in the specified list. 
 The file added to the field under validation must have one of the extensions specified.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="ext:jpg,png" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ ext: ['jpg', 'png'] }" />
 ```
 
@@ -542,10 +542,10 @@ The file added to the field under validation must have one of the extensions spe
 The file added to the field under validation must have an image mime type (image/\*).
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="image" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ image: true }" />
 ```
 
@@ -554,10 +554,10 @@ The file added to the field under validation must have an image mime type (image
 The field under validation must be a valid integer value. Doesn't accept exponential notation.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="integer" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ integer: true }" />
 ```
 
@@ -566,10 +566,10 @@ The field under validation must be a valid integer value. Doesn't accept exponen
 The field under validation must match the given value, uses strict equality.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="is:hello" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ is: 'hello' }" />
 ```
 
@@ -582,10 +582,10 @@ The field under validation must match the given value, uses strict equality.
 The field under validation must not match the given value, uses strict equality.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="is_not:world" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ is_not: 'world' }" />
 ```
 
@@ -600,10 +600,10 @@ The field under validation must exactly have the specified number of items, only
 Allowed Iterable values are `string`, `array`, and any object that can be used with `Array.from`.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="length:5" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ length: 5 }" />
 ```
 
@@ -616,10 +616,10 @@ Allowed Iterable values are `string`, `array`, and any object that can be used w
 The field under validation length may not exceed the specified length.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="max:10" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ max: 10 }" />
 ```
 
@@ -632,10 +632,10 @@ The field under validation length may not exceed the specified length.
 The field under validation must be a numeric value and must not be greater than the specified value.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="max_value:10" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ max_value: 10 }" />
 ```
 
@@ -648,10 +648,10 @@ The field under validation must be a numeric value and must not be greater than 
 The file type added to the field under validation should have one of the specified mime types.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="mimes:image/jpeg" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ mimes: ['image/jpeg'] }" />
 ```
 
@@ -668,10 +668,10 @@ You can use '\*' to specify a wild card, something like `mimes:image/*` will acc
 The field under validation length should not be less than the specified length.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="min:3" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ min: 3 }" />
 ```
 
@@ -682,10 +682,10 @@ The field under validation length should not be less than the specified length.
 #### min_value
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="min_value:5" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ min_value: 5 }" />
 ```
 
@@ -700,10 +700,10 @@ The field under validation must be a numeric value and must not be less than the
 The field under validation must only consist of numbers.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="numeric" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ numeric: true }" />
 ```
 
@@ -712,10 +712,10 @@ The field under validation must only consist of numbers.
 The field under validation must have a value that is in the specified list. **Uses double equals** for checks.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="one_of:1,2,3" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ one_of: [1, 2, 3] }" />
 ```
 
@@ -726,9 +726,9 @@ The field under validation must have a value that is in the specified list. **Us
 The field under validation must match the specified regular expression.
 
 ```vue-html
+<!-- string format: NOT RECOMMENDED -->
 
-
-
+<!-- object format -->
 <Field name="field" :rules="{ regex: /^[0-9]+$/ }" />
 ```
 
@@ -753,10 +753,10 @@ When using the `regex` rule, using the `g` flag may result in unexpected falsy v
 The field under validation must have a non-empty value. By default, all validators pass the validation if they have "empty values" unless they are required. Those empty values are empty strings, `undefined`, `null`, `false`, and empty arrays.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" rules="required" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ required: true }" />
 ```
 
@@ -765,10 +765,10 @@ The field under validation must have a non-empty value. By default, all validato
 The file size added to the field under validation must not exceed the specified size in kilobytes.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" type="file" rules="size:250" />
 
-
+<!-- object format -->
 <Field name="field" :rules="{ size: 250 }" />
 ```
 
@@ -781,10 +781,10 @@ The file size added to the field under validation must not exceed the specified 
 The field under validation must be a valid url. You can pass a `pattern` if you need the url to be more restricted.
 
 ```vue-html
-
+<!-- string format -->
 <Field name="field" type="url" rules="url" />
 
-
+<!-- object format -->
 <Field name="field" type="text" :rules="{ url: 'https://.*' }" />
 ```
 

@@ -13,14 +13,14 @@ This applies to Quasar CLI managed apps only.
 In your app's `*.vue` files or in the .sass/.scss files you can use any Quasar Sass/SCSS variables (examples: `$primary`, `$red-1`), and any other Sass/SCSS variables that you declared in your `/src/css/quasar.variables.sass` or the perfectly equivalent `/src/css/quasar.variables.scss` (depending on your favorite Sass flavour) when using Quasar CLI.
 
 ```html
-
+<!-- Notice lang="sass" -->
 <style lang="sass">
 div
   color: $red-1
   background-color: $grey-5
 </style>
 
-
+<!-- Notice lang="scss" -->
 <style lang="scss">
 div {
   color: $red-1;

@@ -44,16 +44,7 @@ export const useUsers = defineStore('users', {
     async registerUser(login, password) {
       try {
         this.userData = await api.post({ login, password })
-        showTooltip(`Welcome back ${this.userData.name}!`)
-      } catch (error) {
-        showTooltip(error)
-        // 让表单组件显示错误
-        return error
-      }
-    },
-  },
-})
-```
+        showTooltip(`Welcome back ${this.userData.name}``
 
 你也完全可以自由地设置任何你想要的参数以及返回任何结果。当调用 action 时，一切类型也都是可以被自动推断出来的。
 
@@ -66,7 +57,7 @@ const store = useCounterStore()
 store.randomizeCounter()
 </script>
 <template>
-  
+  <!-- 即使在模板中也可以 -->
   <button @click="store.randomizeCounter()">Randomize</button>
 </template>
 ```

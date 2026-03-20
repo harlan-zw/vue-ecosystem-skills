@@ -5,7 +5,7 @@ title: ProcessorState
 
 # Interface: ProcessorState
 
-Defined in: activities/chat/stream/types.ts:61
+Defined in: activities/chat/stream/types.ts:79
 
 Current state of the processor
 
@@ -17,7 +17,7 @@ Current state of the processor
 content: string;
 ```
 
-Defined in: activities/chat/stream/types.ts:62
+Defined in: activities/chat/stream/types.ts:80
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: activities/chat/stream/types.ts:62
 done: boolean;
 ```
 
-Defined in: activities/chat/stream/types.ts:67
+Defined in: activities/chat/stream/types.ts:85
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: activities/chat/stream/types.ts:67
 finishReason: string | null;
 ```
 
-Defined in: activities/chat/stream/types.ts:66
+Defined in: activities/chat/stream/types.ts:84
 
 ***
 
@@ -47,7 +47,7 @@ Defined in: activities/chat/stream/types.ts:66
 thinking: string;
 ```
 
-Defined in: activities/chat/stream/types.ts:63
+Defined in: activities/chat/stream/types.ts:81
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: activities/chat/stream/types.ts:63
 toolCallOrder: string[];
 ```
 
-Defined in: activities/chat/stream/types.ts:65
+Defined in: activities/chat/stream/types.ts:83
 
 ***
 
@@ -67,4 +67,4 @@ Defined in: activities/chat/stream/types.ts:65
 toolCalls: Map<string, InternalToolCallState>;
 ```
 
-Defined in: activities/chat/stream/types.ts:64
+Defined in: activities/chat/stream/types.ts:82

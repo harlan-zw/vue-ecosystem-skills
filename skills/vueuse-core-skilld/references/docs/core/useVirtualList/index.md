@@ -103,7 +103,7 @@ const { list, containerProps, wrapperProps } = useVirtualList(
 <template>
   <UseVirtualList :list="list" :options="options" height="300px">
     <template #default="props">
-      
+      <!-- you can get current item of list here -->
       <div style="height: 22px">
         Row {{ props.index }} {{ props.data }}
       </div>

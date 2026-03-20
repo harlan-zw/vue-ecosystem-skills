@@ -54,11 +54,15 @@ When you want to inhibit TouchRepeat, you can do so by stopping propagation of t
 
 ```html
 <div v-touch-repeat.mouse.enter="userHasHold">
-  
+  <!-- ...content -->
   <div @touchstart.stop @mousedown.stop @keydown.stop>
-    
+    <!--
+      TouchRepeat will not apply here because
+      we are calling stopPropagation() on touchstart,
+      mousedown and keydown events
+    -->
   </div>
-  
+  <!-- ...content -->
 </div>
 ```
 

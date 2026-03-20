@@ -1,9 +1,11 @@
----
-url: /guide/essentials/dynamic-matching.md
----
 # Dynamic Route Matching with Params
 
-Very often we will need to map routes with the given pattern to the same component. For example, we may have a `User` component which should be rendered for all users but with different user IDs. In Vue Router we can use a dynamic segment in the path to achieve that, we call that a *param*:
+<VueSchoolLink
+  href="https://vueschool.io/lessons/dynamic-routes"
+  title="Learn about dynamic route matching with params"
+/>
+
+Very often we will need to map routes with the given pattern to the same component. For example, we may have a `User` component which should be rendered for all users but with different user IDs. In Vue Router we can use a dynamic segment in the path to achieve that, we call that a _param_:
 
 ```js
 import User from './User.vue'
@@ -17,7 +19,7 @@ const routes = [
 
 Now URLs like `/users/johnny` and `/users/jolyne` will both map to the same route.
 
-A *param* is denoted by a colon `:`. When a route is matched, the value of its *params* will be exposed as `route.params` in every component. Therefore, we can render the current user ID by updating `User`'s template to this:
+A _param_ is denoted by a colon `:`. When a route is matched, the value of its _params_ will be exposed as `route.params` in every component. Therefore, we can render the current user ID by updating `User`'s template to this:
 
 ```vue
 <template>
@@ -28,7 +30,7 @@ A *param* is denoted by a colon `:`. When a route is matched, the value of its *
 </template>
 ```
 
-You can have multiple *params* in the same route, and they will map to corresponding fields on `route.params`. Examples:
+You can have multiple _params_ in the same route, and they will map to corresponding fields on `route.params`. Examples:
 
 | pattern                        | matched path             | route.params                             |
 | ------------------------------ | ------------------------ | ---------------------------------------- |
@@ -39,7 +41,14 @@ In addition to `route.params`, the `route` object also exposes other useful info
 
 A working demo of this example can be found here.
 
+
+
 ## Reacting to Params Changes
+
+<VueSchoolLink
+  href="https://vueschool.io/lessons/reacting-to-param-changes"
+  title="Learn how to react to param changes"
+/>
 
 One thing to note when using routes with params is that when the user navigates from `/users/johnny` to `/users/jolyne`, **the same component instance will be reused**. Since both routes render the same component, this is more efficient than destroying the old instance and then creating a new one. **However, this also means that some lifecycle hooks of the component will not be called**.
 
@@ -112,7 +121,12 @@ export default {
 
 ## Catch all / 404 Not found Route
 
-Regular params will only match characters in between url fragments, separated by `/`. If we want to match **anything**, we can use a custom *param* regexp by adding the regexp inside parentheses right after the *param*:
+<VueSchoolLink
+  href="https://vueschool.io/lessons/404-not-found-page"
+  title="Learn how to make a catch all/404 not found route"
+/>
+
+Regular params will only match characters in between url fragments, separated by `/`. If we want to match **anything**, we can use a custom _param_ regexp by adding the regexp inside parentheses right after the _param_:
 
 ```js
 const routes = [
@@ -139,6 +153,8 @@ router.push({
 See more in the [repeated params](./route-matching-syntax.md#Repeatable-params) section.
 
 If you are using [History mode](./history-mode.md), make sure to follow the instructions to correctly configure your server as well.
+
+<RuleKitLink />
 
 ## Advanced Matching Patterns
 

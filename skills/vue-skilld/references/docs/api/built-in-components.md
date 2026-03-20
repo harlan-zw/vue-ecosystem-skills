@@ -1,5 +1,5 @@
 ---
-url: /api/built-in-components.md
+pageClass: api
 ---
 
 # Built-in Components {#built-in-components}

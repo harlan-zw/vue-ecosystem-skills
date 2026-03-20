@@ -1,6 +1,3 @@
----
-url: /api/composition-api-lifecycle.md
----
 # Composition API: Lifecycle Hooks {#composition-api-lifecycle-hooks}
 
 :::info Usage Note

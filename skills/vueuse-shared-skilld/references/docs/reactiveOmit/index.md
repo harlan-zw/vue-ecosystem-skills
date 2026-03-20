@@ -58,7 +58,7 @@ const childProps = reactiveOmit(props, 'value')
 
 <template>
   <div>
-    
+    <!-- only passes "color" and "font" props to child -->
     <ChildComp v-bind="childProps" />
   </div>
 </template>

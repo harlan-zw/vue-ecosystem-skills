@@ -258,12 +258,12 @@ Note that the priority of this configuration follows the field config first then
 
 ```vue
 <template>
-  
+  <!-- All fields values will be kept -->
   <Form keep-values v-slot="{ values }">
-    
+    <!-- This field value will be kept -->
     <Field v-if="showFields" name="email" />
 
-    
+    <!-- This field value will be removed -->
     <Field v-if="showFields" name="name" :keep-value="false" />
 
     <button @click="showFields = !showFields" type="button">Show/Hide fields</button>

@@ -115,8 +115,8 @@ We are using Jest for this example, which does not reset the DOM every test. For
 The next thing to do is fill out the username input. Unfortunately, we cannot use `wrapper.find('input')`. Why not? A quick `console.log(wrapper.html())` shows us:
 
 ```html
-
-
+<!--teleport start-->
+<!--teleport end-->
 ```
 
 We see some comments used by Vue to handle `<Teleport>` - but no `<input>`. That's because the `<Signup>` component (and its HTML) are not rendered inside of `<Navbar>` anymore - it was teleported outside.

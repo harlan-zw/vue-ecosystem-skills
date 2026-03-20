@@ -29,7 +29,7 @@ const canvasRef = ref<HTMLCanvasElement>()
   <canvas ref="canvasRef" class="w-full h-full">
     <TresCanvasContext v-if="canvasRef" :canvas="canvasRef">
       <TresPerspectiveCamera :position="[3, 3, 3]" />
-      
+      <!-- Your scene content here -->
     </TresCanvasContext>
   </canvas>
 </template>

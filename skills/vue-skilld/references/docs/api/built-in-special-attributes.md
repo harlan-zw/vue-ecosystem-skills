@@ -1,6 +1,3 @@
----
-url: /api/built-in-special-attributes.md
----
 # Built-in Special Attributes {#built-in-special-attributes}
 
 ## key {#key}

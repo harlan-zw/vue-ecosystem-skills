@@ -1,7 +1,9 @@
----
-url: /guide/advanced/transitions.md
----
 # Transitions
+
+<VueSchoolLink
+  href="https://vueschool.io/lessons/route-transitions"
+  title="Learn about route transitions"
+/>
 
 In order to use transitions on your route components and animate navigations, you need to use the [`<RouterView>` slot](./router-view-slot):
 
@@ -42,6 +44,8 @@ const routes = [
   </transition>
 </router-view>
 ```
+
+<RuleKitLink />
 
 ## Route-Based Dynamic Transition
 
@@ -90,3 +94,5 @@ app.use(router)
 await router.isReady()
 app.mount('#app')
 ```
+
+

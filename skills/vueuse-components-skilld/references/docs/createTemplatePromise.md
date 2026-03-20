@@ -23,7 +23,7 @@ async function open() {
 
 <template>
   <TemplatePromise v-slot="{ promise, resolve, reject, args }">
-    
+    <!-- your UI -->
     <button @click="resolve('ok')">
       OK
     </button>
@@ -57,13 +57,13 @@ In template, use `v-slot` to access the promise and resolve functions.
 ```vue
 <template>
   <TemplatePromise v-slot="{ promise, resolve, reject, args }">
-    
+    <!-- you can have anything -->
     <button @click="resolve('ok')">
       OK
     </button>
   </TemplatePromise>
   <MyPromise v-slot="{ promise, resolve, reject, args }">
-    
+    <!-- another one -->
   </MyPromise>
 </template>
 ```
@@ -100,9 +100,9 @@ And in the template slot, you can access the arguments via `args` property.
 <template>
   <TemplatePromise v-slot="{ args, resolve }">
     <div>{{ args[0] }}</div>
-    
+    <!-- hello -->
     <div>{{ args[1] }}</div>
-    
+    <!-- 123 -->
     <button @click="resolve(true)">
       OK
     </button>
@@ -142,7 +142,7 @@ const TemplatePromise = createTemplatePromise<ReturnType>({
 
 <template>
   <TemplatePromise v-slot="{ resolve }">
-    
+    <!-- your UI -->
     <button @click="resolve('ok')">
       OK
     </button>

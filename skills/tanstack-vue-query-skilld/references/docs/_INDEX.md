@@ -1,5 +1,5 @@
 ---
-total: 73
+total: 74
 ---
 
 # Docs Index
@@ -84,8 +84,9 @@ Previously reactive was returned which led to mult...
 - [useQuery](./framework/vue/reference/useQuery.md)
 - [useQueryClient](./framework/vue/reference/useQueryClient.md)
 
-## reference (11)
+## reference (12)
 
+- [environmentManager](./reference/environmentManager.md): The environmentManager manages how TanStack Query detects whether the current runtime should be treated as server-side.
 - [FocusManager](./reference/focusManager.md): The FocusManager manages the focus state within TanStack Query.
 - [InfiniteQueryObserver](./reference/InfiniteQueryObserver.md): The InfiniteQueryObserver can be used to observe and switch between infinite queries.
 - [MutationCache](./reference/MutationCache.md): The MutationCache is the storage for mutations.

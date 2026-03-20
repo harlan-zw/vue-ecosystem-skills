@@ -1,6 +1,3 @@
----
-url: /guide/reusability/composables.md
----
 # Composables {#composables}
 
 

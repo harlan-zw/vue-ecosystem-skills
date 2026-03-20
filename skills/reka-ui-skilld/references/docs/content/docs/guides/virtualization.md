@@ -59,7 +59,7 @@ const items = [
   <ComboboxRoot>
     …
     <ComboboxContent>
-      
+      <!-- Make sure to set a height for Virtualizer's parent element -->
       <ComboboxViewport class="max-h-80 overflow-y-auto">
         <ComboboxVirtualizer
           v-slot="{ option }"
@@ -88,7 +88,7 @@ Do ensure that `<Virtualizer>`'s parent element has a defined height!
   <ComboboxRoot>
     …
     <ComboboxContent>
-      
+      <!-- Height must be defined -->
       <ComboboxViewport class="max-h-80 overflow-y-auto">
         <ComboboxVirtualizer>
           …

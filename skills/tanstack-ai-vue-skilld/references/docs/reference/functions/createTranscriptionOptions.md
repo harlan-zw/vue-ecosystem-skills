@@ -6,10 +6,10 @@ title: createTranscriptionOptions
 # Function: createTranscriptionOptions()
 
 ```ts
-function createTranscriptionOptions<TAdapter>(options): TranscriptionActivityOptions<TAdapter>;
+function createTranscriptionOptions<TAdapter, TStream>(options): TranscriptionActivityOptions<TAdapter, TStream>;
 ```
 
-Defined in: activities/generateTranscription/index.ts:150
+Defined in: activities/generateTranscription/index.ts:199
 
 Create typed options for the generateTranscription() function without executing.
 
@@ -19,12 +19,16 @@ Create typed options for the generateTranscription() function without executing.
 
 `TAdapter` *extends* [`TranscriptionAdapter`](../interfaces/TranscriptionAdapter.md)\<`string`, `object`\>
 
+### TStream
+
+`TStream` *extends* `boolean` = `false`
+
 ## Parameters
 
 ### options
 
-`TranscriptionActivityOptions`\<`TAdapter`\>
+`TranscriptionActivityOptions`\<`TAdapter`, `TStream`\>
 
 ## Returns
 
-`TranscriptionActivityOptions`\<`TAdapter`\>
+`TranscriptionActivityOptions`\<`TAdapter`, `TStream`\>

@@ -1,6 +1,3 @@
----
-url: /file-based-routing/eslint.md
----
 # ESLint
 
 If you are not using auto imports, you will need to tell ESLint about `vue-router/auto-routes`. Add these lines to your eslint configuration:

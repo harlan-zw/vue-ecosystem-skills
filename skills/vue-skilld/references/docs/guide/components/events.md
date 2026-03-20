@@ -1,6 +1,3 @@
----
-url: /guide/components/events.md
----
 
 
 # Component Events {#component-events}

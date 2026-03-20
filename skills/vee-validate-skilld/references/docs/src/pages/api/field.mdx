@@ -110,20 +110,20 @@ Because of this, using `v-model` will conflict with `v-bind="field"` because bot
 For simple inputs this is not an issue:
 
 ```vue-html
-
+<!-- ✅  Simple Field -->
 <Field type="text" name="name" v-model="name" />
 ```
 
 But for complex inputs rendered with scoped slots (v-slot), you need to place it on the `Field` component tag itself, not the rendered input.
 
 ```vue-html
-
+<!-- DONT: ⛔️  v-model on input tag -->
 <Field type="text" name="name" v-slot="{ field }">
-  
+  <!-- Conflict between v-model and `v-bind=field` -->
   <input v-bind="field" v-model="name">
 </Field>
 
-
+<!-- DO: ✅  v-model on field tag -->
 <Field v-model="name" type="text" name="name" v-slot="{ field }">
   <input v-bind="field">
 </Field>
@@ -221,10 +221,10 @@ Resets the field's validation state, reverts all `meta` object to their default 
 Note that it is unsafe to use this function as an event handler directly, check the following snippet:
 
 ```vue-html
-
+<!-- ⛔️ Unsafe -->
 <button @click="resetField">Reset</button>
 
-
+<!-- ✅  Safe -->
 <button @click="resetField()">Reset</button>
 ```
 

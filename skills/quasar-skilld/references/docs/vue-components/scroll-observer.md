@@ -28,12 +28,15 @@ Please note that simply attaching `scroll` CSS class to a DOM element or on a Vu
 Example of good container:
 
 ```html
-
+<!--
+  Quasar CSS helper 'overflow-hidden' is
+  equivalent to style="overflow: hidden"
+-->
 <div class="scroll overflow-hidden" style="height: 100px">
   ...content expanding over the 100px height from container...
   <q-scroll-observer @scroll="scrollHandler" />
 
-  
+  <!-- example with `v-scroll` directive -->
   <div v-scroll="scrollHandler">...</div>
 </div>
 ```

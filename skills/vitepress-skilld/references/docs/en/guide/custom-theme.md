@@ -75,7 +75,7 @@ The most basic layout component needs to contain a [`<Content />`](../reference/
 <template>
   <h1>Custom Layout!</h1>
 
-  
+  <!-- this is where markdown content will be rendered -->
   <Content />
 </template>
 ```
@@ -144,7 +144,7 @@ const { page, frontmatter } = useData()
 
   <NotFound v-if="page.isNotFound" />
   <Home v-if="frontmatter.layout === 'home'" />
-  <Page v-else /> 
+  <Page v-else /> <!-- <Page /> renders <Content /> -->
 </template>
 ```
 

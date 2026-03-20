@@ -1,6 +1,3 @@
----
-url: /guide/best-practices/production-deployment.md
----
 # Production Deployment {#production-deployment}
 
 ## Development vs. Production {#development-vs-production}

@@ -1,6 +1,3 @@
----
-url: /guide/essentials/template-syntax.md
----
 # Template Syntax {#template-syntax}
 
 <ScrimbaLink href="https://scrimba.com/links/vue-template-syntax" title="Free Vue.js Template Syntax Lesson" type="scrimba">

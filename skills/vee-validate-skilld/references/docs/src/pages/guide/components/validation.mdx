@@ -290,19 +290,19 @@ Note that configuring any of these options to `false` will not remove all the ev
 This might not be flexible enough for your needs, which is why you can define the same config per `Field` component instance:
 
 ```vue-html
-
+<!-- Turns off validation events -->
 <Field name="email" :validateOnBlur="false" :validateOnChange="false" :validateOnInput="false" />
 ```
 
 Additionally if you need to use different events or have specific needs in mind, you can control which events to listen to by using the scoped-slot `handleChange` prop of the `<Field />` component and binding it to the desired event:
 
 ```vue-html
-
+<!-- Listen to all events, this is the default behavior -->
 <Field v-slot="{ field }">
   <input v-bind="field" />
 </Field>
 
-
+<!-- Only validate when the change event is dispatched -->
 <Field v-slot="{ field, handleChange }">
   <input @change="handleChange" :value="field.value" />
 </Field>
@@ -311,10 +311,10 @@ Additionally if you need to use different events or have specific needs in mind,
 In addition to those events, you can also validate when the `<Field />` or `<Form />` components are mounted with `validateOnMount` prop present on both components:
 
 ```vue-html
-
+<!-- Trigger validation when this field is mounted (initial validation) -->
 <Field name="name" validate-on-mount />
 
-
+<!-- Trigger validation on all fields inside this form when the form is mounted -->
 <Form validate-on-mount>
   <Field name="email" />
   <Field name="password" />
@@ -324,7 +324,7 @@ In addition to those events, you can also validate when the `<Field />` or `<For
 You can also specify if a `handleChange` call should trigger validation or not by providing the second argument:
 
 ```vue-html
-
+<!-- Only update field value without validating it -->
 <Field v-slot="{ field, handleChange }">
   <input @change="$event => handleChange($event, false)" :value="field.value" />
 </Field>
@@ -364,7 +364,7 @@ If you intend to use the scoped slot on the `Field` component, you can access `e
 <Field name="field" :rules="rules" v-slot="{ field, errors, errorMessage }">
   <input v-bind="field" type="text" />
   <span>{{ errors[0] }}</span>
-  
+  <!-- Or -->
   <span>{{ errorMessage }}</span>
 </Field>
 ```
@@ -408,7 +408,7 @@ You've seen how the `ErrorMessage` works in the previous examples, by default th
 ```vue-html
 <Form>
   <Field name="field" :rules="rules" />
-  
+  <!-- Render the error message as a div element -->
   <ErrorMessage name="field" as="div" />
 </Form>
 ```
@@ -522,7 +522,7 @@ The form's metadata properties are:
 
 ```vue-html
 <Form v-slot="{ meta }">
-  
+  <!-- Some fields -->
   <pre>{{ meta }}</pre>
 </Form>
 ```

@@ -128,7 +128,7 @@ function onScroll(state: UseScrollReturn) {
     </div>
   </div>
 
-  
+  <!-- with options -->
   <div v-scroll="[onScroll, { throttle: 10 }]">
     <div v-for="item in data" :key="item">
       {{ item }}

@@ -42,12 +42,12 @@
 و با فرض این که شما در `foo/one.md` هستید:
 
 ```md
-[Home](/) 
-[foo](/foo/) 
-[foo heading](./#heading) 
-[bar - three](../bar/three) 
-[bar - three](../bar/three.md) 
-[bar - four](../bar/four.html) 
+[Home](/) <!-- sends the user to the root index.md -->
+[foo](/foo/) <!-- sends the user to index.html of directory foo -->
+[foo heading](./#heading) <!-- anchors user to a heading in the foo index file -->
+[bar - three](../bar/three) <!-- you can omit extension -->
+[bar - three](../bar/three.md) <!-- you can append .md -->
+[bar - four](../bar/four.html) <!-- or you can append .html -->
 ```
 
 ### پسوند صفحه  {#page-suffix}
@@ -609,11 +609,11 @@ const line4 = 'این خط ۴ است'
 ```md
 <<< @/snippets/snippet.cs{c#}
 
-
+<!-- با highlight خطوط: -->
 
 <<< @/snippets/snippet.cs{1,2,4-6 c#}
 
-
+<!-- با شمارهگذاری خطوط: -->
 
 <<< @/snippets/snippet.cs{1,2,4-6 c#:line-numbers}
 ```
@@ -688,11 +688,11 @@ export default config
 ```md
 ::: code-group
 
-
+<!-- به طور پیشفرض نام فایل به عنوان عنوان استفاده میشود -->
 
 <<< @/snippets/snippet.js
 
-
+<!-- میتوانید یک عنوان سفارشی نیز ارائه دهید -->
 
 <<< @/snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [قطعه با منطقه]
 :::
@@ -724,7 +724,7 @@ export default config
 
 ## مبانی
 
-
+<!--@include: ./parts/basics.md-->
 ```
 
 **قسمت فایل** (`parts/basics.md`)
@@ -760,7 +760,7 @@ export default config
 
 ## مبانی
 
-
+<!--@include: ./parts/basics.md{3,}-->
 ```
 
 **قسمت فایل** (`parts/basics.md`)
@@ -796,20 +796,20 @@ export default config
 
 ## مبانی
 
-
-
+<!--@include: ./parts/basics.md#basic-usage{,2}-->
+<!--@include: ./parts/basics.md#basic-usage{5,}-->
 ```
 
 **قسمت فایل** (`parts/basics.md`)
 
 ```md
-
+<!-- #region basic-usage -->
 ## استفاده خط 1
 
 ## استفاده خط 2
 
 ## استفاده خط 3
-
+<!-- #endregion basic-usage -->
 ```
 
 **کد معادل**

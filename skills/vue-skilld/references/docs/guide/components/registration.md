@@ -1,6 +1,3 @@
----
-url: /guide/components/registration.md
----
 # Component Registration {#component-registration}
 
 > This page assumes you've already read the [Components Basics](/guide/essentials/component-basics). Read that first if you are new to components.

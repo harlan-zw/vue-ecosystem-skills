@@ -28,7 +28,7 @@ const formatter = useDateFormatter('en')
 
 <template>
   <span>
-    
+    <!-- output the month in short format. e.g.: Jan, Feb, etc. -->
     {{ formatter.custom(value.toDate(getLocalTimeZone()), { month: 'short' }) }}
   </span>
 </template>

@@ -25,7 +25,7 @@ const { forwardRef } = useForwardExpose()
 
 <template>
   <span>
-    
+    <!-- We want to expose div as the template ref's element -->
     <div :ref="forwardRef">
       ...
     </div>

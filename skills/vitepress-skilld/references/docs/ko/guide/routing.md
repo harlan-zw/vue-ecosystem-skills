@@ -84,11 +84,11 @@ src/getting-started.md  -->  /getting-started.html
 페이지 간 링크를 만들 때 절대 경로와 상대 경로 모두 사용할 수 있습니다. `.md`와 `.html` 확장자 모두 작동하지만, VitePress가 구성에 따라 최종 URL을 생성할 수 있도록 파일 확장자를 생략하는 것이 좋은 방법입니다.
 
 ```md
-
+<!-- Do -->
 [시작하기](./getting-started)
 [시작하기](../guide/getting-started)
 
-
+<!-- Don't -->
 [시작하기](./getting-started.md)
 [시작하기](./getting-started.html)
 ```
@@ -368,5 +368,5 @@ export default {
 그런 다음 특수 문법을 사용하여 마크다운 파일 자체의 일부로 콘텐츠를 렌더링할 수 있습니다:
 
 ```md
-
+<!-- @content -->
 ```

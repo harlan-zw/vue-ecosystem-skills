@@ -48,7 +48,7 @@ outline: deep
 
     - by {{ $params.author }} on {{ $params.date }}
 
-    
+    <!-- @content -->
     ```
 
 ## 整合指南 {#integration-guides}

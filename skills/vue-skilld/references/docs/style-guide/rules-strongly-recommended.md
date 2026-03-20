@@ -1,6 +1,3 @@
----
-url: /style-guide/rules-strongly-recommended.md
----
 # Priority B Rules: Strongly Recommended {#priority-b-rules-strongly-recommended}
 
 ::: warning Note

@@ -1,6 +1,3 @@
----
-url: /api/options-rendering.md
----
 # Options: Rendering {#options-rendering}
 
 ## template {#template}

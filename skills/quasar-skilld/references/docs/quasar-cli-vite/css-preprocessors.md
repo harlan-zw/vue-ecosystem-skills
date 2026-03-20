@@ -27,7 +27,7 @@ More info: css.modules, css.postcss, css.preprocessorOptions.
 Your Vue files can contain Sass/SCSS code through the `<style>` tag.
 
 ```html
-
+<!-- Notice lang="sass" -->
 <style lang="sass">
 div
   color: #444
@@ -36,7 +36,7 @@ div
 ```
 
 ```html
-
+<!-- Notice lang="scss" -->
 <style lang="scss">
 div {
   color: #444;

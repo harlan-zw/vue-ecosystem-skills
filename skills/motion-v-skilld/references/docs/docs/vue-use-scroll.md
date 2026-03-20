@@ -1,14 +1,102 @@
----
-title: "useScroll — Vue scroll animations | Motion"
-meta:
-  "og:description": "Create Vue scroll-linked animations like progress bars &amp; parallax with Motion for Vue's useScroll hook. Track scroll, element position &amp; use motion values."
-  "og:title": "useScroll — Vue scroll animations | Motion"
-  "twitter:description": "Create Vue scroll-linked animations like progress bars &amp; parallax with Motion for Vue's useScroll hook. Track scroll, element position &amp; use motion values."
-  "twitter:title": "useScroll — Vue scroll animations | Motion"
-  description: "Create Vue scroll-linked animations like progress bars &amp; parallax with Motion for Vue's useScroll hook. Track scroll, element position &amp; use motion values."
----
+useScroll — Vue scroll animations | Motion
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+AI Kit
+
+
+
+Motion+
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+
+
+Motion+
+
+Motion homepage
+
+Docs
+
+Examples
+
+Tutorials
+
+AI Kit
+
+
+
+Motion+
+
+Documentation
+
+<h2>JS</h2> <h2>React</h2> Vue Studio
+
+<h3>Get started</h3> <h3>Examples</h3>
+
+### Animation
+
+- Overview
+- Directive
+- Gesture
+- Layout
+- Scroll
+- Transition options
+
+### Components
+
+- motion
+- AnimatePresence
+- LayoutGroup
+- LazyMotion
+- MotionConfig
+- Reorder
+
+### Premium APIs
+
+- AnimateNumber
+- Cursor
+- Ticker
+- Typewriter
+
+### Motion values
+
+- Overview
+- useMotionTemplate
+- useMotionValueEvent
+- useScroll
+- useSpring
+- useTime
+- useTransform
+- useVelocity
+
+### Hooks
+
+- useAnimate
+- useAnimationFrame
+- useDragControls
+- useInView
+- useReducedMotion
+
+### Integrations
+
+- Reka
 
 Vue
+
+Copy page
 
 # useScroll
 
@@ -60,7 +148,6 @@ As `useScroll` returns motion values, we can compose this scroll info with other
 > Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation!
 >
 > ~ Sam Selikoff, Motion for React Recipes
-
 ### [Element scroll](#element-scroll)
 
 To track the scroll position of a scrollable element we can pass the element's `ref` to `useScroll`'s `container` option:
@@ -177,7 +264,6 @@ As `useScroll` returns motion values, we can compose this scroll info with other
 > Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation!
 >
 > ~ Sam Selikoff, Motion for React Recipes
-
 ### [Element scroll](#element-scroll)
 
 To track the scroll position of a scrollable element we can pass the element's `ref` to `useScroll`'s `container` option:
@@ -294,7 +380,6 @@ As `useScroll` returns motion values, we can compose this scroll info with other
 > Since `scrollY` is a `MotionValue`, there's a neat trick you can use to tell when the user's scroll direction changes:Perfect for triggering a sticky header animation!
 >
 > ~ Sam Selikoff, Motion for React Recipes
-
 ### [Element scroll](#element-scroll)
 
 To track the scroll position of a scrollable element we can pass the element's `ref` to `useScroll`'s `container` option:
@@ -409,7 +494,50 @@ animations.dev
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 
@@ -427,7 +555,50 @@ Upgrade
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 
@@ -445,7 +616,50 @@ Upgrade
 
 Subscribe for the latest news & updates.
 
+Subscribe
 
+
+
+## Site
+
+- Blog
+- Docs
+- Examples
+- Magazine
+- Motion+
+- Studio
+- Support
+- Tutorials
+
+###### Most Popular
+
+- React animation
+- Layout animation
+- SVG animation
+- Motion component
+- GSAP vs Motion
+
+## Premium APIs
+
+- Carousel
+- Custom Cursor
+- Number animations
+- Ticker
+- Typewriter
+
+###### Docs
+
+- JavaScript
+- React
+- Vue
+- Studio
+
+## Social
+
+- Discord
+- GitHub
+- X/Twitter
+- YouTube
 
 Latest version:
 

@@ -1,6 +1,3 @@
----
-url: /file-based-routing/extending-routes.md
----
 # Extending Routes
 
 ## Extending routes in config
@@ -45,7 +42,7 @@ definePage({
 </script>
 
 <template>
-  
+  <!-- ... -->
 </template>
 ```
 
@@ -112,7 +109,7 @@ const router = createRouter({
 })
 ```
 
-Another one is adding *redirect* records to the router:
+Another one is adding _redirect_ records to the router:
 
 ```ts
 import { routes } from 'vue-router/auto-routes'

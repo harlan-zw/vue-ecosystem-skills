@@ -928,7 +928,7 @@ export {
 ```
 
 ```vue
-
+<!-- DropdownMenuContent.vue -->
 <script setup lang="ts">
 import type { DropdownMenuContentEmits, DropdownMenuContentProps } from 'reka-ui'
 import { DropdownMenuContent, DropdownMenuPortal, useForwardPropsEmits } from 'reka-ui'
@@ -949,7 +949,7 @@ const forwarded = useForwardPropsEmits(props, emits)
 ```
 
 ```vue
-
+<!-- DropdownMenuCheckboxItem.vue -->
 <script setup lang="ts">
 import type { DropdownMenuCheckboxItemEmits, DropdownMenuCheckboxItemProps } from 'reka-ui'
 import { CheckIcon } from '@radix-icons/vue'
@@ -974,7 +974,7 @@ const forwarded = useForwardPropsEmits(props, emits)
 ```
 
 ```vue
-
+<!-- DropdownMenuRadioItem.vue -->
 <script setup lang="ts">
 import type { DropdownMenuRadioItemEmits, DropdownMenuRadioItemProps } from 'reka-ui'
 import { DotFilledIcon } from '@radix-icons/vue'

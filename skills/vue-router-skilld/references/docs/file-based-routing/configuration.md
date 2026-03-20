@@ -1,6 +1,3 @@
----
-url: /file-based-routing/configuration.md
----
 # Configuration
 
 Have a glimpse of all the existing configuration options with their corresponding **default values**:

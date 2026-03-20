@@ -24,7 +24,7 @@ import { TresCanvas } from '@tresjs/core'
 <template>
   <TresCanvas shadows>
     <TresPerspectiveCamera :position="[5, 5, 5]" />
-    
+    <!-- Your scene content here -->
   </TresCanvas>
 </template>
 ```
@@ -40,10 +40,10 @@ By default, `<TresCanvas />` automatically adapts to its **parent element's dime
 ```vue [parent-sized.vue]
 <template>
   <div class="w-full aspect-video">
-    
+    <!-- Canvas automatically fills the container -->
     <TresCanvas>
       <TresPerspectiveCamera :position="[3, 3, 3]" />
-      
+      <!-- Your 3D scene here -->
     </TresCanvas>
   </div>
 </template>
@@ -55,10 +55,10 @@ For immersive full-screen 3D experiences, use the `window-size` prop to make the
 
 ```vue [fullscreen.vue]
 <template>
-  
+  <!-- Canvas automatically fills the entire window -->
   <TresCanvas window-size>
     <TresPerspectiveCamera :position="[3, 3, 3]" />
-    
+    <!-- Your 3D scene here -->
   </TresCanvas>
 </template>
 ```
@@ -197,7 +197,7 @@ For detailed technical information about prop reactivity, see GitHub Issue #982.
   ```vue [Default (No Prefix)]
   <template>
     <TresCanvas>
-      
+      <!-- Default primitive component -->
       <primitive :object="myThreeObject" />
     </TresCanvas>
   </template>

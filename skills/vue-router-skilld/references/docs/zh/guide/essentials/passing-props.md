@@ -29,7 +29,7 @@ const routes = [{ path: '/users/:id', component: User }]
 ::: code-group
 
 ```vue [Composition API]
-
+<!-- User.vue -->
 <script setup>
 defineProps({
   id: String,
@@ -42,7 +42,7 @@ defineProps({
 ```
 
 ```vue [Options API]
-
+<!-- User.vue -->
 <script>
 export default {
   props: {

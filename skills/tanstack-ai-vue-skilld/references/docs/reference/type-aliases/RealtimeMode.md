@@ -6,16 +6,9 @@ title: RealtimeMode
 # Type Alias: RealtimeMode
 
 ```ts
-type RealtimeMode = 'idle' | 'listening' | 'thinking' | 'speaking';
+type RealtimeMode = "idle" | "listening" | "thinking" | "speaking";
 ```
 
-Defined in: realtime/types.ts
+Defined in: realtime/types.ts:191
 
-Current mode of the realtime session.
-
-| Value | Description |
-|-------|-------------|
-| `'idle'` | Connected but not actively interacting |
-| `'listening'` | Capturing user audio input |
-| `'thinking'` | Processing user input |
-| `'speaking'` | AI is generating a response |
+Current mode of the realtime session

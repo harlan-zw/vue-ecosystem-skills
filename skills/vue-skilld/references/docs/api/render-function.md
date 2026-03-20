@@ -1,6 +1,3 @@
----
-url: /api/render-function.md
----
 # Render Function APIs {#render-function-apis}
 
 ## h() {#h}

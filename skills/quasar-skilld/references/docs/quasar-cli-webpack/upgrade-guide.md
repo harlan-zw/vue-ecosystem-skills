@@ -78,7 +78,7 @@ api.compatibleWith(
 ```
 
 ### Notable breaking changes
-* Minimum Node.js version is now 18.12
+* Minimum Node.js version is now 20
 * We have shifted towards an ESM style for the whole Quasar project folder, so many default project files now require ESM code (although using `.cjs` as an extension for these files is supported, but you will most likely need to rename the extension should you not wish to change anything). One example is the `/quasar.config.js` file which now it's assumed to be ESM too (so change from `.js` to `.cjs` should you still want a CommonJs file).
 * Ported and adapted the superior devserver implementation from @quasar/app-vite for all Quasar modes. The benefits are huge.
 * Ported the superior implementation of SSR, PWA, Electron & BEX modes from @quasar/app-vite. We will detail each Quasar mode changes on this docs page.
@@ -170,7 +170,7 @@ When asked to "Pick Quasar App CLI variant", answer with: "Quasar App CLI with W
 Preparations:
 
 * If using the global installation of Quasar CLI (`@quasar/cli`), make sure that you have the latest one. This is due to the support of quasar.config file in multiple formats.
-* Again, we highlight that the minimum supported version of Node.js is now v18 (always use the LTS versions of Node.js - the higher the version the better).
+* Again, we highlight that the minimum supported version of Node.js is now v20 (always use the LTS versions of Node.js - the higher the version the better).
 
 * Edit your `/package.json` on the `@quasar/app-webpack` entry and assign it `^4.0.0`:
   ```diff /package.json
@@ -282,9 +282,9 @@ Preparations:
 * For consistency with `@quasar/app-vite` (and easy switch between `@quasar/app-webpack` and it) move `/src/index.template.html` to `/index.html` and do the following changes:
   ```diff /index.html
   <body>
-  - 
+  - <!-- DO NOT touch the following DIV -->
   - <div id="q-app"></div>
-  + 
+  + <!-- quasar:entry-point -->
   </body>
   ```
 
@@ -1138,7 +1138,7 @@ import { defineSsrMiddleware } from '#q-app/wrappers'
 export default defineSsrMiddleware(({ app, resolve, render, serve }) => {
   // we capture any other Express route and hand it
   // over to Vue and Vue Router to render our page
-  app.get(resolve.urlPath('*'), (req, res) => {
+  app.get(resolve.urlPath('{*path}'), (req, res) => {
     res.setHeader('Content-Type', 'text/html')
 
     render(/* the ssrContext: */ { req, res })
@@ -1195,7 +1195,7 @@ For TS devs, you should also make a small change to your /src-ssr/middlewares fi
 + import { type Request, type Response } from 'express';
 // ...
 - app.get(resolve.urlPath('*'), (req, res) => {
-+ app.get(resolve.urlPath('*'), (req: Request, res: Response) => {
++ app.get(resolve.urlPath('{*path}'), (req: Request, res: Response) => {
 ```
 
 There are some additional changes to the `/quasar.config` file:
@@ -1930,7 +1930,7 @@ interface EsbuildTargetOptions {
   /**
    * @default ['es2022', 'firefox115', 'chrome115', 'safari14']
    */
-  browser?: string[];
+  browser?: string | string[];
   /**
    * @example 'node20'
    */

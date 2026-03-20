@@ -386,7 +386,7 @@ interface BuildTargetOptions {
   /**
    * @default ['es2022', 'firefox115', 'chrome115', 'safari14']
    */
-  browser?: string[];
+  browser?: string | string[];
   /**
    * @example 'node20'
    */
@@ -630,13 +630,13 @@ interface QuasarBuildConfiguration {
    * it's not the case.
    *
    * Will not change anything if your Vite config already touches the
-   * build.rollupOptions.output.entryFileNames/chunkFileNames/assetFileNames props.
+   * build.rolldownOptions.output.entryFileNames/chunkFileNames/assetFileNames props.
    *
    * Gets applied to production builds only.
    *
    * Useful especially for (but not restricted to) PWA. If set to false then updating the
    * PWA will force to re-download all assets again, regardless if they were changed or
-   * not (due to how Rollup works through Vite).
+   * not (due to how Rolldown works through Vite).
    *
    * @default true
    */

@@ -54,7 +54,7 @@ If you want to have full control of when the scene is rendered, you can set the 
 ```vue [manual-mode.vue]
 <template>
   <TresCanvas render-mode="manual">
-    
+    <!-- Your scene goes here -->
   </TresCanvas>
 </template>
 ```
@@ -108,7 +108,7 @@ In this rendering mode, Tres will continuously render the scene on every frame. 
 ```vue [always-mode.vue]
 <template>
   <TresCanvas render-mode="always">
-    
+    <!-- Your scene goes here -->
   </TresCanvas>
 </template>
 ```

@@ -1,6 +1,3 @@
----
-url: /guide/best-practices/security.md
----
 # Security {#security}
 
 ## Reporting Vulnerabilities {#reporting-vulnerabilities}

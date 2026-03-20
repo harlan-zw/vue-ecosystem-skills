@@ -105,17 +105,17 @@ const enabled = ref(0)
 </script>
 
 <template>
-  
+  <!-- String values -->
   <SwitchRoot v-model="status" true-value="active" false-value="inactive">
     <SwitchThumb />
   </SwitchRoot>
-  <span>Status: {{ status }}</span> 
+  <span>Status: {{ status }}</span> <!-- "active" or "inactive" -->
 
-  
+  <!-- Number values -->
   <SwitchRoot v-model="enabled" :true-value="1" :false-value="0">
     <SwitchThumb />
   </SwitchRoot>
-  <span>Enabled: {{ enabled }}</span> 
+  <span>Enabled: {{ enabled }}</span> <!-- 1 or 0 -->
 </template>
 ```
 

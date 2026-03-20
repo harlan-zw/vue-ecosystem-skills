@@ -1,6 +1,3 @@
----
-url: /guide/scaling-up/sfc.md
----
 # Single-File Components {#single-file-components}
 
 ## Introduction {#introduction}

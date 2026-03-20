@@ -17,12 +17,12 @@ const dir = useTextDirection() // Ref<'ltr' | 'rtl' | 'auto'>
 By default, it returns `rtl` direction when dir `rtl` is applied to the `html` tag, for example:
 
 ```html
-
+<!--ltr-->
 <html>
   ...
 </html>
 
-
+<!--rtl-->
 <html dir="rtl">
   ...
 </html>

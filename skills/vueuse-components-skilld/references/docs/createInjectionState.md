@@ -50,7 +50,7 @@ export function useCounterStoreOrThrow() {
 ```
 
 ```vue
-
+<!-- RootComponent.vue -->
 <script setup lang="ts">
 // @filename: useCounterStore.ts
 // @include: useCounterStore
@@ -68,7 +68,7 @@ useProvideCounterStore(0)
 ```
 
 ```vue
-
+<!-- CountComponent.vue -->
 <script setup lang="ts">
 // @filename: useCounterStore.ts
 // @include: useCounterStore
@@ -98,7 +98,7 @@ const { count, double } = useCounterStore()!
 ```
 
 ```vue
-
+<!-- ButtonComponent.vue -->
 <script setup lang="ts">
 // @filename: useCounterStore.ts
 // @include: useCounterStore

@@ -1,6 +1,3 @@
----
-url: /style-guide/rules-recommended.md
----
 # Priority C Rules: Recommended {#priority-c-rules-recommended}
 
 ::: warning Note

@@ -75,7 +75,7 @@ export default {
 <template>
   <h1>Пользовательский макет!</h1>
 
-  
+  <!-- здесь будет отображаться содержимое в формате Markdown -->
   <Content />
 </template>
 ```
@@ -144,7 +144,7 @@ const { page, frontmatter } = useData()
 
   <NotFound v-if="page.isNotFound" />
   <Home v-if="frontmatter.layout === 'home'" />
-  <Page v-else /> 
+  <Page v-else /> <!-- <Page /> рендерит <Content /> -->
 </template>
 ```
 

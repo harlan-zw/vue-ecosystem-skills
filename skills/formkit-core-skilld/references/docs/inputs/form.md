@@ -271,34 +271,7 @@ export default {
       this.$formkit.submit('newsletter')
     },
     submitToMailchimp(data) {
-      alert(`Submitted ${data.email} successfully!`)
-    },
-  },
-}
-</script>
-
-<template>
-  <FormKit
-    type="form"
-    id="newsletter"
-    :actions="false"
-    @submit="submitToMailchimp"
-  >
-    <FormKit
-      type="email"
-      name="email"
-      validation="required|email"
-      label="Email address"
-      help="What email address should we send our newsletter to?"
-    />
-  </FormKit>
-  <p class="text-xs font-italic mb-2">
-    This button is not part of the above form:
-  </p>
-  <!-- 👀 Look, this is not part of the form. -->
-  <FormKit type="button" @click="submitForm">Signup for newsletter</FormKit>
-</template>
-```
+      alert(`Submitted ${data.email} successfully``
 
 #### Submitting with node.submit()
 

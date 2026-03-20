@@ -48,7 +48,7 @@ VitePress를 CMS에 연결하는 것은 주로 [동적 라우트](./routing#dyna
 
     - 작성자: {{ $params.author }}, 작성일: {{ $params.date }}
 
-    
+    <!-- @content -->
     ```
 
 ## 통합 가이드 {#integration-guides}

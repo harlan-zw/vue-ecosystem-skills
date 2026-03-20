@@ -1,5 +1,5 @@
 ---
-url: /about/community-guide.md
+outline: deep
 ---
 
 # Community Guide {#community-guide}

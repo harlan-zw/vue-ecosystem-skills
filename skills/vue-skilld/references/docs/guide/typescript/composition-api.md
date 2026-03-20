@@ -1,6 +1,3 @@
----
-url: /guide/typescript/composition-api.md
----
 # TypeScript with Composition API {#typescript-with-composition-api}
 
 <ScrimbaLink href="https://scrimba.com/links/vue-ts-composition-api" title="Free Vue.js TypeScript with Composition API Lesson" type="scrimba">

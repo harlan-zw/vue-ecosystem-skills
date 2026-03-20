@@ -109,13 +109,13 @@ export default {
 </script>
 
 <template>
-  
+  <!-- ❌ Doesn't work -->
   <input v-model="field.value" />
 
-  
+  <!-- ❌ Doesn't work -->
   <pre>{{ form.meta.valid }}</pre>
 
-  
+  <!-- ❌ Doesn't work -->
   <div v-for="item in fieldArray.fields"></div>
 </template>
 ```
@@ -133,16 +133,16 @@ const fieldArray = reactive(useFieldArray('users'));
 </script>
 
 <template>
-  
+  <!-- ❌  Still Doesn't work because it is a writeable computed ref -->
   <input v-model="field.value" />
 
-  
+  <!-- ✅  Works if unwrapped manually -->
   <input v-model="field.value.value" />
 
-  
+  <!-- ✅  Works -->
   <pre>{{ form.meta.valid }}</pre>
 
-  
+  <!-- ✅  Works -->
   <div v-for="item in fieldArray.fields"></div>
 </template>
 ```

@@ -1,6 +1,3 @@
----
-url: /api/options-state.md
----
 # Options: State {#options-state}
 
 ## data {#data}
@@ -428,13 +425,7 @@ Declare the custom events emitted by the component.
         if (payload.email && payload.password) {
           return true
         } else {
-          console.warn(`Invalid submit event payload!`)
-          return false
-        }
-      }
-    }
-  }
-  ```
+          console.warn(`Invalid submit event payload``
 
 - **See also**
   - [Guide - Fallthrough Attributes](/guide/components/attrs)
