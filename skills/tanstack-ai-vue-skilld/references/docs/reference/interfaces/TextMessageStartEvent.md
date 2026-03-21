@@ -5,7 +5,7 @@ title: TextMessageStartEvent
 
 # Interface: TextMessageStartEvent
 
-Defined in: types.ts:806
+Defined in: types.ts:777
 
 Emitted when a text message starts.
 
@@ -21,7 +21,7 @@ Emitted when a text message starts.
 messageId: string;
 ```
 
-Defined in: types.ts:809
+Defined in: types.ts:780
 
 Unique identifier for this message
 
@@ -33,7 +33,7 @@ Unique identifier for this message
 optional model: string;
 ```
 
-Defined in: types.ts:751
+Defined in: types.ts:722
 
 Model identifier for multi-model support
 
@@ -49,7 +49,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:753
+Defined in: types.ts:724
 
 Original provider event for debugging/advanced use cases
 
@@ -62,12 +62,12 @@ Original provider event for debugging/advanced use cases
 ### role
 
 ```ts
-role: "user" | "assistant" | "tool" | "system";
+role: "assistant";
 ```
 
-Defined in: types.ts:811
+Defined in: types.ts:782
 
-Role of the message sender
+Role is always assistant for generated messages
 
 ***
 
@@ -77,7 +77,7 @@ Role of the message sender
 timestamp: number;
 ```
 
-Defined in: types.ts:749
+Defined in: types.ts:720
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: types.ts:749
 type: "TEXT_MESSAGE_START";
 ```
 
-Defined in: types.ts:807
+Defined in: types.ts:778
 
 #### Overrides
 

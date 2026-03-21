@@ -5,7 +5,7 @@ title: StateDeltaEvent
 
 # Interface: StateDeltaEvent
 
-Defined in: types.ts:928
+Defined in: types.ts:884
 
 Emitted to provide an incremental state update.
 
@@ -21,7 +21,7 @@ Emitted to provide an incremental state update.
 delta: Record<string, unknown>;
 ```
 
-Defined in: types.ts:931
+Defined in: types.ts:887
 
 The state changes to apply
 
@@ -33,7 +33,7 @@ The state changes to apply
 optional model: string;
 ```
 
-Defined in: types.ts:751
+Defined in: types.ts:722
 
 Model identifier for multi-model support
 
@@ -49,7 +49,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:753
+Defined in: types.ts:724
 
 Original provider event for debugging/advanced use cases
 
@@ -65,7 +65,7 @@ Original provider event for debugging/advanced use cases
 timestamp: number;
 ```
 
-Defined in: types.ts:749
+Defined in: types.ts:720
 
 #### Inherited from
 
@@ -79,7 +79,7 @@ Defined in: types.ts:749
 type: "STATE_DELTA";
 ```
 
-Defined in: types.ts:929
+Defined in: types.ts:885
 
 #### Overrides
 

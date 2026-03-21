@@ -5,7 +5,7 @@ title: ToolCallEndEvent
 
 # Interface: ToolCallEndEvent
 
-Defined in: types.ts:867
+Defined in: types.ts:836
 
 Emitted when a tool call completes.
 
@@ -21,7 +21,7 @@ Emitted when a tool call completes.
 optional input: unknown;
 ```
 
-Defined in: types.ts:874
+Defined in: types.ts:843
 
 Final parsed input arguments
 
@@ -33,7 +33,7 @@ Final parsed input arguments
 optional model: string;
 ```
 
-Defined in: types.ts:751
+Defined in: types.ts:722
 
 Model identifier for multi-model support
 
@@ -49,7 +49,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:753
+Defined in: types.ts:724
 
 Original provider event for debugging/advanced use cases
 
@@ -65,7 +65,7 @@ Original provider event for debugging/advanced use cases
 optional result: string;
 ```
 
-Defined in: types.ts:876
+Defined in: types.ts:845
 
 Tool execution result (if executed)
 
@@ -77,7 +77,7 @@ Tool execution result (if executed)
 timestamp: number;
 ```
 
-Defined in: types.ts:749
+Defined in: types.ts:720
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: types.ts:749
 toolCallId: string;
 ```
 
-Defined in: types.ts:870
+Defined in: types.ts:839
 
 Tool call identifier
 
@@ -103,7 +103,7 @@ Tool call identifier
 toolName: string;
 ```
 
-Defined in: types.ts:872
+Defined in: types.ts:841
 
 Name of the tool
 
@@ -115,7 +115,7 @@ Name of the tool
 type: "TOOL_CALL_END";
 ```
 
-Defined in: types.ts:868
+Defined in: types.ts:837
 
 #### Overrides
 

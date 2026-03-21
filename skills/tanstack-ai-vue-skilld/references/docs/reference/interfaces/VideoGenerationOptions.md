@@ -5,7 +5,7 @@ title: VideoGenerationOptions
 
 # Interface: VideoGenerationOptions\<TProviderOptions, TSize\>
 
-Defined in: types.ts:1069
+Defined in: types.ts:1024
 
 **`Experimental`**
 
@@ -32,7 +32,7 @@ These are the common options supported across providers.
 optional duration: number;
 ```
 
-Defined in: types.ts:1080
+Defined in: types.ts:1035
 
 **`Experimental`**
 
@@ -46,7 +46,7 @@ Video duration in seconds
 model: string;
 ```
 
-Defined in: types.ts:1074
+Defined in: types.ts:1029
 
 **`Experimental`**
 
@@ -60,7 +60,7 @@ The model to use for video generation
 optional modelOptions: TProviderOptions;
 ```
 
-Defined in: types.ts:1082
+Defined in: types.ts:1037
 
 **`Experimental`**
 
@@ -74,7 +74,7 @@ Model-specific options for video generation
 prompt: string;
 ```
 
-Defined in: types.ts:1076
+Defined in: types.ts:1031
 
 **`Experimental`**
 
@@ -88,7 +88,7 @@ Text description of the desired video
 optional size: TSize;
 ```
 
-Defined in: types.ts:1078
+Defined in: types.ts:1033
 
 **`Experimental`**
 

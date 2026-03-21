@@ -10,6 +10,11 @@
     "url": "git+https://github.com/harlan-zw/ai-skills-vue-ecosystem.git"
   },
   "scripts": {
+    "generate": "bash generate.sh",
+    "generate:regen": "bash generate.sh --refs-and-regen",
+    "generate:regen:gemini": "SKILLD_MODEL=gemini-3-flash-preview bash generate.sh --refs-and-regen",
+    "generate:check": "bash generate.sh --check",
+    "generate:refs": "bash generate.sh --refs-only",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

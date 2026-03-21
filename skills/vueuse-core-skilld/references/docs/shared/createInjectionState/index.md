@@ -149,7 +149,6 @@ const [useProvideCounterStore, useCounterStore] = createInjectionState((initialV
 import { createInjectionState } from '@vueuse/core'
 import { computed, shallowRef } from 'vue'
 
-// useCounterStore does not return undefined when defaultValue is specified
 const [useProvideCounterStore, useCounterStore] = createInjectionState((initialValue: number) => {
   // state
   const count = shallowRef(initialValue)

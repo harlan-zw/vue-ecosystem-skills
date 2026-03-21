@@ -3,8 +3,8 @@ name: vueuse-integrations-skilld
 description: "Integration wrappers for utility libraries. ALWAYS use when writing code importing \"@vueuse/integrations\". Consult for debugging, best practices, or modifying @vueuse/integrations, vueuse/integrations, vueuse integrations, vueuse."
 metadata:
   version: 14.2.1
-  generated_at: 2026-03-20
-  references_synced_at: 2026-03-20
+  generated_at: 2026-03-21
+  references_synced_at: 2026-03-21
 ---
 
 # vueuse/vueuse `@vueuse/integrations`
@@ -15,7 +15,7 @@ metadata:
 **Deps:** @vueuse/core@14.2.1, @vueuse/shared@14.2.1
 **Tags:** next: 5.0.0, alpha: 14.0.0-alpha.3, beta: 14.0.0-beta.1, latest: 14.2.1
 
-**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
+**References:** [GitHub Issues](./references/issues/_INDEX.md) — bugs, workarounds, edge cases • [GitHub Discussions](./references/discussions/_INDEX.md) — Q&A, patterns, recipes • [Releases](./references/releases/_INDEX.md) — changelog, breaking changes, new APIs
 ## API Changes
 
 This section documents version-specific API changes — prioritize recent major/minor releases.

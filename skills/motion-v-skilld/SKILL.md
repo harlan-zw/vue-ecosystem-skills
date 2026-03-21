@@ -3,8 +3,8 @@ name: motion-v-skilld
 description: "ALWAYS use when writing code importing \"motion-v\". Consult for debugging, best practices, or modifying motion-v, motion v, motion-vue, motion vue."
 metadata:
   version: 2.0.1
-  generated_at: 2026-03-20
-  references_synced_at: 2026-03-20
+  generated_at: 2026-03-21
+  references_synced_at: 2026-03-21
 ---
 
 # motiondivision/motion-vue `motion-v`
@@ -13,7 +13,7 @@ metadata:
 **Deps:** framer-motion@^12.29.2, hey-listen@^1.0.8, motion-dom@^12.29.2, motion-utils@^12.29.2
 **Tags:** latest: 2.0.1
 
-**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
+**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides • [GitHub Issues](./references/issues/_INDEX.md) — bugs, workarounds, edge cases • [GitHub Discussions](./references/discussions/_INDEX.md) — Q&A, patterns, recipes • [Releases](./references/releases/_INDEX.md) — changelog, breaking changes, new APIs
 ## API Changes
 
 This section documents version-specific API changes — prioritize recent major/minor releases.

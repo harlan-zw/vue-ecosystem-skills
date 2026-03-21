@@ -3,8 +3,8 @@ name: vueuse-motion-skilld
 description: " Vue Composables putting your components in motion. ALWAYS use when writing code importing \"@vueuse/motion\". Consult for debugging, best practices, or modifying @vueuse/motion, vueuse/motion, vueuse motion, motion."
 metadata:
   version: 3.0.3
-  generated_at: 2026-03-20
-  references_synced_at: 2026-03-20
+  generated_at: 2026-03-21
+  references_synced_at: 2026-03-21
 ---
 
 # vueuse/motion `@vueuse/motion`
@@ -15,7 +15,7 @@ metadata:
 **Deps:** @vueuse/core@^13.0.0, @vueuse/shared@^13.0.0, defu@^6.1.4, framesync@^6.1.2, popmotion@^11.0.5, style-value-types@^5.1.2
 **Tags:** beta: 2.0.0-beta.29, latest: 3.0.3
 
-**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
+**References:** [GitHub Issues](./references/issues/_INDEX.md) — bugs, workarounds, edge cases • [GitHub Discussions](./references/discussions/_INDEX.md) — Q&A, patterns, recipes • [Releases](./references/releases/_INDEX.md) — changelog, breaking changes, new APIs
 ## API Changes
 
 This section documents version-specific API changes — prioritize recent major/minor releases.

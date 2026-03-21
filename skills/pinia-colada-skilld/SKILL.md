@@ -3,8 +3,8 @@ name: pinia-colada-skilld
 description: "The smart data fetching layer for Vue.js. ALWAYS use when writing code importing \"@pinia/colada\". Consult for debugging, best practices, or modifying @pinia/colada, pinia/colada, pinia colada, pinia-colada."
 metadata:
   version: 1.0.0
-  generated_at: 2026-03-20
-  references_synced_at: 2026-03-20
+  generated_at: 2026-03-21
+  references_synced_at: 2026-03-21
 ---
 
 # posva/pinia-colada `@pinia/colada`
@@ -14,7 +14,7 @@ metadata:
 **Version:** 1.0.0
 **Tags:** latest: 1.0.0
 
-**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
+**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides • [GitHub Issues](./references/issues/_INDEX.md) — bugs, workarounds, edge cases • [GitHub Discussions](./references/discussions/_INDEX.md) — Q&A, patterns, recipes • [Releases](./references/releases/_INDEX.md) — changelog, breaking changes, new APIs
 ## API Changes
 
 This section documents version-specific API changes — prioritize recent major/minor releases.

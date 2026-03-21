@@ -3,8 +3,8 @@ name: tanstack-vue-query-skilld
 description: "Hooks for managing, caching and syncing asynchronous and remote data in Vue. ALWAYS use when writing code importing \"@tanstack/vue-query\". Consult for debugging, best practices, or modifying @tanstack/vue-query, tanstack/vue-query, tanstack vue-query, tanstack vue query, query."
 metadata:
   version: 5.92.12
-  generated_at: 2026-03-20
-  references_synced_at: 2026-03-20
+  generated_at: 2026-03-21
+  references_synced_at: 2026-03-21
 ---
 
 # TanStack/query `@tanstack/vue-query`
@@ -15,7 +15,7 @@ metadata:
 **Deps:** @tanstack/match-sorter-utils@^8.19.4, @vue/devtools-api@^6.6.3, vue-demi@^0.14.10, @tanstack/query-core@5.91.2
 **Tags:** alpha: 5.0.0-alpha.91, beta: 5.0.0-beta.35, rc: 5.0.0-rc.16, previous: 4.43.0, latest: 5.92.12
 
-**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides
+**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides • [GitHub Issues](./references/issues/_INDEX.md) — bugs, workarounds, edge cases • [GitHub Discussions](./references/discussions/_INDEX.md) — Q&A, patterns, recipes • [Releases](./references/releases/_INDEX.md) — changelog, breaking changes, new APIs
 ## API Changes
 
 This section documents version-specific API changes — prioritize recent major/minor releases.

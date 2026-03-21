@@ -5,7 +5,7 @@ title: ToolCallArgsEvent
 
 # Interface: ToolCallArgsEvent
 
-Defined in: types.ts:854
+Defined in: types.ts:823
 
 Emitted when tool call arguments are streaming.
 
@@ -21,7 +21,7 @@ Emitted when tool call arguments are streaming.
 optional args: string;
 ```
 
-Defined in: types.ts:861
+Defined in: types.ts:830
 
 Full accumulated arguments so far
 
@@ -33,7 +33,7 @@ Full accumulated arguments so far
 delta: string;
 ```
 
-Defined in: types.ts:859
+Defined in: types.ts:828
 
 Incremental JSON arguments delta
 
@@ -45,7 +45,7 @@ Incremental JSON arguments delta
 optional model: string;
 ```
 
-Defined in: types.ts:751
+Defined in: types.ts:722
 
 Model identifier for multi-model support
 
@@ -61,7 +61,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:753
+Defined in: types.ts:724
 
 Original provider event for debugging/advanced use cases
 
@@ -77,7 +77,7 @@ Original provider event for debugging/advanced use cases
 timestamp: number;
 ```
 
-Defined in: types.ts:749
+Defined in: types.ts:720
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: types.ts:749
 toolCallId: string;
 ```
 
-Defined in: types.ts:857
+Defined in: types.ts:826
 
 Tool call identifier
 
@@ -103,7 +103,7 @@ Tool call identifier
 type: "TOOL_CALL_ARGS";
 ```
 
-Defined in: types.ts:855
+Defined in: types.ts:824
 
 #### Overrides
 

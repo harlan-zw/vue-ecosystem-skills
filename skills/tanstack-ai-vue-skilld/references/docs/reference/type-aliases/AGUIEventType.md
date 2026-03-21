@@ -24,7 +24,7 @@ type AGUIEventType =
   | "CUSTOM";
 ```
 
-Defined in: types.ts:721
+Defined in: types.ts:693
 
 AG-UI Protocol event types.
 Based on the AG-UI specification for agent-user interaction.

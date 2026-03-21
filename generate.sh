@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MODEL="sonnet"
-EJECT_DIR="./skills"
-SKILLD="npx -y skilld@latest"
+MODEL="${SKILLD_MODEL:-sonnet}"
+EJECT_DIR="${SKILLD_OUT:-./skills}"
+SKILLD="${SKILLD_BIN:-npx -y skilld@latest}"
+BATCH_SIZE="${SKILLD_BATCH:-6}"
+STALE_DAYS="${SKILLD_STALE_DAYS:-30}"
 REFS_ONLY=false
 REFS_AND_REGEN=false
+CHECK_ONLY=false
 
 PACKAGES=(
   # Core
@@ -73,7 +76,11 @@ for arg in "$@"; do
       ;;
     --refs-and-regen)
       REFS_AND_REGEN=true
-      REFS_ONLY=true  # refs-and-regen implies refs-only behavior as baseline
+      REFS_ONLY=true
+      ;;
+    --check)
+      CHECK_ONLY=true
+      REFS_ONLY=true
       ;;
     *)
       POSITIONAL+=("$arg")
@@ -116,6 +123,44 @@ extract_body() {
   sed -n '/^## API Changes/,$p' "$1"
 }
 
+# Fetch latest version from npm registry (handles @scope and dist-tags like vue@beta)
+npm_latest_version() {
+  local pkg="$1"
+  # If pkg has a dist-tag suffix (e.g. vue@beta, vuetify@next), use it
+  local name tag
+  if [[ "$pkg" =~ ^(@[^/]+/[^@]+|[^@]+)@([^/]+)$ ]]; then
+    name="${BASH_REMATCH[1]}"
+    tag="${BASH_REMATCH[2]}"
+  else
+    name="$pkg"
+    tag="latest"
+  fi
+  npm view "$name@$tag" version 2>/dev/null || echo ""
+}
+
+# Extract references_synced_at from SKILL.md frontmatter
+extract_synced_at() {
+  sed -n '/^---$/,/^---$/{ s/^  references_synced_at: *//p; }' "$1"
+}
+
+# Check if synced_at date is older than STALE_DAYS
+is_stale() {
+  local synced_at="$1"
+  if [ -z "$synced_at" ]; then
+    echo "true"
+    return
+  fi
+  local synced_epoch now_epoch diff_days
+  synced_epoch=$(date -d "$synced_at" +%s 2>/dev/null || echo 0)
+  now_epoch=$(date -u +%s)
+  diff_days=$(( (now_epoch - synced_epoch) / 86400 ))
+  if [ "$diff_days" -ge "$STALE_DAYS" ]; then
+    echo "true"
+  else
+    echo "false"
+  fi
+}
+
 # Compare semver: returns major, minor, patch, or none
 semver_change() {
   local old="$1" new="$2"
@@ -151,17 +196,18 @@ merge_skill_md() {
 }
 
 total=${#PACKAGES[@]}
-current=0
 failed=()
 regenerated=()
 
 echo "Skill Version: $($SKILLD --version)"
-if [ "$REFS_AND_REGEN" = true ]; then
-  echo "Syncing references for $total skills (LLM regen on minor/major bumps)"
+if [ "$CHECK_ONLY" = true ]; then
+  echo "Checking $total skills for version bumps (dry run, batch=$BATCH_SIZE)"
+elif [ "$REFS_AND_REGEN" = true ]; then
+  echo "Syncing references for $total skills (LLM regen on minor/major bumps, batch=$BATCH_SIZE)"
 elif [ "$REFS_ONLY" = true ]; then
-  echo "Syncing references for $total skills (no LLM, SKILL.md body preserved)"
+  echo "Syncing references for $total skills (no LLM, SKILL.md body preserved, batch=$BATCH_SIZE)"
 else
-  echo "Generating $total skills with model=$MODEL"
+  echo "Generating $total skills with model=$MODEL (batch=$BATCH_SIZE)"
 fi
 echo "Output: $EJECT_DIR"
 echo "---"
@@ -169,7 +215,6 @@ echo "---"
 # Delete old output for explicit packages so we get a clean regeneration (skip in refs-only mode)
 if [ "$EXPLICIT" = true ] && [ "$REFS_ONLY" = false ]; then
   for pkg in "${PACKAGES[@]}"; do
-    # Strip version suffix (e.g. vue@beta -> vue, vuetify@next -> vuetify)
     bare=$(echo "$pkg" | sed 's/@[^/]*$//')
     dir_name="$(skill_dir_name "$bare")-skilld"
     target="$EJECT_DIR/$dir_name"
@@ -181,94 +226,203 @@ if [ "$EXPLICIT" = true ] && [ "$REFS_ONLY" = false ]; then
   echo "---"
 fi
 
-for pkg in "${PACKAGES[@]}"; do
-  current=$((current + 1))
+# --- Per-package worker for refs-only/refs-and-regen (pass 1: sync refs, no LLM) ---
+sync_refs_worker() {
+  local pkg="$1" idx="$2"
+  local bare dir_name skill_path skill_md old_ver old_body new_ver change synced_at stale
 
   bare=$(echo "$pkg" | sed 's/@[^/]*$//')
   dir_name="$(skill_dir_name "$bare")-skilld"
   skill_path="$EJECT_DIR/$dir_name"
   skill_md="$skill_path/SKILL.md"
 
-  # Skip pre-generated skills in default full-generation mode
-  if [ "$EXPLICIT" = false ] && [ "$REFS_ONLY" = false ]; then
-    if [ -d "$skill_path" ]; then
-      echo "[$current/$total] $pkg (skipped — already exists)"
-      echo ""
-      continue
+  if [ ! -d "$skill_path" ]; then
+    echo "[$idx/$total] $pkg (skipped, no existing skill)"
+    return 0
+  fi
+
+  old_ver=$(extract_version "$skill_md")
+  synced_at=$(extract_synced_at "$skill_md")
+  stale=$(is_stale "$synced_at")
+
+  # Quick check: compare npm registry version against current SKILL.md version
+  new_ver=$(npm_latest_version "$pkg")
+  if [ -z "$new_ver" ]; then
+    echo "[$idx/$total] ✗ $pkg (npm lookup failed)"
+    echo "$pkg" >> "$EJECT_DIR/.failed"
+    return 0
+  fi
+
+  change=$(semver_change "$old_ver" "$new_ver")
+
+  # Skip skilld eject if version unchanged and docs are fresh
+  if [ "$change" = "none" ] && [ "$stale" = "false" ]; then
+    echo "[$idx/$total] = $pkg $old_ver (up to date, synced $synced_at)"
+    return 0
+  fi
+
+  # Determine if we actually need to run skilld eject
+  local needs_eject=false
+  if [ "$change" = "major" ] || [ "$change" = "minor" ] || [ "$change" = "patch" ]; then
+    needs_eject=true
+  elif [ "$stale" = "true" ]; then
+    needs_eject=true
+  fi
+
+  if [ "$CHECK_ONLY" = true ]; then
+    # Dry run: just report, no eject needed
+    if [ "$change" = "major" ] || [ "$change" = "minor" ]; then
+      echo "[$idx/$total] ↑ $pkg $old_ver → $new_ver ($change) — needs regen"
+      echo "$pkg|$old_ver|$new_ver|$change" >> "$EJECT_DIR/.regen_queue"
+    elif [ "$change" = "patch" ]; then
+      echo "[$idx/$total] ~ $pkg $old_ver → $new_ver (patch)"
+    elif [ "$stale" = "true" ]; then
+      echo "[$idx/$total] ⧖ $pkg $old_ver (stale, last synced $synced_at)"
     fi
+    return 0
   fi
 
-  # In refs-only mode, skip packages that don't have an existing skill dir
-  if [ "$REFS_ONLY" = true ] && [ ! -d "$skill_path" ]; then
-    echo "[$current/$total] $pkg (skipped — no existing skill)"
-    echo ""
-    continue
-  fi
-
-  echo "[$current/$total] $pkg"
-
-  if [ "$REFS_ONLY" = true ]; then
-    # --- refs-only / refs-and-regen path ---
-    # 1. Backup SKILL.md
+  # Run skilld eject to sync refs
+  if [ "$needs_eject" = true ]; then
+    old_body=$(extract_body "$skill_md")
     cp "$skill_md" "$skill_md.bak"
-    old_ver=$(extract_version "$skill_md.bak")
-    old_body=$(extract_body "$skill_md.bak")
 
-    # 2. Run skilld eject without --model (syncs refs + header)
-    eject_args=("$pkg" --out "$EJECT_DIR" --yes --debug --no-search)
-    if ! $SKILLD eject "${eject_args[@]}"; then
-      echo "  ✗ $pkg (failed)"
-      # Restore backup on failure
+    if ! $SKILLD eject "$pkg" --out "$EJECT_DIR" --yes --debug --no-search 2>&1; then
+      echo "[$idx/$total] ✗ $pkg (ref sync failed)"
       mv "$skill_md.bak" "$skill_md"
-      failed+=("$pkg")
-      echo ""
-      continue
+      echo "$pkg" >> "$EJECT_DIR/.failed"
+      return 0
     fi
 
-    new_ver=$(extract_version "$skill_md")
-    change=$(semver_change "$old_ver" "$new_ver")
-
-    # 3. Decide: LLM regen or merge
     if [ "$REFS_AND_REGEN" = true ] && { [ "$change" = "major" ] || [ "$change" = "minor" ]; }; then
-      echo "  ↑ $old_ver → $new_ver ($change bump) — regenerating with LLM"
+      echo "[$idx/$total] ↑ $pkg $old_ver → $new_ver ($change) — queued for LLM regen"
+      echo "$pkg|$old_ver|$new_ver" >> "$EJECT_DIR/.regen_queue"
+      rm -f "$skill_md.bak"
+    else
+      if [ -n "$old_body" ]; then
+        merge_skill_md "$skill_md" "$old_body"
+        if [ "$stale" = "true" ] && [ "$change" = "none" ]; then
+          echo "[$idx/$total] ✓ $pkg $old_ver (refs refreshed, was stale)"
+        else
+          echo "[$idx/$total] ✓ $pkg (refs updated, body preserved)"
+        fi
+      else
+        echo "[$idx/$total] ✓ $pkg (refs updated)"
+      fi
+      stamp_synced_at "$skill_md"
+      rm -f "$skill_md.bak"
+    fi
+  fi
+}
+
+# --- Per-package worker for full generation ---
+generate_worker() {
+  local pkg="$1" idx="$2"
+  local bare dir_name skill_path
+
+  bare=$(echo "$pkg" | sed 's/@[^/]*$//')
+  dir_name="$(skill_dir_name "$bare")-skilld"
+  skill_path="$EJECT_DIR/$dir_name"
+
+  if [ "$EXPLICIT" = false ] && [ -d "$skill_path" ]; then
+    echo "[$idx/$total] $pkg (skipped, already exists)"
+    return 0
+  fi
+
+  if $SKILLD eject "$pkg" --out "$EJECT_DIR" --yes --force --model "$MODEL" --debug --no-search 2>&1; then
+    echo "[$idx/$total] ✓ $pkg"
+  else
+    echo "[$idx/$total] ✗ $pkg (failed)"
+    echo "$pkg" >> "$EJECT_DIR/.failed"
+  fi
+}
+
+export -f skill_dir_name stamp_synced_at extract_version extract_body extract_synced_at semver_change merge_skill_md npm_latest_version is_stale
+export -f sync_refs_worker generate_worker
+export SKILLD EJECT_DIR MODEL REFS_AND_REGEN REFS_ONLY CHECK_ONLY EXPLICIT STALE_DAYS total
+
+# Clean up temp files
+rm -f "$EJECT_DIR/.failed" "$EJECT_DIR/.regen_queue"
+
+# --- Batch execution ---
+run_batched() {
+  local worker="$1"
+  local batch=()
+  local idx=0
+
+  for pkg in "${PACKAGES[@]}"; do
+    idx=$((idx + 1))
+    batch+=("$pkg" "$idx")
+
+    if [ ${#batch[@]} -ge $((BATCH_SIZE * 2)) ] || [ "$idx" -eq "$total" ]; then
+      # Launch batch in parallel
+      local pids=()
+      local i=0
+      while [ $i -lt ${#batch[@]} ]; do
+        "$worker" "${batch[$i]}" "${batch[$((i + 1))]}" &
+        pids+=($!)
+        i=$((i + 2))
+      done
+      # Wait for all in batch
+      for pid in "${pids[@]}"; do
+        wait "$pid" 2>/dev/null || true
+      done
+      batch=()
+    fi
+  done
+}
+
+if [ "$CHECK_ONLY" = true ]; then
+  echo "Checking versions (parallel, batch=$BATCH_SIZE)..."
+  echo "---"
+  run_batched sync_refs_worker
+elif [ "$REFS_ONLY" = true ]; then
+  echo "Pass 1: syncing refs (parallel, batch=$BATCH_SIZE)..."
+  echo "---"
+  run_batched sync_refs_worker
+
+  # Pass 2: LLM regen for major/minor bumps (sequential)
+  if [ "$REFS_AND_REGEN" = true ] && [ -f "$EJECT_DIR/.regen_queue" ]; then
+    echo ""
+    echo "Pass 2: LLM regen for version bumps..."
+    echo "---"
+    while IFS='|' read -r pkg old_ver new_ver; do
+      echo "Regenerating $pkg ($old_ver → $new_ver) with model=$MODEL"
       if $SKILLD eject "$pkg" --out "$EJECT_DIR" --yes --force --model "$MODEL" --debug --no-search; then
         regenerated+=("$pkg ($old_ver → $new_ver)")
         echo "  ✓ $pkg (regenerated)"
       else
-        echo "  ✗ $pkg (LLM regen failed, restoring backup)"
-        mv "$skill_md.bak" "$skill_md"
+        echo "  ✗ $pkg (LLM regen failed)"
         failed+=("$pkg")
-        echo ""
-        continue
       fi
-    else
-      # Merge: new header + old body
-      if [ -n "$old_body" ]; then
-        merge_skill_md "$skill_md" "$old_body"
-        echo "  ✓ $pkg (refs updated, body preserved)"
-      else
-        echo "  ✓ $pkg (refs updated, no body to preserve)"
-      fi
-    fi
-
-    stamp_synced_at "$skill_md"
-    rm -f "$skill_md.bak"
-  else
-    # --- full generation path ---
-    eject_args=("$pkg" --out "$EJECT_DIR" --yes --force --model "$MODEL" --debug --no-search)
-    if $SKILLD eject "${eject_args[@]}"; then
-      echo "  ✓ $pkg"
-    else
-      echo "  ✗ $pkg (failed)"
-      failed+=("$pkg")
-    fi
+      echo ""
+    done < "$EJECT_DIR/.regen_queue"
   fi
+else
+  run_batched generate_worker
+fi
 
-  echo ""
-done
+# Collect failures from parallel workers
+if [ -f "$EJECT_DIR/.failed" ]; then
+  while IFS= read -r pkg; do
+    failed+=("$pkg")
+  done < "$EJECT_DIR/.failed"
+fi
 
 echo "=== Done ==="
-if [ "$REFS_ONLY" = true ]; then
+if [ "$CHECK_ONLY" = true ]; then
+  echo "Checked: $((total - ${#failed[@]}))/$total"
+  if [ -f "$EJECT_DIR/.regen_queue" ]; then
+    count=$(wc -l < "$EJECT_DIR/.regen_queue")
+    echo ""
+    echo "Skills needing regen ($count):"
+    while IFS='|' read -r pkg old_ver new_ver change; do
+      echo "  $pkg  $old_ver → $new_ver  ($change)"
+    done < "$EJECT_DIR/.regen_queue"
+  else
+    echo "All skills up to date, no regen needed."
+  fi
+elif [ "$REFS_ONLY" = true ]; then
   echo "Synced: $((total - ${#failed[@]}))/$total"
 else
   echo "Generated: $((total - ${#failed[@]}))/$total"
@@ -280,6 +434,9 @@ if [ ${#regenerated[@]} -gt 0 ]; then
     echo "  - $item"
   done
 fi
+
+# Clean up temp files
+rm -f "$EJECT_DIR/.failed" "$EJECT_DIR/.regen_queue"
 
 if [ ${#failed[@]} -gt 0 ]; then
   echo "Failed:"

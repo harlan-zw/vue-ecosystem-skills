@@ -17,7 +17,7 @@ date: 2026-01-07T03:07:59.027Z
 
 ## components (1)
 
-- [@vueuse/components](./components/README.md): NPM version
+- [@vueuse/components](./components/README.md): Learn more about component usage.
 
 ## core/_template (1)
 
@@ -614,7 +614,7 @@ Consider using @tanstack/vue-virtual instead, if you are looking for more featur
 
 ## electron (1)
 
-- [@vueuse/electron](./electron/README.md): NPM version
+- [@vueuse/electron](./electron/README.md): @vueuse/electron provides the following functions
 
 ## electron/useIpcRenderer (1)
 
@@ -638,7 +638,7 @@ Consider using @tanstack/vue-virtual instead, if you are looking for more featur
 
 ## firebase (1)
 
-- [@vueuse/firebase](./firebase/README.md): NPM version
+- [@vueuse/firebase](./firebase/README.md): Add-on of VueUse, enables the real-time bindings for Firebase.
 
 ## firebase/useAuth (1)
 
@@ -663,7 +663,7 @@ can easily react to changes in the users' authentication sta...
 
 ## integrations (1)
 
-- [@vueuse/integrations](./integrations/README.md): NPM version
+- [@vueuse/integrations](./integrations/README.md): For better tree-shaking result, import functions from submodules, for example:
 
 ## integrations/useAsyncValidator (1)
 
@@ -735,7 +735,7 @@ can easily react to changes in the users' authentication sta...
 
 ## math (1)
 
-- [@vueuse/math](./math/README.md): NPM version
+- [@vueuse/math](./math/README.md): MIT License  2019-PRESENT Anthony Fu
 
 ## math/useAbs (1)
 
@@ -791,11 +791,11 @@ can easily react to changes in the users' authentication sta...
 
 ## nuxt (1)
 
-- [@vueuse/nuxt](./nuxt/README.md): NPM version
+- [@vueuse/nuxt](./nuxt/README.md): Install the vueuse module into your application using @nuxt/cli:
 
 ## router (1)
 
-- [@vueuse/router](./router/README.md): NPM version
+- [@vueuse/router](./router/README.md): MIT License  2019-PRESENT Anthony Fu
 
 ## router/useRouteHash (1)
 
@@ -815,7 +815,7 @@ can easily react to changes in the users' authentication sta...
 
 ## rxjs (1)
 
-- [@vueuse/rxjs](./rxjs/README.md): NPM version
+- [@vueuse/rxjs](./rxjs/README.md): MIT License  2019-PRESENT Anthony Fu
 
 ## rxjs/toObserver (1)
 

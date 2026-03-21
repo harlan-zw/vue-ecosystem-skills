@@ -5,7 +5,7 @@ title: ToolDefinitionInstance
 
 # Interface: ToolDefinitionInstance\<TInput, TOutput, TName\>
 
-Defined in: activities/chat/tools/tool-definition.ts:44
+Defined in: activities/chat/tools/tool-definition.ts:43
 
 Tool definition that can be used directly or instantiated for server/client
 
@@ -39,7 +39,7 @@ Tool definition that can be used directly or instantiated for server/client
 __toolSide: "definition";
 ```
 
-Defined in: activities/chat/tools/tool-definition.ts:49
+Defined in: activities/chat/tools/tool-definition.ts:48
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: activities/chat/tools/tool-definition.ts:49
 description: string;
 ```
 
-Defined in: types.ts:411
+Defined in: types.ts:383
 
 Clear description of what the tool does.
 
@@ -71,10 +71,10 @@ Be specific about what the tool does, what parameters it needs, and what it retu
 ### execute()?
 
 ```ts
-optional execute: (args, context?) => any;
+optional execute: (args) => any;
 ```
 
-Defined in: types.ts:491
+Defined in: types.ts:463
 
 Optional function to execute when the model calls this tool.
 
@@ -90,10 +90,6 @@ Can return any value - will be automatically stringified if needed.
 `any`
 
 The arguments parsed from the model's tool call (validated against inputSchema)
-
-##### context?
-
-[`ToolExecutionContext`](ToolExecutionContext.md)
 
 #### Returns
 
@@ -122,7 +118,7 @@ execute: async (args) => {
 optional inputSchema: TInput;
 ```
 
-Defined in: types.ts:451
+Defined in: types.ts:423
 
 Schema describing the tool's input parameters.
 
@@ -180,7 +176,7 @@ type({
 optional metadata: Record<string, any>;
 ```
 
-Defined in: types.ts:497
+Defined in: types.ts:469
 
 Additional metadata for adapters or custom extensions
 
@@ -196,7 +192,7 @@ Additional metadata for adapters or custom extensions
 name: TName;
 ```
 
-Defined in: types.ts:401
+Defined in: types.ts:373
 
 Unique name of the tool (used by the model to call it).
 
@@ -221,7 +217,7 @@ Must be unique within the tools array.
 optional needsApproval: boolean;
 ```
 
-Defined in: types.ts:494
+Defined in: types.ts:466
 
 If true, tool execution requires user approval before running. Works with both server and client tools.
 
@@ -237,7 +233,7 @@ If true, tool execution requires user approval before running. Works with both s
 optional outputSchema: TOutput;
 ```
 
-Defined in: types.ts:472
+Defined in: types.ts:444
 
 Optional schema for validating tool output.
 

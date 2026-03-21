@@ -5,7 +5,7 @@ title: StepStartedEvent
 
 # Interface: StepStartedEvent
 
-Defined in: types.ts:882
+Defined in: types.ts:851
 
 Emitted when a thinking/reasoning step starts.
 
@@ -21,7 +21,7 @@ Emitted when a thinking/reasoning step starts.
 optional model: string;
 ```
 
-Defined in: types.ts:751
+Defined in: types.ts:722
 
 Model identifier for multi-model support
 
@@ -37,7 +37,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:753
+Defined in: types.ts:724
 
 Original provider event for debugging/advanced use cases
 
@@ -53,7 +53,7 @@ Original provider event for debugging/advanced use cases
 stepId: string;
 ```
 
-Defined in: types.ts:885
+Defined in: types.ts:854
 
 Unique identifier for this step
 
@@ -65,7 +65,7 @@ Unique identifier for this step
 optional stepType: string;
 ```
 
-Defined in: types.ts:887
+Defined in: types.ts:856
 
 Type of step (e.g., 'thinking', 'planning')
 
@@ -77,7 +77,7 @@ Type of step (e.g., 'thinking', 'planning')
 timestamp: number;
 ```
 
-Defined in: types.ts:749
+Defined in: types.ts:720
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: types.ts:749
 type: "STEP_STARTED";
 ```
 
-Defined in: types.ts:883
+Defined in: types.ts:852
 
 #### Overrides
 

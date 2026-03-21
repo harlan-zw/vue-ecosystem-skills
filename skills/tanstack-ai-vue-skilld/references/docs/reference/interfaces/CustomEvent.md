@@ -5,7 +5,7 @@ title: CustomEvent
 
 # Interface: CustomEvent
 
-Defined in: types.ts:937
+Defined in: types.ts:893
 
 Custom event for extensibility.
 
@@ -15,13 +15,25 @@ Custom event for extensibility.
 
 ## Properties
 
+### data?
+
+```ts
+optional data: unknown;
+```
+
+Defined in: types.ts:898
+
+Custom event data
+
+***
+
 ### model?
 
 ```ts
 optional model: string;
 ```
 
-Defined in: types.ts:751
+Defined in: types.ts:722
 
 Model identifier for multi-model support
 
@@ -37,7 +49,7 @@ Model identifier for multi-model support
 name: string;
 ```
 
-Defined in: types.ts:940
+Defined in: types.ts:896
 
 Custom event name
 
@@ -49,7 +61,7 @@ Custom event name
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:753
+Defined in: types.ts:724
 
 Original provider event for debugging/advanced use cases
 
@@ -65,7 +77,7 @@ Original provider event for debugging/advanced use cases
 timestamp: number;
 ```
 
-Defined in: types.ts:749
+Defined in: types.ts:720
 
 #### Inherited from
 
@@ -79,20 +91,8 @@ Defined in: types.ts:749
 type: "CUSTOM";
 ```
 
-Defined in: types.ts:938
+Defined in: types.ts:894
 
 #### Overrides
 
 [`BaseAGUIEvent`](BaseAGUIEvent.md).[`type`](BaseAGUIEvent.md#type)
-
-***
-
-### value?
-
-```ts
-optional value: unknown;
-```
-
-Defined in: types.ts:942
-
-Custom event value

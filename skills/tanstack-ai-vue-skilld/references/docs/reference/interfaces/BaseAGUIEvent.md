@@ -5,7 +5,7 @@ title: BaseAGUIEvent
 
 # Interface: BaseAGUIEvent
 
-Defined in: types.ts:747
+Defined in: types.ts:718
 
 Base structure for AG-UI events.
 Extends AG-UI spec with TanStack AI additions (model field).
@@ -23,7 +23,6 @@ Extends AG-UI spec with TanStack AI additions (model field).
 - [`ToolCallEndEvent`](ToolCallEndEvent.md)
 - [`StepStartedEvent`](StepStartedEvent.md)
 - [`StepFinishedEvent`](StepFinishedEvent.md)
-- [`MessagesSnapshotEvent`](MessagesSnapshotEvent.md)
 - [`StateSnapshotEvent`](StateSnapshotEvent.md)
 - [`StateDeltaEvent`](StateDeltaEvent.md)
 - [`CustomEvent`](CustomEvent.md)
@@ -36,7 +35,7 @@ Extends AG-UI spec with TanStack AI additions (model field).
 optional model: string;
 ```
 
-Defined in: types.ts:751
+Defined in: types.ts:722
 
 Model identifier for multi-model support
 
@@ -48,7 +47,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:753
+Defined in: types.ts:724
 
 Original provider event for debugging/advanced use cases
 
@@ -60,7 +59,7 @@ Original provider event for debugging/advanced use cases
 timestamp: number;
 ```
 
-Defined in: types.ts:749
+Defined in: types.ts:720
 
 ***
 
@@ -70,4 +69,4 @@ Defined in: types.ts:749
 type: AGUIEventType;
 ```
 
-Defined in: types.ts:748
+Defined in: types.ts:719
