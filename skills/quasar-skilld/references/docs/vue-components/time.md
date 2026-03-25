@@ -81,8 +81,8 @@ If, for some reason, you need to use a custom ad-hoc locale rather than the curr
 
 ### Limiting options
 
-* You can use the `hour-options`, `minute-options` and `second-options` props to limit user selection to certain times.
-* Alternatively, for a more in-depth way of limiting options, you can also supply a function (second example below) to `options-fn` prop.
+- You can use the `hour-options`, `minute-options` and `second-options` props to limit user selection to certain times.
+- Alternatively, for a more in-depth way of limiting options, you can also supply a function (second example below) to `options-fn` prop.
 
 <DocExample title="Options" file="Options" overflow />
 
@@ -96,8 +96,8 @@ Connecting a QDate and QTime with same model on a QInput:
 
 The following are **helpers** for QInput `mask` and `rules` props. You can use these for convenience or write the string specifying your [custom needs](/vue-components/input#mask).
 
-* Property `mask` helpers: full list.
-* Property `rules` helpers: full list.
+- Property `mask` helpers: full list.
+- Property `rules` helpers: full list.
 
 Examples: "date", "time", "fulltime".
 

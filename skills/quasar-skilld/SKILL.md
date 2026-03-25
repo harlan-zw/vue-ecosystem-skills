@@ -2,19 +2,15 @@
 name: quasar-skilld
 description: "Build high-performance VueJS user interfaces (SPA, PWA, SSR, Mobile and Desktop) in record time. ALWAYS use when writing code importing \"quasar\". Consult for debugging, best practices, or modifying quasar."
 metadata:
-  version: 2.18.7
-  generated_at: 2026-03-21
-  references_synced_at: 2026-03-21
+  version: 2.19.1
+  generated_at: 2026-03-25
+  references_synced_at: 2026-03-25
 ---
 
-# quasarframework/quasar `quasar`
+# quasarframework/quasar `quasar@2.19.1`
+**Tags:** legacy: 1.22.10, latest: 2.19.1
 
-> Build high-performance VueJS user interfaces (SPA, PWA, SSR, Mobile and Desktop) in record time
-
-**Version:** 2.18.7
-**Tags:** legacy: 1.22.10, latest: 2.18.7
-
-**References:** [Docs](./references/docs/_INDEX.md) — API reference, guides • [GitHub Issues](./references/issues/_INDEX.md) — bugs, workarounds, edge cases • [GitHub Discussions](./references/discussions/_INDEX.md) — Q&A, patterns, recipes • [Releases](./references/releases/_INDEX.md) — changelog, breaking changes, new APIs
+**References:** [Docs](./references/docs/_INDEX.md)
 ## API Changes
 
 This section documents version-specific API changes — prioritize recent major/minor releases.

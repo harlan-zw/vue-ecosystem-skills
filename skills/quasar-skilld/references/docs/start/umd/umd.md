@@ -14,27 +14,30 @@ UMD is all about adding Quasar style and javascript tags. Please select what you
 <UmdTags />
 
 ::: warning
-* Please notice the `<!DOCTYPE html>` at the beginning of the document. Do not forget to add it, or else some browsers (notably Safari) will use some compatibility mode that breaks flex.
-* If you are using an RTL Quasar language pack (eg. Hebrew) then toggle the "RTL CSS support" above too!
-* Do NOT use self-closing tags, like `<q-icon ... />`. Instead, go with `<q-icon ...></q-icon>`.
-* It might be wise to pin all the packages that you use to specific versions that you've already tested in development. Regressions can occur, like in Vue 3.2.32 and this can break your pages. Example of pinning Vue to a specific version (point the script tag to): https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.prod.js
-:::
+
+- Please notice the `<!DOCTYPE html>` at the beginning of the document. Do not forget to add it, or else some browsers (notably Safari) will use some compatibility mode that breaks flex.
+- If you are using an RTL Quasar language pack (eg. Hebrew) then toggle the "RTL CSS support" above too!
+- Do NOT use self-closing tags, like `<q-icon ... />`. Instead, go with `<q-icon ...></q-icon>`.
+- It might be wise to pin all the packages that you use to specific versions that you've already tested in development. Regressions can occur, like in Vue 3.2.32 and this can break your pages. Example of pinning Vue to a specific version (point the script tag to): https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.prod.js
+  :::
 
 ::: tip
 All components, directives and Quasar plugins are ready to be used out of the box. There is no need for additional code to install them. Just make sure that you will NOT be using self-closing tags.
 :::
 
 ## JsFiddle / Codepen
+
 You can fork and use these links for reporting issues on GitHub too:
 
-| Supplier | URL |
-| --- | --- |
+| Supplier | URL                                                        |
+| -------- | ---------------------------------------------------------- |
 | jsFiddle | https://jsfiddle.quasar.dev |
-| Codepen | https://codepen.quasar.dev |
+| Codepen  | https://codepen.quasar.dev   |
 
 These links (obviously) use the Quasar UMD version.
 
 ## Quasar Global Object
+
 When you embed Quasar UMD into a webpage you'll get a `Quasar` global Object injected:
 
 ```js
@@ -64,6 +67,7 @@ Quasar.utils.is.deepEqual(objA, objB)
 ```
 
 ## Quasar Config Object
+
 There are some configuration options for Quasar & Quasar plugins:
 
 ```js
@@ -82,6 +86,7 @@ app.use(Quasar, {
 ```
 
 ## Usage
+
 So, after you figured out the CDN links that you need to embed into your webpages, now it's time to use Quasar.
 
 By using the UMD version, you'll have all of the components, directives and Quasar plugins already installed for you. You just need to start using them.
@@ -117,6 +122,7 @@ Quasar.openURL('https://quasar.dev')
 ```
 
 ### Changing Quasar Icon Set
+
 Assuming you have already included the CDN link to your favorite Quasar Icon Set (unless you're using Material Icons which is used by default), you can then tell Quasar to use it:
 
 ```js
@@ -126,6 +132,7 @@ Quasar.IconSet.set(Quasar.IconSet.fontawesomeV6)
 The list of available [Quasar Icon Sets](/options/quasar-icon-sets) can be found on GitHub.
 
 ### Changing Quasar Language Pack
+
 Assuming you have already included the CDN link to your desired Quasar I18n Language (unless you want "en-US" language pack which is used by default), you can then tell Quasar to use it:
 
 ```js

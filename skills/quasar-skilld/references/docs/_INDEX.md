@@ -47,9 +47,7 @@ This rule applies to ALL Quasar repositories.
 - [Contribution Guide](./how-to-contribute/contribution-guide.md): This guide covers ways in which you can become a part of the ongoing development of Quasar.
 - [How-to Start a New Project](./how-to-contribute/new-project.md): You have a great new idea which is in line with the Quasar vision. Great, here is how to make it happen!
 - [The Role of the Project Maintainer](./how-to-contribute/project-maintainer.md): More info - Best Practices for Maintainers
-- [Active Project, Goals and Maintainers](./how-to-contribute/running-projects.md): | Project | Responsibility | Maintainer | Repo, Links |
-| --- | --- | --- | --- |
-| Core UI, CLI, IconGenie | Ultimate responsibility of the Quasar...
+- [Active Project, Goals and Maintainers](./how-to-contribute/running-projects.md): | Project                 | Responsibility                                                                           | Maintainer   | Repo, Links  ...
 
 ## icongenie (5)
 
