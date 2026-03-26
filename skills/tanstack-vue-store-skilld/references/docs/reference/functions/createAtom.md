@@ -11,7 +11,7 @@ title: createAtom
 function createAtom<T>(getValue, options?): ReadonlyAtom<T>;
 ```
 
-Defined in: atom.ts:126
+Defined in: atom.ts:138
 
 ### Type Parameters
 
@@ -39,7 +39,7 @@ Defined in: atom.ts:126
 function createAtom<T>(initialValue, options?): Atom<T>;
 ```
 
-Defined in: atom.ts:130
+Defined in: atom.ts:142
 
 ### Type Parameters
 

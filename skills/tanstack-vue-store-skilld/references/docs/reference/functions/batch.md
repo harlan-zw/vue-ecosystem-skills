@@ -9,7 +9,7 @@ title: batch
 function batch(fn): void;
 ```
 
-Defined in: batch.ts:4
+Defined in: atom.ts:62
 
 ## Parameters
 

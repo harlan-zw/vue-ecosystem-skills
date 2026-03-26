@@ -28,11 +28,11 @@ total: 29
 
 ## reference/functions (6)
 
-- [batch](./reference/functions/batch.md): Defined in: batch.ts:4
-- [createAsyncAtom](./reference/functions/createAsyncAtom.md): Defined in: atom.ts:88
-- [createAtom](./reference/functions/createAtom.md): Defined in: atom.ts:126
+- [batch](./reference/functions/batch.md): Defined in: atom.ts:62
+- [createAsyncAtom](./reference/functions/createAsyncAtom.md): Defined in: atom.ts:100
+- [createAtom](./reference/functions/createAtom.md): Defined in: atom.ts:138
 - [createStore](./reference/functions/createStore.md): Defined in: store.ts:55
-- [flush](./reference/functions/flush.md): Defined in: atom.ts:69
+- [flush](./reference/functions/flush.md): Defined in: atom.ts:81
 - [toObserver](./reference/functions/toObserver.md): Defined in: atom.ts:12
 
 ## reference (1)

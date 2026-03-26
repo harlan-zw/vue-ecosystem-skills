@@ -9,7 +9,7 @@ title: flush
 function flush(): void;
 ```
 
-Defined in: atom.ts:69
+Defined in: atom.ts:81
 
 ## Returns
 
