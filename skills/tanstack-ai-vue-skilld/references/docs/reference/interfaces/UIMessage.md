@@ -5,7 +5,7 @@ title: UIMessage
 
 # Interface: UIMessage
 
-Defined in: types.ts:325
+Defined in: types.ts:327
 
 UIMessage - Domain-specific message format optimized for building chat UIs
 Contains parts that can be text, tool calls, or tool results
@@ -18,7 +18,7 @@ Contains parts that can be text, tool calls, or tool results
 optional createdAt: Date;
 ```
 
-Defined in: types.ts:329
+Defined in: types.ts:331
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: types.ts:329
 id: string;
 ```
 
-Defined in: types.ts:326
+Defined in: types.ts:328
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: types.ts:326
 parts: MessagePart[];
 ```
 
-Defined in: types.ts:328
+Defined in: types.ts:330
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: types.ts:328
 role: "user" | "assistant" | "system";
 ```
 
-Defined in: types.ts:327
+Defined in: types.ts:329

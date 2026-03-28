@@ -5,7 +5,7 @@ title: ThinkingPart
 
 # Interface: ThinkingPart
 
-Defined in: types.ts:306
+Defined in: types.ts:308
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: types.ts:306
 content: string;
 ```
 
-Defined in: types.ts:308
+Defined in: types.ts:310
 
 ***
 
@@ -25,4 +25,4 @@ Defined in: types.ts:308
 type: "thinking";
 ```
 
-Defined in: types.ts:307
+Defined in: types.ts:309

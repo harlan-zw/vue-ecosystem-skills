@@ -11,7 +11,7 @@ type ContentPartSource =
   | ContentPartUrlSource;
 ```
 
-Defined in: types.ts:155
+Defined in: types.ts:157
 
 Source specification for multimodal content.
 Discriminated union supporting both inline data (base64) and URL-based content.

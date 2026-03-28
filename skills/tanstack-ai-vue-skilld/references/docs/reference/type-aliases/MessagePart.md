@@ -17,4 +17,4 @@ type MessagePart =
   | ThinkingPart;
 ```
 
-Defined in: types.ts:311
+Defined in: types.ts:313

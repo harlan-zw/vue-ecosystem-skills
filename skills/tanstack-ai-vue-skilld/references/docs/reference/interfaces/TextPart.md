@@ -5,7 +5,7 @@ title: TextPart
 
 # Interface: TextPart\<TMetadata\>
 
-Defined in: types.ts:276
+Defined in: types.ts:278
 
 Message parts - building blocks of UIMessage
 
@@ -23,7 +23,7 @@ Message parts - building blocks of UIMessage
 content: string;
 ```
 
-Defined in: types.ts:278
+Defined in: types.ts:280
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: types.ts:278
 optional metadata: TMetadata;
 ```
 
-Defined in: types.ts:279
+Defined in: types.ts:281
 
 ***
 
@@ -43,4 +43,4 @@ Defined in: types.ts:279
 type: "text";
 ```
 
-Defined in: types.ts:277
+Defined in: types.ts:279

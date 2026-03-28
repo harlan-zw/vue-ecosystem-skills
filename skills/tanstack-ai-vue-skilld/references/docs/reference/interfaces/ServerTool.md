@@ -5,7 +5,7 @@ title: ServerTool
 
 # Interface: ServerTool\<TInput, TOutput, TName\>
 
-Defined in: activities/chat/tools/tool-definition.ts:12
+Defined in: activities/chat/tools/tool-definition.ts:13
 
 Marker type for server-side tools
 
@@ -35,7 +35,7 @@ Marker type for server-side tools
 __toolSide: "server";
 ```
 
-Defined in: activities/chat/tools/tool-definition.ts:17
+Defined in: activities/chat/tools/tool-definition.ts:18
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: activities/chat/tools/tool-definition.ts:17
 description: string;
 ```
 
-Defined in: types.ts:383
+Defined in: types.ts:413
 
 Clear description of what the tool does.
 
@@ -67,10 +67,10 @@ Be specific about what the tool does, what parameters it needs, and what it retu
 ### execute()?
 
 ```ts
-optional execute: (args) => any;
+optional execute: (args, context?) => any;
 ```
 
-Defined in: types.ts:463
+Defined in: types.ts:493
 
 Optional function to execute when the model calls this tool.
 
@@ -86,6 +86,10 @@ Can return any value - will be automatically stringified if needed.
 `any`
 
 The arguments parsed from the model's tool call (validated against inputSchema)
+
+##### context?
+
+[`ToolExecutionContext`](ToolExecutionContext.md)
 
 #### Returns
 
@@ -114,7 +118,7 @@ execute: async (args) => {
 optional inputSchema: TInput;
 ```
 
-Defined in: types.ts:423
+Defined in: types.ts:453
 
 Schema describing the tool's input parameters.
 
@@ -166,13 +170,29 @@ type({
 
 ***
 
+### lazy?
+
+```ts
+optional lazy: boolean;
+```
+
+Defined in: types.ts:499
+
+If true, this tool is lazy and will only be sent to the LLM after being discovered via the lazy tool discovery mechanism. Only meaningful when used with chat().
+
+#### Inherited from
+
+[`Tool`](Tool.md).[`lazy`](Tool.md#lazy)
+
+***
+
 ### metadata?
 
 ```ts
 optional metadata: Record<string, any>;
 ```
 
-Defined in: types.ts:469
+Defined in: types.ts:502
 
 Additional metadata for adapters or custom extensions
 
@@ -188,7 +208,7 @@ Additional metadata for adapters or custom extensions
 name: TName;
 ```
 
-Defined in: types.ts:373
+Defined in: types.ts:403
 
 Unique name of the tool (used by the model to call it).
 
@@ -213,7 +233,7 @@ Must be unique within the tools array.
 optional needsApproval: boolean;
 ```
 
-Defined in: types.ts:466
+Defined in: types.ts:496
 
 If true, tool execution requires user approval before running. Works with both server and client tools.
 
@@ -229,7 +249,7 @@ If true, tool execution requires user approval before running. Works with both s
 optional outputSchema: TOutput;
 ```
 
-Defined in: types.ts:444
+Defined in: types.ts:474
 
 Optional schema for validating tool output.
 

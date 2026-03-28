@@ -5,7 +5,7 @@ title: StreamProcessorEvents
 
 # Interface: StreamProcessorEvents
 
-Defined in: activities/chat/stream/processor.ts:54
+Defined in: activities/chat/stream/processor.ts:56
 
 Events emitted by the StreamProcessor
 
@@ -17,7 +17,7 @@ Events emitted by the StreamProcessor
 optional onApprovalRequest: (args) => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:69
+Defined in: activities/chat/stream/processor.ts:71
 
 #### Parameters
 
@@ -45,13 +45,43 @@ Defined in: activities/chat/stream/processor.ts:69
 
 ***
 
+### onCustomEvent()?
+
+```ts
+optional onCustomEvent: (eventType, data, context) => void;
+```
+
+Defined in: activities/chat/stream/processor.ts:79
+
+#### Parameters
+
+##### eventType
+
+`string`
+
+##### data
+
+`unknown`
+
+##### context
+
+###### toolCallId?
+
+`string`
+
+#### Returns
+
+`void`
+
+***
+
 ### onError()?
 
 ```ts
 optional onError: (error) => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:61
+Defined in: activities/chat/stream/processor.ts:63
 
 #### Parameters
 
@@ -71,7 +101,7 @@ Defined in: activities/chat/stream/processor.ts:61
 optional onMessagesChange: (messages) => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:56
+Defined in: activities/chat/stream/processor.ts:58
 
 #### Parameters
 
@@ -91,7 +121,7 @@ Defined in: activities/chat/stream/processor.ts:56
 optional onStreamEnd: (message) => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:60
+Defined in: activities/chat/stream/processor.ts:62
 
 #### Parameters
 
@@ -111,7 +141,7 @@ Defined in: activities/chat/stream/processor.ts:60
 optional onStreamStart: () => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:59
+Defined in: activities/chat/stream/processor.ts:61
 
 #### Returns
 
@@ -125,7 +155,7 @@ Defined in: activities/chat/stream/processor.ts:59
 optional onTextUpdate: (messageId, content) => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:77
+Defined in: activities/chat/stream/processor.ts:86
 
 #### Parameters
 
@@ -149,7 +179,7 @@ Defined in: activities/chat/stream/processor.ts:77
 optional onThinkingUpdate: (messageId, content) => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:84
+Defined in: activities/chat/stream/processor.ts:93
 
 #### Parameters
 
@@ -173,7 +203,7 @@ Defined in: activities/chat/stream/processor.ts:84
 optional onToolCall: (args) => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:64
+Defined in: activities/chat/stream/processor.ts:66
 
 #### Parameters
 
@@ -203,7 +233,7 @@ Defined in: activities/chat/stream/processor.ts:64
 optional onToolCallStateChange: (messageId, toolCallId, state, args) => void;
 ```
 
-Defined in: activities/chat/stream/processor.ts:78
+Defined in: activities/chat/stream/processor.ts:87
 
 #### Parameters
 

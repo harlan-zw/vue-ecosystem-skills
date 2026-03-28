@@ -41,6 +41,18 @@ Defined in: types.ts:88
 
 ***
 
+### providerMetadata?
+
+```ts
+optional providerMetadata: Record<string, unknown>;
+```
+
+Defined in: types.ts:95
+
+Provider-specific metadata to carry through the tool call lifecycle
+
+***
+
 ### type
 
 ```ts

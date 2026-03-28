@@ -9,7 +9,7 @@ title: ConstrainedModelMessage
 type ConstrainedModelMessage<TInputModalitiesTypes> = Omit<ModelMessage, "content"> & object;
 ```
 
-Defined in: types.ts:341
+Defined in: types.ts:343
 
 A ModelMessage with content constrained to only allow content parts
 matching the specified input modalities.

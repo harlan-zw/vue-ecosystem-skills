@@ -5,7 +5,7 @@ title: SummarizationOptions
 
 # Interface: SummarizationOptions
 
-Defined in: types.ts:941
+Defined in: types.ts:993
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: types.ts:941
 optional focus: string[];
 ```
 
-Defined in: types.ts:946
+Defined in: types.ts:998
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: types.ts:946
 optional maxLength: number;
 ```
 
-Defined in: types.ts:944
+Defined in: types.ts:996
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: types.ts:944
 model: string;
 ```
 
-Defined in: types.ts:942
+Defined in: types.ts:994
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: types.ts:942
 optional style: "bullet-points" | "paragraph" | "concise";
 ```
 
-Defined in: types.ts:945
+Defined in: types.ts:997
 
 ***
 
@@ -55,4 +55,4 @@ Defined in: types.ts:945
 text: string;
 ```
 
-Defined in: types.ts:943
+Defined in: types.ts:995

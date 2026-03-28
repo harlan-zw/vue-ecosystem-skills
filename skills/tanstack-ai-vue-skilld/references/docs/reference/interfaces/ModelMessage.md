@@ -5,7 +5,7 @@ title: ModelMessage
 
 # Interface: ModelMessage\<TContent\>
 
-Defined in: types.ts:260
+Defined in: types.ts:262
 
 ## Type Parameters
 
@@ -21,7 +21,7 @@ Defined in: types.ts:260
 content: TContent;
 ```
 
-Defined in: types.ts:267
+Defined in: types.ts:269
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: types.ts:267
 optional name: string;
 ```
 
-Defined in: types.ts:268
+Defined in: types.ts:270
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: types.ts:268
 role: "user" | "assistant" | "tool";
 ```
 
-Defined in: types.ts:266
+Defined in: types.ts:268
 
 ***
 
@@ -51,7 +51,7 @@ Defined in: types.ts:266
 optional toolCallId: string;
 ```
 
-Defined in: types.ts:270
+Defined in: types.ts:272
 
 ***
 
@@ -61,4 +61,4 @@ Defined in: types.ts:270
 optional toolCalls: ToolCall[];
 ```
 
-Defined in: types.ts:269
+Defined in: types.ts:271

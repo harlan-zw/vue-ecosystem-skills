@@ -5,7 +5,7 @@ title: MessagesSnapshotEvent
 
 # Interface: MessagesSnapshotEvent
 
-Defined in: types.ts:910
+Defined in: types.ts:917
 
 Emitted to provide a snapshot of all messages in a conversation.
 
@@ -25,7 +25,7 @@ This is a first-class AG-UI event type.
 messages: UIMessage[];
 ```
 
-Defined in: types.ts:913
+Defined in: types.ts:920
 
 Complete array of messages in the conversation
 
@@ -37,7 +37,7 @@ Complete array of messages in the conversation
 optional model: string;
 ```
 
-Defined in: types.ts:751
+Defined in: types.ts:756
 
 Model identifier for multi-model support
 
@@ -53,7 +53,7 @@ Model identifier for multi-model support
 optional rawEvent: unknown;
 ```
 
-Defined in: types.ts:753
+Defined in: types.ts:758
 
 Original provider event for debugging/advanced use cases
 
@@ -69,7 +69,7 @@ Original provider event for debugging/advanced use cases
 timestamp: number;
 ```
 
-Defined in: types.ts:749
+Defined in: types.ts:754
 
 #### Inherited from
 
@@ -83,7 +83,7 @@ Defined in: types.ts:749
 type: "MESSAGES_SNAPSHOT";
 ```
 
-Defined in: types.ts:911
+Defined in: types.ts:918
 
 #### Overrides
 

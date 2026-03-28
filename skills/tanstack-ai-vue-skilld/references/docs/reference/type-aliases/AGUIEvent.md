@@ -18,11 +18,12 @@ type AGUIEvent =
   | ToolCallEndEvent
   | StepStartedEvent
   | StepFinishedEvent
+  | MessagesSnapshotEvent
   | StateSnapshotEvent
   | StateDeltaEvent
   | CustomEvent;
 ```
 
-Defined in: types.ts:904
+Defined in: types.ts:955
 
 Union of all AG-UI events.

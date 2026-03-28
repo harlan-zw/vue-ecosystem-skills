@@ -5,7 +5,7 @@ title: ToolExecutionContext
 
 # Interface: ToolExecutionContext
 
-Defined in: types.ts:351
+Defined in: types.ts:353
 
 Context passed to tool execute functions, providing capabilities like
 emitting custom events during execution.
@@ -18,7 +18,7 @@ emitting custom events during execution.
 emitCustomEvent: (eventName, value) => void;
 ```
 
-Defined in: types.ts:372
+Defined in: types.ts:374
 
 Emit a custom event during tool execution.
 Events are streamed to the client in real-time as AG-UI CUSTOM events.
@@ -61,6 +61,6 @@ const tool = toolDefinition({ ... }).server(async (args, context) => {
 optional toolCallId: string;
 ```
 
-Defined in: types.ts:353
+Defined in: types.ts:355
 
 The ID of the tool call being executed

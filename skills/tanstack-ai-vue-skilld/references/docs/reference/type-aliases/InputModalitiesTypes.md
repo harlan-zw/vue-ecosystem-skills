@@ -9,7 +9,7 @@ title: InputModalitiesTypes
 type InputModalitiesTypes = object;
 ```
 
-Defined in: types.ts:332
+Defined in: types.ts:334
 
 ## Properties
 
@@ -19,7 +19,7 @@ Defined in: types.ts:332
 inputModalities: ReadonlyArray<Modality>;
 ```
 
-Defined in: types.ts:333
+Defined in: types.ts:335
 
 ***
 
@@ -29,4 +29,4 @@ Defined in: types.ts:333
 messageMetadataByModality: DefaultMessageMetadataByModality;
 ```
 
-Defined in: types.ts:334
+Defined in: types.ts:336

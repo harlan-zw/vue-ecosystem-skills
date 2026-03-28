@@ -5,7 +5,7 @@ title: ToolDefinitionConfig
 
 # Interface: ToolDefinitionConfig\<TInput, TOutput, TName\>
 
-Defined in: activities/chat/tools/tool-definition.ts:88
+Defined in: activities/chat/tools/tool-definition.ts:90
 
 Tool definition configuration
 
@@ -31,7 +31,7 @@ Tool definition configuration
 description: string;
 ```
 
-Defined in: activities/chat/tools/tool-definition.ts:94
+Defined in: activities/chat/tools/tool-definition.ts:96
 
 ***
 
@@ -41,7 +41,17 @@ Defined in: activities/chat/tools/tool-definition.ts:94
 optional inputSchema: TInput;
 ```
 
-Defined in: activities/chat/tools/tool-definition.ts:95
+Defined in: activities/chat/tools/tool-definition.ts:97
+
+***
+
+### lazy?
+
+```ts
+optional lazy: boolean;
+```
+
+Defined in: activities/chat/tools/tool-definition.ts:100
 
 ***
 
@@ -51,7 +61,7 @@ Defined in: activities/chat/tools/tool-definition.ts:95
 optional metadata: Record<string, unknown>;
 ```
 
-Defined in: activities/chat/tools/tool-definition.ts:98
+Defined in: activities/chat/tools/tool-definition.ts:101
 
 ***
 
@@ -61,7 +71,7 @@ Defined in: activities/chat/tools/tool-definition.ts:98
 name: TName;
 ```
 
-Defined in: activities/chat/tools/tool-definition.ts:93
+Defined in: activities/chat/tools/tool-definition.ts:95
 
 ***
 
@@ -71,7 +81,7 @@ Defined in: activities/chat/tools/tool-definition.ts:93
 optional needsApproval: boolean;
 ```
 
-Defined in: activities/chat/tools/tool-definition.ts:97
+Defined in: activities/chat/tools/tool-definition.ts:99
 
 ***
 
@@ -81,4 +91,4 @@ Defined in: activities/chat/tools/tool-definition.ts:97
 optional outputSchema: TOutput;
 ```
 
-Defined in: activities/chat/tools/tool-definition.ts:96
+Defined in: activities/chat/tools/tool-definition.ts:98

@@ -5,7 +5,7 @@ title: ToolResultPart
 
 # Interface: ToolResultPart
 
-Defined in: types.ts:298
+Defined in: types.ts:300
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: types.ts:298
 content: string;
 ```
 
-Defined in: types.ts:301
+Defined in: types.ts:303
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: types.ts:301
 optional error: string;
 ```
 
-Defined in: types.ts:303
+Defined in: types.ts:305
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: types.ts:303
 state: ToolResultState;
 ```
 
-Defined in: types.ts:302
+Defined in: types.ts:304
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: types.ts:302
 toolCallId: string;
 ```
 
-Defined in: types.ts:300
+Defined in: types.ts:302
 
 ***
 
@@ -55,4 +55,4 @@ Defined in: types.ts:300
 type: "tool-result";
 ```
 
-Defined in: types.ts:299
+Defined in: types.ts:301
