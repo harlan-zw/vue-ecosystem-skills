@@ -9,7 +9,7 @@ title: FieldMetaBase
 type FieldMetaBase<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync> = object;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:567
+Defined in: packages/form-core/src/FieldApi.ts:568
 
 ## Type Parameters
 
@@ -105,7 +105,7 @@ Defined in: packages/form-core/src/FieldApi.ts:567
 errorMap: ValidationErrorMap<UnwrapFieldValidateOrFn<TName, TOnMount, TFormOnMount>, UnwrapFieldValidateOrFn<TName, TOnChange, TFormOnChange>, UnwrapFieldAsyncValidateOrFn<TName, TOnChangeAsync, TFormOnChangeAsync>, UnwrapFieldValidateOrFn<TName, TOnBlur, TFormOnBlur>, UnwrapFieldAsyncValidateOrFn<TName, TOnBlurAsync, TFormOnBlurAsync>, UnwrapFieldValidateOrFn<TName, TOnSubmit, TFormOnSubmit>, UnwrapFieldAsyncValidateOrFn<TName, TOnSubmitAsync, TFormOnSubmitAsync>, UnwrapFieldValidateOrFn<TName, TOnDynamic, TFormOnDynamic>, UnwrapFieldAsyncValidateOrFn<TName, TOnDynamicAsync, TFormOnDynamicAsync>>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:613
+Defined in: packages/form-core/src/FieldApi.ts:614
 
 A map of errors related to the field value.
 
@@ -117,7 +117,7 @@ A map of errors related to the field value.
 isBlurred: boolean;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:605
+Defined in: packages/form-core/src/FieldApi.ts:606
 
 A flag indicating whether the field has been blurred.
 
@@ -129,7 +129,7 @@ A flag indicating whether the field has been blurred.
 isDirty: boolean;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:609
+Defined in: packages/form-core/src/FieldApi.ts:610
 
 A flag that is `true` if the field's value has been modified by the user. Opposite of `isPristine`.
 
@@ -141,7 +141,7 @@ A flag that is `true` if the field's value has been modified by the user. Opposi
 isTouched: boolean;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:601
+Defined in: packages/form-core/src/FieldApi.ts:602
 
 A flag indicating whether the field has been touched.
 
@@ -153,6 +153,6 @@ A flag indicating whether the field has been touched.
 isValidating: boolean;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:632
+Defined in: packages/form-core/src/FieldApi.ts:633
 
 A flag indicating whether the field is currently being validated.

@@ -57,9 +57,9 @@ You can accomplish this by spe...
 
 ## reference/classes (3)
 
-- [FieldApi](./reference/classes/FieldApi.md): Defined in: packages/form-core/src/FieldApi.ts:979
+- [FieldApi](./reference/classes/FieldApi.md): Defined in: packages/form-core/src/FieldApi.ts:980
 - [FieldGroupApi](./reference/classes/FieldGroupApi.md): Defined in: packages/form-core/src/FieldGroupApi.ts:113
-- [FormApi](./reference/classes/FormApi.md): Defined in: packages/form-core/src/FormApi.ts:848
+- [FormApi](./reference/classes/FormApi.md): Defined in: packages/form-core/src/FormApi.ts:866
 
 ## reference/functions (9)
 
@@ -81,16 +81,16 @@ You can accomplish this by spe...
 
 - [AnyDeepKeyAndValue](./reference/interfaces/AnyDeepKeyAndValue.md): Defined in: packages/form-core/src/util-types.ts:22
 - [ArrayDeepKeyAndValue](./reference/interfaces/ArrayDeepKeyAndValue.md): Defined in: packages/form-core/src/util-types.ts:33
-- [BaseFormOptions](./reference/interfaces/BaseFormOptions.md): Defined in: packages/form-core/src/FormApi.ts:314
-- [FieldApiOptions](./reference/interfaces/FieldApiOptions.md): Defined in: packages/form-core/src/FieldApi.ts:487
+- [BaseFormOptions](./reference/interfaces/BaseFormOptions.md): Defined in: packages/form-core/src/FormApi.ts:332
+- [FieldApiOptions](./reference/interfaces/FieldApiOptions.md): Defined in: packages/form-core/src/FieldApi.ts:488
 - [FieldGroupOptions](./reference/interfaces/FieldGroupOptions.md): Defined in: packages/form-core/src/FieldGroupApi.ts:50
 - [FieldGroupState](./reference/interfaces/FieldGroupState.md): Defined in: packages/form-core/src/FieldGroupApi.ts:40
 - [FieldListeners](./reference/interfaces/FieldListeners.md): Defined in: packages/form-core/src/FieldApi.ts:375
-- [FieldOptions](./reference/interfaces/FieldOptions.md): Defined in: packages/form-core/src/FieldApi.ts:391
+- [FieldOptions](./reference/interfaces/FieldOptions.md): Defined in: packages/form-core/src/FieldApi.ts:392
 - [FieldValidators](./reference/interfaces/FieldValidators.md): Defined in: packages/form-core/src/FieldApi.ts:287
 - [FormListeners](./reference/interfaces/FormListeners.md): Defined in: packages/form-core/src/FormApi.ts:223
-- [FormOptions](./reference/interfaces/FormOptions.md): Defined in: packages/form-core/src/FormApi.ts:328
-- [FormState](./reference/interfaces/FormState.md): Defined in: packages/form-core/src/FormApi.ts:700
+- [FormOptions](./reference/interfaces/FormOptions.md): Defined in: packages/form-core/src/FormApi.ts:346
+- [FormState](./reference/interfaces/FormState.md): Defined in: packages/form-core/src/FormApi.ts:718
 - [FormValidators](./reference/interfaces/FormValidators.md): Defined in: packages/form-core/src/FormApi.ts:176
 - [ObjectDeepKeyAndValue](./reference/interfaces/ObjectDeepKeyAndValue.md): Defined in: packages/form-core/src/util-types.ts:97
 - [StandardSchemaV1Issue](./reference/interfaces/StandardSchemaV1Issue.md): Defined in: packages/form-core/src/standardSchemaValidator.ts:179
@@ -102,17 +102,17 @@ You can accomplish this by spe...
 
 - [AllObjectKeys](./reference/type-aliases/AllObjectKeys.md): Defined in: packages/form-core/src/util-types.ts:80
 - [AllTupleKeys](./reference/type-aliases/AllTupleKeys.md): Defined in: packages/form-core/src/util-types.ts:65
-- [AnyBaseFormState](./reference/type-aliases/AnyBaseFormState.md): Defined in: packages/form-core/src/FormApi.ts:608
-- [AnyFieldApi](./reference/type-aliases/AnyFieldApi.md): Defined in: packages/form-core/src/FieldApi.ts:939
+- [AnyBaseFormState](./reference/type-aliases/AnyBaseFormState.md): Defined in: packages/form-core/src/FormApi.ts:626
+- [AnyFieldApi](./reference/type-aliases/AnyFieldApi.md): Defined in: packages/form-core/src/FieldApi.ts:940
 - [AnyFieldGroupApi](./reference/type-aliases/AnyFieldGroupApi.md): Defined in: packages/form-core/src/FieldGroupApi.ts:23
-- [AnyFieldMeta](./reference/type-aliases/AnyFieldMeta.md): Defined in: packages/form-core/src/FieldApi.ts:844
-- [AnyFieldMetaBase](./reference/type-aliases/AnyFieldMetaBase.md): Defined in: packages/form-core/src/FieldApi.ts:635
-- [AnyFieldMetaDerived](./reference/type-aliases/AnyFieldMetaDerived.md): Defined in: packages/form-core/src/FieldApi.ts:740
-- [AnyFormApi](./reference/type-aliases/AnyFormApi.md): Defined in: packages/form-core/src/FormApi.ts:821
-- [AnyFormOptions](./reference/type-aliases/AnyFormOptions.md): Defined in: packages/form-core/src/FormApi.ts:463
-- [AnyFormState](./reference/type-aliases/AnyFormState.md): Defined in: packages/form-core/src/FormApi.ts:741
+- [AnyFieldMeta](./reference/type-aliases/AnyFieldMeta.md): Defined in: packages/form-core/src/FieldApi.ts:845
+- [AnyFieldMetaBase](./reference/type-aliases/AnyFieldMetaBase.md): Defined in: packages/form-core/src/FieldApi.ts:636
+- [AnyFieldMetaDerived](./reference/type-aliases/AnyFieldMetaDerived.md): Defined in: packages/form-core/src/FieldApi.ts:741
+- [AnyFormApi](./reference/type-aliases/AnyFormApi.md): Defined in: packages/form-core/src/FormApi.ts:839
+- [AnyFormOptions](./reference/type-aliases/AnyFormOptions.md): Defined in: packages/form-core/src/FormApi.ts:481
+- [AnyFormState](./reference/type-aliases/AnyFormState.md): Defined in: packages/form-core/src/FormApi.ts:759
 - [ArrayAccessor](./reference/type-aliases/ArrayAccessor.md): Defined in: packages/form-core/src/util-types.ts:30
-- [BaseFormState](./reference/type-aliases/BaseFormState.md): Defined in: packages/form-core/src/FormApi.ts:529
+- [BaseFormState](./reference/type-aliases/BaseFormState.md): Defined in: packages/form-core/src/FormApi.ts:547
 - [BroadcastFormApi](./reference/type-aliases/BroadcastFormApi.md): Defined in: packages/form-core/src/EventClient.ts:14
 - [BroadcastFormId](./reference/type-aliases/BroadcastFormId.md): Defined in: packages/form-core/src/EventClient.ts:41
 - [BroadcastFormState](./reference/type-aliases/BroadcastFormState.md): Defined in: packages/form-core/src/EventClient.ts:9
@@ -126,16 +126,16 @@ You can accomplish this by spe...
 - [DeepKeysOfType](./reference/type-aliases/DeepKeysOfType.md): Defined in: packages/form-core/src/util-types.ts:177
 - [DeepRecord](./reference/type-aliases/DeepRecord.md): Defined in: packages/form-core/src/util-types.ts:154
 - [DeepValue](./reference/type-aliases/DeepValue.md): Defined in: packages/form-core/src/util-types.ts:168
-- [DerivedFormState](./reference/type-aliases/DerivedFormState.md): Defined in: packages/form-core/src/FormApi.ts:622
+- [DerivedFormState](./reference/type-aliases/DerivedFormState.md): Defined in: packages/form-core/src/FormApi.ts:640
 - [EventClientEventMap](./reference/type-aliases/EventClientEventMap.md): Defined in: packages/form-core/src/EventClient.ts:57
 - [EventClientEventNames](./reference/type-aliases/EventClientEventNames.md): Defined in: packages/form-core/src/EventClient.ts:59
 - [ExtractGlobalFormError](./reference/type-aliases/ExtractGlobalFormError.md): Defined in: packages/form-core/src/types.ts:124
-- [FieldInfo](./reference/type-aliases/FieldInfo.md): Defined in: packages/form-core/src/FormApi.ts:491
-- [FieldMeta](./reference/type-aliases/FieldMeta.md): Defined in: packages/form-core/src/FieldApi.ts:767
-- [FieldMetaBase](./reference/type-aliases/FieldMetaBase.md): Defined in: packages/form-core/src/FieldApi.ts:567
-- [FieldMetaDerived](./reference/type-aliases/FieldMetaDerived.md): Defined in: packages/form-core/src/FieldApi.ts:659
+- [FieldInfo](./reference/type-aliases/FieldInfo.md): Defined in: packages/form-core/src/FormApi.ts:509
+- [FieldMeta](./reference/type-aliases/FieldMeta.md): Defined in: packages/form-core/src/FieldApi.ts:768
+- [FieldMetaBase](./reference/type-aliases/FieldMetaBase.md): Defined in: packages/form-core/src/FieldApi.ts:568
+- [FieldMetaDerived](./reference/type-aliases/FieldMetaDerived.md): Defined in: packages/form-core/src/FieldApi.ts:660
 - [FieldsMap](./reference/type-aliases/FieldsMap.md): Defined in: packages/form-core/src/util-types.ts:186
-- [FieldState](./reference/type-aliases/FieldState.md): Defined in: packages/form-core/src/FieldApi.ts:871
+- [FieldState](./reference/type-aliases/FieldState.md): Defined in: packages/form-core/src/FieldApi.ts:872
 - [FormValidateFn](./reference/type-aliases/FormValidateFn.md): Defined in: packages/form-core/src/FormApi.ts:87
 - [FormValidationError](./reference/type-aliases/FormValidationError.md): Defined in: packages/form-core/src/types.ts:102
 - [FormValidator](./reference/type-aliases/FormValidator.md): Defined in: packages/form-core/src/FormApi.ts:146
@@ -155,7 +155,7 @@ You can accomplish this by spe...
 - [UpdaterFn](./reference/type-aliases/UpdaterFn.md): Defined in: packages/form-core/src/utils.ts:13
 - [ValidationError](./reference/type-aliases/ValidationError.md): Defined in: packages/form-core/src/types.ts:5
 - [ValidationLogicFn](./reference/type-aliases/ValidationLogicFn.md): Defined in: packages/form-core/src/ValidationLogic.ts:56
-- [ValidationMeta](./reference/type-aliases/ValidationMeta.md): Defined in: packages/form-core/src/FormApi.ts:481
+- [ValidationMeta](./reference/type-aliases/ValidationMeta.md): Defined in: packages/form-core/src/FormApi.ts:499
 - [ValidationSource](./reference/type-aliases/ValidationSource.md): Defined in: packages/form-core/src/types.ts:7
 
 ## reference/variables (4)

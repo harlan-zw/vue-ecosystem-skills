@@ -5,7 +5,7 @@ title: FieldApi
 
 # Class: FieldApi\<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync, TFormOnServer, TParentSubmitMeta\>
 
-Defined in: packages/form-core/src/FieldApi.ts:979
+Defined in: packages/form-core/src/FieldApi.ts:980
 
 A class representing the API for managing a form field.
 
@@ -117,7 +117,7 @@ the `new FieldApi` constructor.
 new FieldApi<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync, TFormOnServer, TParentSubmitMeta>(opts): FieldApi<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync, TFormOnServer, TParentSubmitMeta>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1133
+Defined in: packages/form-core/src/FieldApi.ts:1134
 
 Initializes a new `FieldApi` instance.
 
@@ -139,7 +139,7 @@ Initializes a new `FieldApi` instance.
 form: FormApi<TParentData, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync, TFormOnServer, TParentSubmitMeta>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1033
+Defined in: packages/form-core/src/FieldApi.ts:1034
 
 A reference to the form API instance.
 
@@ -151,7 +151,7 @@ A reference to the form API instance.
 name: TName;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1061
+Defined in: packages/form-core/src/FieldApi.ts:1062
 
 The field name.
 
@@ -163,7 +163,7 @@ The field name.
 options: FieldApiOptions<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync, TFormOnServer, TParentSubmitMeta>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1065
+Defined in: packages/form-core/src/FieldApi.ts:1066
 
 The field options.
 
@@ -175,7 +175,7 @@ The field options.
 store: ReadonlyStore<FieldState<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync>>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1093
+Defined in: packages/form-core/src/FieldApi.ts:1094
 
 The field state store.
 
@@ -187,7 +187,7 @@ The field state store.
 timeoutIds: object;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1124
+Defined in: packages/form-core/src/FieldApi.ts:1125
 
 #### formListeners
 
@@ -217,7 +217,7 @@ validations: Record<ValidationCause, ReturnType<typeof setTimeout> | null>;
 get state(): FieldState<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1121
+Defined in: packages/form-core/src/FieldApi.ts:1122
 
 The current field state.
 
@@ -233,7 +233,7 @@ The current field state.
 clearValues(options?): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1556
+Defined in: packages/form-core/src/FieldApi.ts:1636
 
 Clear all values from the array.
 
@@ -255,7 +255,7 @@ Clear all values from the array.
 getInfo(): FieldInfo<TParentData>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1442
+Defined in: packages/form-core/src/FieldApi.ts:1522
 
 Gets the field information object.
 
@@ -271,7 +271,7 @@ Gets the field information object.
 getMeta(): FieldMeta<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1406
+Defined in: packages/form-core/src/FieldApi.ts:1486
 
 #### Returns
 
@@ -285,7 +285,7 @@ Defined in: packages/form-core/src/FieldApi.ts:1406
 getValue(): TData;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1383
+Defined in: packages/form-core/src/FieldApi.ts:1463
 
 Gets the current field value.
 
@@ -305,7 +305,7 @@ Use `field.state.value` instead.
 handleBlur(): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1944
+Defined in: packages/form-core/src/FieldApi.ts:2031
 
 Handles the blur event.
 
@@ -321,7 +321,7 @@ Handles the blur event.
 handleChange(updater): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1937
+Defined in: packages/form-core/src/FieldApi.ts:2024
 
 Handles the change event.
 
@@ -346,7 +346,7 @@ insertValue(
    options?): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1465
+Defined in: packages/form-core/src/FieldApi.ts:1545
 
 Inserts a value at the specified index, shifting the subsequent values to the right.
 
@@ -376,11 +376,13 @@ Inserts a value at the specified index, shifting the subsequent values to the ri
 mount(): () => void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1279
+Defined in: packages/form-core/src/FieldApi.ts:1281
 
 Mounts the field instance to the form.
 
 #### Returns
+
+A function to unmount the field instance.
 
 ```ts
 (): void;
@@ -401,7 +403,7 @@ moveValue(
    options?): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1540
+Defined in: packages/form-core/src/FieldApi.ts:1620
 
 Moves the value at the first specified index to the second specified index.
 
@@ -433,7 +435,7 @@ parseValueWithSchema(schema):
   | undefined;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1987
+Defined in: packages/form-core/src/FieldApi.ts:2074
 
 Parses the field's value with the given schema and returns
 issues (if any). This method does NOT set any internal errors.
@@ -461,7 +463,7 @@ parseValueWithSchemaAsync(schema): Promise<
 | undefined>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1999
+Defined in: packages/form-core/src/FieldApi.ts:2086
 
 Parses the field's value with the given schema and returns
 issues (if any). This method does NOT set any internal errors.
@@ -488,7 +490,7 @@ The standard schema to parse this field's value with.
 pushValue(value, options?): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1447
+Defined in: packages/form-core/src/FieldApi.ts:1527
 
 Pushes a new value to the field.
 
@@ -514,7 +516,7 @@ Pushes a new value to the field.
 removeValue(index, options?): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1505
+Defined in: packages/form-core/src/FieldApi.ts:1585
 
 Removes a value at the specified index.
 
@@ -543,7 +545,7 @@ replaceValue(
    options?): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1485
+Defined in: packages/form-core/src/FieldApi.ts:1565
 
 Replaces a value at the specified index.
 
@@ -573,7 +575,7 @@ Replaces a value at the specified index.
 setErrorMap(errorMap): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1960
+Defined in: packages/form-core/src/FieldApi.ts:2047
 
 Updates the field's errorMap
 
@@ -595,7 +597,7 @@ Updates the field's errorMap
 setMeta(updater): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1411
+Defined in: packages/form-core/src/FieldApi.ts:1491
 
 Sets the field metadata.
 
@@ -617,7 +619,7 @@ Sets the field metadata.
 setValue(updater, options?): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1390
+Defined in: packages/form-core/src/FieldApi.ts:1470
 
 Sets the field value and run the `change` validator.
 
@@ -646,7 +648,7 @@ swapValues(
    options?): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1520
+Defined in: packages/form-core/src/FieldApi.ts:1600
 
 Swaps the values at the specified indices.
 
@@ -676,7 +678,7 @@ Swaps the values at the specified indices.
 update(opts): void;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1332
+Defined in: packages/form-core/src/FieldApi.ts:1412
 
 Updates the field instance with new options.
 
@@ -698,7 +700,7 @@ Updates the field instance with new options.
 validate(cause, opts?): unknown[] | Promise<unknown[]>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:1904
+Defined in: packages/form-core/src/FieldApi.ts:1991
 
 Validates the field value.
 

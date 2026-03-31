@@ -9,7 +9,7 @@ title: FieldState
 type FieldState<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync> = object;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:871
+Defined in: packages/form-core/src/FieldApi.ts:872
 
 An object type representing the state of a field.
 
@@ -107,7 +107,7 @@ An object type representing the state of a field.
 meta: FieldMeta<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:909
+Defined in: packages/form-core/src/FieldApi.ts:910
 
 The current metadata of the field.
 
@@ -119,6 +119,6 @@ The current metadata of the field.
 value: TData;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:905
+Defined in: packages/form-core/src/FieldApi.ts:906
 
 The current value of the field.

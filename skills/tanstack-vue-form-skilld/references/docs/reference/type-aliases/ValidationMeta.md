@@ -9,7 +9,7 @@ title: ValidationMeta
 type ValidationMeta = object;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:481
+Defined in: packages/form-core/src/FormApi.ts:499
 
 An object representing the validation metadata for a field. Not intended for public usage.
 
@@ -21,6 +21,6 @@ An object representing the validation metadata for a field. Not intended for pub
 lastAbortController: AbortController;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:485
+Defined in: packages/form-core/src/FormApi.ts:503
 
 An abort controller stored in memory to cancel previous async validation attempts.

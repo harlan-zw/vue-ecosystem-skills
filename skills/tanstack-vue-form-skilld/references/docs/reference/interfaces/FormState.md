@@ -5,7 +5,7 @@ title: FormState
 
 # Interface: FormState\<TFormData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TOnServer\>
 
-Defined in: packages/form-core/src/FormApi.ts:700
+Defined in: packages/form-core/src/FormApi.ts:718
 
 An object representing the current state of the form.
 
@@ -67,7 +67,7 @@ An object representing the current state of the form.
 optional _force_re_eval: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:605
+Defined in: packages/form-core/src/FormApi.ts:623
 
 @private, used to force a re-evaluation of the form state when options change
 
@@ -85,7 +85,7 @@ BaseFormState._force_re_eval
 canSubmit: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:693
+Defined in: packages/form-core/src/FormApi.ts:711
 
 A boolean indicating if the form can be submitted based on its current state.
 
@@ -103,7 +103,7 @@ DerivedFormState.canSubmit
 errorMap: ValidationErrorMap<UnwrapFormValidateOrFn<TOnMount>, UnwrapFormValidateOrFn<TOnChange>, UnwrapFormAsyncValidateOrFn<TOnChangeAsync>, UnwrapFormValidateOrFn<TOnBlur>, UnwrapFormAsyncValidateOrFn<TOnBlurAsync>, UnwrapFormValidateOrFn<TOnSubmit>, UnwrapFormAsyncValidateOrFn<TOnSubmitAsync>, UnwrapFormValidateOrFn<TOnDynamic>, UnwrapFormAsyncValidateOrFn<TOnDynamicAsync>, UnwrapFormAsyncValidateOrFn<TOnServer>>;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:549
+Defined in: packages/form-core/src/FormApi.ts:567
 
 The error map for the form itself.
 
@@ -131,7 +131,7 @@ errors: (
   | UnwrapFormAsyncValidateOrFn<TOnServer>)[];
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:646
+Defined in: packages/form-core/src/FormApi.ts:664
 
 The error array for the form itself.
 
@@ -149,7 +149,7 @@ DerivedFormState.errors
 fieldMeta: Partial<Record<DeepKeys<TFormData>, AnyFieldMeta>>;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:697
+Defined in: packages/form-core/src/FormApi.ts:715
 
 A record of field metadata for each field in the form.
 
@@ -167,7 +167,7 @@ DerivedFormState.fieldMeta
 fieldMetaBase: Partial<Record<DeepKeys<TFormData>, AnyFieldMetaBase>>;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:568
+Defined in: packages/form-core/src/FormApi.ts:586
 
 A record of field metadata for each field in the form, not including the derived properties, like `errors` and such
 
@@ -185,7 +185,7 @@ BaseFormState.fieldMetaBase
 isBlurred: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:673
+Defined in: packages/form-core/src/FormApi.ts:691
 
 A boolean indicating if any of the form fields have been blurred.
 
@@ -203,7 +203,7 @@ DerivedFormState.isBlurred
 isDefaultValue: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:685
+Defined in: packages/form-core/src/FormApi.ts:703
 
 A boolean indicating if all of the form's fields are the same as default values.
 
@@ -221,7 +221,7 @@ DerivedFormState.isDefaultValue
 isDirty: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:677
+Defined in: packages/form-core/src/FormApi.ts:695
 
 A boolean indicating if any of the form's fields' values have been modified by the user. Evaluates `true` if the user have modified at least one of the fields. Opposite of `isPristine`.
 
@@ -239,7 +239,7 @@ DerivedFormState.isDirty
 isFieldsValid: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:665
+Defined in: packages/form-core/src/FormApi.ts:683
 
 A boolean indicating if all the form fields are valid. Evaluates `true` if there are no field errors.
 
@@ -257,7 +257,7 @@ DerivedFormState.isFieldsValid
 isFieldsValidating: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:661
+Defined in: packages/form-core/src/FormApi.ts:679
 
 A boolean indicating if any of the form fields are currently validating.
 
@@ -275,7 +275,7 @@ DerivedFormState.isFieldsValidating
 isFormValid: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:642
+Defined in: packages/form-core/src/FormApi.ts:660
 
 A boolean indicating if the form is valid.
 
@@ -293,7 +293,7 @@ DerivedFormState.isFormValid
 isFormValidating: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:638
+Defined in: packages/form-core/src/FormApi.ts:656
 
 A boolean indicating if the form is currently validating.
 
@@ -311,7 +311,7 @@ DerivedFormState.isFormValidating
 isPristine: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:681
+Defined in: packages/form-core/src/FormApi.ts:699
 
 A boolean indicating if none of the form's fields' values have been modified by the user. Evaluates `true` if the user have not modified any of the fields. Opposite of `isDirty`.
 
@@ -329,7 +329,7 @@ DerivedFormState.isPristine
 isSubmitSuccessful: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:601
+Defined in: packages/form-core/src/FormApi.ts:619
 
 A boolean indicating if the last submission was successful.
 
@@ -347,7 +347,7 @@ BaseFormState.isSubmitSuccessful
 isSubmitted: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:589
+Defined in: packages/form-core/src/FormApi.ts:607
 
 A boolean indicating if the `onSubmit` function has completed successfully.
 
@@ -369,7 +369,7 @@ BaseFormState.isSubmitted
 isSubmitting: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:581
+Defined in: packages/form-core/src/FormApi.ts:599
 
 A boolean indicating if the form is currently in the process of being submitted after `handleSubmit` is called.
 
@@ -395,7 +395,7 @@ BaseFormState.isSubmitting
 isTouched: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:669
+Defined in: packages/form-core/src/FormApi.ts:687
 
 A boolean indicating if any of the form fields have been touched.
 
@@ -413,7 +413,7 @@ DerivedFormState.isTouched
 isValid: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:689
+Defined in: packages/form-core/src/FormApi.ts:707
 
 A boolean indicating if the form and all its fields are valid. Evaluates `true` if there are no errors.
 
@@ -431,7 +431,7 @@ DerivedFormState.isValid
 isValidating: boolean;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:593
+Defined in: packages/form-core/src/FormApi.ts:611
 
 A boolean indicating if the form or any of its fields are currently validating.
 
@@ -449,7 +449,7 @@ BaseFormState.isValidating
 submissionAttempts: number;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:597
+Defined in: packages/form-core/src/FormApi.ts:615
 
 A counter for tracking the number of submission attempts.
 
@@ -467,7 +467,7 @@ BaseFormState.submissionAttempts
 validationMetaMap: Record<ValidationErrorMapKeys, ValidationMeta | undefined>;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:564
+Defined in: packages/form-core/src/FormApi.ts:582
 
 An internal mechanism used for keeping track of validation logic in a form.
 
@@ -485,7 +485,7 @@ BaseFormState.validationMetaMap
 values: TFormData;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:545
+Defined in: packages/form-core/src/FormApi.ts:563
 
 The current values of the form fields.
 

@@ -5,7 +5,7 @@ title: FieldOptions
 
 # Interface: FieldOptions\<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync\>
 
-Defined in: packages/form-core/src/FieldApi.ts:391
+Defined in: packages/form-core/src/FieldApi.ts:392
 
 An object type representing the options for a field in a form.
 
@@ -71,7 +71,7 @@ An object type representing the options for a field in a form.
 optional asyncAlways: boolean;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:428
+Defined in: packages/form-core/src/FieldApi.ts:429
 
 If `true`, always run async validation, even if there are errors emitted during synchronous validation.
 
@@ -83,7 +83,7 @@ If `true`, always run async validation, even if there are errors emitted during 
 optional asyncDebounceMs: number;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:424
+Defined in: packages/form-core/src/FieldApi.ts:425
 
 The default time to debounce async validation if there is not a more specific debounce time passed.
 
@@ -95,7 +95,7 @@ The default time to debounce async validation if there is not a more specific de
 optional defaultMeta: Partial<FieldMeta<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, any, any, any, any, any, any, any, any, any>>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:449
+Defined in: packages/form-core/src/FieldApi.ts:450
 
 An optional object with default metadata for the field.
 
@@ -107,7 +107,7 @@ An optional object with default metadata for the field.
 optional defaultValue: NoInfer<TData>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:420
+Defined in: packages/form-core/src/FieldApi.ts:421
 
 An optional default value for the field.
 
@@ -119,7 +119,7 @@ An optional default value for the field.
 optional disableErrorFlat: boolean;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:481
+Defined in: packages/form-core/src/FieldApi.ts:482
 
 Disable the `flat(1)` operation on `field.errors`. This is useful if you want to keep the error structure as is. Not suggested for most use-cases.
 
@@ -131,7 +131,7 @@ Disable the `flat(1)` operation on `field.errors`. This is useful if you want to
 optional listeners: FieldListeners<TParentData, TName, TData>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:477
+Defined in: packages/form-core/src/FieldApi.ts:478
 
 A list of listeners which attach to the corresponding events
 
@@ -143,7 +143,7 @@ A list of listeners which attach to the corresponding events
 name: TName;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:416
+Defined in: packages/form-core/src/FieldApi.ts:417
 
 The field name. The type will be `DeepKeys<TParentData>` to ensure your name is a deep key of the parent dataset.
 
@@ -155,6 +155,6 @@ The field name. The type will be `DeepKeys<TParentData>` to ensure your name is 
 optional validators: FieldValidators<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync>;
 ```
 
-Defined in: packages/form-core/src/FieldApi.ts:432
+Defined in: packages/form-core/src/FieldApi.ts:433
 
 A list of validators to pass to the field

@@ -5,7 +5,7 @@ title: BaseFormOptions
 
 # Interface: BaseFormOptions\<TFormData, TSubmitMeta\>
 
-Defined in: packages/form-core/src/FormApi.ts:314
+Defined in: packages/form-core/src/FormApi.ts:332
 
 An object representing the base properties of a form, unrelated to any validators
 
@@ -31,7 +31,7 @@ An object representing the base properties of a form, unrelated to any validator
 optional defaultValues: TFormData;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:318
+Defined in: packages/form-core/src/FormApi.ts:336
 
 Set initial values for your form.
 
@@ -43,6 +43,6 @@ Set initial values for your form.
 optional onSubmitMeta: TSubmitMeta;
 ```
 
-Defined in: packages/form-core/src/FormApi.ts:322
+Defined in: packages/form-core/src/FormApi.ts:340
 
 onSubmitMeta, the data passed from the handleSubmit handler, to the onSubmit function props
