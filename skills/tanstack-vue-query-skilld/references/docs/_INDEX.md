@@ -1,5 +1,5 @@
 ---
-total: 75
+total: 76
 ---
 
 # Docs Index
@@ -29,7 +29,7 @@ total: 75
 this system is the reactive system only triggers updates on spec...
 - [TypeScript](./framework/vue/typescript.md): typescript playground
 
-## framework/vue/guides (33)
+## framework/vue/guides (34)
 
 - [Background Fetching Indicators](./framework/vue/guides/background-fetching-indicators.md)
 - [Caching Examples](./framework/vue/guides/caching.md)
@@ -51,6 +51,7 @@ Previously reactive was returned which led to mult...
 - [Paginated / Lagged Queries](./framework/vue/guides/paginated-queries.md)
 - [Parallel Queries](./framework/vue/guides/parallel-queries.md)
 - [Placeholder Query Data](./framework/vue/guides/placeholder-query-data.md)
+- [Polling](./framework/vue/guides/polling.md)
 - [Prefetching](./framework/vue/guides/prefetching.md): If you're lucky enough, you may know enough about what your users will do to be able to prefetch the data they need before it's needed! If this is ...
 - [Queries](./framework/vue/guides/queries.md)
 - [Query Cancellation](./framework/vue/guides/query-cancellation.md)

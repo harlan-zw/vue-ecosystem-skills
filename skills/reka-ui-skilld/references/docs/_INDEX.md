@@ -286,359 +286,294 @@ design systems and web apps using <a href="https://vuejs.org" target="bla...
 
 ## content/meta (362)
 
-- [AccordionContent](./content/meta/AccordionContent.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AccordionHeader](./content/meta/AccordionHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AccordionItem](./content/meta/AccordionItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AccordionRoot](./content/meta/AccordionRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AccordionTrigger](./content/meta/AccordionTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AlertDialogAction](./content/meta/AlertDialogAction.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AlertDialogCancel](./content/meta/AlertDialogCancel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AlertDialogContent](./content/meta/AlertDialogContent.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AlertDialogDescription](./content/meta/AlertDialogDescription.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AlertDialogOverlay](./content/meta/AlertDialogOverlay.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AlertDialogPortal](./content/meta/AlertDialogPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [AlertDialogRoot](./content/meta/AlertDialogRoot.md): <PropsTable :data="[
-{
- 'name': 'defaultOpen',
- 'description': '<p>The open state of the dialog when it is initially rendered. Use when you do not ...
-- [AlertDialogTitle](./content/meta/AlertDialogTitle.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AlertDialogTrigger](./content/meta/AlertDialogTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AspectRatio](./content/meta/AspectRatio.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AutocompleteInput](./content/meta/AutocompleteInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AutocompleteRoot](./content/meta/AutocompleteRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AvatarFallback](./content/meta/AvatarFallback.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AvatarImage](./content/meta/AvatarImage.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [AvatarRoot](./content/meta/AvatarRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarCell](./content/meta/CalendarCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarCellTrigger](./content/meta/CalendarCellTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarGrid](./content/meta/CalendarGrid.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarGridBody](./content/meta/CalendarGridBody.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarGridHead](./content/meta/CalendarGridHead.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarGridRow](./content/meta/CalendarGridRow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarHeadCell](./content/meta/CalendarHeadCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarHeader](./content/meta/CalendarHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarHeading](./content/meta/CalendarHeading.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarNext](./content/meta/CalendarNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarPrev](./content/meta/CalendarPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CalendarRoot](./content/meta/CalendarRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CheckboxGroupRoot](./content/meta/CheckboxGroupRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CheckboxIndicator](./content/meta/CheckboxIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CheckboxRoot](./content/meta/CheckboxRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CollapsibleContent](./content/meta/CollapsibleContent.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CollapsibleRoot](./content/meta/CollapsibleRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [CollapsibleTrigger](./content/meta/CollapsibleTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorAreaArea](./content/meta/ColorAreaArea.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorAreaRoot](./content/meta/ColorAreaRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorAreaThumb](./content/meta/ColorAreaThumb.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorFieldInput](./content/meta/ColorFieldInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorFieldRoot](./content/meta/ColorFieldRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorSliderRoot](./content/meta/ColorSliderRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorSliderThumb](./content/meta/ColorSliderThumb.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorSliderTrack](./content/meta/ColorSliderTrack.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorSwatch](./content/meta/ColorSwatch.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorSwatchPickerItem](./content/meta/ColorSwatchPickerItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorSwatchPickerItemIndicator](./content/meta/ColorSwatchPickerItemIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorSwatchPickerItemSwatch](./content/meta/ColorSwatchPickerItemSwatch.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ColorSwatchPickerRoot](./content/meta/ColorSwatchPickerRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxAnchor](./content/meta/ComboboxAnchor.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxArrow](./content/meta/ComboboxArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxCancel](./content/meta/ComboboxCancel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxContent](./content/meta/ComboboxContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
-- [ComboboxEmpty](./content/meta/ComboboxEmpty.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxGroup](./content/meta/ComboboxGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxInput](./content/meta/ComboboxInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxItem](./content/meta/ComboboxItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxItemIndicator](./content/meta/ComboboxItemIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxLabel](./content/meta/ComboboxLabel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxPortal](./content/meta/ComboboxPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [ComboboxRoot](./content/meta/ComboboxRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxSeparator](./content/meta/ComboboxSeparator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxTrigger](./content/meta/ComboboxTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxViewport](./content/meta/ComboboxViewport.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ComboboxVirtualizer](./content/meta/ComboboxVirtualizer.md): <PropsTable :data="[
-{
- 'name': 'estimateSize',
- 'description': '<p>Estimated size (in px) of each item</p>\n',
- 'type': 'number | ((index: number)...
-- [ConfigProvider](./content/meta/ConfigProvider.md): <PropsTable :data="[
-{
- 'name': 'dir',
- 'description': '<p>The global reading direction of your application. This will be inherited by all primitiv...
-- [ContextMenuArrow](./content/meta/ContextMenuArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuCheckboxItem](./content/meta/ContextMenuCheckboxItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuContent](./content/meta/ContextMenuContent.md): <PropsTable :data="[
-{
- 'name': 'alignFlip',
- 'description': '<p>Flip alignment when colliding with boundary.\nMay only occur when <code>prioritize...
-- [ContextMenuGroup](./content/meta/ContextMenuGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuItem](./content/meta/ContextMenuItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuItemIndicator](./content/meta/ContextMenuItemIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuLabel](./content/meta/ContextMenuLabel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuPortal](./content/meta/ContextMenuPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [ContextMenuRadioGroup](./content/meta/ContextMenuRadioGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuRadioItem](./content/meta/ContextMenuRadioItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuRoot](./content/meta/ContextMenuRoot.md): <PropsTable :data="[
-{
- 'name': 'dir',
- 'description': '<p>The reading direction of the combobox when applicable.</p>\n<p>If omitted, inherits glob...
-- [ContextMenuSeparator](./content/meta/ContextMenuSeparator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuSub](./content/meta/ContextMenuSub.md): <PropsTable :data="[
-{
- 'name': 'defaultOpen',
- 'description': '<p>The open state of the submenu when it is initially rendered. Use when you do not...
-- [ContextMenuSubContent](./content/meta/ContextMenuSubContent.md): <PropsTable :data="[
-{
- 'name': 'alignFlip',
- 'description': '<p>Flip alignment when colliding with boundary.\nMay only occur when <code>prioritize...
-- [ContextMenuSubTrigger](./content/meta/ContextMenuSubTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ContextMenuTrigger](./content/meta/ContextMenuTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateFieldInput](./content/meta/DateFieldInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateFieldRoot](./content/meta/DateFieldRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerAnchor](./content/meta/DatePickerAnchor.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerArrow](./content/meta/DatePickerArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
+- [AccordionContent](./content/meta/AccordionContent.md): Props
+- [AccordionHeader](./content/meta/AccordionHeader.md): Props
+- [AccordionItem](./content/meta/AccordionItem.md): <SlotsTable :data="[
+{
+ 'name': 'open',
+ 'description': '<p>Current open state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [AccordionRoot](./content/meta/AccordionRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the expanded state of an item changes</p>\n',
+ '...
+- [AccordionTrigger](./content/meta/AccordionTrigger.md): Props
+- [AlertDialogAction](./content/meta/AlertDialogAction.md): Props
+- [AlertDialogCancel](./content/meta/AlertDialogCancel.md): Props
+- [AlertDialogContent](./content/meta/AlertDialogContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [AlertDialogDescription](./content/meta/AlertDialogDescription.md): Props
+- [AlertDialogOverlay](./content/meta/AlertDialogOverlay.md): Props
+- [AlertDialogPortal](./content/meta/AlertDialogPortal.md): Props
+- [AlertDialogRoot](./content/meta/AlertDialogRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the dialog changes.</p>\n',
+ 'type':...
+- [AlertDialogTitle](./content/meta/AlertDialogTitle.md): Props
+- [AlertDialogTrigger](./content/meta/AlertDialogTrigger.md): Props
+- [AspectRatio](./content/meta/AspectRatio.md): <SlotsTable :data="[
+{
+ 'name': 'aspect',
+ 'description': '<p>Current aspect ratio (in %)</p>\n',
+ 'type': 'number'
+}
+]" />
+</llm-exclude>
+- [AutocompleteInput](./content/meta/AutocompleteInput.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[string]'
+}...
+- [AutocompleteRoot](./content/meta/AutocompleteRoot.md): <EmitsTable :data="[
+{
+ 'name': 'highlight',
+ 'description': '<p>Event handler when highlighted element changes.</p>\n',
+ 'type': '[payload: { ref:...
+- [AvatarFallback](./content/meta/AvatarFallback.md): Props
+- [AvatarImage](./content/meta/AvatarImage.md): <EmitsTable :data="[
+{
+ 'name': 'loadingStatusChange',
+ 'description': '<p>A callback providing information about the loading status of the image. ...
+- [AvatarRoot](./content/meta/AvatarRoot.md): Props
+- [CalendarCell](./content/meta/CalendarCell.md): Props
+- [CalendarCellTrigger](./content/meta/CalendarCellTrigger.md): <SlotsTable :data="[
+{
+ 'name': 'dayValue',
+ 'description': '<p>Current day</p>\n',
+ 'type': 'string'
+},
+{
+ 'name': 'disabled',
+ 'description': '<p...
+- [CalendarGrid](./content/meta/CalendarGrid.md): Props
+- [CalendarGridBody](./content/meta/CalendarGridBody.md): Props
+- [CalendarGridHead](./content/meta/CalendarGridHead.md): Props
+- [CalendarGridRow](./content/meta/CalendarGridRow.md): Props
+- [CalendarHeadCell](./content/meta/CalendarHeadCell.md): Props
+- [CalendarHeader](./content/meta/CalendarHeader.md): Props
+- [CalendarHeading](./content/meta/CalendarHeading.md): <SlotsTable :data="[
+{
+ 'name': 'headingValue',
+ 'description': '<p>Current month and year</p>\n',
+ 'type': 'string'
+}
+]" />
+</llm-exclude>
+- [CalendarNext](./content/meta/CalendarNext.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [CalendarPrev](./content/meta/CalendarPrev.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [CalendarRoot](./content/meta/CalendarRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [CheckboxGroupRoot](./content/meta/CheckboxGroupRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value of the checkbox changes.</p>\n',
+ 'typ...
+- [CheckboxIndicator](./content/meta/CheckboxIndicator.md): Props
+- [CheckboxRoot](./content/meta/CheckboxRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value of the checkbox changes.</p>\n',
+ 'typ...
+- [CollapsibleContent](./content/meta/CollapsibleContent.md): <EmitsTable :data="[
+{
+ 'name': 'contentFound',
+ 'description': '',
+ 'type': '[(void)?]'
+}
+]" />
+</llm-exclude>
+- [CollapsibleRoot](./content/meta/CollapsibleRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the collapsible changes.</p>\n',
+ 't...
+- [CollapsibleTrigger](./content/meta/CollapsibleTrigger.md): Props
+- [ColorAreaArea](./content/meta/ColorAreaArea.md): Props
+- [ColorAreaRoot](./content/meta/ColorAreaRoot.md): <EmitsTable :data="[
+{
+ 'name': 'change',
+ 'description': '',
+ 'type': '[value: string]'
+},
+{
+ 'name': 'changeEnd',
+ 'description': '',
+ 'type': '[...
+- [ColorAreaThumb](./content/meta/ColorAreaThumb.md): Props
+- [ColorFieldInput](./content/meta/ColorFieldInput.md): Props
+- [ColorFieldRoot](./content/meta/ColorFieldRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:color',
+ 'description': '',
+ 'type': '[value: Color]'
+},
+{
+ 'name': 'update:modelValue',
+ 'description': '<...
+- [ColorSliderRoot](./content/meta/ColorSliderRoot.md): <EmitsTable :data="[
+{
+ 'name': 'change',
+ 'description': '',
+ 'type': '[value: string]'
+},
+{
+ 'name': 'changeEnd',
+ 'description': '',
+ 'type': '[...
+- [ColorSliderThumb](./content/meta/ColorSliderThumb.md): <SlotsTable :data="[
+{
+ 'name': 'channelName',
+ 'description': '<p>The display name of the current channel</p>\n',
+ 'type': 'string'
+},
+{
+ 'name': ...
+- [ColorSliderTrack](./content/meta/ColorSliderTrack.md): Props
+- [ColorSwatch](./content/meta/ColorSwatch.md): <SlotsTable :data="[
+{
+ 'name': 'color',
+ 'description': '',
+ 'type': 'string'
+},
+{
+ 'name': 'alpha',
+ 'description': '',
+ 'type': 'number'
+}
+]" />...
+- [ColorSwatchPickerItem](./content/meta/ColorSwatchPickerItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the selecting item. <br> It can be prevented by calli...
+- [ColorSwatchPickerItemIndicator](./content/meta/ColorSwatchPickerItemIndicator.md): Props
+- [ColorSwatchPickerItemSwatch](./content/meta/ColorSwatchPickerItemSwatch.md): Props
+- [ColorSwatchPickerRoot](./content/meta/ColorSwatchPickerRoot.md): <EmitsTable :data="[
+{
+ 'name': 'entryFocus',
+ 'description': '<p>Event handler called when container is being focused. Can be prevented.</p>\n',
+ ...
+- [ComboboxAnchor](./content/meta/ComboboxAnchor.md): Props
+- [ComboboxArrow](./content/meta/ComboboxArrow.md): Props
+- [ComboboxCancel](./content/meta/ComboboxCancel.md): Props
+- [ComboboxContent](./content/meta/ComboboxContent.md): <EmitsTable :data="[
+{
+ 'name': 'escapeKeyDown',
+ 'description': '<p>Event handler called when the escape key is down.\nCan be prevented.</p>\n',
+ ...
+- [ComboboxEmpty](./content/meta/ComboboxEmpty.md): Props
+- [ComboboxGroup](./content/meta/ComboboxGroup.md): Props
+- [ComboboxInput](./content/meta/ComboboxInput.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[string]'
+}...
+- [ComboboxItem](./content/meta/ComboboxItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the selecting item. <br> It can be prevented by calli...
+- [ComboboxItemIndicator](./content/meta/ComboboxItemIndicator.md): Props
+- [ComboboxLabel](./content/meta/ComboboxLabel.md): Props
+- [ComboboxPortal](./content/meta/ComboboxPortal.md): Props
+- [ComboboxRoot](./content/meta/ComboboxRoot.md): <EmitsTable :data="[
+{
+ 'name': 'highlight',
+ 'description': '<p>Event handler when highlighted element changes.</p>\n',
+ 'type': '[payload: { ref:...
+- [ComboboxSeparator](./content/meta/ComboboxSeparator.md): Props
+- [ComboboxTrigger](./content/meta/ComboboxTrigger.md): Props
+- [ComboboxViewport](./content/meta/ComboboxViewport.md): Props
+- [ComboboxVirtualizer](./content/meta/ComboboxVirtualizer.md): <SlotsTable :data="[
+{
+ 'name': 'option',
+ 'description': '',
+ 'type': 'null | string | number | bigint | Record<string, any>'
+},
+{
+ 'name': ...
+- [ConfigProvider](./content/meta/ConfigProvider.md): <MethodsTable :data="[
+{
+ 'name': 'useId',
+ 'description': '<p>The global <code>useId</code> injection as a workaround for preventing hydration iss...
+- [ContextMenuArrow](./content/meta/ContextMenuArrow.md): Props
+- [ContextMenuCheckboxItem](./content/meta/ContextMenuCheckboxItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [ContextMenuContent](./content/meta/ContextMenuContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [ContextMenuGroup](./content/meta/ContextMenuGroup.md): Props
+- [ContextMenuItem](./content/meta/ContextMenuItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [ContextMenuItemIndicator](./content/meta/ContextMenuItemIndicator.md): Props
+- [ContextMenuLabel](./content/meta/ContextMenuLabel.md): Props
+- [ContextMenuPortal](./content/meta/ContextMenuPortal.md): Props
+- [ContextMenuRadioGroup](./content/meta/ContextMenuRadioGroup.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[payload: A...
+- [ContextMenuRadioItem](./content/meta/ContextMenuRadioItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [ContextMenuRoot](./content/meta/ContextMenuRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the submenu changes.</p>\n',
+ 'type'...
+- [ContextMenuSeparator](./content/meta/ContextMenuSeparator.md): Props
+- [ContextMenuSub](./content/meta/ContextMenuSub.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the submenu changes.</p>\n',
+ 'type'...
+- [ContextMenuSubContent](./content/meta/ContextMenuSubContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [ContextMenuSubTrigger](./content/meta/ContextMenuSubTrigger.md): Props
+- [ContextMenuTrigger](./content/meta/ContextMenuTrigger.md): Props
+- [DateFieldInput](./content/meta/DateFieldInput.md): Props
+- [DateFieldRoot](./content/meta/DateFieldRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [DatePickerAnchor](./content/meta/DatePickerAnchor.md): Props
+- [DatePickerArrow](./content/meta/DatePickerArrow.md): Props
 - [DatePickerCalendar](./content/meta/DatePickerCalendar.md): <SlotsTable :data="[
 {
  'name': 'date',
@@ -649,22 +584,22 @@ design systems and web apps using <a href="https://vuejs.org" target="bla...
  'name': 'grid',
  'description': '',
  'type': 'Grid<DateVa...
-- [DatePickerCell](./content/meta/DatePickerCell.md): <PropsTable :data="[
+- [DatePickerCell](./content/meta/DatePickerCell.md): Props
+- [DatePickerCellTrigger](./content/meta/DatePickerCellTrigger.md): <SlotsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerCellTrigger](./content/meta/DatePickerCellTrigger.md): <PropsTable :data="[
+ 'name': 'dayValue',
+ 'description': '<p>Current day</p>\n',
+ 'type': 'string'
+},
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerClose](./content/meta/DatePickerClose.md): <PropsTable :data="[
+ 'name': 'disabled',
+ 'description': '<p...
+- [DatePickerClose](./content/meta/DatePickerClose.md): Props
+- [DatePickerContent](./content/meta/DatePickerContent.md): <EmitsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerContent](./content/meta/DatePickerContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
 - [DatePickerField](./content/meta/DatePickerField.md): <SlotsTable :data="[
 {
  'name': 'segments',
@@ -674,71 +609,51 @@ design systems and web apps using <a href="https://vuejs.org" target="bla...
 {
  'name': 'modelValue',
  'de...
-- [DatePickerGrid](./content/meta/DatePickerGrid.md): <PropsTable :data="[
+- [DatePickerGrid](./content/meta/DatePickerGrid.md): Props
+- [DatePickerGridBody](./content/meta/DatePickerGridBody.md): Props
+- [DatePickerGridHead](./content/meta/DatePickerGridHead.md): Props
+- [DatePickerGridRow](./content/meta/DatePickerGridRow.md): Props
+- [DatePickerHeadCell](./content/meta/DatePickerHeadCell.md): Props
+- [DatePickerHeader](./content/meta/DatePickerHeader.md): Props
+- [DatePickerHeading](./content/meta/DatePickerHeading.md): <SlotsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerGridBody](./content/meta/DatePickerGridBody.md): <PropsTable :data="[
+ 'name': 'headingValue',
+ 'description': '<p>Current month and year</p>\n',
+ 'type': 'string'
+}
+]" />
+</llm-exclude>
+- [DatePickerInput](./content/meta/DatePickerInput.md): Props
+- [DatePickerNext](./content/meta/DatePickerNext.md): <SlotsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerGridHead](./content/meta/DatePickerGridHead.md): <PropsTable :data="[
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [DatePickerPrev](./content/meta/DatePickerPrev.md): <SlotsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerGridRow](./content/meta/DatePickerGridRow.md): <PropsTable :data="[
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [DatePickerRoot](./content/meta/DatePickerRoot.md): <EmitsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerHeadCell](./content/meta/DatePickerHeadCell.md): <PropsTable :data="[
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [DatePickerTrigger](./content/meta/DatePickerTrigger.md): Props
+- [DateRangeFieldInput](./content/meta/DateRangeFieldInput.md): Props
+- [DateRangeFieldRoot](./content/meta/DateRangeFieldRoot.md): <EmitsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerHeader](./content/meta/DatePickerHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerHeading](./content/meta/DatePickerHeading.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerInput](./content/meta/DatePickerInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerNext](./content/meta/DatePickerNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerPrev](./content/meta/DatePickerPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DatePickerRoot](./content/meta/DatePickerRoot.md): <PropsTable :data="[
-{
- 'name': 'closeOnSelect',
- 'description': '<p>Whether or not to close the popover on date select</p>\n',
- 'type': 'boolean',...
-- [DatePickerTrigger](./content/meta/DatePickerTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangeFieldInput](./content/meta/DateRangeFieldInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangeFieldRoot](./content/meta/DateRangeFieldRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerAnchor](./content/meta/DateRangePickerAnchor.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerArrow](./content/meta/DateRangePickerArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[D...
+- [DateRangePickerAnchor](./content/meta/DateRangePickerAnchor.md): Props
+- [DateRangePickerArrow](./content/meta/DateRangePickerArrow.md): Props
 - [DateRangePickerCalendar](./content/meta/DateRangePickerCalendar.md): <SlotsTable :data="[
 {
  'name': 'date',
@@ -749,1020 +664,761 @@ design systems and web apps using <a href="https://vuejs.org" target="bla...
  'name': 'grid',
  'description': '',
  'type': 'Grid<DateVa...
-- [DateRangePickerCell](./content/meta/DateRangePickerCell.md): <PropsTable :data="[
+- [DateRangePickerCell](./content/meta/DateRangePickerCell.md): Props
+- [DateRangePickerCellTrigger](./content/meta/DateRangePickerCellTrigger.md): <SlotsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerCellTrigger](./content/meta/DateRangePickerCellTrigger.md): <PropsTable :data="[
+ 'name': 'dayValue',
+ 'description': '<p>Current day</p>\n',
+ 'type': 'string'
+},
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerClose](./content/meta/DateRangePickerClose.md): <PropsTable :data="[
+ 'name': 'disabled',
+ 'description': '<p...
+- [DateRangePickerClose](./content/meta/DateRangePickerClose.md): Props
+- [DateRangePickerContent](./content/meta/DateRangePickerContent.md): <EmitsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerContent](./content/meta/DateRangePickerContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
 - [DateRangePickerField](./content/meta/DateRangePickerField.md): <SlotsTable :data="[
 {
  'name': 'segments',
  'description': '',
  'type': '{ start: { part: SegmentPart; value: string; }[]; end: { part: SegmentPar...
-- [DateRangePickerGrid](./content/meta/DateRangePickerGrid.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerGridBody](./content/meta/DateRangePickerGridBody.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerGridHead](./content/meta/DateRangePickerGridHead.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerGridRow](./content/meta/DateRangePickerGridRow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerHeadCell](./content/meta/DateRangePickerHeadCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerHeader](./content/meta/DateRangePickerHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerHeading](./content/meta/DateRangePickerHeading.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerInput](./content/meta/DateRangePickerInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerNext](./content/meta/DateRangePickerNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerPrev](./content/meta/DateRangePickerPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DateRangePickerRoot](./content/meta/DateRangePickerRoot.md): <PropsTable :data="[
-{
- 'name': 'allowNonContiguousRanges',
- 'description': '<p>When combined with <code>isDateUnavailable</code>, determines wheth...
-- [DateRangePickerTrigger](./content/meta/DateRangePickerTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DialogClose](./content/meta/DialogClose.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DialogContent](./content/meta/DialogContent.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DialogDescription](./content/meta/DialogDescription.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DialogOverlay](./content/meta/DialogOverlay.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DialogPortal](./content/meta/DialogPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [DialogRoot](./content/meta/DialogRoot.md): <PropsTable :data="[
-{
- 'name': 'defaultOpen',
- 'description': '<p>The open state of the dialog when it is initially rendered. Use when you do not ...
-- [DialogTitle](./content/meta/DialogTitle.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DialogTrigger](./content/meta/DialogTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuArrow](./content/meta/DropdownMenuArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuCheckboxItem](./content/meta/DropdownMenuCheckboxItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuContent](./content/meta/DropdownMenuContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
-- [DropdownMenuFilter](./content/meta/DropdownMenuFilter.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuGroup](./content/meta/DropdownMenuGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuItem](./content/meta/DropdownMenuItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuItemIndicator](./content/meta/DropdownMenuItemIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuLabel](./content/meta/DropdownMenuLabel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuPortal](./content/meta/DropdownMenuPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [DropdownMenuRadioGroup](./content/meta/DropdownMenuRadioGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuRadioItem](./content/meta/DropdownMenuRadioItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuRoot](./content/meta/DropdownMenuRoot.md): <PropsTable :data="[
-{
- 'name': 'defaultOpen',
- 'description': '<p>The open state of the dropdown menu when it is initially rendered. Use when you ...
-- [DropdownMenuSeparator](./content/meta/DropdownMenuSeparator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuSub](./content/meta/DropdownMenuSub.md): <PropsTable :data="[
-{
- 'name': 'defaultOpen',
- 'description': '<p>The open state of the dropdown menu when it is initially rendered. Use when you ...
-- [DropdownMenuSubContent](./content/meta/DropdownMenuSubContent.md): <PropsTable :data="[
-{
- 'name': 'alignFlip',
- 'description': '<p>Flip alignment when colliding with boundary.\nMay only occur when <code>prioritize...
-- [DropdownMenuSubTrigger](./content/meta/DropdownMenuSubTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [DropdownMenuTrigger](./content/meta/DropdownMenuTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [EditableArea](./content/meta/EditableArea.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [EditableCancelTrigger](./content/meta/EditableCancelTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [EditableEditTrigger](./content/meta/EditableEditTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [EditableInput](./content/meta/EditableInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [EditablePreview](./content/meta/EditablePreview.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [EditableRoot](./content/meta/EditableRoot.md): <PropsTable :data="[
-{
- 'name': 'activationMode',
- 'description': '<p>The activation event of the editable field</p>\n',
- 'type': '\'dblclick\' | \...
-- [EditableSubmitTrigger](./content/meta/EditableSubmitTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [FocusScope](./content/meta/FocusScope.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [HoverCardArrow](./content/meta/HoverCardArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [HoverCardContent](./content/meta/HoverCardContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
-- [HoverCardPortal](./content/meta/HoverCardPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [HoverCardRoot](./content/meta/HoverCardRoot.md): <PropsTable :data="[
-{
- 'name': 'closeDelay',
- 'description': '<p>The duration from when the mouse leaves the trigger or content until the hover ca...
-- [HoverCardTrigger](./content/meta/HoverCardTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [Label](./content/meta/Label.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ListboxContent](./content/meta/ListboxContent.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ListboxFilter](./content/meta/ListboxFilter.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ListboxGroup](./content/meta/ListboxGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ListboxGroupLabel](./content/meta/ListboxGroupLabel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ListboxItem](./content/meta/ListboxItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ListboxItemIndicator](./content/meta/ListboxItemIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ListboxRoot](./content/meta/ListboxRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ListboxVirtualizer](./content/meta/ListboxVirtualizer.md): <PropsTable :data="[
-{
- 'name': 'estimateSize',
- 'description': '<p>Estimated size (in px) of each item</p>\n',
- 'type': 'number | ((index: number)...
-- [MenubarArrow](./content/meta/MenubarArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarCheckboxItem](./content/meta/MenubarCheckboxItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarContent](./content/meta/MenubarContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
-- [MenubarGroup](./content/meta/MenubarGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarItem](./content/meta/MenubarItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarItemIndicator](./content/meta/MenubarItemIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarLabel](./content/meta/MenubarLabel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarMenu](./content/meta/MenubarMenu.md): <PropsTable :data="[
-{
- 'name': 'value',
- 'description': '<p>A unique value that associates the item with an active value when the navigation menu ...
-- [MenubarPortal](./content/meta/MenubarPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [MenubarRadioGroup](./content/meta/MenubarRadioGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarRadioItem](./content/meta/MenubarRadioItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarRoot](./content/meta/MenubarRoot.md): <PropsTable :data="[
-{
- 'name': 'defaultValue',
- 'description': '<p>The value of the menu that should be open when initially rendered. Use when you...
-- [MenubarSeparator](./content/meta/MenubarSeparator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarSub](./content/meta/MenubarSub.md): <PropsTable :data="[
-{
- 'name': 'defaultOpen',
- 'description': '<p>The open state of the submenu when it is initially rendered. Use when you do not...
-- [MenubarSubContent](./content/meta/MenubarSubContent.md): <PropsTable :data="[
-{
- 'name': 'alignFlip',
- 'description': '<p>Flip alignment when colliding with boundary.\nMay only occur when <code>prioritize...
-- [MenubarSubTrigger](./content/meta/MenubarSubTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MenubarTrigger](./content/meta/MenubarTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerCell](./content/meta/MonthPickerCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerCellTrigger](./content/meta/MonthPickerCellTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerGrid](./content/meta/MonthPickerGrid.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerGridBody](./content/meta/MonthPickerGridBody.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerGridRow](./content/meta/MonthPickerGridRow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerHeader](./content/meta/MonthPickerHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerHeading](./content/meta/MonthPickerHeading.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerNext](./content/meta/MonthPickerNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerPrev](./content/meta/MonthPickerPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthPickerRoot](./content/meta/MonthPickerRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerCell](./content/meta/MonthRangePickerCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerCellTrigger](./content/meta/MonthRangePickerCellTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerGrid](./content/meta/MonthRangePickerGrid.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerGridBody](./content/meta/MonthRangePickerGridBody.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerGridRow](./content/meta/MonthRangePickerGridRow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerHeader](./content/meta/MonthRangePickerHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerHeading](./content/meta/MonthRangePickerHeading.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerNext](./content/meta/MonthRangePickerNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerPrev](./content/meta/MonthRangePickerPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [MonthRangePickerRoot](./content/meta/MonthRangePickerRoot.md): <PropsTable :data="[
-{
- 'name': 'allowNonContiguousRanges',
- 'description': '<p>When combined with <code>isMonthUnavailable</code>, determines whet...
-- [NavigationMenuContent](./content/meta/NavigationMenuContent.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NavigationMenuIndicator](./content/meta/NavigationMenuIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NavigationMenuItem](./content/meta/NavigationMenuItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NavigationMenuLink](./content/meta/NavigationMenuLink.md): <PropsTable :data="[
-{
- 'name': 'active',
- 'description': '<p>Used to identify the link as the currently active page.</p>\n',
- 'type': 'boolean',
+- [DateRangePickerGrid](./content/meta/DateRangePickerGrid.md): Props
+- [DateRangePickerGridBody](./content/meta/DateRangePickerGridBody.md): Props
+- [DateRangePickerGridHead](./content/meta/DateRangePickerGridHead.md): Props
+- [DateRangePickerGridRow](./content/meta/DateRangePickerGridRow.md): Props
+- [DateRangePickerHeadCell](./content/meta/DateRangePickerHeadCell.md): Props
+- [DateRangePickerHeader](./content/meta/DateRangePickerHeader.md): Props
+- [DateRangePickerHeading](./content/meta/DateRangePickerHeading.md): <SlotsTable :data="[
+{
+ 'name': 'headingValue',
+ 'description': '<p>Current month and year</p>\n',
+ 'type': 'string'
+}
+]" />
+</llm-exclude>
+- [DateRangePickerInput](./content/meta/DateRangePickerInput.md): Props
+- [DateRangePickerNext](./content/meta/DateRangePickerNext.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [DateRangePickerPrev](./content/meta/DateRangePickerPrev.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [DateRangePickerRoot](./content/meta/DateRangePickerRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [DateRangePickerTrigger](./content/meta/DateRangePickerTrigger.md): Props
+- [DialogClose](./content/meta/DialogClose.md): Props
+- [DialogContent](./content/meta/DialogContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [DialogDescription](./content/meta/DialogDescription.md): Props
+- [DialogOverlay](./content/meta/DialogOverlay.md): Props
+- [DialogPortal](./content/meta/DialogPortal.md): Props
+- [DialogRoot](./content/meta/DialogRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the dialog changes.</p>\n',
+ 'type':...
+- [DialogTitle](./content/meta/DialogTitle.md): Props
+- [DialogTrigger](./content/meta/DialogTrigger.md): Props
+- [DropdownMenuArrow](./content/meta/DropdownMenuArrow.md): Props
+- [DropdownMenuCheckboxItem](./content/meta/DropdownMenuCheckboxItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [DropdownMenuContent](./content/meta/DropdownMenuContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [DropdownMenuFilter](./content/meta/DropdownMenuFilter.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[string]'
+}...
+- [DropdownMenuGroup](./content/meta/DropdownMenuGroup.md): Props
+- [DropdownMenuItem](./content/meta/DropdownMenuItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [DropdownMenuItemIndicator](./content/meta/DropdownMenuItemIndicator.md): Props
+- [DropdownMenuLabel](./content/meta/DropdownMenuLabel.md): Props
+- [DropdownMenuPortal](./content/meta/DropdownMenuPortal.md): Props
+- [DropdownMenuRadioGroup](./content/meta/DropdownMenuRadioGroup.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[payload: A...
+- [DropdownMenuRadioItem](./content/meta/DropdownMenuRadioItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [DropdownMenuRoot](./content/meta/DropdownMenuRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the submenu changes.</p>\n',
+ 'type'...
+- [DropdownMenuSeparator](./content/meta/DropdownMenuSeparator.md): Props
+- [DropdownMenuSub](./content/meta/DropdownMenuSub.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the submenu changes.</p>\n',
+ 'type'...
+- [DropdownMenuSubContent](./content/meta/DropdownMenuSubContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [DropdownMenuSubTrigger](./content/meta/DropdownMenuSubTrigger.md): Props
+- [DropdownMenuTrigger](./content/meta/DropdownMenuTrigger.md): Props
+- [EditableArea](./content/meta/EditableArea.md): Props
+- [EditableCancelTrigger](./content/meta/EditableCancelTrigger.md): Props
+- [EditableEditTrigger](./content/meta/EditableEditTrigger.md): Props
+- [EditableInput](./content/meta/EditableInput.md): Props
+- [EditablePreview](./content/meta/EditablePreview.md): Props
+- [EditableRoot](./content/meta/EditableRoot.md): <EmitsTable :data="[
+{
+ 'name': 'submit',
+ 'description': '<p>Event handler called when a value is submitted</p>\n',
+ 'type': '[value: string | nul...
+- [EditableSubmitTrigger](./content/meta/EditableSubmitTrigger.md): Props
+- [FocusScope](./content/meta/FocusScope.md): <EmitsTable :data="[
+{
+ 'name': 'mountAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on mount.\nCan be prevented.</p>\n',
+...
+- [HoverCardArrow](./content/meta/HoverCardArrow.md): Props
+- [HoverCardContent](./content/meta/HoverCardContent.md): <EmitsTable :data="[
+{
+ 'name': 'escapeKeyDown',
+ 'description': '<p>Event handler called when the escape key is down.\nCan be prevented.</p>\n',
  ...
-- [NavigationMenuList](./content/meta/NavigationMenuList.md): <PropsTable :data="[
+- [HoverCardPortal](./content/meta/HoverCardPortal.md): Props
+- [HoverCardRoot](./content/meta/HoverCardRoot.md): <EmitsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NavigationMenuRoot](./content/meta/NavigationMenuRoot.md): <PropsTable :data="[
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the hover card changes.</p>\n',
+ 'ty...
+- [HoverCardTrigger](./content/meta/HoverCardTrigger.md): Props
+- [Label](./content/meta/Label.md): Props
+- [ListboxContent](./content/meta/ListboxContent.md): Props
+- [ListboxFilter](./content/meta/ListboxFilter.md): <EmitsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NavigationMenuSub](./content/meta/NavigationMenuSub.md): <PropsTable :data="[
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[string]'
+}...
+- [ListboxGroup](./content/meta/ListboxGroup.md): Props
+- [ListboxGroupLabel](./content/meta/ListboxGroupLabel.md): Props
+- [ListboxItem](./content/meta/ListboxItem.md): <EmitsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NavigationMenuTrigger](./content/meta/NavigationMenuTrigger.md): <PropsTable :data="[
+ 'name': 'select',
+ 'description': '<p>Event handler called when the selecting item. <br> It can be prevented by calli...
+- [ListboxItemIndicator](./content/meta/ListboxItemIndicator.md): Props
+- [ListboxRoot](./content/meta/ListboxRoot.md): <EmitsTable :data="[
 {
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NavigationMenuViewport](./content/meta/NavigationMenuViewport.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>Placement of the viewport for css variables <code>(--reka-navigation-menu-viewport-lef...
-- [NumberFieldDecrement](./content/meta/NumberFieldDecrement.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NumberFieldIncrement](./content/meta/NumberFieldIncrement.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NumberFieldInput](./content/meta/NumberFieldInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [NumberFieldRoot](./content/meta/NumberFieldRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PaginationEllipsis](./content/meta/PaginationEllipsis.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PaginationFirst](./content/meta/PaginationFirst.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PaginationLast](./content/meta/PaginationLast.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PaginationList](./content/meta/PaginationList.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PaginationListItem](./content/meta/PaginationListItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PaginationNext](./content/meta/PaginationNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PaginationPrev](./content/meta/PaginationPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PaginationRoot](./content/meta/PaginationRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PinInputInput](./content/meta/PinInputInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PinInputRoot](./content/meta/PinInputRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PopoverAnchor](./content/meta/PopoverAnchor.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PopoverArrow](./content/meta/PopoverArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PopoverClose](./content/meta/PopoverClose.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [PopoverContent](./content/meta/PopoverContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
-- [PopoverPortal](./content/meta/PopoverPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [PopoverRoot](./content/meta/PopoverRoot.md): <PropsTable :data="[
-{
- 'name': 'defaultOpen',
- 'description': '<p>The open state of the popover when it is initially rendered. Use when you do not...
-- [PopoverTrigger](./content/meta/PopoverTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ProgressIndicator](./content/meta/ProgressIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ProgressRoot](./content/meta/ProgressRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RadioGroupIndicator](./content/meta/RadioGroupIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RadioGroupItem](./content/meta/RadioGroupItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RadioGroupRoot](./content/meta/RadioGroupRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarCell](./content/meta/RangeCalendarCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarCellTrigger](./content/meta/RangeCalendarCellTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarGrid](./content/meta/RangeCalendarGrid.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarGridBody](./content/meta/RangeCalendarGridBody.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarGridHead](./content/meta/RangeCalendarGridHead.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarGridRow](./content/meta/RangeCalendarGridRow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarHeadCell](./content/meta/RangeCalendarHeadCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarHeader](./content/meta/RangeCalendarHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarHeading](./content/meta/RangeCalendarHeading.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarNext](./content/meta/RangeCalendarNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarPrev](./content/meta/RangeCalendarPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RangeCalendarRoot](./content/meta/RangeCalendarRoot.md): <PropsTable :data="[
-{
- 'name': 'allowNonContiguousRanges',
- 'description': '<p>When combined with <code>isDateUnavailable</code>, determines wheth...
-- [RovingFocusGroup](./content/meta/RovingFocusGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [RovingFocusItem](./content/meta/RovingFocusItem.md): <PropsTable :data="[
-{
- 'name': 'active',
- 'description': '<p>When <code>true</code>, item will be initially focused.</p>\n',
- 'type': 'boolean',
+ 'name': 'entryFocus',
+ 'description': '<p>Event handler called when container is being focused. Can be prevented.</p>\n',
  ...
-- [ScrollAreaCorner](./content/meta/ScrollAreaCorner.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ScrollAreaRoot](./content/meta/ScrollAreaRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ScrollAreaScrollbar](./content/meta/ScrollAreaScrollbar.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ScrollAreaThumb](./content/meta/ScrollAreaThumb.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ScrollAreaViewport](./content/meta/ScrollAreaViewport.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectArrow](./content/meta/SelectArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectContent](./content/meta/SelectContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
-- [SelectGroup](./content/meta/SelectGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectIcon](./content/meta/SelectIcon.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectItem](./content/meta/SelectItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectItemIndicator](./content/meta/SelectItemIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectItemText](./content/meta/SelectItemText.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectLabel](./content/meta/SelectLabel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectPortal](./content/meta/SelectPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [SelectRoot](./content/meta/SelectRoot.md): <PropsTable :data="[
-{
- 'name': 'autocomplete',
- 'description': '<p>Native html input <code>autocomplete</code> attribute.</p>\n',
- 'type': 'string...
-- [SelectScrollDownButton](./content/meta/SelectScrollDownButton.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectScrollUpButton](./content/meta/SelectScrollUpButton.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectSeparator](./content/meta/SelectSeparator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectTrigger](./content/meta/SelectTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectValue](./content/meta/SelectValue.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SelectViewport](./content/meta/SelectViewport.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [Separator](./content/meta/Separator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SliderRange](./content/meta/SliderRange.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SliderRoot](./content/meta/SliderRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SliderThumb](./content/meta/SliderThumb.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SliderTrack](./content/meta/SliderTrack.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SplitterGroup](./content/meta/SplitterGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SplitterPanel](./content/meta/SplitterPanel.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SplitterResizeHandle](./content/meta/SplitterResizeHandle.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [StepperDescription](./content/meta/StepperDescription.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [StepperIndicator](./content/meta/StepperIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [StepperItem](./content/meta/StepperItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [StepperRoot](./content/meta/StepperRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [StepperSeparator](./content/meta/StepperSeparator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [StepperTitle](./content/meta/StepperTitle.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [StepperTrigger](./content/meta/StepperTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SwitchRoot](./content/meta/SwitchRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [SwitchThumb](./content/meta/SwitchThumb.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TabsContent](./content/meta/TabsContent.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TabsIndicator](./content/meta/TabsIndicator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TabsList](./content/meta/TabsList.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TabsRoot](./content/meta/TabsRoot.md): <PropsTable :data="[
-{
- 'name': 'activationMode',
- 'description': '<p>Whether a tab is activated automatically (on focus) or manually (on click).</...
-- [TabsTrigger](./content/meta/TabsTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TagsInputClear](./content/meta/TagsInputClear.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TagsInputInput](./content/meta/TagsInputInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TagsInputItem](./content/meta/TagsInputItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TagsInputItemDelete](./content/meta/TagsInputItemDelete.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TagsInputItemText](./content/meta/TagsInputItemText.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TagsInputRoot](./content/meta/TagsInputRoot.md): <PropsTable :data="[
-{
- 'name': 'addOnBlur',
- 'description': '<p>When <code>true</code> allow adding tags blur input</p>\n',
- 'type': 'boolean',
- '...
-- [TimeFieldInput](./content/meta/TimeFieldInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TimeFieldRoot](./content/meta/TimeFieldRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TimeRangeFieldInput](./content/meta/TimeRangeFieldInput.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TimeRangeFieldRoot](./content/meta/TimeRangeFieldRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToastAction](./content/meta/ToastAction.md): <PropsTable :data="[
-{
- 'name': 'altText',
- 'description': '<p>A short description for an alternate way to carry out the action. For screen reader ...
-- [ToastClose](./content/meta/ToastClose.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToastDescription](./content/meta/ToastDescription.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToastPortal](./content/meta/ToastPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [ToastProvider](./content/meta/ToastProvider.md): <PropsTable :data="[
-{
- 'name': 'disableSwipe',
- 'description': '<p>Whether to disable the ability to swipe to close the toast.</p>\n',
- 'type': 'b...
-- [ToastRoot](./content/meta/ToastRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToastTitle](./content/meta/ToastTitle.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToastViewport](./content/meta/ToastViewport.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [Toggle](./content/meta/Toggle.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToggleGroupItem](./content/meta/ToggleGroupItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToggleGroupRoot](./content/meta/ToggleGroupRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToolbarButton](./content/meta/ToolbarButton.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToolbarLink](./content/meta/ToolbarLink.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToolbarRoot](./content/meta/ToolbarRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToolbarSeparator](./content/meta/ToolbarSeparator.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToolbarToggleGroup](./content/meta/ToolbarToggleGroup.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [ToolbarToggleItem](./content/meta/ToolbarToggleItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TooltipArrow](./content/meta/TooltipArrow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TooltipContent](./content/meta/TooltipContent.md): <PropsTable :data="[
-{
- 'name': 'align',
- 'description': '<p>The preferred alignment against the trigger.\nMay change when collisions occur.</p>\n'...
-- [TooltipPortal](./content/meta/TooltipPortal.md): <PropsTable :data="[
-{
- 'name': 'defer',
- 'description': '<p>Defer the resolving of a Teleport target until other parts of the\napplication have mo...
-- [TooltipProvider](./content/meta/TooltipProvider.md): <PropsTable :data="[
-{
- 'name': 'content',
- 'description': '<p>Default settings that will be used by all tooltip components.</p>\n',
- 'type': 'Tool...
-- [TooltipRoot](./content/meta/TooltipRoot.md): <PropsTable :data="[
-{
- 'name': 'defaultOpen',
- 'description': '<p>The open state of the tooltip when it is initially rendered.\nUse when you do no...
-- [TooltipTrigger](./content/meta/TooltipTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TreeItem](./content/meta/TreeItem.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TreeRoot](./content/meta/TreeRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [TreeVirtualizer](./content/meta/TreeVirtualizer.md): <PropsTable :data="[
-{
- 'name': 'estimateSize',
- 'description': '<p>Estimated size (in px) of each item</p>\n',
- 'type': 'number | ((index: number)...
-- [Viewport](./content/meta/Viewport.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [VisuallyHidden](./content/meta/VisuallyHidden.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerCell](./content/meta/YearPickerCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerCellTrigger](./content/meta/YearPickerCellTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerGrid](./content/meta/YearPickerGrid.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerGridBody](./content/meta/YearPickerGridBody.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerGridRow](./content/meta/YearPickerGridRow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerHeader](./content/meta/YearPickerHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerHeading](./content/meta/YearPickerHeading.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerNext](./content/meta/YearPickerNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerPrev](./content/meta/YearPickerPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearPickerRoot](./content/meta/YearPickerRoot.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerCell](./content/meta/YearRangePickerCell.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerCellTrigger](./content/meta/YearRangePickerCellTrigger.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerGrid](./content/meta/YearRangePickerGrid.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerGridBody](./content/meta/YearRangePickerGridBody.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerGridRow](./content/meta/YearRangePickerGridRow.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerHeader](./content/meta/YearRangePickerHeader.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerHeading](./content/meta/YearRangePickerHeading.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerNext](./content/meta/YearRangePickerNext.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerPrev](./content/meta/YearRangePickerPrev.md): <PropsTable :data="[
-{
- 'name': 'as',
- 'description': '<p>The element or component this component should render as. Can be overwritten by <code>asC...
-- [YearRangePickerRoot](./content/meta/YearRangePickerRoot.md): <PropsTable :data="[
-{
- 'name': 'allowNonContiguousRanges',
- 'description': '<p>When combined with <code>isYearUnavailable</code>, determines wheth...
+- [ListboxVirtualizer](./content/meta/ListboxVirtualizer.md): <SlotsTable :data="[
+{
+ 'name': 'option',
+ 'description': '',
+ 'type': 'null | string | number | bigint | Record<string, any>'
+},
+{
+ 'name': ...
+- [MenubarArrow](./content/meta/MenubarArrow.md): Props
+- [MenubarCheckboxItem](./content/meta/MenubarCheckboxItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [MenubarContent](./content/meta/MenubarContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [MenubarGroup](./content/meta/MenubarGroup.md): Props
+- [MenubarItem](./content/meta/MenubarItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [MenubarItemIndicator](./content/meta/MenubarItemIndicator.md): Props
+- [MenubarLabel](./content/meta/MenubarLabel.md): Props
+- [MenubarMenu](./content/meta/MenubarMenu.md): Props
+- [MenubarPortal](./content/meta/MenubarPortal.md): Props
+- [MenubarRadioGroup](./content/meta/MenubarRadioGroup.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[payload: A...
+- [MenubarRadioItem](./content/meta/MenubarRadioItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects an item (via mouse or keyboard). <br&gt...
+- [MenubarRoot](./content/meta/MenubarRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[value: boo...
+- [MenubarSeparator](./content/meta/MenubarSeparator.md): Props
+- [MenubarSub](./content/meta/MenubarSub.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the submenu changes.</p>\n',
+ 'type'...
+- [MenubarSubContent](./content/meta/MenubarSubContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [MenubarSubTrigger](./content/meta/MenubarSubTrigger.md): Props
+- [MenubarTrigger](./content/meta/MenubarTrigger.md): Props
+- [MonthPickerCell](./content/meta/MonthPickerCell.md): Props
+- [MonthPickerCellTrigger](./content/meta/MonthPickerCellTrigger.md): <SlotsTable :data="[
+{
+ 'name': 'monthValue',
+ 'description': '<p>Current month value (short name)</p>\n',
+ 'type': 'string'
+},
+{
+ 'name': 'disable...
+- [MonthPickerGrid](./content/meta/MonthPickerGrid.md): Props
+- [MonthPickerGridBody](./content/meta/MonthPickerGridBody.md): Props
+- [MonthPickerGridRow](./content/meta/MonthPickerGridRow.md): Props
+- [MonthPickerHeader](./content/meta/MonthPickerHeader.md): Props
+- [MonthPickerHeading](./content/meta/MonthPickerHeading.md): <SlotsTable :data="[
+{
+ 'name': 'headingValue',
+ 'description': '<p>Current year heading</p>\n',
+ 'type': 'string'
+}
+]" />
+</llm-exclude>
+- [MonthPickerNext](./content/meta/MonthPickerNext.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [MonthPickerPrev](./content/meta/MonthPickerPrev.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [MonthPickerRoot](./content/meta/MonthPickerRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [MonthRangePickerCell](./content/meta/MonthRangePickerCell.md): Props
+- [MonthRangePickerCellTrigger](./content/meta/MonthRangePickerCellTrigger.md): <SlotsTable :data="[
+{
+ 'name': 'monthValue',
+ 'description': '<p>Current month value (short name)</p>\n',
+ 'type': 'string'
+},
+{
+ 'name': 'disable...
+- [MonthRangePickerGrid](./content/meta/MonthRangePickerGrid.md): Props
+- [MonthRangePickerGridBody](./content/meta/MonthRangePickerGridBody.md): Props
+- [MonthRangePickerGridRow](./content/meta/MonthRangePickerGridRow.md): Props
+- [MonthRangePickerHeader](./content/meta/MonthRangePickerHeader.md): Props
+- [MonthRangePickerHeading](./content/meta/MonthRangePickerHeading.md): <SlotsTable :data="[
+{
+ 'name': 'headingValue',
+ 'description': '<p>Current year heading</p>\n',
+ 'type': 'string'
+}
+]" />
+</llm-exclude>
+- [MonthRangePickerNext](./content/meta/MonthRangePickerNext.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [MonthRangePickerPrev](./content/meta/MonthRangePickerPrev.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [MonthRangePickerRoot](./content/meta/MonthRangePickerRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [NavigationMenuContent](./content/meta/NavigationMenuContent.md): <EmitsTable :data="[
+{
+ 'name': 'escapeKeyDown',
+ 'description': '<p>Event handler called when the escape key is down.\nCan be prevented.</p>\n',
+ ...
+- [NavigationMenuIndicator](./content/meta/NavigationMenuIndicator.md): Props
+- [NavigationMenuItem](./content/meta/NavigationMenuItem.md): Props
+- [NavigationMenuLink](./content/meta/NavigationMenuLink.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects a link (via mouse or keyboard).</p>\n<p>Ca...
+- [NavigationMenuList](./content/meta/NavigationMenuList.md): Props
+- [NavigationMenuRoot](./content/meta/NavigationMenuRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[value: str...
+- [NavigationMenuSub](./content/meta/NavigationMenuSub.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[value: str...
+- [NavigationMenuTrigger](./content/meta/NavigationMenuTrigger.md): Props
+- [NavigationMenuViewport](./content/meta/NavigationMenuViewport.md): Props
+- [NumberFieldDecrement](./content/meta/NumberFieldDecrement.md): Props
+- [NumberFieldIncrement](./content/meta/NumberFieldIncrement.md): Props
+- [NumberFieldInput](./content/meta/NumberFieldInput.md): Props
+- [NumberFieldRoot](./content/meta/NumberFieldRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[val: numbe...
+- [PaginationEllipsis](./content/meta/PaginationEllipsis.md): Props
+- [PaginationFirst](./content/meta/PaginationFirst.md): Props
+- [PaginationLast](./content/meta/PaginationLast.md): Props
+- [PaginationList](./content/meta/PaginationList.md): <SlotsTable :data="[
+{
+ 'name': 'items',
+ 'description': '<p>Pages item</p>\n',
+ 'type': '{ type: \'ellipsis\'; } | { type: \'page\'; value: number...
+- [PaginationListItem](./content/meta/PaginationListItem.md): Props
+- [PaginationNext](./content/meta/PaginationNext.md): Props
+- [PaginationPrev](./content/meta/PaginationPrev.md): Props
+- [PaginationRoot](./content/meta/PaginationRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:page',
+ 'description': '<p>Event handler called when the page value changes</p>\n',
+ 'type': '[value: numbe...
+- [PinInputInput](./content/meta/PinInputInput.md): Props
+- [PinInputRoot](./content/meta/PinInputRoot.md): <EmitsTable :data="[
+{
+ 'name': 'complete',
+ 'description': '',
+ 'type': '[value: string[]]'
+},
+{
+ 'name': 'update:modelValue',
+ 'description': '<p...
+- [PopoverAnchor](./content/meta/PopoverAnchor.md): Props
+- [PopoverArrow](./content/meta/PopoverArrow.md): Props
+- [PopoverClose](./content/meta/PopoverClose.md): Props
+- [PopoverContent](./content/meta/PopoverContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [PopoverPortal](./content/meta/PopoverPortal.md): Props
+- [PopoverRoot](./content/meta/PopoverRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the popover changes.</p>\n',
+ 'type'...
+- [PopoverTrigger](./content/meta/PopoverTrigger.md): Props
+- [ProgressIndicator](./content/meta/ProgressIndicator.md): Props
+- [ProgressRoot](./content/meta/ProgressRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:max',
+ 'description': '<p>Event handler called when the max value changes</p>\n',
+ 'type': '[value: number]...
+- [RadioGroupIndicator](./content/meta/RadioGroupIndicator.md): Props
+- [RadioGroupItem](./content/meta/RadioGroupItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the user selects a link (via mouse or keyboard).</p>\n<p>Ca...
+- [RadioGroupRoot](./content/meta/RadioGroupRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the radio group value changes</p>\n',
+ 'type': '...
+- [RangeCalendarCell](./content/meta/RangeCalendarCell.md): Props
+- [RangeCalendarCellTrigger](./content/meta/RangeCalendarCellTrigger.md): <SlotsTable :data="[
+{
+ 'name': 'dayValue',
+ 'description': '<p>Current day</p>\n',
+ 'type': 'string'
+},
+{
+ 'name': 'disabled',
+ 'description': '<p...
+- [RangeCalendarGrid](./content/meta/RangeCalendarGrid.md): Props
+- [RangeCalendarGridBody](./content/meta/RangeCalendarGridBody.md): Props
+- [RangeCalendarGridHead](./content/meta/RangeCalendarGridHead.md): Props
+- [RangeCalendarGridRow](./content/meta/RangeCalendarGridRow.md): Props
+- [RangeCalendarHeadCell](./content/meta/RangeCalendarHeadCell.md): Props
+- [RangeCalendarHeader](./content/meta/RangeCalendarHeader.md): Props
+- [RangeCalendarHeading](./content/meta/RangeCalendarHeading.md): <SlotsTable :data="[
+{
+ 'name': 'headingValue',
+ 'description': '<p>Current month and year</p>\n',
+ 'type': 'string'
+}
+]" />
+</llm-exclude>
+- [RangeCalendarNext](./content/meta/RangeCalendarNext.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [RangeCalendarPrev](./content/meta/RangeCalendarPrev.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [RangeCalendarRoot](./content/meta/RangeCalendarRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [RovingFocusGroup](./content/meta/RovingFocusGroup.md): <EmitsTable :data="[
+{
+ 'name': 'entryFocus',
+ 'description': '<p>Event handler called when container is being focused. Can be prevented.</p>\n',
+ ...
+- [RovingFocusItem](./content/meta/RovingFocusItem.md): Props
+- [ScrollAreaCorner](./content/meta/ScrollAreaCorner.md): Props
+- [ScrollAreaRoot](./content/meta/ScrollAreaRoot.md): <MethodsTable :data="[
+{
+ 'name': 'scrollTop',
+ 'description': '<p>Scroll viewport to top</p>\n',
+ 'type': '() => void'
+},
+{
+ 'name': 'scrollTop...
+- [ScrollAreaScrollbar](./content/meta/ScrollAreaScrollbar.md): Props
+- [ScrollAreaThumb](./content/meta/ScrollAreaThumb.md): Props
+- [ScrollAreaViewport](./content/meta/ScrollAreaViewport.md): Props
+- [SelectArrow](./content/meta/SelectArrow.md): Props
+- [SelectContent](./content/meta/SelectContent.md): <EmitsTable :data="[
+{
+ 'name': 'closeAutoFocus',
+ 'description': '<p>Event handler called when auto-focusing on close.\nCan be prevented.</p>\n',
+...
+- [SelectGroup](./content/meta/SelectGroup.md): Props
+- [SelectIcon](./content/meta/SelectIcon.md): Props
+- [SelectItem](./content/meta/SelectItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the selecting item. <br> It can be prevented by calli...
+- [SelectItemIndicator](./content/meta/SelectItemIndicator.md): Props
+- [SelectItemText](./content/meta/SelectItemText.md): Props
+- [SelectLabel](./content/meta/SelectLabel.md): Props
+- [SelectPortal](./content/meta/SelectPortal.md): Props
+- [SelectRoot](./content/meta/SelectRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes.</p>\n',
+ 'type': '[value: Acc...
+- [SelectScrollDownButton](./content/meta/SelectScrollDownButton.md): Props
+- [SelectScrollUpButton](./content/meta/SelectScrollUpButton.md): Props
+- [SelectSeparator](./content/meta/SelectSeparator.md): Props
+- [SelectTrigger](./content/meta/SelectTrigger.md): Props
+- [SelectValue](./content/meta/SelectValue.md): <SlotsTable :data="[
+{
+ 'name': 'selectedLabel',
+ 'description': '',
+ 'type': 'string[]'
+},
+{
+ 'name': 'modelValue',
+ 'description': '',
+ 'type': '...
+- [SelectViewport](./content/meta/SelectViewport.md): Props
+- [Separator](./content/meta/Separator.md): Props
+- [SliderRange](./content/meta/SliderRange.md): Props
+- [SliderRoot](./content/meta/SliderRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the slider value changes</p>\n',
+ 'type': '[payl...
+- [SliderThumb](./content/meta/SliderThumb.md): Props
+- [SliderTrack](./content/meta/SliderTrack.md): Props
+- [SplitterGroup](./content/meta/SplitterGroup.md): <EmitsTable :data="[
+{
+ 'name': 'layout',
+ 'description': '<p>Event handler called when group layout changes</p>\n',
+ 'type': '[val: number[]]'
+}
+]...
+- [SplitterPanel](./content/meta/SplitterPanel.md): <EmitsTable :data="[
+{
+ 'name': 'collapse',
+ 'description': '<p>Event handler called when panel is collapsed.</p>\n',
+ 'type': '[]'
+},
+{
+ 'name': '...
+- [SplitterResizeHandle](./content/meta/SplitterResizeHandle.md): <EmitsTable :data="[
+{
+ 'name': 'dragging',
+ 'description': '<p>Event handler called when dragging the handler.</p>\n',
+ 'type': '[isDragging: bool...
+- [StepperDescription](./content/meta/StepperDescription.md): Props
+- [StepperIndicator](./content/meta/StepperIndicator.md): <SlotsTable :data="[
+{
+ 'name': 'step',
+ 'description': '<p>Current step</p>\n',
+ 'type': 'number'
+}
+]" />
+</llm-exclude>
+- [StepperItem](./content/meta/StepperItem.md): <SlotsTable :data="[
+{
+ 'name': 'state',
+ 'description': '<p>The current state of the stepper item</p>\n',
+ 'type': '\'active\' | \'completed\' | \...
+- [StepperRoot](./content/meta/StepperRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes</p>\n',
+ 'type': '[payload: nu...
+- [StepperSeparator](./content/meta/StepperSeparator.md): Props
+- [StepperTitle](./content/meta/StepperTitle.md): Props
+- [StepperTrigger](./content/meta/StepperTrigger.md): Props
+- [SwitchRoot](./content/meta/SwitchRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value of the switch changes.</p>\n',
+ 'type'...
+- [SwitchThumb](./content/meta/SwitchThumb.md): Props
+- [TabsContent](./content/meta/TabsContent.md): Props
+- [TabsIndicator](./content/meta/TabsIndicator.md): <MethodsTable :data="[
+{
+ 'name': 'updateIndicatorStyle',
+ 'description': '',
+ 'type': '() => void'
+}
+]" />
+</llm-exclude>
+- [TabsList](./content/meta/TabsList.md): Props
+- [TabsRoot](./content/meta/TabsRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value changes</p>\n',
+ 'type': '[payload: St...
+- [TabsTrigger](./content/meta/TabsTrigger.md): Props
+- [TagsInputClear](./content/meta/TagsInputClear.md): Props
+- [TagsInputInput](./content/meta/TagsInputInput.md): Props
+- [TagsInputItem](./content/meta/TagsInputItem.md): Props
+- [TagsInputItemDelete](./content/meta/TagsInputItemDelete.md): Props
+- [TagsInputItemText](./content/meta/TagsInputItemText.md): Props
+- [TagsInputRoot](./content/meta/TagsInputRoot.md): <EmitsTable :data="[
+{
+ 'name': 'addTag',
+ 'description': '<p>Event handler called when tag is added</p>\n',
+ 'type': '[payload: AcceptableInputVal...
+- [TimeFieldInput](./content/meta/TimeFieldInput.md): Props
+- [TimeFieldRoot](./content/meta/TimeFieldRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [TimeRangeFieldInput](./content/meta/TimeRangeFieldInput.md): Props
+- [TimeRangeFieldRoot](./content/meta/TimeRangeFieldRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [ToastAction](./content/meta/ToastAction.md): Props
+- [ToastClose](./content/meta/ToastClose.md): Props
+- [ToastDescription](./content/meta/ToastDescription.md): Props
+- [ToastPortal](./content/meta/ToastPortal.md): Props
+- [ToastProvider](./content/meta/ToastProvider.md): Props
+- [ToastRoot](./content/meta/ToastRoot.md): <EmitsTable :data="[
+{
+ 'name': 'escapeKeyDown',
+ 'description': '<p>Event handler called when the escape key is down. It can be prevented by calli...
+- [ToastTitle](./content/meta/ToastTitle.md): Props
+- [ToastViewport](./content/meta/ToastViewport.md): Props
+- [Toggle](./content/meta/Toggle.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value of the toggle changes.</p>\n',
+ 'type'...
+- [ToggleGroupItem](./content/meta/ToggleGroupItem.md): <SlotsTable :data="[
+{
+ 'name': 'modelValue',
+ 'description': '<p>Current value</p>\n',
+ 'type': 'boolean'
+},
+{
+ 'name': 'state',
+ 'description': '...
+- [ToggleGroupRoot](./content/meta/ToggleGroupRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value of the toggle changes.</p>\n',
+ 'type'...
+- [ToolbarButton](./content/meta/ToolbarButton.md): Props
+- [ToolbarLink](./content/meta/ToolbarLink.md): Props
+- [ToolbarRoot](./content/meta/ToolbarRoot.md): Props
+- [ToolbarSeparator](./content/meta/ToolbarSeparator.md): Props
+- [ToolbarToggleGroup](./content/meta/ToolbarToggleGroup.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called when the value of the toggle changes.</p>\n',
+ 'type'...
+- [ToolbarToggleItem](./content/meta/ToolbarToggleItem.md): Props
+- [TooltipArrow](./content/meta/TooltipArrow.md): Props
+- [TooltipContent](./content/meta/TooltipContent.md): <EmitsTable :data="[
+{
+ 'name': 'escapeKeyDown',
+ 'description': '<p>Event handler called when focus moves to the destructive action after opening....
+- [TooltipPortal](./content/meta/TooltipPortal.md): Props
+- [TooltipProvider](./content/meta/TooltipProvider.md): Props
+- [TooltipRoot](./content/meta/TooltipRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:open',
+ 'description': '<p>Event handler called when the open state of the tooltip changes.</p>\n',
+ 'type'...
+- [TooltipTrigger](./content/meta/TooltipTrigger.md): Props
+- [TreeItem](./content/meta/TreeItem.md): <EmitsTable :data="[
+{
+ 'name': 'select',
+ 'description': '<p>Event handler called when the selecting item. <br> It can be prevented by calli...
+- [TreeRoot](./content/meta/TreeRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:expanded',
+ 'description': '',
+ 'type': '[val: string[]]'
+},
+{
+ 'name': 'update:modelValue',
+ 'description'...
+- [TreeVirtualizer](./content/meta/TreeVirtualizer.md): <SlotsTable :data="[
+{
+ 'name': 'item',
+ 'description': '',
+ 'type': 'FlattenedItem<Record<string, any>>'
+},
+{
+ 'name': 'virtualizer',
+...
+- [Viewport](./content/meta/Viewport.md): Props
+- [VisuallyHidden](./content/meta/VisuallyHidden.md): Props
+- [YearPickerCell](./content/meta/YearPickerCell.md): Props
+- [YearPickerCellTrigger](./content/meta/YearPickerCellTrigger.md): <SlotsTable :data="[
+{
+ 'name': 'yearValue',
+ 'description': '<p>Current year value</p>\n',
+ 'type': 'string'
+},
+{
+ 'name': 'disabled',
+ 'descripti...
+- [YearPickerGrid](./content/meta/YearPickerGrid.md): Props
+- [YearPickerGridBody](./content/meta/YearPickerGridBody.md): Props
+- [YearPickerGridRow](./content/meta/YearPickerGridRow.md): Props
+- [YearPickerHeader](./content/meta/YearPickerHeader.md): Props
+- [YearPickerHeading](./content/meta/YearPickerHeading.md): <SlotsTable :data="[
+{
+ 'name': 'headingValue',
+ 'description': '<p>Current year range heading</p>\n',
+ 'type': 'string'
+}
+]" />
+</llm-exclude>
+- [YearPickerNext](./content/meta/YearPickerNext.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [YearPickerPrev](./content/meta/YearPickerPrev.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [YearPickerRoot](./content/meta/YearPickerRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
+- [YearRangePickerCell](./content/meta/YearRangePickerCell.md): Props
+- [YearRangePickerCellTrigger](./content/meta/YearRangePickerCellTrigger.md): <SlotsTable :data="[
+{
+ 'name': 'yearValue',
+ 'description': '<p>Current year value</p>\n',
+ 'type': 'string'
+},
+{
+ 'name': 'disabled',
+ 'descripti...
+- [YearRangePickerGrid](./content/meta/YearRangePickerGrid.md): Props
+- [YearRangePickerGridBody](./content/meta/YearRangePickerGridBody.md): Props
+- [YearRangePickerGridRow](./content/meta/YearRangePickerGridRow.md): Props
+- [YearRangePickerHeader](./content/meta/YearRangePickerHeader.md): Props
+- [YearRangePickerHeading](./content/meta/YearRangePickerHeading.md): <SlotsTable :data="[
+{
+ 'name': 'headingValue',
+ 'description': '<p>Current year range heading</p>\n',
+ 'type': 'string'
+}
+]" />
+</llm-exclude>
+- [YearRangePickerNext](./content/meta/YearRangePickerNext.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [YearRangePickerPrev](./content/meta/YearRangePickerPrev.md): <SlotsTable :data="[
+{
+ 'name': 'disabled',
+ 'description': '<p>Current disable state</p>\n',
+ 'type': 'boolean'
+}
+]" />
+</llm-exclude>
+- [YearRangePickerRoot](./content/meta/YearRangePickerRoot.md): <EmitsTable :data="[
+{
+ 'name': 'update:modelValue',
+ 'description': '<p>Event handler called whenever the model value changes</p>\n',
+ 'type': '[d...
