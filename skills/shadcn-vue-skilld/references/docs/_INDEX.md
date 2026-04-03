@@ -93,7 +93,9 @@ questions or feedback, please reach out to the Figma file maintainers.
 
 ## dark-mode (4)
 
-- [Vite](./dark-mode/01.vite.md): Optional, to include icons for theme button.
+- [Vite](./dark-mode/01.vite.md): ::vue-school-link{lesson="dark-mode-with-shadcn-vue" placement="top"}
+Watch a Vue School video about how to enable dark mode with shadcn-vue.
+::
 - [Nuxt](./dark-mode/02.nuxt.md): Then, add @nuxtjs/color-mode to the modules section of your nuxt.config.ts
 - [Vitepress](./dark-mode/03.vitepress.md): Optional, to include icons for theme button.
 - [Astro](./dark-mode/04.astro.md): Optional, to include icons for theme button.
@@ -105,7 +107,9 @@ questions or feedback, please reach out to the Figma file maintainers.
 
 ## installation (5)
 
-- [Vite](./installation/01.vite.md): Start by creating a new Vue project using vite:
+- [Vite](./installation/01.vite.md): ::vue-school-link{lesson="install-shadcn-vue" placement="top"}
+Watch a Vue School video on how to install shadcn-vue.
+::
 - [Nuxt](./installation/02.nuxt.md): Start by creating a new Nuxt project using create-nuxt-app:
 - [Astro](./installation/03.astro.md): Start by creating a new Astro project:
 - [Laravel](./installation/04.laravel.md): Start by creating a new Laravel project with Inertia and Vue using the laravel installer laravel new my-app:
