@@ -815,7 +815,7 @@ For TS devs, you should also make a small change to your /src-ssr/middlewares fi
 + import { type Request, type Response } from 'express';
 // ...
 - app.get(resolve.urlPath('*'), (req, res) => {
-+ app.get(resolve.urlPath('{*path}'), (req: Request, res: Response) => {
++ app.get(resolve.urlPath('*'), (req: Request, res: Response) => {
 ```
 
 There are some additions to the `/quasar.config` file too:
@@ -1009,9 +1009,9 @@ Your background and content scripts have the `.ts` extension. Use that extension
 import { createBridge } from '#q-app/bex/background'
 
 /**
- * Call useBridge() to enable communication with the app & content scripts
+ * Call createBridge() to enable communication with the app & content scripts
  * (and between the app & content scripts), otherwise skip calling
- * useBridge() and use no bridge.
+ * createBridge() and use no bridge.
  */
 const bridge = createBridge({ debug: false })
 <<| js Old way |>>

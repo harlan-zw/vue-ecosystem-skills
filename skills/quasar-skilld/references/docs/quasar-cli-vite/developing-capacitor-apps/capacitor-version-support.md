@@ -16,6 +16,32 @@ If you previously used a lower version of Capacitor and you want to upgrade to a
 
 It would also be wise to check the changelog of Capacitor itself to see what breaking changes it has.
 
+## Capacitor v8
+
+::: warning Requirements
+
+- Node v22.21.1+
+- Xcode 16+ (for iOS)
+- Xcode Command Line Tools
+- Homebrew
+- Cocoapods
+- Android Studio 2024.2.1+
+- Android SDK (API 23+)
+  :::
+
+Assuming that you've installed Capacitor mode already, this is how your dependencies in `/src-capacitor/package.json` should look like:
+
+```json /src-capacitor/package.json
+dependencies: {
+  "@capacitor/app": "^8.0.0",
+  "@capacitor/cli": "^8.0.0",
+  "@capacitor/core": "^8.0.0",
+  "@capacitor/splash-screen": "^8.0.0"
+}
+```
+
+The `@capacitor/app` and `@capacitor/splash-screen` are optional, but it helps Quasar with some UI functionality if they are installed.
+
 ## Capacitor v7
 
 ::: warning Requirements

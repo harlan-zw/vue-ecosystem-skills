@@ -251,7 +251,7 @@ Now let's see what it contains:
 export default ({ app, resolve, render, serve }) => {
   // we capture any other Express route and hand it
   // over to Vue and Vue Router to render our page
-  app.get(resolve.urlPath('{*path}'), (req, res) => {
+  app.get(resolve.urlPath('*'), (req, res) => {
     res.setHeader('Content-Type', 'text/html')
 
     render({ req, res })
@@ -320,7 +320,7 @@ The order in which the SSR middlewares are applied matters. So it might be wise 
 
 ```js
 export default defineSsrMiddleware(({ app, resolve }) => {
-  app.all(resolve.urlPath('{*path}'), (req, _, next) => {
+  app.all(resolve.urlPath('*'), (req, _, next) => {
     console.log('someone requested:', req.url)
     next()
   })

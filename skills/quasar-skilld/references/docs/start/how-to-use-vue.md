@@ -3,7 +3,7 @@ title: How To Use Vue
 desc: Quick tutorial about Vue principles and how to use it with Quasar.
 ---
 
-Before you begin with Quasar, it is a good idea to get acquainted with ES6 and have a fairly good knowledge about how Vue 3 works. (Quick overview of ES6 and ES6 complete list of features -- don't worry, you don't need to understand ALL of ES6). For devs experienced with reactive UIs, the Vue 3 documentation itself takes a half-day at most to read top-to-bottom and will help you understand how Quasar components can be used and configured.
+Before you begin with Quasar, it is a good idea to have a fairly good knowledge about how Vue 3 works. For devs experienced with reactive UIs, the Vue 3 documentation itself takes a half-day at most to read top-to-bottom and will help you understand how Quasar components can be used and configured.
 
 ::: tip
 If you are a total beginner to Vue and reactive UI libraries and want a good tutorial, we recommend you take a look at [Vue and Quasar video tutorials](/video-tutorials).

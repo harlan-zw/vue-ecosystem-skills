@@ -392,7 +392,7 @@ export const serveStaticContent = defineSsrServeStaticContent(
 import { defineSsrMiddleware } from '#q-app/wrappers'
 
 export default defineSsrMiddleware(({ app, resolve, render, serve }) => {
-  app.get(resolve.urlPath('{*path}'), async (req, res) => {
+  app.get(resolve.urlPath('*'), async (req, res) => {
     res.type('text/html')
 
     try {

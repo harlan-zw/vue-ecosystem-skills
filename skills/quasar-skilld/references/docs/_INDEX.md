@@ -414,7 +414,7 @@ Quasar was born because I felt that a full featured framework to build responsiv
 
 ## start (7)
 
-- [How To Use Vue](./start/how-to-use-vue.md): Before you begin with Quasar, it is a good idea to get acquainted with ES6 and have a fairly good knowledge about how Vue 3 works. (Quick overview ...
+- [How To Use Vue](./start/how-to-use-vue.md): Before you begin with Quasar, it is a good idea to have a fairly good knowledge about how Vue 3 works. For devs experienced with reactive UIs, the ...
 - [Pick a Quasar Flavour](./start/pick-quasar-flavour.md): There are four ways of using Quasar. Pick the one that suits you best:
 - [Quasar Playground](./start/playground.md): You can fork and use these links for reporting issues on GitHub too. These links (obviously) use the Quasar UMD version.
 - [Quasar CLI](./start/quasar-cli.md): Quasar CLI is the pride of Quasar Framework. You can seamlessly build:

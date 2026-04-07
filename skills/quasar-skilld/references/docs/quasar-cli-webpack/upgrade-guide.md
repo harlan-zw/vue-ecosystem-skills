@@ -1469,9 +1469,9 @@ Your background and content scripts have the `.ts` extension. Use that extension
 import { createBridge } from '#q-app/bex/background'
 
 /**
- * Call useBridge() to enable communication with the app & content scripts
+ * Call createBridge() to enable communication with the app & content scripts
  * (and between the app & content scripts), otherwise skip calling
- * useBridge() and use no bridge.
+ * createBridge() and use no bridge.
  */
 const bridge = createBridge({ debug: false })
 <<| js Old way |>>

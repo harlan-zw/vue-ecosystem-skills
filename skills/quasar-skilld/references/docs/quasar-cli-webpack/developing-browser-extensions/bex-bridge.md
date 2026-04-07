@@ -44,9 +44,9 @@ You can have multiple background scripts specified in your manifest.json, howeve
 import { createBridge } from '#q-app/bex/background'
 
 /**
- * Call useBridge() to enable communication with the app & content scripts
+ * Call createBridge() to enable communication with the app & content scripts
  * (and between the app & content scripts), otherwise skip calling
- * useBridge() and use no bridge.
+ * createBridge() and use no bridge.
  */
 const bridge = createBridge({ debug: false })
 ```
