@@ -1,5 +1,5 @@
 ---
-total: 29
+total: 21
 ---
 
 # Docs Index
@@ -14,46 +14,41 @@ total: 29
 
 ## framework/vue/reference/functions (2)
 
-- [shallow](./framework/vue/reference/functions/shallow.md): Defined in: index.ts:41
-- [useStore](./framework/vue/reference/functions/useStore.md): Defined in: index.ts:12
+- [shallow](./framework/vue/reference/functions/shallow.md): Defined in: index.ts:55
+- [useStore](./framework/vue/reference/functions/useStore.md): Defined in: index.ts:16
 
 ## framework/vue/reference (1)
 
 - [@tanstack/vue-store](./framework/vue/reference/index.md)
 
-## reference/classes (2)
+## reference/classes (3)
 
-- [ReadonlyStore](./reference/classes/ReadonlyStore.md): Defined in: store.ts:31
-- [Store](./reference/classes/Store.md): Defined in: store.ts:4
+- [Derived](./reference/classes/Derived.md): Defined in: derived.ts:61
+- [Effect](./reference/classes/Effect.md): Defined in: effect.ts:17
+- [Store](./reference/classes/Store.md): Defined in: store.ts:28
 
-## reference/functions (6)
+## reference/functions (2)
 
-- [batch](./reference/functions/batch.md): Defined in: atom.ts:62
-- [createAsyncAtom](./reference/functions/createAsyncAtom.md): Defined in: atom.ts:100
-- [createAtom](./reference/functions/createAtom.md): Defined in: atom.ts:138
-- [createStore](./reference/functions/createStore.md): Defined in: store.ts:55
-- [flush](./reference/functions/flush.md): Defined in: atom.ts:81
-- [toObserver](./reference/functions/toObserver.md): Defined in: atom.ts:12
+- [batch](./reference/functions/batch.md): Defined in: scheduler.ts:133
+- [isUpdaterFunction](./reference/functions/isUpdaterFunction.md): Defined in: types.ts:27
 
 ## reference (1)
 
 - [@tanstack/store](./reference/index.md)
 
-## reference/interfaces (10)
+## reference/interfaces (3)
 
-- [Atom](./reference/interfaces/Atom.md): Defined in: types.ts:42
-- [AtomOptions](./reference/interfaces/AtomOptions.md): Defined in: types.ts:47
-- [BaseAtom](./reference/interfaces/BaseAtom.md): Defined in: types.ts:33
-- [InternalBaseAtom](./reference/interfaces/InternalBaseAtom.md): Defined in: types.ts:35
-- [InternalReadonlyAtom](./reference/interfaces/InternalReadonlyAtom.md): Defined in: types.ts:53
-- [InteropSubscribable](./reference/interfaces/InteropSubscribable.md): Defined in: types.ts:5
-- [Readable](./reference/interfaces/Readable.md): Defined in: types.ts:29
-- [ReadonlyAtom](./reference/interfaces/ReadonlyAtom.md): Defined in: types.ts:67
-- [Subscribable](./reference/interfaces/Subscribable.md): Defined in: types.ts:20
-- [Subscription](./reference/interfaces/Subscription.md): Defined in: types.ts:16
+- [DerivedFnProps](./reference/interfaces/DerivedFnProps.md): Defined in: derived.ts:30
+- [DerivedOptions](./reference/interfaces/DerivedOptions.md): Defined in: derived.ts:45
+- [StoreOptions](./reference/interfaces/StoreOptions.md): Defined in: store.ts:5
 
-## reference/type-aliases (3)
+## reference/type-aliases (2)
 
-- [AnyAtom](./reference/type-aliases/AnyAtom.md): Defined in: types.ts:51
-- [Observer](./reference/type-aliases/Observer.md): Defined in: types.ts:10
-- [Selection](./reference/type-aliases/Selection.md): Defined in: types.ts:3
+- [UnwrapDerivedOrStore](./reference/type-aliases/UnwrapDerivedOrStore.md): Defined in: derived.ts:5
+- [Updater](./reference/type-aliases/Updater.md): Defined in: types.ts:9
+
+## reference/variables (3)
+
+- [__depsThatHaveWrittenThisTick](./reference/variables/depsThatHaveWrittenThisTick.md): Defined in: scheduler.ts:28
+- [__derivedToStore](./reference/variables/derivedToStore.md): Defined in: scheduler.ts:23
+- [__storeToDerived](./reference/variables/storeToDerived.md): Defined in: scheduler.ts:19

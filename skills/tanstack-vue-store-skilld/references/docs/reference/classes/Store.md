@@ -3,101 +3,145 @@ id: Store
 title: Store
 ---
 
-# Class: Store\<T\>
+# Class: Store\<TState, TUpdater\>
 
-Defined in: store.ts:4
+Defined in: store.ts:28
 
 ## Type Parameters
 
-### T
+### TState
 
-`T`
+`TState`
+
+### TUpdater
+
+`TUpdater` *extends* `AnyUpdater` = (`cb`) => `TState`
 
 ## Constructors
 
 ### Constructor
 
 ```ts
-new Store<T>(getValue): Store<T>;
+new Store<TState, TUpdater>(initialState, options?): Store<TState, TUpdater>;
 ```
 
-Defined in: store.ts:6
+Defined in: store.ts:37
 
 #### Parameters
 
-##### getValue
+##### initialState
 
-(`prev?`) => `T`
+`TState`
 
-#### Returns
+##### options?
 
-`Store`\<`T`\>
-
-### Constructor
-
-```ts
-new Store<T>(initialValue): Store<T>;
-```
-
-Defined in: store.ts:7
-
-#### Parameters
-
-##### initialValue
-
-`T`
+[`StoreOptions`](../../interfaces/StoreOptions.md)\<`TState`, `TUpdater`\>
 
 #### Returns
 
-`Store`\<`T`\>
+`Store`\<`TState`, `TUpdater`\>
 
-## Accessors
+## Properties
 
-### state
-
-#### Get Signature
+### listeners
 
 ```ts
-get state(): T;
+listeners: Set<Listener<TState>>;
 ```
 
-Defined in: store.ts:18
-
-##### Returns
-
-`T`
-
-## Methods
-
-### get()
-
-```ts
-get(): T;
-```
-
-Defined in: store.ts:21
-
-#### Returns
-
-`T`
+Defined in: store.ts:32
 
 ***
 
+### options?
+
+```ts
+optional options: StoreOptions<TState, TUpdater>;
+```
+
+Defined in: store.ts:35
+
+***
+
+### prevState
+
+```ts
+prevState: TState;
+```
+
+Defined in: store.ts:34
+
+***
+
+### state
+
+```ts
+state: TState;
+```
+
+Defined in: store.ts:33
+
+## Methods
+
 ### setState()
+
+#### Call Signature
 
 ```ts
 setState(updater): void;
 ```
 
-Defined in: store.ts:15
+Defined in: store.ts:55
 
-#### Parameters
+Update the store state safely with improved type checking
 
-##### updater
+##### Parameters
 
-(`prev`) => `T`
+###### updater
 
-#### Returns
+(`prevState`) => `TState`
+
+##### Returns
+
+`void`
+
+#### Call Signature
+
+```ts
+setState(updater): void;
+```
+
+Defined in: store.ts:56
+
+Update the store state safely with improved type checking
+
+##### Parameters
+
+###### updater
+
+`TState`
+
+##### Returns
+
+`void`
+
+#### Call Signature
+
+```ts
+setState(updater): void;
+```
+
+Defined in: store.ts:57
+
+Update the store state safely with improved type checking
+
+##### Parameters
+
+###### updater
+
+`TUpdater`
+
+##### Returns
 
 `void`
 
@@ -106,17 +150,23 @@ Defined in: store.ts:15
 ### subscribe()
 
 ```ts
-subscribe(observerOrFn): Subscription;
+subscribe(listener): () => void;
 ```
 
-Defined in: store.ts:24
+Defined in: store.ts:43
 
 #### Parameters
 
-##### observerOrFn
+##### listener
 
-[`Observer`](../type-aliases/Observer.md)\<`T`\> | (`value`) => `void`
+`Listener`\<`TState`\>
 
 #### Returns
 
-[`Subscription`](../interfaces/Subscription.md)
+```ts
+(): void;
+```
+
+##### Returns
+
+`void`

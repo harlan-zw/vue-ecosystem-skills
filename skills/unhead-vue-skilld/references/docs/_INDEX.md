@@ -1,5 +1,5 @@
 ---
-total: 103
+total: 109
 ---
 
 # Docs Index
@@ -7,7 +7,7 @@ total: 103
 ## 0.nuxt/head/guides/0.get-started (2)
 
 - [Installation](./0.nuxt/head/guides/0.get-started/1.installation.md): Quick Start: Unhead is built into Nuxt 3 - just use useHead(), useSeoMeta(), or useScript() directly in your components. No installation needed!
-- [Upgrade Guide](./0.nuxt/head/guides/0.get-started/1.migration.md): As of Nuxt 3.16, Unhead v2 is the default version for Nuxt.
+- [Upgrade Guide](./0.nuxt/head/guides/0.get-started/1.migration.md): Unhead v3 removes all deprecated APIs and focuses on performance improvements.
 
 ## 0.nuxt/head/guides/1.core-concepts (2)
 
@@ -22,15 +22,14 @@ total: 103
 
 - [Vue Components](./0.nuxt/schema-org/guides/1.core-concepts/5.vue-components.md):  Using the components API is no longer recommended. You should use the composables for better developer experience.
 
-## 0.typescript/head/guides/0.get-started (2)
+## 0.typescript/head/guides/0.get-started (1)
 
 - [Installation](./0.typescript/head/guides/0.get-started/1.installation.md): Unhead is built for JavaScript applications that need to manage the head of their document in both server and client-rendered environments.
-- [Upgrade Guide](./0.typescript/head/guides/0.get-started/1.migration.md): With the release of Unhead v2, we now have first-class support for other frameworks. However, this guide will focus on
-the changes that affec TypeS...
 
-## 0.typescript/head/guides/1.core-concepts (1)
+## 0.typescript/head/guides/1.core-concepts (2)
 
 - [Wrapping Composables](./0.typescript/head/guides/1.core-concepts/0.wrapping-composables.md): Quick Answer: Create custom composables by wrapping useHead() with your own defaults. Pass the head instance to reuse across your application.
+- [Streaming SSR](./0.typescript/head/guides/1.core-concepts/5.streaming.md): Standard SSR waits for everything to render before sending HTML. Streaming sends the document shell immediately, then streams content as async oper...
 
 ## 0.typescript/schema-org/guides/get-started (1)
 
@@ -41,14 +40,15 @@ Vite SPA
 ## 0.vue/head/guides/0.get-started (2)
 
 - [Installation](./0.vue/head/guides/0.get-started/1.installation.md): Quick Start: Install @unhead/vue, create head with createHead(), and use app.use(head). For SSR, use separate client/server entry points with trans...
-- [Upgrade Guide](./0.vue/head/guides/0.get-started/1.migration.md): While Unhead has always been framework-agnostic, the most adoption was by the Vue ecosystem.
+- [Upgrade Guide](./0.vue/head/guides/0.get-started/1.migration.md): Unhead v3 removes all deprecated APIs and focuses on performance improvements. This guide covers the breaking changes for Vue users.
 
-## 0.vue/head/guides/1.core-concepts (4)
+## 0.vue/head/guides/1.core-concepts (5)
 
 - [Context & Reactivity](./0.vue/head/guides/1.core-concepts/0.reactivity-and-context.md): Quick Answer: In Vue, pass refs and computed values directly to useHead(). Changes are tracked automatically. Use injectHead() in composables outsi...
 - [<Head> Component](./0.vue/head/guides/1.core-concepts/1.components.md): Quick Answer: Use <Head>, <Title>, , <Link>, and  components for template-based head management. Import from @unhead/vue/components.
 - [Options API](./0.vue/head/guides/1.core-concepts/3.options-api.md): Quick Answer: Use the head() option in Vue components to define head tags. It receives the component instance as this, allowing access to data and ...
 - [Pause DOM Rendering](./0.vue/head/guides/1.core-concepts/4.pausing-dom-rendering.md): Pausing the DOM rendering is useful for when you want to ensure your page is fully loaded before updating tags.
+- [Streaming SSR](./0.vue/head/guides/1.core-concepts/5.streaming.md): Standard SSR waits for everything to render before sending HTML. Streaming sends the document shell immediately, then streams content as async comp...
 
 ## 0.vue/schema-org/guides/0.get-started (1)
 
@@ -57,6 +57,16 @@ Vite SPA
 ## 0.vue/schema-org/guides/1.core-concepts (1)
 
 - [Vue Components](./0.vue/schema-org/guides/1.core-concepts/5.vue-components.md):  Using the components API is no longer recommended. You should use the composables for better developer experience.
+
+## 6.migration-guide (2)
+
+- [v3](./6.migration-guide/1.v3.md): Unhead v3 removes all deprecated APIs and focuses on performance improvements. This guide covers the breaking changes.
+- [v2](./6.migration-guide/2.v2.md): With the release of Unhead v2, we now have first-class support for other frameworks. This guide covers the v1 to v2 migration.
+
+## 7.releases (2)
+
+- [v3](./7.releases/1.v3.md): Unhead v3 rebuilds the rendering engine from the ground up. The motivation: streaming SSR. Frameworks like Nuxt, SolidStart, and SvelteKit stream H...
+- [v2](./7.releases/2.v2.md): I'm thrilled to announce the release of Unhead v2, a major milestone in Unhead becoming the most performant and feature-complete head manager for a...
 
 ## head/1.guides/0.get-started (3)
 
@@ -74,36 +84,36 @@ Vite SPA
 - [Handling DOM Events](./head/1.guides/1.core-concepts/8.dom-event-handling.md): Quick Answer: Use onload and onerror attributes in your useHead() script tags. For advanced event handling, use useScript() with onLoaded() and onE...
 - [Script Loading](./head/1.guides/1.core-concepts/9.loading-scripts.md): The useScript composable provides a powerful way to load and manage external scripts in your application. Built on top of useHead(){lang="ts"}, it ...
 
-## head/1.guides/2.advanced (3)
+## head/1.guides/build-plugins (5)
 
-- [Extending Unhead](./head/1.guides/2.advanced/11.extending-unhead.md): Unhead is designed with extensibility in mind, providing lower-level primitives that can be composed to create powerful functionality. This guide e...
-- [Bundle Optimizations](./head/1.guides/2.advanced/7.client-only-tags.md): Quick Answer: To reduce bundle size, use import.meta.client to conditionally add tags only on the client. For Vite, use the Unhead Vite plugin to t...
-- [Build Optimization Plugins](./head/1.guides/2.advanced/9.vite-plugin.md): Quick Answer: The Unhead Vite plugin enables build-time optimizations like tree-shaking server-only code and transforming useSeoMeta() for smaller ...
+- [Build Plugins](./head/1.guides/build-plugins/0.overview.md): Quick Answer: Each framework package ships a unified Vite plugin at @unhead/{framework}/vite that handles build optimizations. One import, one plug...
+- [Tree-Shaking](./head/1.guides/build-plugins/1.tree-shaking.md): Quick Answer: The tree-shaking transform strips deprecated server composables and useSchemaOrg calls from client bundles so they never ship to the ...
+- [useSeoMeta Transform](./head/1.guides/build-plugins/2.seo-meta-transform.md): Quick Answer: The useSeoMeta transform rewrites useSeoMeta() calls into equivalent useHead() calls at build time. This removes the runtime meta-key...
+- [Minify Transform](./head/1.guides/build-plugins/3.minify-transform.md): Quick Answer: The minify transform runs at build time and minifies static string literals inside useHead() script and style tags. Uses heavier tool...
+- [Devtools](./head/1.guides/build-plugins/4.devtools.md): Quick Answer: The Unhead devtools integration adds a panel to Vite DevTools showing all active head tags, entries, SEO overview, plugins, and sourc...
 
-## head/1.guides/plugins (4)
+## head/1.guides/plugins (6)
 
 - [Template Params Plugin](./head/1.guides/plugins/6.template-params.md): Quick Answer: Template params let you use placeholders like %s and %siteName in your head tags. Configure them with templateParams: { siteName: 'My...
 - [Alias Sorting](./head/1.guides/plugins/alias-sorting.md): Quick Answer: The Alias Sorting plugin lets you control head tag order using readable before: and after: prefixes instead of arbitrary numbers. Use...
 - [Canonical Plugin](./head/1.guides/plugins/canonical.md): Quick Answer: The Canonical plugin automatically generates <link rel="canonical"> tags and converts relative URLs to absolute URLs in your meta tag...
 - [Infer SEO Meta](./head/1.guides/plugins/infer-seo-meta-tags.md): Quick Answer: The Infer SEO Meta plugin automatically generates og:title, og:description, and twitter:card from your existing title and description...
+- [Minify](./head/1.guides/plugins/minify.md): Quick Answer: The Minify plugin strips comments, collapses whitespace, and minifies inline  and  content during SSR rendering. It us...
+- [Validate](./head/1.guides/plugins/validate.md): Quick Answer: The Validate plugin catches common head tag mistakes — non-absolute URLs, missing OG tags, typos in meta properties, conflicting robo...
 
 ## head/7.api/0.get-started (1)
 
 - [Overview](./head/7.api/0.get-started/overview.md): Quick Reference: The main composables are useHead() for general head management, useSeoMeta() for SEO tags, and useScript() for script loading. All...
 
-## head/7.api/composables (5)
+## head/7.api/composables (4)
 
 - [useHead()](./head/7.api/composables/0.use-head.md): Quick Start:
 - [useHeadSafe()](./head/7.api/composables/1.use-head-safe.md): The useHeadSafe composable is a security-focused wrapper around the useHead composable that restricts input to only allow safe values, providing pr...
 - [useSeoMeta()](./head/7.api/composables/3.use-seo-meta.md): The useSeoMeta composable lets you define your site's SEO meta tags as a flat object with full TypeScript support.
 - [useScript()](./head/7.api/composables/4.use-script.md): The useScript composable provides an enhanced developer experience for loading third-party scripts with intelligent defaults for performance, secur...
-- [useServerHead()](./head/7.api/composables/6.use-server-head.md): ::warning
-DEPRECATED: All useServer composables (including useServerHead, useServerSeoMeta, etc.) are deprecated.
-Use useHead(){lang="ts"} with imp...
 
-## head/7.api/hooks (15)
+## head/7.api/hooks (12)
 
-- [init](./head/7.api/hooks/01.init.md): The init hook is called when a new Unhead instance is created and initialized. This hook provides a great opportunity to set up any global configur...
 - [entries:updated](./head/7.api/hooks/02.entries-updated.md): The entries:updated hook is called whenever the collection of head entries is modified, either by adding new entries, updating existing ones, or re...
 - [entries:resolve](./head/7.api/hooks/03.entries-resolve.md): The entries:resolve hook is called when head entries need to be resolved into tags. This hook provides access to both the entries and the tags bein...
 - [entries:normalize](./head/7.api/hooks/04.entries-normalize.md): The entries:normalize hook is called for each entry when it's being normalized into tags. This hook gives you access to the tags generated from a s...
@@ -112,12 +122,14 @@ Use useHead(){lang="ts"} with imp...
 - [tags:resolve](./head/7.api/hooks/07.tags-resolve.md): The tags:resolve hook is one of the most important hooks in Unhead, called during the main tag resolution process. This hook provides access to all...
 - [tags:afterResolve](./head/7.api/hooks/08.tags-after-resolve.md): The tags:afterResolve hook is called after all tags have been resolved but before they are rendered. This is the final opportunity to modify tags b...
 - [dom:beforeRender](./head/7.api/hooks/09.dom-before-render.md): The dom:beforeRender hook is called before tags are rendered to the DOM in client-side environments. This hook allows you to control whether render...
-- [dom:renderTag](./head/7.api/hooks/10.dom-render-tag.md): The dom:renderTag hook is called for each individual tag as it's being rendered to the DOM. This hook gives you fine-grained control over how each ...
-- [dom:rendered](./head/7.api/hooks/11.dom-rendered.md): The dom:rendered hook is called after all tags have been rendered to the DOM. This hook provides access to the rendered elements and is useful for ...
 - [ssr:beforeRender](./head/7.api/hooks/12.ssr-before-render.md): The ssr:beforeRender hook is called before the server-side rendering process begins. This hook allows you to control whether the SSR rendering shou...
 - [ssr:render](./head/7.api/hooks/13.ssr-render.md): The ssr:render hook is called during the server-side rendering process after tags have been resolved but before they're converted to HTML strings. ...
 - [ssr:rendered](./head/7.api/hooks/14.ssr-rendered.md): The ssr:rendered hook is called after the server-side rendering process has completed and all head tags have been converted to HTML strings. This h...
 - [script:updated](./head/7.api/hooks/15.script-updated.md): The script:updated hook is called when a script instance managed by Unhead is updated. This hook is specific to Unhead's script management features...
+
+## head/7.api (1)
+
+- [Plugins](./head/7.api/plugins.md): Unhead uses a hooks-based architecture powered by unjs/hookable. Plugins let you tap into different parts of the head tag management lifecycle.
 
 ## schema-org/2.guides/0.get-started (1)
 
@@ -146,7 +158,7 @@ Use useHead(){lang="ts"} with imp...
 
 ## schema-org/5.api/9.schema (34)
 
-- [Article Schema](./schema-org/5.api/9.schema/article.md): WebPage
+- [Article](./schema-org/5.api/9.schema/article.md): Article schema identifies written content like blog posts, news articles, and technical documentation. It helps search engines understand authorshi...
 - [Book Schema](./schema-org/5.api/9.schema/book.md): ::alert{type="warning"}
  Schema in development
 ::
@@ -160,17 +172,17 @@ Use useHead(){lang="ts"} with imp...
  Documentation in progress
 ::
 - [Food Establishment Schema](./schema-org/5.api/9.schema/food-establishment.md): Type: defineFoodEstablishment(input?: FoodEstablishment){lang="ts"}
-- [HowTo Schema](./schema-org/5.api/9.schema/how-to.md)
+- [HowTo](./schema-org/5.api/9.schema/how-to.md): HowTo schema marks up step-by-step instructions so Google can display them as rich results with expandable steps. Use it for tutorials, guides, DIY...
 - [Image Schema](./schema-org/5.api/9.schema/image.md): Describes an individual image (usually in the context of an embedded media object).
-- [ItemList Schema](./schema-org/5.api/9.schema/item-list.md): A list of items of any sort. Mainly used for breadcrumbs and carousels.
-- [Job Posting Schema](./schema-org/5.api/9.schema/job-posting.md): See Global Resolves for full context.
-- [Local Business Schema](./schema-org/5.api/9.schema/local-business.md): Type: defineLocalBusiness(input?: LocalBusiness){lang="ts"}
+- [ItemList](./schema-org/5.api/9.schema/item-list.md): ItemList schema represents an ordered or unordered list of items. Google uses it to display carousel rich results for recipes, products, courses, a...
+- [JobPosting](./schema-org/5.api/9.schema/job-posting.md): JobPosting schema enables your job listings to appear in Google Jobs search results with salary, location, and application details. It's required f...
+- [LocalBusiness](./schema-org/5.api/9.schema/local-business.md): LocalBusiness schema tells search engines about a physical business location — its name, address, opening hours, and services. It powers Google's l...
 - [Movie Schema](./schema-org/5.api/9.schema/movie.md): Type: defineMovie(input?: Movie){lang="ts"}
 - [Music Album Schema](./schema-org/5.api/9.schema/music-album.md): Type: defineMusicAlbum(input?: MusicAlbum){lang="ts"}
 - [Music Group Schema](./schema-org/5.api/9.schema/music-group.md): Type: defineMusicGroup(input?: MusicGroup){lang="ts"}
 - [Music Playlist Schema](./schema-org/5.api/9.schema/music-playlist.md): Type: defineMusicPlaylist(input?: MusicPlaylist){lang="ts"}
 - [Music Recording Schema](./schema-org/5.api/9.schema/music-recording.md): Type: defineMusicRecording(input?: MusicRecording){lang="ts"}
-- [Organization Schema](./schema-org/5.api/9.schema/organization.md): See Global Resolves for full context.
+- [Organization](./schema-org/5.api/9.schema/organization.md): Organization schema establishes your company or brand identity for search engines. It powers Google's Knowledge Panel, connects social profiles via...
 - [Person Schema](./schema-org/5.api/9.schema/person.md): See Global Resolves for full context.
 - [Podcast Episode Schema](./schema-org/5.api/9.schema/podcast-episode.md): Type: definePodcastEpisode(input?: PodcastEpisode){lang="ts"}
 - [Podcast Season Schema](./schema-org/5.api/9.schema/podcast-season.md): Type: definePodcastSeason(input?: PodcastSeason){lang="ts"}
@@ -179,9 +191,7 @@ Use useHead(){lang="ts"} with imp...
 - [Question Schema](./schema-org/5.api/9.schema/question.md): See Global Resolves for full context.
 - [Recipe Schema](./schema-org/5.api/9.schema/recipe.md): See Global Resolves for full context.
 - [Service Schema](./schema-org/5.api/9.schema/service.md): Type: defineService(input?: Service){lang="ts"}
-- [Software App Schema](./schema-org/5.api/9.schema/software-app.md): ::alert{type="warning"}
- Documentation in development
-::
+- [SoftwareApplication](./schema-org/5.api/9.schema/software-app.md): SoftwareApplication schema describes a software product with its features, pricing, ratings, and platform compatibility. It enables rich result dis...
 - [TV Episode Schema](./schema-org/5.api/9.schema/tv-episode.md): Type: defineTVEpisode(input?: TVEpisode){lang="ts"}
 - [TV Season Schema](./schema-org/5.api/9.schema/tv-season.md): Type: defineTVSeason(input?: TVSeason){lang="ts"}
 - [TV Series Schema](./schema-org/5.api/9.schema/tv-series.md): Type: defineTVSeries(input?: TVSeries){lang="ts"}

@@ -7,33 +7,28 @@ title: "@tanstack/store"
 
 ## Classes
 
-- [ReadonlyStore](classes/ReadonlyStore.md)
-- [Store](classes/Store.md)
+- [Derived](../classes/Derived.md)
+- [Effect](../classes/Effect.md)
+- [Store](../classes/Store.md)
 
 ## Interfaces
 
-- [Atom](interfaces/Atom.md)
-- [AtomOptions](interfaces/AtomOptions.md)
-- [BaseAtom](interfaces/BaseAtom.md)
-- [InternalBaseAtom](interfaces/InternalBaseAtom.md)
-- [InternalReadonlyAtom](interfaces/InternalReadonlyAtom.md)
-- [InteropSubscribable](interfaces/InteropSubscribable.md)
-- [Readable](interfaces/Readable.md)
-- [ReadonlyAtom](interfaces/ReadonlyAtom.md)
-- [Subscribable](interfaces/Subscribable.md)
-- [Subscription](interfaces/Subscription.md)
+- [DerivedFnProps](../interfaces/DerivedFnProps.md)
+- [DerivedOptions](../interfaces/DerivedOptions.md)
+- [StoreOptions](../interfaces/StoreOptions.md)
 
 ## Type Aliases
 
-- [AnyAtom](type-aliases/AnyAtom.md)
-- [Observer](type-aliases/Observer.md)
-- [Selection](type-aliases/Selection.md)
+- [UnwrapDerivedOrStore](../type-aliases/UnwrapDerivedOrStore.md)
+- [Updater](../type-aliases/Updater.md)
+
+## Variables
+
+- [\_\_depsThatHaveWrittenThisTick](../variables/depsThatHaveWrittenThisTick.md)
+- [\_\_derivedToStore](../variables/derivedToStore.md)
+- [\_\_storeToDerived](../variables/storeToDerived.md)
 
 ## Functions
 
-- [batch](functions/batch.md)
-- [createAsyncAtom](functions/createAsyncAtom.md)
-- [createAtom](functions/createAtom.md)
-- [createStore](functions/createStore.md)
-- [flush](functions/flush.md)
-- [toObserver](functions/toObserver.md)
+- [batch](../functions/batch.md)
+- [isUpdaterFunction](../functions/isUpdaterFunction.md)

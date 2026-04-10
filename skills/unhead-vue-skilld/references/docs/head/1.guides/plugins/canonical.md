@@ -16,20 +16,35 @@ The Canonical Plugin automatically converts relative URLs to absolute URLs in yo
 
 ## What Tags Does the Plugin Transform?
 
-The plugin transforms these tags automatically:
+The plugin resolves relative URLs to absolute URLs in all of these tags:
 
-- `og:image` and `twitter:image` meta tags
-- `og:url` meta tag
-- `rel="canonical"` link tag
+### Meta Tags
+
+- `og:url`, `og:image`, `og:image:url`, `og:image:secure_url`
+- `og:video`, `og:video:url`, `og:video:secure_url`
+- `og:audio`, `og:audio:url`, `og:audio:secure_url`
+- `twitter:image`, `twitter:image:src`
+- `twitter:player`, `twitter:player:stream`
+
+### Link Tags
+
+- `rel="canonical"` — with query filtering, hash stripping, and trailing slash normalization
+- `rel="next"` / `rel="prev"` — pagination links
+- `rel="alternate"` — hreflang and feed links (critical for international SEO)
+- `rel="author"`, `rel="license"`, `rel="help"`, `rel="search"`, `rel="pingback"`
 
 ::code-block
+
 ```html [Before]
 <meta property="og:image" content="/images/hero.jpg">
+<link rel="alternate" hreflang="es" href="/es/page">
 ```
 
 ```html [After]
 <meta property="og:image" content="https://mysite.com/images/hero.jpg">
+<link rel="alternate" hreflang="es" href="https://mysite.com/es/page">
 ```
+
 ::
 
 ## How Do I Set Up the Canonical Plugin?
@@ -37,8 +52,9 @@ The plugin transforms these tags automatically:
 Install the plugin in both your server & client entries:
 
 ::code-block
+
 ```ts [Input]
-import { CanonicalPlugin } from 'unhead/plugins'
+import { CanonicalPlugin } from '@unhead/dynamic-import/plugins'
 
 const head = createHead({
   plugins: [
@@ -48,19 +64,116 @@ const head = createHead({
   ]
 })
 ```
+
 ::
+
+## How Does Query Parameter Filtering Work?
+
+Tracking parameters like `utm_source`, `fbclid`, and `gclid` create duplicate URLs that dilute your SEO. The plugin automatically strips **all** query parameters from canonical and `og:url` tags by default.
+
+::code-block
+
+```html [Before]
+<link rel="canonical" href="https://mysite.com/blog?page=2&utm_source=twitter&fbclid=abc">
+```
+
+```html [After]
+<link rel="canonical" href="https://mysite.com/blog">
+```
+
+::
+
+### How Do I Preserve Specific Query Parameters?
+
+If your site uses query parameters that affect content (e.g. pagination, filters), pass them via `queryWhitelist`:
+
+::code-block
+
+```ts [Input]
+CanonicalPlugin({
+  canonicalHost: 'https://mysite.com',
+  queryWhitelist: ['page', 'sort', 'q', 'category']
+})
+```
+
+::
+
+Common parameters you may want to whitelist:
+
+- `page` - Pagination
+- `sort` - Sort order
+- `filter` - Content filters
+- `search`, `q` - Search queries
+- `category`, `tag` - Category/tag filters
+- `lang`, `locale` - Language variants
+
+### How Do I Disable Query Filtering?
+
+Set `queryWhitelist` to `false` to keep all query parameters:
+
+::code-block
+
+```ts [Input]
+CanonicalPlugin({
+  canonicalHost: 'https://mysite.com',
+  queryWhitelist: false
+})
+```
+
+::
+
+::tip
+Query filtering only applies to `rel="canonical"` and `og:url` tags. Image and video URLs (`og:image`, `twitter:image`, etc.) are never filtered, since their query parameters often control dimensions and formats.
+::
+
+## How Does Trailing Slash Normalization Work?
+
+Inconsistent trailing slashes (`/about` vs `/about/`) create duplicate canonical URLs. Use the `trailingSlash` option to enforce consistency:
+
+::code-block
+
+```ts [Input]
+// Always add trailing slash
+CanonicalPlugin({
+  canonicalHost: 'https://mysite.com',
+  trailingSlash: true
+})
+
+// Always remove trailing slash
+CanonicalPlugin({
+  canonicalHost: 'https://mysite.com',
+  trailingSlash: false
+})
+```
+
+::
+
+::tip
+The root path `/` is never stripped of its trailing slash, even when `trailingSlash` is `false`.
+::
+
+## Does the Plugin Strip URL Fragments?
+
+Yes. Hash fragments (e.g. `#section`) are automatically removed from canonical and `og:url` tags. Search engines ignore fragments, and leaving them in can create unnecessary URL variations.
 
 ## What Are the Configuration Options?
 
 ::code-block
+
 ```ts [Input]
 interface CanonicalPluginOptions {
   // Your site's domain (required)
   canonicalHost?: string
   // Optional: Custom function to transform URLs
   customResolver?: (path: string) => string
+  // Query parameters to preserve (default: [] — strips all)
+  // Set to false to disable filtering
+  queryWhitelist?: string[] | false
+  // Normalize trailing slashes (true = add, false = remove, undefined = leave as-is)
+  trailingSlash?: boolean
 }
 ```
+
 ::
 
 ### What Happens If I Don't Set canonicalHost?
@@ -78,17 +191,20 @@ Always set `canonicalHost` explicitly for consistent behavior across environment
 Use `customResolver` to implement custom URL transformation logic:
 
 ::code-block
+
 ```ts [Input]
 CanonicalPlugin({
   canonicalHost: 'https://mysite.com',
   customResolver: path => new URL(`/cdn${path}`, 'https://example.com').toString()
 })
 ```
+
 ::
 
 Example transformation:
 
 ::code-block
+
 ```html [Before]
 <meta property="og:image" content="/hero.jpg">
 ```
@@ -96,6 +212,7 @@ Example transformation:
 ```html [After]
 <meta property="og:image" content="https://mysite.com/cdn/hero.jpg">
 ```
+
 ::
 
 ## How Do I Integrate with a CDN?
@@ -103,6 +220,7 @@ Example transformation:
 Point image assets to your CDN domain:
 
 ::code-block
+
 ```ts [Input]
 CanonicalPlugin({
   canonicalHost: 'https://mysite.com',
@@ -114,6 +232,87 @@ CanonicalPlugin({
   }
 })
 ```
+
+::
+
+## Framework Setup Guides
+
+Register the plugin when creating your head instance:
+
+::FrameworkCode
+
+#nuxt
+```ts [plugins/canonical.ts]
+import { injectHead } from '@unhead/vue'
+import { CanonicalPlugin } from '@unhead/dynamic-import/plugins'
+
+export default defineNuxtPlugin(() => {
+  const head = injectHead()
+  head.use(CanonicalPlugin({
+    canonicalHost: 'https://mysite.com'
+  }))
+})
+```
+
+#vue
+```ts [main.ts]
+import { createHead } from '@unhead/vue/client'
+import { CanonicalPlugin } from 'unhead/plugins'
+
+const head = createHead({
+  plugins: [
+    CanonicalPlugin({
+      canonicalHost: 'https://mysite.com'
+    })
+  ]
+})
+
+app.use(head)
+```
+
+#react
+```tsx [app.tsx]
+import { createHead } from '@unhead/react/client'
+import { CanonicalPlugin } from 'unhead/plugins'
+
+const head = createHead({
+  plugins: [
+    CanonicalPlugin({
+      canonicalHost: 'https://mysite.com'
+    })
+  ]
+})
+```
+
+#svelte
+```ts [src/entry-client.ts]
+import { createHead, UnheadContextKey } from '@unhead/svelte/client'
+import { CanonicalPlugin } from 'unhead/plugins'
+
+const head = createHead()
+head.use(CanonicalPlugin({
+  canonicalHost: 'https://mysite.com'
+}))
+```
+
+#angular
+```ts [app.config.ts]
+import { provideClientHead } from '@unhead/angular'
+import { CanonicalPlugin } from 'unhead/plugins'
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideClientHead({
+      plugins: [
+        CanonicalPlugin({
+          canonicalHost: 'https://mysite.com'
+        })
+      ]
+    })
+  ]
+}
+```
+
 ::
 
 ## Related

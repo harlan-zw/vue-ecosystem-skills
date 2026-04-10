@@ -9,7 +9,7 @@ title: shallow
 function shallow<T>(objA, objB): boolean;
 ```
 
-Defined in: index.ts:41
+Defined in: index.ts:55
 
 ## Type Parameters
 

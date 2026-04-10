@@ -12,9 +12,9 @@ It can be used with any of our framework adapters, but can also be used in vanil
 You'll start by creating a new store instance, which is a wrapper around your data:
 
 ```typescript
-import { createStore } from '@tanstack/store';
+import { Store } from '@tanstack/store';
 
-const countStore = createStore(0);
+const countStore = new Store(0);
 
 console.log(countStore.state); // 0
 countStore.setState(() => 1);
@@ -24,12 +24,36 @@ console.log(countStore.state); // 1
 This `Store` can then be used to track updates to your data:
 
 ```typescript
-const {unsubscribe} = countStore.subscribe(() => {
+const unsub = countStore.subscribe(() => {
   console.log('The count is now:', countStore.state);
 });
 
 // Later, to cleanup
-unsubscribe();
+unsub();
+```
+
+You can even transform the data before it's updated:
+
+```typescript
+const count = new Store(12, {
+  updateFn: (prevValue) => (updateValue) => {
+    return updateValue(prevValue) + previous;
+  }
+});
+
+count.setState(() => 12);
+// count.state === 24
+```
+
+And implement a primitive form of derived state:
+
+```typescript
+let double = 0;
+const count = new Store(0, {
+  onUpdate: () => {
+    double = count.state * 2;
+  }
+})
 ```
 
 ### Batch Updates
@@ -46,49 +70,84 @@ batch(() => {
 });
 ```
 
-## Derived Stores
+## Derived
 
-You can create derived stores that automatically update when their dependencies change:
+You can also use the `Derived` class to create derived values that lazily update when their dependencies change:
 
 ```typescript
-const count = createStore(0);
+const count = new Store(0);
 
-const double = createStore(() => count.state * 2);
+const double = new Derived({
+  fn: () => count.state * 2,
+  // Must explicitly list dependencies
+  deps: [count]
+});
 
-console.log(double.state); // 0
-count.setState(() => 5);
-console.log(double.state); // 10
+// Must mount the derived value to start listening for updates
+const unmount = double.mount();
+
+// Later, to cleanup
+unmount();
 ```
 
 ### Previous Derived Value
 
-You can access the previous value of a derived computation by using the `prev` argument passed to the function:
+You can access the previous value of a derived computation by using the `prevVal` argument passed to the `fn` function:
 
 ```typescript
-const count = createStore(1);
+const count = new Store(1);
 
-const sum = createStore<number>((prev) => {
-  return count.state + (prev ?? 0);
+const double = new Derived({
+  fn: ({ prevVal }) => {
+    return count.state + (prevVal ?? 0);
+  },
+  deps: [count]
 });
 
-console.log(sum.state); // 1
+double.mount();
+double.state; // 1
 count.setState(() => 2);
-console.log(sum.state); // 3
+double.state; // 3
 ```
 
-## Subscriptions
+### Dependency Values
 
-You can subscribe to store changes to perform side effects:
+You can access the values of the dependencies of a derived computation by using the `prevDepVals` and `currDepVals` arguments passed to the `fn` function:
 
 ```typescript
-const count = createStore(0);
+const count = new Store(1);
 
-const {unsubscribe} = count.subscribe((state) => {
-  console.log('The count is now:', state);
+const double = new Derived({
+  fn: ({ prevDepVals, currDepVals }) => {
+    return (prevDepVals[0] ?? 0) + currDepVals[0];
+  },
+  deps: [count]
 });
 
-count.setState(() => 5); // Logs: "The count is now: 5"
+double.mount();
+double.state; // 1
+count.setState(() => 2);
+double.state; // 3
+```
+
+## Effects
+
+You can also use the `Effect` class to manage side effects across multiple stores and derived values:
+
+```typescript
+const effect = new Effect({
+  fn: () => {
+    console.log('The count is now:', count.state);
+  },
+  // Array of `Store`s or `Derived`s
+  deps: [count],
+  // Should effect run immediately, default is false
+  eager: true
+})
+
+// Must mount the effect to start listening for updates
+const unmount = effect.mount();
 
 // Later, to cleanup
-unsubscribe();
+unmount();
 ```

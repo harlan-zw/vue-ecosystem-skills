@@ -5,39 +5,80 @@ title: useStore
 
 # Function: useStore()
 
+## Call Signature
+
 ```ts
 function useStore<TState, TSelected>(
    store, 
-   selector, 
-options): Readonly<Ref<TSelected>>;
+   selector?, 
+options?): Readonly<Ref<TSelected>>;
 ```
 
-Defined in: index.ts:12
+Defined in: index.ts:16
 
-## Type Parameters
+### Type Parameters
 
-### TState
+#### TState
 
 `TState`
 
-### TSelected
+#### TSelected
 
 `TSelected` = `NoInfer`\<`TState`\>
 
-## Parameters
+### Parameters
 
-### store
+#### store
 
-`Atom`\<`TState`\> | `ReadonlyAtom`\<`TState`\>
+`Store`\<`TState`, `any`\>
 
-### selector
+#### selector?
 
 (`state`) => `TSelected`
 
-### options
+#### options?
 
-`UseStoreOptions`\<`TSelected`\> = `{}`
+`UseStoreOptions`\<`TSelected`\>
 
-## Returns
+### Returns
+
+`Readonly`\<`Ref`\<`TSelected`\>\>
+
+## Call Signature
+
+```ts
+function useStore<TState, TSelected>(
+   store, 
+   selector?, 
+options?): Readonly<Ref<TSelected>>;
+```
+
+Defined in: index.ts:21
+
+### Type Parameters
+
+#### TState
+
+`TState`
+
+#### TSelected
+
+`TSelected` = `NoInfer`\<`TState`\>
+
+### Parameters
+
+#### store
+
+`Derived`\<`TState`, `any`\>
+
+#### selector?
+
+(`state`) => `TSelected`
+
+#### options?
+
+`UseStoreOptions`\<`TSelected`\>
+
+### Returns
 
 `Readonly`\<`Ref`\<`TSelected`\>\>

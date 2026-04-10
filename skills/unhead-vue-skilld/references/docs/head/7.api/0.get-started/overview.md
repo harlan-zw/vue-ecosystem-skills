@@ -16,9 +16,13 @@ description: 'Unhead API reference for useHead(), useSeoMeta(), useScript() comp
 
 ::
 
+## How do I create plugins?
+
+See the [Plugins API](/docs/head/api/plugins) for creating custom plugins with `defineHeadPlugin`.
+
 ## What hooks can I use?
 
-### How do I hook into entry updates?
+### Entry Hooks
 
 - [entries:updated](/docs/head/api/hooks/entries-updated) - Called when entries have been updated
 - [entries:resolve](/docs/head/api/hooks/entries-resolve) - Called when entries need to be resolved to tags
@@ -33,9 +37,7 @@ description: 'Unhead API reference for useHead(), useSeoMeta(), useScript() comp
 
 ### How do I hook into DOM rendering?
 
-- [dom:beforeRender](/docs/head/api/hooks/dom-before-render) - Called before rendering to the DOM
-- [dom:renderTag](/docs/head/api/hooks/dom-render-tag) - Called when a tag is being rendered to the DOM
-- [dom:rendered](/docs/head/api/hooks/dom-rendered) - Called after tags have been rendered to the DOM
+- [dom:beforeRender](/docs/head/api/hooks/dom-before-render) - Called before rendering to the DOM (synchronous)
 
 ### How do I hook into server-side rendering?
 
