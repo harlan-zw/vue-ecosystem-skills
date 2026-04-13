@@ -1,5 +1,5 @@
 ---
-total: 237
+total: 241
 ---
 
 # Docs Index
@@ -63,6 +63,10 @@ cre...
 - [Mynth](./community-adapters/mynth.md): The Mynth adapter provides access to Mynth image generation models through TanStack AI. It is a community adapter for generateImage() with typed mo...
 - [Soniox](./community-adapters/soniox.md): The Soniox adapter provides access to Soniox transcription models.
 
+## comparison (1)
+
+- [TanStack AI vs Vercel AI SDK](./comparison/vercel-ai-sdk.md): Both TanStack AI and Vercel AI SDK are open-source TypeScript toolkits for building AI-powered applications. They share common ground - streaming c...
+
 ## getting-started (5)
 
 - [Devtools](./getting-started/devtools.md): TanStack Devtools is a unified devtools panel for inspecting and debugging TanStack libraries, including TanStack AI. It provides real-time insight...
@@ -102,18 +106,20 @@ cre...
 - [ToolCallManager](./reference/classes/ToolCallManager.md): Defined in: activities/chat/tools/tool-calls.ts:83
 - [WordBoundaryStrategy](./reference/classes/WordBoundaryStrategy.md): Defined in: activities/chat/stream/strategies.ts:57
 
-## reference/functions (35)
+## reference/functions (37)
 
-- [chat](./reference/functions/chat.md): Defined in: activities/chat/index.ts:1341
+- [chat](./reference/functions/chat.md): Defined in: activities/chat/index.ts:1373
 - [combineStrategies](./reference/functions/combineStrategies.md): Defined in: activities/chat/agent-loop-strategies.ts:79
 - [convertMessagesToModelMessages](./reference/functions/convertMessagesToModelMessages.md): Defined in: activities/chat/messages.ts:63
 - [convertSchemaToJsonSchema](./reference/functions/convertSchemaToJsonSchema.md): Defined in: activities/chat/tools/schema-converter.ts:199
 - [createChatOptions](./reference/functions/createChatOptions.md): Defined in: activities/chat/index.ts:185
+- [createFrozenRegistry](./reference/functions/createFrozenRegistry.md): Defined in: tool-registry.ts:119
 - [createImageOptions](./reference/functions/createImageOptions.md): Defined in: activities/generateImage/index.ts:244
 - [createModel](./reference/functions/createModel.md): Defined in: extend-adapter.ts:61
-- [createReplayStream](./reference/functions/createReplayStream.md): Defined in: activities/chat/stream/processor.ts:1495
+- [createReplayStream](./reference/functions/createReplayStream.md): Defined in: activities/chat/stream/processor.ts:1502
 - [createSpeechOptions](./reference/functions/createSpeechOptions.md): Defined in: activities/generateSpeech/index.ts:181
 - [createSummarizeOptions](./reference/functions/createSummarizeOptions.md): Defined in: activities/summarize/index.ts:254
+- [createToolRegistry](./reference/functions/createToolRegistry.md): Defined in: tool-registry.ts:78
 - [createTranscriptionOptions](./reference/functions/createTranscriptionOptions.md): Defined in: activities/generateTranscription/index.ts:199
 - [createVideoOptions](./reference/functions/createVideoOptions.md): Defined in: activities/generateVideo/index.ts:481
 - [detectImageMimeType](./reference/functions/detectImageMimeType.md): Defined in: utils.ts:17
@@ -144,7 +150,7 @@ cre...
 
 - [@tanstack/ai](./reference/index.md)
 
-## reference/interfaces (98)
+## reference/interfaces (99)
 
 - [AbortInfo](./reference/interfaces/AbortInfo.md): Defined in: activities/chat/middleware/types.ts:258
 - [AfterToolCallInfo](./reference/interfaces/AfterToolCallInfo.md): Defined in: activities/chat/middleware/types.ts:154
@@ -226,6 +232,7 @@ cre...
 - [ToolDefinitionInstance](./reference/interfaces/ToolDefinitionInstance.md): Defined in: activities/chat/tools/tool-definition.ts:45
 - [ToolExecutionContext](./reference/interfaces/ToolExecutionContext.md): Defined in: types.ts:353
 - [ToolPhaseCompleteInfo](./reference/interfaces/ToolPhaseCompleteInfo.md): Defined in: activities/chat/middleware/types.ts:194
+- [ToolRegistry](./reference/interfaces/ToolRegistry.md): Defined in: tool-registry.ts:9
 - [ToolResultPart](./reference/interfaces/ToolResultPart.md): Defined in: types.ts:300
 - [TranscriptionAdapter](./reference/interfaces/TranscriptionAdapter.md): Defined in: activities/generateTranscription/adapter.ts:24
 - [TranscriptionOptions](./reference/interfaces/TranscriptionOptions.md): Defined in: types.ts:1183
