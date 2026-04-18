@@ -6,7 +6,7 @@ id: quick-start
 The basic vue app example to get started with the TanStack vue-store.
 
 **App.vue**
-```html
+```vue
 <script setup>
 import Increment from './Increment.vue';
 import Display from './Display.vue';
@@ -24,10 +24,10 @@ import Display from './Display.vue';
 
 **store.js**
 ```js
-import { Store } from '@tanstack/vue-store';
+import { createStore } from '@tanstack/vue-store';
 
 // You can instantiate the store outside of Vue components too!
-export const store = new Store({
+export const store = createStore({
   dogs: 0,
   cats: 0,
 });
@@ -43,13 +43,13 @@ export function updateState(animal) {
 ```
 
 **Display.vue**
-```html
+```vue
 <script setup>
-import { useStore } from '@tanstack/vue-store';
+import { useSelector } from '@tanstack/vue-store';
 import { store } from './store';
 
 const props = defineProps({ animal: String });
-const count = useStore(store, (state) => state[props.animal]);
+const count = useSelector(store, (state) => state[props.animal]);
 </script>
 
 <!-- This will only re-render when `state[props.animal]` changes. If an unrelated store property changes, it won't re-render -->
@@ -58,8 +58,10 @@ const count = useStore(store, (state) => state[props.animal]);
 </template>
 ```
 
+`useStore` remains available as a deprecated alias to `useSelector`.
+
 **Increment.vue**
-```html
+```vue
 <script setup>
 import { store, updateState } from './store';
 

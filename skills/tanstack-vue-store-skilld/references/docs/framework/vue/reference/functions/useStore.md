@@ -1,84 +1,65 @@
 ---
-id: useStore
-title: useStore
+id: _useStore
+title: _useStore
 ---
 
-# Function: useStore()
-
-## Call Signature
+# Function: \_useStore()
 
 ```ts
-function useStore<TState, TSelected>(
+function _useStore<TState, TActions, TSelected>(
    store, 
-   selector?, 
-options?): Readonly<Ref<TSelected>>;
+   selector, 
+   options?): [Readonly<Ref<TSelected, TSelected>>, [TActions] extends [never] ? (updater) => void : TActions];
 ```
 
-Defined in: index.ts:16
+Defined in: vue-store/src/\_useStore.ts:24
 
-### Type Parameters
+Experimental combined read+write hook for stores, mirroring useAtom's tuple
+pattern.
 
-#### TState
+Returns `[selected, actions]` when the store has an actions factory, or
+`[selected, setState]` for plain stores.
+
+## Type Parameters
+
+### TState
 
 `TState`
 
-#### TSelected
+### TActions
+
+`TActions` *extends* `StoreActionMap`
+
+### TSelected
 
 `TSelected` = `NoInfer`\<`TState`\>
 
-### Parameters
+## Parameters
 
-#### store
+### store
 
-`Store`\<`TState`, `any`\>
+`Store`\<`TState`, `TActions`\>
 
-#### selector?
+### selector
 
 (`state`) => `TSelected`
 
-#### options?
+### options?
 
-`UseStoreOptions`\<`TSelected`\>
+[`UseSelectorOptions`](../interfaces/UseSelectorOptions.md)\<`TSelected`\>
 
-### Returns
+## Returns
 
-`Readonly`\<`Ref`\<`TSelected`\>\>
+\[`Readonly`\<`Ref`\<`TSelected`, `TSelected`\>\>, \[`TActions`\] *extends* \[`never`\] ? (`updater`) => `void` : `TActions`\]
 
-## Call Signature
+## Example
 
 ```ts
-function useStore<TState, TSelected>(
-   store, 
-   selector?, 
-options?): Readonly<Ref<TSelected>>;
+// Store with actions
+const [cats, { addCat }] = _useStore(petStore, (s) => s.cats)
+console.log(cats.value)
+
+// Store without actions
+const [count, setState] = _useStore(plainStore, (s) => s)
+setState((prev) => prev + 1)
 ```
-
-Defined in: index.ts:21
-
-### Type Parameters
-
-#### TState
-
-`TState`
-
-#### TSelected
-
-`TSelected` = `NoInfer`\<`TState`\>
-
-### Parameters
-
-#### store
-
-`Derived`\<`TState`, `any`\>
-
-#### selector?
-
-(`state`) => `TSelected`
-
-#### options?
-
-`UseStoreOptions`\<`TSelected`\>
-
-### Returns
-
-`Readonly`\<`Ref`\<`TSelected`\>\>

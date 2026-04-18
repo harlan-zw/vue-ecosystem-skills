@@ -5,7 +5,7 @@ title: ReadonlyStore
 
 # Class: ReadonlyStore\<T\>
 
-Defined in: store.ts:31
+Defined in: store.ts:59
 
 ## Type Parameters
 
@@ -15,7 +15,7 @@ Defined in: store.ts:31
 
 ## Implements
 
-- `Omit`\<[`Store`](Store.md)\<`T`\>, `"setState"`\>
+- `Omit`\<[`Store`](Store.md)\<`T`\>, `"setState"` \| `"actions"`\>
 
 ## Constructors
 
@@ -25,7 +25,7 @@ Defined in: store.ts:31
 new ReadonlyStore<T>(getValue): ReadonlyStore<T>;
 ```
 
-Defined in: store.ts:33
+Defined in: store.ts:64
 
 #### Parameters
 
@@ -43,7 +43,7 @@ Defined in: store.ts:33
 new ReadonlyStore<T>(initialValue): ReadonlyStore<T>;
 ```
 
-Defined in: store.ts:34
+Defined in: store.ts:65
 
 #### Parameters
 
@@ -65,7 +65,7 @@ Defined in: store.ts:34
 get state(): T;
 ```
 
-Defined in: store.ts:42
+Defined in: store.ts:73
 
 ##### Returns
 
@@ -85,7 +85,7 @@ Omit.state
 get(): T;
 ```
 
-Defined in: store.ts:45
+Defined in: store.ts:76
 
 #### Returns
 
@@ -105,7 +105,7 @@ Omit.get
 subscribe(observerOrFn): Subscription;
 ```
 
-Defined in: store.ts:48
+Defined in: store.ts:79
 
 #### Parameters
 

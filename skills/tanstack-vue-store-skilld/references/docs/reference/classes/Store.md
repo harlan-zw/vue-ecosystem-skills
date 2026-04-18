@@ -3,145 +3,137 @@ id: Store
 title: Store
 ---
 
-# Class: Store\<TState, TUpdater\>
+# Class: Store\<T, TActions\>
 
-Defined in: store.ts:28
+Defined in: store.ts:15
 
 ## Type Parameters
 
-### TState
+### T
 
-`TState`
+`T`
 
-### TUpdater
+### TActions
 
-`TUpdater` *extends* `AnyUpdater` = (`cb`) => `TState`
+`TActions` *extends* [`StoreActionMap`](../type-aliases/StoreActionMap.md) = `never`
 
 ## Constructors
 
 ### Constructor
 
 ```ts
-new Store<TState, TUpdater>(initialState, options?): Store<TState, TUpdater>;
+new Store<T, TActions>(getValue): Store<T, TActions>;
 ```
 
-Defined in: store.ts:37
+Defined in: store.ts:18
 
 #### Parameters
 
-##### initialState
+##### getValue
 
-`TState`
-
-##### options?
-
-[`StoreOptions`](../../interfaces/StoreOptions.md)\<`TState`, `TUpdater`\>
+(`prev?`) => `T`
 
 #### Returns
 
-`Store`\<`TState`, `TUpdater`\>
+`Store`\<`T`, `TActions`\>
+
+### Constructor
+
+```ts
+new Store<T, TActions>(initialValue): Store<T, TActions>;
+```
+
+Defined in: store.ts:19
+
+#### Parameters
+
+##### initialValue
+
+`T`
+
+#### Returns
+
+`Store`\<`T`, `TActions`\>
+
+### Constructor
+
+```ts
+new Store<T, TActions>(initialValue, actionsFactory): Store<T, TActions>;
+```
+
+Defined in: store.ts:20
+
+#### Parameters
+
+##### initialValue
+
+`NonFunction`\<`T`\>
+
+##### actionsFactory
+
+[`StoreActionsFactory`](../type-aliases/StoreActionsFactory.md)\<`T`, `TActions`\>
+
+#### Returns
+
+`Store`\<`T`, `TActions`\>
 
 ## Properties
 
-### listeners
+### actions
 
 ```ts
-listeners: Set<Listener<TState>>;
+readonly actions: TActions;
 ```
 
-Defined in: store.ts:32
+Defined in: store.ts:17
 
-***
-
-### options?
-
-```ts
-optional options: StoreOptions<TState, TUpdater>;
-```
-
-Defined in: store.ts:35
-
-***
-
-### prevState
-
-```ts
-prevState: TState;
-```
-
-Defined in: store.ts:34
-
-***
+## Accessors
 
 ### state
 
+#### Get Signature
+
 ```ts
-state: TState;
+get state(): T;
 ```
 
-Defined in: store.ts:33
+Defined in: store.ts:46
+
+##### Returns
+
+`T`
 
 ## Methods
 
+### get()
+
+```ts
+get(): T;
+```
+
+Defined in: store.ts:49
+
+#### Returns
+
+`T`
+
+***
+
 ### setState()
 
-#### Call Signature
-
 ```ts
 setState(updater): void;
 ```
 
-Defined in: store.ts:55
+Defined in: store.ts:43
 
-Update the store state safely with improved type checking
+#### Parameters
 
-##### Parameters
+##### updater
 
-###### updater
+(`prev`) => `T`
 
-(`prevState`) => `TState`
-
-##### Returns
-
-`void`
-
-#### Call Signature
-
-```ts
-setState(updater): void;
-```
-
-Defined in: store.ts:56
-
-Update the store state safely with improved type checking
-
-##### Parameters
-
-###### updater
-
-`TState`
-
-##### Returns
-
-`void`
-
-#### Call Signature
-
-```ts
-setState(updater): void;
-```
-
-Defined in: store.ts:57
-
-Update the store state safely with improved type checking
-
-##### Parameters
-
-###### updater
-
-`TUpdater`
-
-##### Returns
+#### Returns
 
 `void`
 
@@ -150,23 +142,17 @@ Update the store state safely with improved type checking
 ### subscribe()
 
 ```ts
-subscribe(listener): () => void;
+subscribe(observerOrFn): Subscription;
 ```
 
-Defined in: store.ts:43
+Defined in: store.ts:52
 
 #### Parameters
 
-##### listener
+##### observerOrFn
 
-`Listener`\<`TState`\>
+[`Observer`](../type-aliases/Observer.md)\<`T`\> | (`value`) => `void`
 
 #### Returns
 
-```ts
-(): void;
-```
-
-##### Returns
-
-`void`
+[`Subscription`](../interfaces/Subscription.md)
