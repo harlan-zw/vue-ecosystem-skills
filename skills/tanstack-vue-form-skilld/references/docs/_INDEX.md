@@ -1,5 +1,5 @@
 ---
-total: 118
+total: 119
 ---
 
 # Docs Index
@@ -63,21 +63,21 @@ You can accomplish this by spe...
 
 ## reference/functions (9)
 
-- [createFieldMap](./reference/functions/createFieldMap.md): Defined in: packages/form-core/src/utils.ts:541
-- [deepCopy](./reference/functions/deepCopy.md): Defined in: packages/form-core/src/utils.ts:621
-- [evaluate](./reference/functions/evaluate.md): Defined in: packages/form-core/src/utils.ts:424
+- [createFieldMap](./reference/functions/createFieldMap.md): Defined in: packages/form-core/src/utils.ts:543
+- [deepCopy](./reference/functions/deepCopy.md): Defined in: packages/form-core/src/utils.ts:623
+- [evaluate](./reference/functions/evaluate.md): Defined in: packages/form-core/src/utils.ts:426
 - [formOptions](./reference/functions/formOptions.md): Defined in: packages/form-core/src/formOptions.ts:23
-- [isGlobalFormValidationError](./reference/functions/isGlobalFormValidationError.md): Defined in: packages/form-core/src/utils.ts:418
+- [isGlobalFormValidationError](./reference/functions/isGlobalFormValidationError.md): Defined in: packages/form-core/src/utils.ts:420
 - [isStandardSchemaValidator](./reference/functions/isStandardSchemaValidator.md): Defined in: packages/form-core/src/standardSchemaValidator.ts:110
 - [mergeForm](./reference/functions/mergeForm.md): Defined in: packages/form-core/src/mergeForm.ts:77
 - [revalidateLogic](./reference/functions/revalidateLogic.md): Defined in: packages/form-core/src/ValidationLogic.ts:68
-- [uuid](./reference/functions/uuid.md): Defined in: packages/form-core/src/utils.ts:580
+- [uuid](./reference/functions/uuid.md): Defined in: packages/form-core/src/utils.ts:582
 
 ## reference (1)
 
 - [@tanstack/form-core](./reference/index.md)
 
-## reference/interfaces (18)
+## reference/interfaces (19)
 
 - [AnyDeepKeyAndValue](./reference/interfaces/AnyDeepKeyAndValue.md): Defined in: packages/form-core/src/util-types.ts:22
 - [ArrayDeepKeyAndValue](./reference/interfaces/ArrayDeepKeyAndValue.md): Defined in: packages/form-core/src/util-types.ts:33
@@ -97,6 +97,7 @@ You can accomplish this by spe...
 - [TupleDeepKeyAndValue](./reference/interfaces/TupleDeepKeyAndValue.md): Defined in: packages/form-core/src/util-types.ts:56
 - [UnknownDeepKeyAndValue](./reference/interfaces/UnknownDeepKeyAndValue.md): Defined in: packages/form-core/src/util-types.ts:122
 - [ValidationLogicProps](./reference/interfaces/ValidationLogicProps.md): Defined in: packages/form-core/src/ValidationLogic.ts:20
+- [ValidationLogicValidatorsFn](./reference/interfaces/ValidationLogicValidatorsFn.md): Defined in: packages/form-core/src/ValidationLogic.ts:3
 
 ## reference/type-aliases (57)
 
@@ -163,4 +164,4 @@ You can accomplish this by spe...
 - [defaultValidationLogic](./reference/variables/defaultValidationLogic.md): Defined in: packages/form-core/src/ValidationLogic.ts:120
 - [formEventClient](./reference/variables/formEventClient.md): Defined in: packages/form-core/src/EventClient.ts:70
 - [standardSchemaValidators](./reference/variables/standardSchemaValidators.md): Defined in: packages/form-core/src/standardSchemaValidator.ts:73
-- [throttleFormState](./reference/variables/throttleFormState.md): Defined in: packages/form-core/src/utils.ts:608
+- [throttleFormState](./reference/variables/throttleFormState.md): Defined in: packages/form-core/src/utils.ts:610

@@ -9,7 +9,7 @@ title: isGlobalFormValidationError
 function isGlobalFormValidationError(error): error is GlobalFormValidationError<unknown>;
 ```
 
-Defined in: packages/form-core/src/utils.ts:418
+Defined in: packages/form-core/src/utils.ts:420
 
 ## Parameters
 

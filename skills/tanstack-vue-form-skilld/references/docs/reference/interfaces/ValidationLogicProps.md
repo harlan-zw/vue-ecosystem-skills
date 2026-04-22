@@ -65,7 +65,9 @@ Defined in: packages/form-core/src/ValidationLogic.ts:33
 
 ###### validators
 
-(`ValidationLogicValidatorsFn` \| `undefined`)[]
+(
+  \| [`ValidationLogicValidatorsFn`](ValidationLogicValidatorsFn.md)
+  \| `undefined`)[]
 
 #### Returns
 

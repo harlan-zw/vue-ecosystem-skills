@@ -1,5 +1,5 @@
 ---
-total: 250
+total: 251
 ---
 
 # Docs Index
@@ -305,10 +305,12 @@ cre...
 
 - [defaultJSONParser](./reference/variables/defaultJSONParser.md): Defined in: packages/typescript/ai/src/activities/chat/stream/json-parser.ts:49
 
-## tools (6)
+## tools (7)
 
 - [Client Tools](./tools/client-tools.md): Client tools execute in the browser, enabling UI updates, local storage access, and browser API interactions. Unlike server tools, client tools don...
 - [Lazy Tool Discovery](./tools/lazy-tool-discovery.md): When an application has many tools, sending all tool definitions to the LLM on every request wastes tokens and can degrade response quality. Lazy t...
+- [Provider Tools](./tools/provider-tools.md): Most providers expose native tools beyond user-defined function calls: web
+search, code execution, computer use, hosted retrieval, and more. TanSta...
 - [Server Tools](./tools/server-tools.md): Server tools execute automatically when called by the LLM. They have full access to server resources like databases, APIs, and environment variables.
 - [Tool Approval Flow](./tools/tool-approval.md): The tool approval flow allows you to require user approval before executing sensitive tools, giving users control over actions like sending emails,...
 - [Tool Architecture](./tools/tool-architecture.md): The TanStack AI tool system provides a powerful, flexible architecture for enabling AI agents to interact with external systems:

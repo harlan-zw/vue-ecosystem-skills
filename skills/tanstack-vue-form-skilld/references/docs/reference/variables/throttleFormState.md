@@ -9,7 +9,7 @@ title: throttleFormState
 const throttleFormState: (...args) => void;
 ```
 
-Defined in: packages/form-core/src/utils.ts:608
+Defined in: packages/form-core/src/utils.ts:610
 
 ## Parameters
 
