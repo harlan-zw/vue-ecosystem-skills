@@ -5,7 +5,7 @@ title: AudioPart
 
 # Interface: AudioPart\<TMetadata\>
 
-Defined in: packages/typescript/ai/src/types.ts:201
+Defined in: packages/typescript/ai/src/types.ts:202
 
 Audio content part for multimodal messages.
 
@@ -25,7 +25,7 @@ Provider-specific metadata type
 optional metadata: TMetadata;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:206
+Defined in: packages/typescript/ai/src/types.ts:207
 
 Provider-specific metadata (e.g., format, sample rate)
 
@@ -37,7 +37,7 @@ Provider-specific metadata (e.g., format, sample rate)
 source: ContentPartSource;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:204
+Defined in: packages/typescript/ai/src/types.ts:205
 
 Source of the audio content
 
@@ -49,4 +49,4 @@ Source of the audio content
 type: "audio";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:202
+Defined in: packages/typescript/ai/src/types.ts:203

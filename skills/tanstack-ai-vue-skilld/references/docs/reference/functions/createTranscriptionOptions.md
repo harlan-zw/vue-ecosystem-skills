@@ -9,7 +9,7 @@ title: createTranscriptionOptions
 function createTranscriptionOptions<TAdapter, TStream>(options): TranscriptionActivityOptions<TAdapter, TStream>;
 ```
 
-Defined in: packages/typescript/ai/src/activities/generateTranscription/index.ts:199
+Defined in: packages/typescript/ai/src/activities/generateTranscription/index.ts:251
 
 Create typed options for the generateTranscription() function without executing.
 
@@ -17,7 +17,7 @@ Create typed options for the generateTranscription() function without executing.
 
 ### TAdapter
 
-`TAdapter` *extends* [`TranscriptionAdapter`](../interfaces/TranscriptionAdapter.md)\<`string`, `object`\>
+`TAdapter` *extends* [`TranscriptionAdapter`](../interfaces/TranscriptionAdapter.md)\<`string`, `TranscriptionProviderOptions`\<`TAdapter`\>\>
 
 ### TStream
 

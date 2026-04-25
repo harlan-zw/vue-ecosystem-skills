@@ -32,7 +32,7 @@ const App = {
     Editor
   },
   template: `<editor v-model="text" label="test" />`,
-  data(){
+  data() {
     return {
       text: 'test'
     }
@@ -49,7 +49,7 @@ test('modelValue should be updated', async () => {
   const wrapper = mount(Editor, {
     props: {
       modelValue: 'initialText',
-      'onUpdate:modelValue': (e) => wrapper.setProps({ modelValue: e })
+      'onUpdate:modelValue': e => wrapper.setProps({ modelValue: e })
     }
   })
 
@@ -82,17 +82,17 @@ test('modelValue and currency should be updated', async () => {
   const wrapper = mount(MoneyEditor, {
     props: {
       modelValue: 'initialText',
-      'onUpdate:modelValue': (e) => wrapper.setProps({ modelValue: e }),
+      'onUpdate:modelValue': e => wrapper.setProps({ modelValue: e }),
       currency: '$',
-      'onUpdate:currency': (e) => wrapper.setProps({ currency: e })
+      'onUpdate:currency': e => wrapper.setProps({ currency: e })
     }
   })
 
   const [currencyInput, modelValueInput] = wrapper.findAll('input')
-  await modelValueInput.setValue('test')
+  await modelValueInput.setValue('100')
   await currencyInput.setValue('£')
 
-  expect(wrapper.props('modelValue')).toBe('test')
+  expect(wrapper.props('modelValue')).toBe('100')
   expect(wrapper.props('currency')).toBe('£')
 })
 ```

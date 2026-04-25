@@ -5,7 +5,7 @@ title: ContentPartDataSource
 
 # Interface: ContentPartDataSource
 
-Defined in: packages/typescript/ai/src/types.ts:142
+Defined in: packages/typescript/ai/src/types.ts:143
 
 Source specification for inline data content (base64).
 Requires a mimeType to ensure providers receive proper content type information.
@@ -18,7 +18,7 @@ Requires a mimeType to ensure providers receive proper content type information.
 mimeType: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:155
+Defined in: packages/typescript/ai/src/types.ts:156
 
 The MIME type of the content (e.g., 'image/png', 'audio/wav').
 Required for data sources to ensure proper handling by providers.
@@ -31,7 +31,7 @@ Required for data sources to ensure proper handling by providers.
 type: "data";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:146
+Defined in: packages/typescript/ai/src/types.ts:147
 
 Indicates this is inline data content.
 
@@ -43,6 +43,6 @@ Indicates this is inline data content.
 value: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:150
+Defined in: packages/typescript/ai/src/types.ts:151
 
 The base64-encoded content value.

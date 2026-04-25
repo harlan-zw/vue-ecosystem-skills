@@ -5,7 +5,7 @@ title: ToolCallPart
 
 # Interface: ToolCallPart
 
-Defined in: packages/typescript/ai/src/types.ts:310
+Defined in: packages/typescript/ai/src/types.ts:311
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: packages/typescript/ai/src/types.ts:310
 optional approval: object;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:317
+Defined in: packages/typescript/ai/src/types.ts:318
 
 Approval metadata if tool requires user approval
 
@@ -45,7 +45,7 @@ needsApproval: boolean;
 arguments: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:314
+Defined in: packages/typescript/ai/src/types.ts:315
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: packages/typescript/ai/src/types.ts:314
 id: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:312
+Defined in: packages/typescript/ai/src/types.ts:313
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: packages/typescript/ai/src/types.ts:312
 name: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:313
+Defined in: packages/typescript/ai/src/types.ts:314
 
 ***
 
@@ -75,7 +75,7 @@ Defined in: packages/typescript/ai/src/types.ts:313
 optional output: any;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:323
+Defined in: packages/typescript/ai/src/types.ts:324
 
 Tool execution output (for client tools or after approval)
 
@@ -87,7 +87,7 @@ Tool execution output (for client tools or after approval)
 state: ToolCallState;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:315
+Defined in: packages/typescript/ai/src/types.ts:316
 
 ***
 
@@ -97,4 +97,4 @@ Defined in: packages/typescript/ai/src/types.ts:315
 type: "tool-call";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:311
+Defined in: packages/typescript/ai/src/types.ts:312

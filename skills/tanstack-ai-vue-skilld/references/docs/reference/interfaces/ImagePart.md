@@ -5,7 +5,7 @@ title: ImagePart
 
 # Interface: ImagePart\<TMetadata\>
 
-Defined in: packages/typescript/ai/src/types.ts:189
+Defined in: packages/typescript/ai/src/types.ts:190
 
 Image content part for multimodal messages.
 
@@ -25,7 +25,7 @@ Provider-specific metadata type (e.g., OpenAI's detail level)
 optional metadata: TMetadata;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:194
+Defined in: packages/typescript/ai/src/types.ts:195
 
 Provider-specific metadata (e.g., OpenAI's detail: 'auto' | 'low' | 'high')
 
@@ -37,7 +37,7 @@ Provider-specific metadata (e.g., OpenAI's detail: 'auto' | 'low' | 'high')
 source: ContentPartSource;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:192
+Defined in: packages/typescript/ai/src/types.ts:193
 
 Source of the image content
 
@@ -49,4 +49,4 @@ Source of the image content
 type: "image";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:190
+Defined in: packages/typescript/ai/src/types.ts:191

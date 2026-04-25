@@ -5,7 +5,7 @@ title: TextMessageEndEvent
 
 # Interface: TextMessageEndEvent
 
-Defined in: packages/typescript/ai/src/types.ts:874
+Defined in: packages/typescript/ai/src/types.ts:883
 
 Emitted when a text message completes.
 
@@ -30,6 +30,6 @@ TanStack AI adds: `model?`
 optional model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:876
+Defined in: packages/typescript/ai/src/types.ts:885
 
 Model identifier for multi-model support

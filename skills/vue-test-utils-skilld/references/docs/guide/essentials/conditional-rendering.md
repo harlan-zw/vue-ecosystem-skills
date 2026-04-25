@@ -8,20 +8,20 @@ This article is also available as a short video.
 
 One of the most basic features of Vue is the ability to dynamically insert and remove elements with `v-if`. Let's look at how to test a component that uses `v-if`.
 
-```js
-const Nav = {
-  template: `
-    <nav>
-      <a id="profile" href="/profile">My Profile</a>
-      <a v-if="admin" id="admin" href="/admin">Admin</a>
-    </nav>
-  `,
-  data() {
-    return {
-      admin: false
-    }
-  }
-}
+```vue
+<!-- Nav.vue -->
+<script setup>
+import { ref } from 'vue'
+
+const admin = ref(false)
+</script>
+
+<template>
+  <nav>
+    <a id="profile" href="/profile">My Profile</a>
+    <a v-if="admin" id="admin" href="/admin">Admin</a>
+  </nav>
+</template>
 ```
 
 In the `<Nav>` component, a link to the user's profile is shown. In addition, if the `admin` value is `true`, we reveal a link to the admin section. There are three scenarios which we should verify are behaving correctly:
@@ -48,9 +48,9 @@ test('renders a profile link', () => {
 })
 ```
 
-If `get()` does not return an element matching the selector, it will raise an error, and your test will fail. `get()` returns a `DOMWrapper` if an element is found. A `DOMWrapper` is a thin wrapper around the DOM element that implements the [Wrapper API](/api/#wrapper-methods) - that's why we are able to do `profileLink.text()` and access the text. You can access the raw element using the `element` property.
+If `get()` does not return an element matching the selector, it will raise an error, and your test will fail. `get()` returns a `DOMWrapper` if an element is found. A `DOMWrapper` is a thin wrapper around the DOM element that implements the [Wrapper API](/api/#Wrapper-methods) - that's why we are able to do `profileLink.text()` and access the text. You can access the raw element using the `element` property.
 
-There is another type of wrapper - a `VueWrapper` - that is returned from [`getComponent`](/api/#getcomponent) that works in the same manner.
+There is another type of wrapper - a `VueWrapper` - that is returned from [`getComponent`](/api/#getComponent) that works in the same manner.
 
 ## Using `find()` and `exists()`
 
@@ -67,33 +67,7 @@ test('does not render an admin link', () => {
 })
 ```
 
-Notice we are calling `exists()` on the value returned from `.find()`. `find()`, like `mount()`, also returns a `wrapper`. `mount()` has a few extra methods, because it's wrapping a Vue component, and `find()` only returns a regular DOM node, but many of the methods are shared between both. Some other methods include `classes()`, which gets the classes a DOM node has, and `trigger()` for simulating user interaction. You can find a list of methods supported [here](../../api/#wrapper-methods).
-
-## Using `data`
-
-The final test is to assert that the admin link is rendered when `admin` is `true`. It's `false` by default, but we can override that using the second argument to `mount()`, the [`mounting options`](../../api/#mount-options).
-
-For `data`, we use the aptly named `data` option:
-
-```js
-test('renders an admin link', () => {
-  const wrapper = mount(Nav, {
-    data() {
-      return {
-        admin: true
-      }
-    }
-  })
-
-  // Again, by using `get()` we are implicitly asserting that
-  // the element exists.
-  expect(wrapper.get('#admin').text()).toEqual('Admin')
-})
-```
-
-If you have other properties in `data`, don't worry - Vue Test Utils will merge the two together. The `data` in the mounting options will take priority over any default values.
-
-To learn what other mounting options exist, see [`Passing Data`](../essentials/passing-data.md) or see [`mounting options`](../../api/#mount-options).
+Notice we are calling `exists()` on the value returned from `.find()`. `find()`, like `mount()`, also returns a `wrapper`. `mount()` has a few extra methods, because it's wrapping a Vue component, and `find()` only returns a regular DOM node, but many of the methods are shared between both. Some other methods include `classes()`, which gets the classes a DOM node has, and `trigger()` for simulating user interaction. You can find a list of methods supported [here](../../api/#Wrapper-methods).
 
 ## Checking Elements visibility
 
@@ -101,22 +75,22 @@ Sometimes you only want to hide/show an element while keeping it in the DOM. Vue
 
 This is how a component with `v-show` looks like:
 
-```js
-const Nav = {
-  template: `
-    <nav>
-      <a id="user" href="/profile">My Profile</a>
-      <ul v-show="shouldShowDropdown" id="user-dropdown">
-        <!-- dropdown content -->
-      </ul>
-    </nav>
-  `,
-  data() {
-    return {
-      shouldShowDropdown: false
-    }
-  }
-}
+```vue
+<!-- Nav.vue -->
+<script setup>
+import { ref } from 'vue'
+
+const shouldShowDropdown = ref(false)
+<script>
+
+<template>
+  <nav>
+    <a id="user" href="/profile">My Profile</a>
+    <ul v-show="shouldShowDropdown" id="user-dropdown">
+      <!-- dropdown content -->
+    </ul>
+  </nav>
+</template>
 ```
 
 In this scenario, the element is not visible but always rendered. `get()` or `find()` will always return a `Wrapper` – `find()` with `.exists()` always return `true` – because the **element is still in the DOM**.
@@ -131,11 +105,15 @@ In this scenario, the element is not visible but always rendered. `get()` or `fi
 
 For any of these cases, `isVisible()` returns `false`.
 
+::: warning
+`isVisible()` only works correctly if the wrapper is attached to the DOM via `attachTo`. This is especially relevant when using **happy-dom** as your test environment. Without `attachTo`, CSS-driven visibility (such as `v-show`) may not be detected properly. See the API docs for `isVisible()` for a full example.
+:::
+
 Testing scenarios using `v-show` will look like:
 
 ```js
 test('does not show the user dropdown', () => {
-  const wrapper = mount(Nav)
+  const wrapper = mount(Nav, { attachTo: document.body })
 
   expect(wrapper.get('#user-dropdown').isVisible()).toBe(false)
 })
@@ -145,5 +123,4 @@ test('does not show the user dropdown', () => {
 
 - Use `find()` along with `exists()` to verify whether an element is in the DOM.
 - Use `get()` if you expect the element to be in the DOM.
-- The `data` mounting option can be used to set default values on a component.
 - Use `get()` with `isVisible()` to verify the visibility of an element that is in the DOM

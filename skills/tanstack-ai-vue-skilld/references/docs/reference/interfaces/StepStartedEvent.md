@@ -5,7 +5,7 @@ title: StepStartedEvent
 
 # Interface: StepStartedEvent
 
-Defined in: packages/typescript/ai/src/types.ts:951
+Defined in: packages/typescript/ai/src/types.ts:960
 
 Emitted when a thinking/reasoning step starts.
 
@@ -30,7 +30,7 @@ TanStack AI adds: `model?`, `stepId?` (deprecated alias), `stepType?`
 optional model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:953
+Defined in: packages/typescript/ai/src/types.ts:962
 
 Model identifier for multi-model support
 
@@ -42,7 +42,7 @@ Model identifier for multi-model support
 optional stepId: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:958
+Defined in: packages/typescript/ai/src/types.ts:967
 
 #### Deprecated
 
@@ -57,6 +57,6 @@ Kept for backward compatibility.
 optional stepType: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:960
+Defined in: packages/typescript/ai/src/types.ts:969
 
 Type of step (e.g., 'thinking', 'planning')

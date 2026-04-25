@@ -5,7 +5,7 @@ title: ToolCallStartEvent
 
 # Interface: ToolCallStartEvent
 
-Defined in: packages/typescript/ai/src/types.ts:885
+Defined in: packages/typescript/ai/src/types.ts:894
 
 Emitted when a tool call starts.
 
@@ -30,7 +30,7 @@ TanStack AI adds: `model?`, `toolName` (deprecated alias), `index?`, `providerMe
 optional index: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:894
+Defined in: packages/typescript/ai/src/types.ts:903
 
 Index for parallel tool calls
 
@@ -42,7 +42,7 @@ Index for parallel tool calls
 optional model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:887
+Defined in: packages/typescript/ai/src/types.ts:896
 
 Model identifier for multi-model support
 
@@ -54,7 +54,7 @@ Model identifier for multi-model support
 optional providerMetadata: Record<string, unknown>;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:896
+Defined in: packages/typescript/ai/src/types.ts:905
 
 Provider-specific metadata to carry into the ToolCall
 
@@ -66,7 +66,7 @@ Provider-specific metadata to carry into the ToolCall
 toolName: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:892
+Defined in: packages/typescript/ai/src/types.ts:901
 
 #### Deprecated
 

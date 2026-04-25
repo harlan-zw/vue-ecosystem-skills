@@ -99,10 +99,7 @@ You can pass an array of slots, too:
 test('layout full page layout', () => {
   const wrapper = mount(Layout, {
     slots: {
-      default: [
-        '<div id="one">One</div>',
-        '<div id="two">Two</div>'
-      ]
+      default: ['<div id="one">One</div>', '<div id="two">Two</div>']
     }
   })
 
@@ -139,7 +136,7 @@ Refer to the tests for more examples and use cases.
 
 ## Scoped Slots
 
-Scoped slots and bindings are also supported. 
+Scoped slots and bindings are also supported.
 
 ```js
 const ComponentWithSlots = {

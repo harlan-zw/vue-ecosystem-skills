@@ -209,6 +209,38 @@ import { config } from '@vue/test-utils'
 config.global.renderStubDefaultSlot = true
 ```
 
+### `shallowMount` now always uses kebab-case for components stubs
+
+**Before**:
+
+```js
+import { shallowMount } from '@vue/test-utils'
+import App from '@/App.vue'
+
+describe('App.vue', () => {
+  it('finds the helloworld component', () => {
+    const wrapper = shallowMount(App, {})
+    const componentStub = wrapper.find('helloworld-stub');
+    expect(componentStub.html()).toBeTruthy();
+  })
+})
+```
+
+**After**:
+
+```js
+import { shallowMount } from '@vue/test-utils'
+import App from '@/App.vue'
+
+describe('App.vue', () => {
+  it('finds the helloworld component', () => {
+    const wrapper = shallowMount(App, {})
+    const componentStub = wrapper.find('hello-world-stub');
+    expect(componentStub.html()).toBeTruthy();
+  })
+})
+```
+
 ### `destroy` is now `unmount` to match Vue 3
 
 Vue 3 renamed the `vm.$destroy` to `vm.$unmount`. Vue Test Utils has followed suit; `wrapper.destroy()` is now `wrapper.unmount()`.
@@ -274,6 +306,28 @@ describe('App', () => {
     const body = new DOMWrapper(document.body);
     expect(body.exists()).toBe(true);
   })
+```
+
+### No more `ref` selector in `findAllComponents`
+
+The `ref` syntax is not supported anymore in `findAllComponents`. You could set a `data-test` attribute instead and update the selector:
+
+`Component.vue`:
+
+```diff
+<template>
+-  <FooComponent v-for="number in [1, 2, 3]" :key="number" ref="number">
++  <FooComponent v-for="number in [1, 2, 3]" :key="number" data-test="number">
+    {{ number }}
+  </FooComponent>
+</template>
+```
+
+`Component.spec.js`:
+
+```diff
+- wrapper.findAllComponents({ ref: 'number' })
++ wrapper.findAllComponents('[data-test="number"]')
 ```
 
 ## Test runners upgrade notes

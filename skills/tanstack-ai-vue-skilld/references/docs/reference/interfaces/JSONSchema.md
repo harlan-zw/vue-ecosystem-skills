@@ -5,7 +5,7 @@ title: JSONSchema
 
 # Interface: JSONSchema
 
-Defined in: packages/typescript/ai/src/types.ts:51
+Defined in: packages/typescript/ai/src/types.ts:52
 
 JSON Schema type for defining tool input/output schemas as raw JSON Schema objects.
 This allows tools to be defined without schema libraries when you have JSON Schema definitions available.
@@ -24,7 +24,7 @@ This allows tools to be defined without schema libraries when you have JSON Sche
 optional $defs: Record<string, JSONSchema>;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:61
+Defined in: packages/typescript/ai/src/types.ts:62
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: packages/typescript/ai/src/types.ts:61
 optional $ref: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:60
+Defined in: packages/typescript/ai/src/types.ts:61
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: packages/typescript/ai/src/types.ts:60
 optional additionalItems: boolean | JSONSchema;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:82
+Defined in: packages/typescript/ai/src/types.ts:83
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: packages/typescript/ai/src/types.ts:82
 optional additionalProperties: boolean | JSONSchema;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:81
+Defined in: packages/typescript/ai/src/types.ts:82
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: packages/typescript/ai/src/types.ts:81
 optional allOf: JSONSchema[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:63
+Defined in: packages/typescript/ai/src/types.ts:64
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: packages/typescript/ai/src/types.ts:63
 optional anyOf: JSONSchema[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:64
+Defined in: packages/typescript/ai/src/types.ts:65
 
 ***
 
@@ -84,7 +84,7 @@ Defined in: packages/typescript/ai/src/types.ts:64
 optional const: unknown;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:57
+Defined in: packages/typescript/ai/src/types.ts:58
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: packages/typescript/ai/src/types.ts:57
 optional default: unknown;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:59
+Defined in: packages/typescript/ai/src/types.ts:60
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: packages/typescript/ai/src/types.ts:59
 optional definitions: Record<string, JSONSchema>;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:62
+Defined in: packages/typescript/ai/src/types.ts:63
 
 ***
 
@@ -114,7 +114,7 @@ Defined in: packages/typescript/ai/src/types.ts:62
 optional description: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:58
+Defined in: packages/typescript/ai/src/types.ts:59
 
 ***
 
@@ -124,7 +124,7 @@ Defined in: packages/typescript/ai/src/types.ts:58
 optional else: JSONSchema;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:69
+Defined in: packages/typescript/ai/src/types.ts:70
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: packages/typescript/ai/src/types.ts:69
 optional enum: unknown[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:56
+Defined in: packages/typescript/ai/src/types.ts:57
 
 ***
 
@@ -144,7 +144,7 @@ Defined in: packages/typescript/ai/src/types.ts:56
 optional examples: unknown[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:88
+Defined in: packages/typescript/ai/src/types.ts:89
 
 ***
 
@@ -154,7 +154,7 @@ Defined in: packages/typescript/ai/src/types.ts:88
 optional exclusiveMaximum: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:73
+Defined in: packages/typescript/ai/src/types.ts:74
 
 ***
 
@@ -164,7 +164,7 @@ Defined in: packages/typescript/ai/src/types.ts:73
 optional exclusiveMinimum: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:72
+Defined in: packages/typescript/ai/src/types.ts:73
 
 ***
 
@@ -174,7 +174,7 @@ Defined in: packages/typescript/ai/src/types.ts:72
 optional format: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:77
+Defined in: packages/typescript/ai/src/types.ts:78
 
 ***
 
@@ -184,7 +184,7 @@ Defined in: packages/typescript/ai/src/types.ts:77
 optional if: JSONSchema;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:67
+Defined in: packages/typescript/ai/src/types.ts:68
 
 ***
 
@@ -194,7 +194,7 @@ Defined in: packages/typescript/ai/src/types.ts:67
 optional items: JSONSchema | JSONSchema[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:54
+Defined in: packages/typescript/ai/src/types.ts:55
 
 ***
 
@@ -204,7 +204,7 @@ Defined in: packages/typescript/ai/src/types.ts:54
 optional maximum: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:71
+Defined in: packages/typescript/ai/src/types.ts:72
 
 ***
 
@@ -214,7 +214,7 @@ Defined in: packages/typescript/ai/src/types.ts:71
 optional maxItems: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:79
+Defined in: packages/typescript/ai/src/types.ts:80
 
 ***
 
@@ -224,7 +224,7 @@ Defined in: packages/typescript/ai/src/types.ts:79
 optional maxLength: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:75
+Defined in: packages/typescript/ai/src/types.ts:76
 
 ***
 
@@ -234,7 +234,7 @@ Defined in: packages/typescript/ai/src/types.ts:75
 optional maxProperties: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:86
+Defined in: packages/typescript/ai/src/types.ts:87
 
 ***
 
@@ -244,7 +244,7 @@ Defined in: packages/typescript/ai/src/types.ts:86
 optional minimum: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:70
+Defined in: packages/typescript/ai/src/types.ts:71
 
 ***
 
@@ -254,7 +254,7 @@ Defined in: packages/typescript/ai/src/types.ts:70
 optional minItems: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:78
+Defined in: packages/typescript/ai/src/types.ts:79
 
 ***
 
@@ -264,7 +264,7 @@ Defined in: packages/typescript/ai/src/types.ts:78
 optional minLength: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:74
+Defined in: packages/typescript/ai/src/types.ts:75
 
 ***
 
@@ -274,7 +274,7 @@ Defined in: packages/typescript/ai/src/types.ts:74
 optional minProperties: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:85
+Defined in: packages/typescript/ai/src/types.ts:86
 
 ***
 
@@ -284,7 +284,7 @@ Defined in: packages/typescript/ai/src/types.ts:85
 optional not: JSONSchema;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:66
+Defined in: packages/typescript/ai/src/types.ts:67
 
 ***
 
@@ -294,7 +294,7 @@ Defined in: packages/typescript/ai/src/types.ts:66
 optional oneOf: JSONSchema[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:65
+Defined in: packages/typescript/ai/src/types.ts:66
 
 ***
 
@@ -304,7 +304,7 @@ Defined in: packages/typescript/ai/src/types.ts:65
 optional pattern: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:76
+Defined in: packages/typescript/ai/src/types.ts:77
 
 ***
 
@@ -314,7 +314,7 @@ Defined in: packages/typescript/ai/src/types.ts:76
 optional patternProperties: Record<string, JSONSchema>;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:83
+Defined in: packages/typescript/ai/src/types.ts:84
 
 ***
 
@@ -324,7 +324,7 @@ Defined in: packages/typescript/ai/src/types.ts:83
 optional properties: Record<string, JSONSchema>;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:53
+Defined in: packages/typescript/ai/src/types.ts:54
 
 ***
 
@@ -334,7 +334,7 @@ Defined in: packages/typescript/ai/src/types.ts:53
 optional propertyNames: JSONSchema;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:84
+Defined in: packages/typescript/ai/src/types.ts:85
 
 ***
 
@@ -344,7 +344,7 @@ Defined in: packages/typescript/ai/src/types.ts:84
 optional required: string[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:55
+Defined in: packages/typescript/ai/src/types.ts:56
 
 ***
 
@@ -354,7 +354,7 @@ Defined in: packages/typescript/ai/src/types.ts:55
 optional then: JSONSchema;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:68
+Defined in: packages/typescript/ai/src/types.ts:69
 
 ***
 
@@ -364,7 +364,7 @@ Defined in: packages/typescript/ai/src/types.ts:68
 optional title: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:87
+Defined in: packages/typescript/ai/src/types.ts:88
 
 ***
 
@@ -374,7 +374,7 @@ Defined in: packages/typescript/ai/src/types.ts:87
 optional type: string | string[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:52
+Defined in: packages/typescript/ai/src/types.ts:53
 
 ***
 
@@ -384,4 +384,4 @@ Defined in: packages/typescript/ai/src/types.ts:52
 optional uniqueItems: boolean;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:80
+Defined in: packages/typescript/ai/src/types.ts:81

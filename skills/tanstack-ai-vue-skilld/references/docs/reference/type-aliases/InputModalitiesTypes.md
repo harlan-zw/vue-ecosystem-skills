@@ -9,7 +9,7 @@ title: InputModalitiesTypes
 type InputModalitiesTypes = object;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:360
+Defined in: packages/typescript/ai/src/types.ts:361
 
 ## Properties
 
@@ -19,7 +19,7 @@ Defined in: packages/typescript/ai/src/types.ts:360
 inputModalities: ReadonlyArray<Modality>;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:361
+Defined in: packages/typescript/ai/src/types.ts:362
 
 ***
 
@@ -29,4 +29,4 @@ Defined in: packages/typescript/ai/src/types.ts:361
 messageMetadataByModality: DefaultMessageMetadataByModality;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:362
+Defined in: packages/typescript/ai/src/types.ts:363

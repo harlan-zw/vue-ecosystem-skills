@@ -8,21 +8,24 @@ Cet article est également disponible dans cette courte video.
 
 Voici un composant simple `<Counter>`. Il possède un bouton qui, lorsqu'il est cliqué, incrémente une variable et émet sa valeur.
 
-```js
-const Counter = {
-  template: '<button @click="handleClick">Incrémenter</button>',
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {
-    handleClick() {
-      this.count += 1;
-      this.$emit('increment', this.count);
-    },
-  },
-};
+```vue
+<!-- Counter.vue -->
+<script setup>
+import { ref } from 'vue'
+
+const count = ref(0)
+
+const emit = defineEmits(['increment'])
+
+const handleClick = () => {
+  count.value += 1
+  emit('increment', count.value)
+}
+</script>
+
+<template>
+  <button @click="handleClick">Incrémenter</button>
+</template>
 ```
 
 Pour tester complètement ce composant, nous devrions vérifier qu'un événement `increment` avec la dernière valeur de `count` est émis.
@@ -33,13 +36,13 @@ Pour ce faire, nous allons nous appuyer sur la méthode `emitted()`. Elle **renv
 
 ```js
 test('émet un évènement lorsque le bouton est cliqué', () => {
-  const wrapper = mount(Counter);
+  const wrapper = mount(Counter)
 
-  wrapper.find('button').trigger('click');
-  wrapper.find('button').trigger('click');
+  wrapper.find('button').trigger('click')
+  wrapper.find('button').trigger('click')
 
-  expect(wrapper.emitted()).toHaveProperty('increment');
-});
+  expect(wrapper.emitted()).toHaveProperty('increment')
+})
 ```
 
 > Si vous n'avez pas vu `trigger()` auparavant, ne vous inquiétez pas. Il est utilisé pour simuler une interaction utilisateur. Vous pouvez en apprendre plus dans [Tester les formulaires](./forms).
@@ -56,33 +59,33 @@ La prochaine étape consiste à vérifier que l'événement contient la valeur d
 
 ```js {8}
 test('émet un évènement avec le compteur quand le bouton est cliqué', () => {
-  const wrapper = mount(Counter);
+  const wrapper = mount(Counter)
 
-  wrapper.find('button').trigger('click');
-  wrapper.find('button').trigger('click');
+  wrapper.find('button').trigger('click')
+  wrapper.find('button').trigger('click')
 
   // `emitted()` accepte un argument. La fonction retourne un tableau contenant toutes les occurences de `this.$emit('increment')`.
-  const incrementEvent = wrapper.emitted('increment');
+  const incrementEvent = wrapper.emitted('increment')
 
   // Nous avons cliqué deux fois, le tableau `increment` devrait donc contenir 2 valeurs.
-  expect(incrementEvent).toHaveLength(2);
+  expect(incrementEvent).toHaveLength(2)
 
   // Affirme le résultat du premier click.
   // Remarquez que la valeur est un tableau.
-  expect(incrementEvent[0]).toEqual([1]);
+  expect(incrementEvent[0]).toEqual([1])
 
   // Ensuite, le résultat du second évènement.
-  expect(incrementEvent[1]).toEqual([2]);
-});
+  expect(incrementEvent[1]).toEqual([2])
+})
 ```
 
 Récapitulons et détaillons le retour de la fonction `emmitted()`. Chaque clé contient les différentes valeurs émises lors du test.
 
 ```js
 // console.log(wrapper.emitted('increment'));
-[
+;[
   [1], // première fois qu'il est appelé, `count` est égal à 1
-  [2], // deuxième fois qu'il est appelé, `count` est égal à 2
+  [2] // deuxième fois qu'il est appelé, `count` est égal à 2
 ]
 ```
 
@@ -90,61 +93,59 @@ Récapitulons et détaillons le retour de la fonction `emmitted()`. Chaque clé 
 
 Imaginons maintenant que notre composant `<Counter>` a besoin d'émettre un objet avec des informations supplémentaires. Par exemple, nous devons informer tout composant parent écoutant l'événement `@increment` si la valeur de `count` est paire ou impaire.
 
-```js {12-15}
-const Counter = {
-  template: `<button @click="handleClick">Incrémenter</button>`,
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {
-    handleClick() {
-      this.count += 1;
+```vue
+<!-- Counter.vue -->
+<script setup>
+import { ref } from 'vue'
 
-      this.$emit('increment', {
-        count: this.count,
-        isEven: this.count % 2 === 0,
-      });
-    },
-  },
-};
+const count = ref(0)
+
+const emit = defineEmits(['increment'])
+
+const handleClick = () => {
+  count.value += 1
+  emit('increment', {
+    count: count.value,
+    isEven: count.value % 2 === 0
+  })
+}
+</script>
+
+<template>
+  <button @click="handleClick">Incrémenter</button>
+</template>
 ```
 
 Comme nous l'avons fait auparavant, nous devons déclencher l'événement `click` sur l'élément `<button>`. Ensuite, nous utilisons `emitted('increment')` pour nous assurer que les bonnes valeurs sont émises.
 
 ```js
 test('émet un évènement avec le compteur quand le boutton est cliqué', () => {
-  const wrapper = mount(Counter);
+  const wrapper = mount(Counter)
 
-  wrapper.find('button').trigger('click');
-  wrapper.find('button').trigger('click');
+  wrapper.find('button').trigger('click')
+  wrapper.find('button').trigger('click')
 
   // Nous avons cliqué deux fois, donc le tableau `increment` devrait avoir 2 valeurs.
-  expect(wrapper.emitted('increment')).toHaveLength(2);
+  expect(wrapper.emitted('increment')).toHaveLength(2)
 
   // Ensuite, nous pouvons nous assurer que chaque élément de `wrapper.emitted('increment')` contient un tableau avec l'objet attendu.
   expect(wrapper.emitted('increment')[0]).toEqual([
     {
       count: 1,
-      isEven: false,
-    },
-  ]);
+      isEven: false
+    }
+  ])
 
   expect(wrapper.emitted('increment')[1]).toEqual([
     {
       count: 2,
-      isEven: true,
-    },
-  ]);
-});
+      isEven: true
+    }
+  ])
+})
 ```
 
 En testant des types complexes tels que des objets, cela ne diffère pas des tests de types primaires tels que des nombres ou des chaînes de caractères.
-
-## API de Composition
-
-Si vous utilisez l'API de Composition, vous devez appeler `context.emit()` à la place de `this.$emit()`. `emitted()` capture les événements de l'un ou l'autre, vous pouvez donc tester votre composant en utilisant les mêmes techniques décrites précédemment.
 
 ## Conclusion
 

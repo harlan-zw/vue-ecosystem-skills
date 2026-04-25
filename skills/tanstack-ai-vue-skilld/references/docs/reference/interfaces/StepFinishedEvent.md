@@ -5,7 +5,7 @@ title: StepFinishedEvent
 
 # Interface: StepFinishedEvent
 
-Defined in: packages/typescript/ai/src/types.ts:969
+Defined in: packages/typescript/ai/src/types.ts:978
 
 Emitted when a thinking/reasoning step finishes.
 
@@ -30,7 +30,7 @@ TanStack AI adds: `model?`, `stepId?` (deprecated alias), `delta?`, `content?`
 optional content: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:980
+Defined in: packages/typescript/ai/src/types.ts:989
 
 Full accumulated thinking content (TanStack AI internal)
 
@@ -42,7 +42,7 @@ Full accumulated thinking content (TanStack AI internal)
 optional delta: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:978
+Defined in: packages/typescript/ai/src/types.ts:987
 
 Incremental thinking content (TanStack AI internal)
 
@@ -54,7 +54,7 @@ Incremental thinking content (TanStack AI internal)
 optional model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:971
+Defined in: packages/typescript/ai/src/types.ts:980
 
 Model identifier for multi-model support
 
@@ -66,7 +66,7 @@ Model identifier for multi-model support
 optional stepId: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:976
+Defined in: packages/typescript/ai/src/types.ts:985
 
 #### Deprecated
 

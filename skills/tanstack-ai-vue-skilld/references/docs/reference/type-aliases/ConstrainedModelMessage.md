@@ -9,7 +9,7 @@ title: ConstrainedModelMessage
 type ConstrainedModelMessage<TInputModalitiesTypes> = Omit<ModelMessage, "content"> & object;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:369
+Defined in: packages/typescript/ai/src/types.ts:370
 
 A ModelMessage with content constrained to only allow content parts
 matching the specified input modalities.

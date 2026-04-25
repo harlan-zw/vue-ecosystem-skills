@@ -5,7 +5,7 @@ title: SummarizationResult
 
 # Interface: SummarizationResult
 
-Defined in: packages/typescript/ai/src/types.ts:1168
+Defined in: packages/typescript/ai/src/types.ts:1182
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: packages/typescript/ai/src/types.ts:1168
 id: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1169
+Defined in: packages/typescript/ai/src/types.ts:1183
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: packages/typescript/ai/src/types.ts:1169
 model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1170
+Defined in: packages/typescript/ai/src/types.ts:1184
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: packages/typescript/ai/src/types.ts:1170
 summary: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1171
+Defined in: packages/typescript/ai/src/types.ts:1185
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: packages/typescript/ai/src/types.ts:1171
 usage: object;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1172
+Defined in: packages/typescript/ai/src/types.ts:1186
 
 #### completionTokens
 

@@ -1028,6 +1028,11 @@ find<T extends Node = Node>(selector: string | RefSelector): DOMWrapper<T>;
 
 You can use the same syntax `querySelector` implements. `find` is basically an alias for `querySelector`. In addition you can search for element refs.
 
+It is similar to `get`, but `find` returns an ErrorWrapper if an element is not found while [`get`](#get) will throw an error.
+
+As a rule of thumb, always use `find` when you are asserting something doesn't exist. If you are asserting something does exist, use [`get`](#get).
+
+
 `Component.vue`:
 
 ```vue
@@ -1101,8 +1106,8 @@ Finds a Vue Component instance and returns a `VueWrapper` if found. Returns `Err
 
 ```ts
 findComponent<T extends never>(selector: string): WrapperLike
-findComponent<T extends DefinedComponent>(selector: T | Exclude<FindComponentSelector, FunctionalComponent>): VueWrapper<InstanceType<T>>
-findComponent<T extends FunctionalComponent>(selector: T | string): DOMWrapper<Element>
+findComponent<T extends DefinedComponent>(selector: T | Exclude<FindComponentSelector, FunctionalComponent<any>>): VueWrapper<InstanceType<T>>
+findComponent<T extends FunctionalComponent<any>>(selector: T | string): DOMWrapper<Element>
 findComponent<T extends never>(selector: NameSelector | RefSelector): VueWrapper
 findComponent<T extends ComponentPublicInstance>(selector: T | FindComponentSelector): VueWrapper<T>
 findComponent(selector: FindComponentSelector): WrapperLike
@@ -1174,7 +1179,7 @@ test('findComponent', () => {
 ```
 
 :::warning
-If `ref` in component points to HTML element, `findComponent` will return empty wrapper. This is intended behaviour
+If `ref` in component points to HTML element, `findComponent` will return empty wrapper. This is intended behaviour.
 :::
 
 :::warning Usage with CSS selectors
@@ -1219,9 +1224,9 @@ wrapper.findComponent<DefineComponent>('.foo') // returns VueWrapper
 
 ```ts
 findAllComponents<T extends never>(selector: string): WrapperLike[]
-findAllComponents<T extends DefinedComponent>(selector: T | Exclude<FindAllComponentsSelector, FunctionalComponent>): VueWrapper<InstanceType<T>>[]
-findAllComponents<T extends FunctionalComponent>(selector: string): DOMWrapper<Element>[]
-findAllComponents<T extends FunctionalComponent>(selector: T): DOMWrapper<Node>[]
+findAllComponents<T extends DefinedComponent>(selector: T | Exclude<FindAllComponentsSelector, FunctionalComponent<any>>): VueWrapper<InstanceType<T>>[]
+findAllComponents<T extends FunctionalComponent<any>>(selector: string): DOMWrapper<Element>[]
+findAllComponents<T extends FunctionalComponent<any>>(selector: T): DOMWrapper<Node>[]
 findAllComponents<T extends never>(selector: NameSelector): VueWrapper[]
 findAllComponents<T extends ComponentPublicInstance>(selector: T | FindAllComponentsSelector): VueWrapper<T>[]
 findAllComponents(selector: FindAllComponentsSelector): WrapperLike[]
@@ -1319,7 +1324,7 @@ getComponent<T extends ComponentPublicInstance>(selector: any): Omit<VueWrapper<
 
 **Details:**
 
-It is similar to `findComponent`, but `getComponent` throws instead of returning a ErrorWrapper.
+It is similar to `findComponent`, but `getComponent` throws an error if a Vue Component instance is not found while [`findComponent`](#findComponent) will return an ErrorWrapper.
 
 **Supported syntax:**
 
@@ -1686,10 +1691,10 @@ test('setValue on checkbox', async () => {
   const wrapper = mount(Component)
 
   await wrapper.find('input[type="checkbox"]').setValue(true)
-  expect(wrapper.find('div')).toBe(true)
+  expect(wrapper.find('div').exists()).toBe(true)
 
   await wrapper.find('input[type="checkbox"]').setValue(false)
-  expect(wrapper.find('div')).toBe(false)
+  expect(wrapper.find('div').exists()).toBe(false)
 })
 
 test('setValue on input text', async () => {
@@ -1711,6 +1716,19 @@ test('setValue on multi select', async () => {
 
 ::: warning
 You should use `await` when you call `setValue` to ensure that Vue updates the DOM before you make an assertion.
+:::
+
+::: warning Object values on `<select>`
+`setValue` compares against the `<option>` element's `value` string, which is
+always a string even when the template binds an object to `v-model`. Passing
+the object itself will not match any option. Select the option by index
+instead and trigger a `change` event:
+
+```js
+const select = wrapper.find('select')
+;(select.element as HTMLSelectElement).selectedIndex = 1
+await select.trigger('change')
+```
 :::
 
 ### text

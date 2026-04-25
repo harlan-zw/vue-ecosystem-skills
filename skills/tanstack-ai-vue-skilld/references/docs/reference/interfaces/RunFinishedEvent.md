@@ -5,7 +5,7 @@ title: RunFinishedEvent
 
 # Interface: RunFinishedEvent
 
-Defined in: packages/typescript/ai/src/types.ts:812
+Defined in: packages/typescript/ai/src/types.ts:821
 
 Emitted when a run completes successfully.
 
@@ -30,7 +30,7 @@ TanStack AI adds: `model?`, `finishReason?`, `usage?`
 optional finishReason: "length" | "stop" | "content_filter" | "tool_calls" | null;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:816
+Defined in: packages/typescript/ai/src/types.ts:825
 
 Why the generation stopped
 
@@ -42,7 +42,7 @@ Why the generation stopped
 optional model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:814
+Defined in: packages/typescript/ai/src/types.ts:823
 
 Model identifier for multi-model support
 
@@ -54,7 +54,7 @@ Model identifier for multi-model support
 optional usage: object;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:818
+Defined in: packages/typescript/ai/src/types.ts:827
 
 Token usage statistics
 

@@ -5,7 +5,7 @@ title: VideoPart
 
 # Interface: VideoPart\<TMetadata\>
 
-Defined in: packages/typescript/ai/src/types.ts:213
+Defined in: packages/typescript/ai/src/types.ts:214
 
 Video content part for multimodal messages.
 
@@ -25,7 +25,7 @@ Provider-specific metadata type
 optional metadata: TMetadata;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:218
+Defined in: packages/typescript/ai/src/types.ts:219
 
 Provider-specific metadata (e.g., duration, resolution)
 
@@ -37,7 +37,7 @@ Provider-specific metadata (e.g., duration, resolution)
 source: ContentPartSource;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:216
+Defined in: packages/typescript/ai/src/types.ts:217
 
 Source of the video content
 
@@ -49,4 +49,4 @@ Source of the video content
 type: "video";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:214
+Defined in: packages/typescript/ai/src/types.ts:215

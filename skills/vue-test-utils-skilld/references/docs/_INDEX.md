@@ -1,5 +1,5 @@
 ---
-total: 53
+total: 79
 ---
 
 # Docs Index
@@ -59,7 +59,7 @@ Note that when mocking dates/timers with Vitest, this must be calle...
 
 ## fr/installation (1)
 
-- [Installation](./fr/installation/index.md): Vue Test Utils est un outil indépendant de tout framework - vous pouvez l'utiliser avec le gestionnaire de tests de votre choix. La manière la plus...
+- [Installation](./fr/installation/index.md): ::: code-group
 
 ## fr/migration (1)
 
@@ -108,8 +108,62 @@ official way to extend Vue Test Utils' API with custom logic, methods, o...
 
 ## installation (1)
 
-- [Installation](./installation/index.md): Vue Test Utils is framework agnostic - you can use it with whichever test runner you like. The easiest way to try it out is using Jest, a popular t...
+- [Installation](./installation/index.md): ::: code-group
 
 ## migration (1)
 
 - [Migrating from Vue Test Utils v1](./migration/index.md): A review of changes VTU v1 -> VTU v2, and some code snippets to showcase required modifications. If you encounter a bug or difference in behavior n...
+
+## zh/api (1)
+
+- [API 参考](./zh/api/index.md): 创建一个包含已挂载和渲染的 Vue 组件的 Wrapper 以进行测试。
+请注意，当使用 Vitest 模拟日期/计时器时，必须在 vi.setSystemTime 之后调用此方法。
+
+## zh/guide/advanced (12)
+
+- [异步行为](./zh/guide/advanced/async-suspense.md): 你可能注意到在指南的某些部分，在调用 wrapper 的一些方法时使用了 await，例如 trigger 和 setValue。这是怎么回事呢？
+- [组件实例](./zh/guide/advanced/component-instance.md): mount 会返回一个 VueWrapper，它提供了许多方便的测试 Vue 组件的方法。有时你可能希望访问底层的 Vue 实例，通过 vm 属性访问它即可。
+- [发起 HTTP 请求](./zh/guide/advanced/http-requests.md): 现代测试运行器在测试 HTTP 请求方面已经提供了许多优秀的功能。因此，Vue Test Utils 并没有提供任何独特的工具来处理这一点。
+- [复用与组合](./zh/guide/advanced/reusability-composition.md): 主要内容：
+- [插槽](./zh/guide/advanced/slots.md): Vue Test Utils 提供了一些有用的功能，用于测试使用 slots 的组件。
+- [测试服务端渲染](./zh/guide/advanced/ssr.md): Vue Test Utils 提供了 renderToString 方法，用于测试服务器端渲染 (SSR) 的 Vue 应用程序。本指南将带你了解如何测试 SSR 的 Vue 应用程序。
+- [测试替身 (stub) 与浅挂载](./zh/guide/advanced/stubs-shallow-mount.md): Vue Test Utils 提供了一些高级功能用于为组件和指令创建测试替身 (stubbing)。测试替身 (stub) 是指将自定义组件或指令的现有实现替换为一个不执行任何操作的虚拟实现，这可以简化本来复杂的测试。让我们来看一个例子。
+- [测试 Teleport](./zh/guide/advanced/teleport.md): Vue 3 新引入了一个内置组件：<Teleport>，它允许组件将其内容“传送”到其 <template> 之外的某处。大多数使用 Vue Test Utils 编写的测试都是针对传递给 mount 的组件，当被测试的组件被传送到最初渲染的组件之外时，就引入了一些复杂性。
+- [过渡效果](./zh/guide/advanced/transitions.md): 通常情况下，你可能希望测试过渡后的 DOM 结构，这就是为什么 Vue Test Utils 默认会模拟 <transition> 和 <transition-group> 的原因。
+- [测试 v-model](./zh/guide/advanced/v-model.md): 在编写基于 v-model 交互 (即 update:modelValue 事件) 的组件时，你需要处理 event 和 props。
+- [测试 Vue Router](./zh/guide/advanced/vue-router.md): 本文将介绍两种测试带有 Vue Router 的应用的方法：
+- [测试 Vuex](./zh/guide/advanced/vuex.md): Vuex 只是一个实现细节；在测试使用 Vuex 的组件时不需要特别处理。尽管如此，还是有一些技巧可以使你的测试更易读和易写。我们将在这里讨论它们。
+
+## zh/guide/essentials (6)
+
+- [快速上手](./zh/guide/essentials/a-crash-course.md): 让我们直接开始吧！通过构建一个简单的待办事项应用程序并逐步编写测试，来学习 Vue Test Utils (VTU)。本指南将涵盖以下内容：
+- [条件渲染](./zh/guide/essentials/conditional-rendering.md): Vue Test Utils 提供了一系列功能，用于渲染组件并对其状态进行断言，以验证其是否正常工作。本文将探讨如何渲染组件，以及如何验证组件是否正确渲染内容。
+- [编写易于测试的组件](./zh/guide/essentials/easy-to-test.md): Vue Test Utils 帮助你为 Vue 组件编写测试。然而，VTU 的功能是有限的。
+- [事件处理](./zh/guide/essentials/event-handling.md): Vue 组件通过 props 和调用 $emit 触发事件来进行交互。在本指南中，我们将介绍如何使用 emitted() 函数来验证事件是否正确触发。
+- [表单处理](./zh/guide/essentials/forms.md): 在 Vue 中，表单可以是简单的 HTML 表单，也可以是复杂的嵌套自定义 Vue 组件表单元素。我们将逐步了解如何与表单元素交互、赋值和触发事件。
+- [传递数据到组件](./zh/guide/essentials/passing-data.md): Vue Test Utils 提供了几种方法来设置组件的数据和属性，以便你可以在不同场景下充分测试组件的行为。
+
+## zh/guide/extending-vtu (2)
+
+- [社区与学习资源](./zh/guide/extending-vtu/community-learning.md)
+- [插件](./zh/guide/extending-vtu/plugins.md): 插件为 Vue Test Utils 的 API 添加全局功能。这是为 Vue Test Utils 的 API 扩展自定义逻辑、方法或功能的官方方式。
+
+## zh/guide/faq (1)
+
+- [常见问题](./zh/guide/faq/index.md): [[toc]]
+
+## zh/guide (1)
+
+- [开始](./zh/guide/index.md): 欢迎使用 Vue Test Utils，这是 Vue.js 的官方测试工具库！
+
+## zh (1)
+
+- [index](./zh/index.md): layout: home
+
+## zh/installation (1)
+
+- [安装](./zh/installation/index.md): ::: code-group
+
+## zh/migration (1)
+
+- [从 Vue Test Utils v1 迁移](./zh/migration/index.md): 这是一篇对 VTU v1 到 VTU v2 变更的回顾，并提供一些代码片段以展示所需的修改。如果你遇到了未在此处记录的错误或行为差异，请创建 issue。

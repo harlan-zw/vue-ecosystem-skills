@@ -5,7 +5,7 @@ title: ImageGenerationResult
 
 # Interface: ImageGenerationResult
 
-Defined in: packages/typescript/ai/src/types.ts:1218
+Defined in: packages/typescript/ai/src/types.ts:1251
 
 Result of image generation
 
@@ -17,7 +17,7 @@ Result of image generation
 id: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1220
+Defined in: packages/typescript/ai/src/types.ts:1253
 
 Unique identifier for the generation
 
@@ -29,7 +29,7 @@ Unique identifier for the generation
 images: GeneratedImage[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1224
+Defined in: packages/typescript/ai/src/types.ts:1257
 
 Array of generated images
 
@@ -41,7 +41,7 @@ Array of generated images
 model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1222
+Defined in: packages/typescript/ai/src/types.ts:1255
 
 Model used for generation
 
@@ -53,7 +53,7 @@ Model used for generation
 optional usage: object;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1226
+Defined in: packages/typescript/ai/src/types.ts:1259
 
 Token usage information (if available)
 

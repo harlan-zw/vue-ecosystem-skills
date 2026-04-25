@@ -2,13 +2,13 @@
 name: vue-test-utils-skilld
 description: "ALWAYS use when writing code importing \"@vue/test-utils\". Consult for debugging, best practices, or modifying @vue/test-utils, vue/test-utils, vue test-utils, vue test utils, test-utils, test utils."
 metadata:
-  version: 2.4.6
-  generated_at: 2026-04-20
-  references_synced_at: 2026-04-20
+  version: 2.4.8
+  generated_at: 2026-04-25
+  references_synced_at: 2026-04-25
 ---
 
-# vuejs/test-utils `@vue/test-utils@2.4.6`
-**Tags:** latest: 2.4.6, 2.0.0-alpha.0: 2.0.0-alpha.0, 2.0.0-alpha.1: 2.0.0-alpha.1
+# vuejs/test-utils `@vue/test-utils@2.4.8`
+**Tags:** 2.0.0-alpha.0: 2.0.0-alpha.0, 2.0.0-alpha.1: 2.0.0-alpha.1, 2.0.0-alpha.2: 2.0.0-alpha.2
 
 **References:** [Docs](./references/docs/_INDEX.md)
 ## API Changes

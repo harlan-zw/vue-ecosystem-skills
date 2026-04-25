@@ -11,7 +11,7 @@ type SchemaInput =
   | JSONSchema;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:103
+Defined in: packages/typescript/ai/src/types.ts:104
 
 Union type for schema input - can be any Standard JSON Schema compliant schema or a plain JSONSchema object.
 

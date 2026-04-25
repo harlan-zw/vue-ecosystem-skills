@@ -5,7 +5,7 @@ title: TextCompletionChunk
 
 # Interface: TextCompletionChunk
 
-Defined in: packages/typescript/ai/src/types.ts:1147
+Defined in: packages/typescript/ai/src/types.ts:1156
 
 ## Properties
 
@@ -15,7 +15,7 @@ Defined in: packages/typescript/ai/src/types.ts:1147
 content: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1150
+Defined in: packages/typescript/ai/src/types.ts:1159
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: packages/typescript/ai/src/types.ts:1150
 optional finishReason: "length" | "stop" | "content_filter" | null;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1152
+Defined in: packages/typescript/ai/src/types.ts:1161
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: packages/typescript/ai/src/types.ts:1152
 id: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1148
+Defined in: packages/typescript/ai/src/types.ts:1157
 
 ***
 
@@ -45,7 +45,7 @@ Defined in: packages/typescript/ai/src/types.ts:1148
 model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1149
+Defined in: packages/typescript/ai/src/types.ts:1158
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: packages/typescript/ai/src/types.ts:1149
 optional role: "assistant";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1151
+Defined in: packages/typescript/ai/src/types.ts:1160
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: packages/typescript/ai/src/types.ts:1151
 optional usage: object;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1153
+Defined in: packages/typescript/ai/src/types.ts:1162
 
 #### completionTokens
 

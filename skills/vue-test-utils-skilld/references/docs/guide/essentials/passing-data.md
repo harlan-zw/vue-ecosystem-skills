@@ -44,6 +44,11 @@ const Password = {
       type: Number
     }
   },
+  data() {
+    return {
+      password: ''
+    }
+  },
   computed: {
     error() {
       if (this.password.length < this.minLength) {
@@ -76,31 +81,24 @@ test('renders an error if length is too short', () => {
 
 Writing a test for a `maxLength` rule is left as an exercise for the reader! Another way to write this would be using `setValue` to update the input with a password that is too short. You can learn more in [Forms](./forms).
 
+> **Note:** The `data` mounting option only works with components using the Options API. If your component uses `<script setup>` (Composition API), use `setValue` or `trigger` to set the component state instead. See [Forms](./forms) for more details.
+
 ## Using `setProps`
 
 Sometimes you may need to write a test for a side effect of a prop changing. This simple `<Show>` component renders a greeting if the `show` prop is `true`.
 
 ```vue
+<!-- Show.vue -->
+<script setup>
+import { ref } from 'vue'
+
+const { show = true } = defineProps(['show'])
+const greeting = ref('Hello')
+</script>
+
 <template>
   <div v-if="show">{{ greeting }}</div>
 </template>
-
-<script>
-
-export default {
-  props: {
-    show: {
-      type: Boolean,
-      default: true
-    }
-  },
-  data() {
-    return {
-      greeting: 'Hello'
-    }
-  }
-}
-</script>
 ```
 
 To test this fully, we might want to verify that `greeting` is rendered by default. We are able to update the `show` prop using `setProps()`, which causes `greeting` to be hidden:

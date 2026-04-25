@@ -5,7 +5,7 @@ title: ToolCallEndEvent
 
 # Interface: ToolCallEndEvent
 
-Defined in: packages/typescript/ai/src/types.ts:918
+Defined in: packages/typescript/ai/src/types.ts:927
 
 Emitted when a tool call completes.
 
@@ -30,7 +30,7 @@ TanStack AI adds: `model?`, `toolCallName?`, `toolName?` (deprecated), `input?`,
 optional input: unknown;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:929
+Defined in: packages/typescript/ai/src/types.ts:938
 
 Final parsed input arguments (TanStack AI internal)
 
@@ -42,7 +42,7 @@ Final parsed input arguments (TanStack AI internal)
 optional model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:920
+Defined in: packages/typescript/ai/src/types.ts:929
 
 Model identifier for multi-model support
 
@@ -54,7 +54,7 @@ Model identifier for multi-model support
 optional result: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:931
+Defined in: packages/typescript/ai/src/types.ts:940
 
 Tool execution result (TanStack AI internal)
 
@@ -66,7 +66,7 @@ Tool execution result (TanStack AI internal)
 optional toolCallName: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:922
+Defined in: packages/typescript/ai/src/types.ts:931
 
 Name of the tool that completed
 
@@ -78,7 +78,7 @@ Name of the tool that completed
 optional toolName: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:927
+Defined in: packages/typescript/ai/src/types.ts:936
 
 #### Deprecated
 

@@ -1,20 +1,33 @@
 # Installation
 
-```bash
-npm install --save-dev @vue/test-utils
+::: code-group
 
-# or
+```shell [npm]
+npm install --save-dev @vue/test-utils
+```
+
+```shell [yarn]
 yarn add --dev @vue/test-utils
 ```
 
+:::
+
 ## Usage
 
-Vue Test Utils is framework agnostic - you can use it with whichever test runner you like. The easiest way to try it out is using Jest, a popular test runner.
+Vue Test Utils is framework agnostic - you can use it with whichever test runner you like.
 
-To load `.vue` files with Jest, you will need `vue-jest`. `vue-jest` v5 is the one that supports Vue 3. It is still in alpha, much like the rest of the Vue.js 3 ecosystem, so if you find a bug please report it here and specify you are using `vue-jest` v5.
+### Vitest (Recommended)
 
-You can install it with `vue-jest@next`. Then you need to configure it with Jest's transform option.
+Vitest is the recommended test runner for Vue projects. It is built on Vite, supports `.vue` files out of the box, and provides a fast, modern testing experience with native ESM support.
 
-If you dont want to configure it yourself, you can get a minimal repository with everything set up here.
+```shell
+npm install --save-dev vitest
+```
+
+No additional transform configuration is needed when using Vitest with a Vite-based project. See the Vitest getting started guide for more details.
+
+### Jest
+
+You can also use Jest with Vue Test Utils. To load `.vue` files with Jest, you will need `vue-jest`. You can install it with `vue-jest@next` and configure it with Jest's transform option.
 
 Continue reading to learn more about Vue Test Utils.

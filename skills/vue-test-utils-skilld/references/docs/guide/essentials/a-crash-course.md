@@ -17,22 +17,16 @@ We will start off with a simple `TodoApp` component with a single todo:
   <div></div>
 </template>
 
-<script>
-export default {
-  name: 'TodoApp',
+<script setup>
+import { ref } from 'vue'
 
-  data() {
-    return {
-      todos: [
-        {
-          id: 1,
-          text: 'Learn Vue.js 3',
-          completed: false
-        }
-      ]
-    }
+const todos = ref([
+  {
+    id: 1,
+    text: 'Learn Vue.js 3',
+    completed: false
   }
-}
+])
 </script>
 ```
 
@@ -59,7 +53,7 @@ Next, we call `mount` and pass the component as the first argument - this is som
 
 Finally, we use another global function common to many tests runner - Jest included - `expect`. The idea is we are asserting, or _expecting_, the actual output to match what we think it should be. In this case, we are finding an element with the selector `data-test="todo"` - in the DOM, this will look like `<div data-test="todo">...</div>`. We then call the `text` method to get the content, which we expect to be `'Learn Vue.js 3'`.
 
-> Using `data-test` selectors is not required, but it can make your tests less brittle. classes and ids tend to change or move around as an application grows - by using `data-test`, it's clear to other developers which elements are used in tests, and should not be changed.
+> Using `data-test` selectors is not required, but it can make your tests less brittle. Classes and ids tend to change or move around as an application grows - by using `data-test`, it's clear to other developers which elements are used in tests, and should not be changed.
 
 ## Making the test pass
 
@@ -117,32 +111,24 @@ If we run this test, it will obviously fail. Let's update `TodoApp.vue` to have 
   </div>
 </template>
 
-<script>
-export default {
-  name: 'TodoApp',
+<script setup>
+import { ref } from 'vue'
 
-  data() {
-    return {
-      newTodo: '',
-      todos: [
-        {
-          id: 1,
-          text: 'Learn Vue.js 3',
-          completed: false
-        }
-      ]
-    }
-  },
-
-  methods: {
-    createTodo() {
-      this.todos.push({
-        id: 2,
-        text: this.newTodo,
-        completed: false
-      })
-    }
+const newTodo = ref('')
+const todos = ref([
+  {
+    id: 1,
+    text: 'Learn Vue.js 3',
+    completed: false
   }
+])
+
+const createTodo = () => {
+  todos.value.push({
+    id: 2,
+    text: newTodo.value,
+    completed: false
+  })
 }
 </script>
 ```

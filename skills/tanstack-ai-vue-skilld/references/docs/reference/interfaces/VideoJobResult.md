@@ -5,7 +5,7 @@ title: VideoJobResult
 
 # Interface: VideoJobResult
 
-Defined in: packages/typescript/ai/src/types.ts:1264
+Defined in: packages/typescript/ai/src/types.ts:1357
 
 **`Experimental`**
 
@@ -21,7 +21,7 @@ Result of creating a video generation job.
 jobId: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1266
+Defined in: packages/typescript/ai/src/types.ts:1359
 
 **`Experimental`**
 
@@ -35,7 +35,7 @@ Unique job identifier for polling status
 model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1268
+Defined in: packages/typescript/ai/src/types.ts:1361
 
 **`Experimental`**
 

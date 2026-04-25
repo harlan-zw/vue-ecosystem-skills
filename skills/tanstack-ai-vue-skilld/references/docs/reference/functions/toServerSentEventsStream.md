@@ -9,7 +9,7 @@ title: toServerSentEventsStream
 function toServerSentEventsStream(stream, abortController?): ReadableStream<Uint8Array<ArrayBufferLike>>;
 ```
 
-Defined in: packages/typescript/ai/src/stream-to-response.ts:49
+Defined in: packages/typescript/ai/src/stream-to-response.ts:50
 
 Convert a StreamChunk async iterable to a ReadableStream in Server-Sent Events format
 

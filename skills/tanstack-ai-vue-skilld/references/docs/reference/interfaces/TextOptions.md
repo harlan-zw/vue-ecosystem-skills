@@ -5,7 +5,7 @@ title: TextOptions
 
 # Interface: TextOptions\<TProviderOptionsSuperset, TProviderOptionsForModel\>
 
-Defined in: packages/typescript/ai/src/types.ts:656
+Defined in: packages/typescript/ai/src/types.ts:657
 
 Options passed into the SDK and further piped to the AI provider.
 
@@ -27,7 +27,7 @@ Options passed into the SDK and further piped to the AI provider.
 optional abortController: AbortController;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:740
+Defined in: packages/typescript/ai/src/types.ts:741
 
 AbortController for request cancellation.
 
@@ -54,7 +54,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/AbortController
 optional agentLoopStrategy: AgentLoopStrategy;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:664
+Defined in: packages/typescript/ai/src/types.ts:665
 
 ***
 
@@ -64,10 +64,24 @@ Defined in: packages/typescript/ai/src/types.ts:664
 optional conversationId: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:726
+Defined in: packages/typescript/ai/src/types.ts:727
 
 Conversation ID for correlating client and server-side devtools events.
 When provided, server-side events will be linked to the client conversation in devtools.
+
+***
+
+### logger
+
+```ts
+logger: InternalLogger;
+```
+
+Defined in: packages/typescript/ai/src/types.ts:748
+
+Internal logger threaded from the chat entry point. Adapter implementations
+must call `logger.request()` before SDK calls, `logger.provider()` for each
+chunk received, and `logger.errors()` in catch blocks.
 
 ***
 
@@ -77,7 +91,7 @@ When provided, server-side events will be linked to the client conversation in d
 optional maxTokens: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:699
+Defined in: packages/typescript/ai/src/types.ts:700
 
 The maximum number of tokens to generate in the response.
 
@@ -97,7 +111,7 @@ messages: ModelMessage<
   | null>[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:661
+Defined in: packages/typescript/ai/src/types.ts:662
 
 ***
 
@@ -107,7 +121,7 @@ Defined in: packages/typescript/ai/src/types.ts:661
 optional metadata: Record<string, any>;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:710
+Defined in: packages/typescript/ai/src/types.ts:711
 
 Additional metadata to attach to the request.
 Can be used for tracking, debugging, or passing custom information.
@@ -126,7 +140,7 @@ Provider usage:
 model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:660
+Defined in: packages/typescript/ai/src/types.ts:661
 
 ***
 
@@ -136,7 +150,7 @@ Defined in: packages/typescript/ai/src/types.ts:660
 optional modelOptions: TProviderOptionsForModel;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:711
+Defined in: packages/typescript/ai/src/types.ts:712
 
 ***
 
@@ -146,7 +160,7 @@ Defined in: packages/typescript/ai/src/types.ts:711
 optional outputSchema: SchemaInput;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:721
+Defined in: packages/typescript/ai/src/types.ts:722
 
 Schema for structured output.
 When provided, the adapter should use the provider's native structured output API
@@ -162,7 +176,7 @@ Supports any Standard JSON Schema compliant library (Zod, ArkType, Valibot, etc.
 optional request: Request | RequestInit;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:712
+Defined in: packages/typescript/ai/src/types.ts:713
 
 ***
 
@@ -172,7 +186,7 @@ Defined in: packages/typescript/ai/src/types.ts:712
 optional runId: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:751
+Defined in: packages/typescript/ai/src/types.ts:760
 
 Run ID for AG-UI protocol run correlation.
 When provided, this will be used in RunStartedEvent and RunFinishedEvent.
@@ -186,7 +200,7 @@ If not provided, a unique ID will be generated.
 optional systemPrompts: string[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:663
+Defined in: packages/typescript/ai/src/types.ts:664
 
 ***
 
@@ -196,7 +210,7 @@ Defined in: packages/typescript/ai/src/types.ts:663
 optional temperature: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:677
+Defined in: packages/typescript/ai/src/types.ts:678
 
 Controls the randomness of the output.
 Higher values (e.g., 0.8) make output more random, lower values (e.g., 0.2) make it more focused and deterministic.
@@ -217,7 +231,7 @@ Provider usage:
 optional threadId: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:745
+Defined in: packages/typescript/ai/src/types.ts:754
 
 Thread ID for AG-UI protocol run correlation.
 When provided, this will be used in RunStartedEvent and RunFinishedEvent.
@@ -230,7 +244,7 @@ When provided, this will be used in RunStartedEvent and RunFinishedEvent.
 optional tools: Tool<any, any, any>[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:662
+Defined in: packages/typescript/ai/src/types.ts:663
 
 ***
 
@@ -240,7 +254,7 @@ Defined in: packages/typescript/ai/src/types.ts:662
 optional topP: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:690
+Defined in: packages/typescript/ai/src/types.ts:691
 
 Nucleus sampling parameter. An alternative to temperature sampling.
 The model considers the results of tokens with topP probability mass.

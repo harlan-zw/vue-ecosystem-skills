@@ -5,7 +5,7 @@ title: SummarizationOptions
 
 # Interface: SummarizationOptions
 
-Defined in: packages/typescript/ai/src/types.ts:1160
+Defined in: packages/typescript/ai/src/types.ts:1169
 
 ## Properties
 
@@ -15,7 +15,20 @@ Defined in: packages/typescript/ai/src/types.ts:1160
 optional focus: string[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1165
+Defined in: packages/typescript/ai/src/types.ts:1174
+
+***
+
+### logger
+
+```ts
+logger: InternalLogger;
+```
+
+Defined in: packages/typescript/ai/src/types.ts:1179
+
+Internal logger threaded from the summarize() entry point. Adapters must
+call logger.request() before the SDK call and logger.errors() in catch blocks.
 
 ***
 
@@ -25,7 +38,7 @@ Defined in: packages/typescript/ai/src/types.ts:1165
 optional maxLength: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1163
+Defined in: packages/typescript/ai/src/types.ts:1172
 
 ***
 
@@ -35,7 +48,7 @@ Defined in: packages/typescript/ai/src/types.ts:1163
 model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1161
+Defined in: packages/typescript/ai/src/types.ts:1170
 
 ***
 
@@ -45,7 +58,7 @@ Defined in: packages/typescript/ai/src/types.ts:1161
 optional style: "bullet-points" | "paragraph" | "concise";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1164
+Defined in: packages/typescript/ai/src/types.ts:1173
 
 ***
 
@@ -55,4 +68,4 @@ Defined in: packages/typescript/ai/src/types.ts:1164
 text: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1162
+Defined in: packages/typescript/ai/src/types.ts:1171

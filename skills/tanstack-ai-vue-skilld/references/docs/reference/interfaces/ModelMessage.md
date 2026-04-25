@@ -5,7 +5,7 @@ title: ModelMessage
 
 # Interface: ModelMessage\<TContent\>
 
-Defined in: packages/typescript/ai/src/types.ts:288
+Defined in: packages/typescript/ai/src/types.ts:289
 
 ## Type Parameters
 
@@ -21,7 +21,7 @@ Defined in: packages/typescript/ai/src/types.ts:288
 content: TContent;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:295
+Defined in: packages/typescript/ai/src/types.ts:296
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: packages/typescript/ai/src/types.ts:295
 optional name: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:296
+Defined in: packages/typescript/ai/src/types.ts:297
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: packages/typescript/ai/src/types.ts:296
 role: "user" | "assistant" | "tool";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:294
+Defined in: packages/typescript/ai/src/types.ts:295
 
 ***
 
@@ -51,7 +51,7 @@ Defined in: packages/typescript/ai/src/types.ts:294
 optional toolCallId: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:298
+Defined in: packages/typescript/ai/src/types.ts:299
 
 ***
 
@@ -61,4 +61,4 @@ Defined in: packages/typescript/ai/src/types.ts:298
 optional toolCalls: ToolCall[];
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:297
+Defined in: packages/typescript/ai/src/types.ts:298

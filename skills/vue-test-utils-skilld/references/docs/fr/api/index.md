@@ -1024,6 +1024,10 @@ find<T extends Node = Node>(selector: string | RefSelector): DOMWrapper<T>;
 
 Vous pouvez utiliser la même syntaxe qu'implémente `querySelector`. `find` est en quelque sorte un alias pour `querySelector`. En plus, vous pouvez rechercher des références d'éléments.
 
+Il est similaire à `get`, mais `find` retourne un `ErrorWrapper` si un élément n'est pas trouvé tandis que [`get`](#get) lancera une erreur.
+
+En règle générale, utilisez toujours `find` lorsque vous souhaitez vérifier que quelque chose n'existe pas. Si vous savez que quelque chose existe, utilisez [`get`](#get).
+
 `Component.vue`:
 
 ```vue
@@ -1097,8 +1101,8 @@ Trouve une instance de composant Vue et renvoie un `VueWrapper` si trouvé. Renv
 
 ```ts
 findComponent<T extends never>(selector: string): WrapperLike
-findComponent<T extends DefinedComponent>(selector: T | Exclude<FindComponentSelector, FunctionalComponent>): VueWrapper<InstanceType<T>>
-findComponent<T extends FunctionalComponent>(selector: T | string): DOMWrapper<Element>
+findComponent<T extends DefinedComponent>(selector: T | Exclude<FindComponentSelector, FunctionalComponent<any>>): VueWrapper<InstanceType<T>>
+findComponent<T extends FunctionalComponent<any>>(selector: T | string): DOMWrapper<Element>
 findComponent<T extends never>(selector: NameSelector | RefSelector): VueWrapper
 findComponent<T extends ComponentPublicInstance>(selector: T | FindComponentSelector): VueWrapper<T>
 findComponent(selector: FindComponentSelector): WrapperLike
@@ -1214,9 +1218,9 @@ wrapper.findComponent<DefineComponent>('.foo'); // retourne VueWrapper
 
 ```ts
 findAllComponents<T extends never>(selector: string): WrapperLike[]
-findAllComponents<T extends DefinedComponent>(selector: T | Exclude<FindAllComponentsSelector, FunctionalComponent>): VueWrapper<InstanceType<T>>[]
-findAllComponents<T extends FunctionalComponent>(selector: string): DOMWrapper<Element>[]
-findAllComponents<T extends FunctionalComponent>(selector: T): DOMWrapper<Node>[]
+findAllComponents<T extends DefinedComponent>(selector: T | Exclude<FindAllComponentsSelector, FunctionalComponent<any>>): VueWrapper<InstanceType<T>>[]
+findAllComponents<T extends FunctionalComponent<any>>(selector: string): DOMWrapper<Element>[]
+findAllComponents<T extends FunctionalComponent<any>>(selector: T): DOMWrapper<Node>[]
 findAllComponents<T extends never>(selector: NameSelector): VueWrapper[]
 findAllComponents<T extends ComponentPublicInstance>(selector: T | FindAllComponentsSelector): VueWrapper<T>[]
 findAllComponents(selector: FindAllComponentsSelector): WrapperLike[]
@@ -1273,9 +1277,10 @@ get(selector: string): Omit<DOMWrapper<Element>, 'exists'>
 
 **Utilisation&nbsp;:**
 
-Similaire à `find`, mais `get` retourne une exception au lieu de renvoyer un `ErrorWrapper`.
+It is similar to `find`, but `get` throws an error if an element is not found while [`find`](#find) will return an ErrorWrapper.
+Similaire à `find`, mais `get` renvoie une erreur si un élément n'est pas trouvé tandis que [`find`](#find) renverra un `ErrorWrapper`.
 
-En règle générale, utilisez toujours `get` sauf lorsque vous vérifiez que quelque chose n'existe pas. Dans ce cas, utilisez `find`.
+En règle générale, utilisez toujours `get` sauf lorsque vous voulez vérifier qu'un élément n'existe pas. Dans ce cas, utilisez [`find`](#find).
 
 `Component.vue`:
 
@@ -1314,7 +1319,7 @@ getComponent<T extends ComponentPublicInstance>(selector: any): Omit<VueWrapper<
 
 **Utilisation&nbsp;:**
 
-Similaire à `findComponent`, mais `getComponent` retourne une exception au lieu de renvoyer un `ErrorWrapper`.
+Similaire à `findComponent`, mais `getComponent` renvoie une erreur si une instance de composant Vue n'est pas trouvée tandis que [`findComponent`](#findComponent) renverra un `ErrorWrapper`.
 
 **Syntaxes supportées&nbsp;:**
 
@@ -1678,10 +1683,10 @@ test('setValue sur une checkbox', async () => {
   const wrapper = mount(Component);
 
   await wrapper.find('input[type="checkbox"]').setValue(true);
-  expect(wrapper.find('div')).toBe(true);
+  expect(wrapper.find('div').exists()).toBe(true);
 
   await wrapper.find('input[type="checkbox"]').setValue(false);
-  expect(wrapper.find('div')).toBe(false);
+  expect(wrapper.find('div').exists()).toBe(false);
 });
 
 test('setValue sur un champ texte', async () => {
@@ -1703,6 +1708,20 @@ test('setValue sur une liste déroulante à choix multiples', async () => {
 
 ::: warning
 Vous devriez utiliser `await` lorsque vous appelez `setValue` pour vous assurer que Vue met à jour le DOM avant de faire une vérification.
+:::
+
+::: warning Valeurs objets sur `<select>`
+`setValue` compare la valeur passée à la chaîne `value` de l'élément
+`<option>`, qui reste une chaîne même lorsque le template lie un objet à
+`v-model`. Passer l'objet lui-même ne correspondra à aucune option.
+Sélectionnez plutôt l'option par son index puis déclenchez un événement
+`change` :
+
+```js
+const select = wrapper.find('select')
+;(select.element as HTMLSelectElement).selectedIndex = 1
+await select.trigger('change')
+```
 :::
 
 ### text

@@ -74,7 +74,7 @@ Provider-specific options
 ### semanticEagerness?
 
 ```ts
-optional semanticEagerness: "low" | "high" | "medium";
+optional semanticEagerness: "low" | "medium" | "high";
 ```
 
 Defined in: packages/typescript/ai/src/realtime/types.ts:50

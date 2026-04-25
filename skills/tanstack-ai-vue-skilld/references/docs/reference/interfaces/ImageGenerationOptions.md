@@ -5,7 +5,7 @@ title: ImageGenerationOptions
 
 # Interface: ImageGenerationOptions\<TProviderOptions, TSize\>
 
-Defined in: packages/typescript/ai/src/types.ts:1187
+Defined in: packages/typescript/ai/src/types.ts:1201
 
 Options for image generation.
 These are the common options supported across providers.
@@ -22,13 +22,26 @@ These are the common options supported across providers.
 
 ## Properties
 
+### logger
+
+```ts
+logger: InternalLogger;
+```
+
+Defined in: packages/typescript/ai/src/types.ts:1219
+
+Internal logger threaded from the generateImage() entry point. Adapters must
+call logger.request() before the SDK call and logger.errors() in catch blocks.
+
+***
+
 ### model
 
 ```ts
 model: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1192
+Defined in: packages/typescript/ai/src/types.ts:1206
 
 The model to use for image generation
 
@@ -40,7 +53,7 @@ The model to use for image generation
 optional modelOptions: TProviderOptions;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1200
+Defined in: packages/typescript/ai/src/types.ts:1214
 
 Model-specific options for image generation
 
@@ -52,7 +65,7 @@ Model-specific options for image generation
 optional numberOfImages: number;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1196
+Defined in: packages/typescript/ai/src/types.ts:1210
 
 Number of images to generate (default: 1)
 
@@ -64,7 +77,7 @@ Number of images to generate (default: 1)
 prompt: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1194
+Defined in: packages/typescript/ai/src/types.ts:1208
 
 Text description of the desired image(s)
 
@@ -76,6 +89,6 @@ Text description of the desired image(s)
 optional size: TSize;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:1198
+Defined in: packages/typescript/ai/src/types.ts:1212
 
 Image size in WIDTHxHEIGHT format (e.g., "1024x1024")

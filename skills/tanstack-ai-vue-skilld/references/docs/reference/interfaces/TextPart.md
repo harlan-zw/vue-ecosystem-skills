@@ -5,7 +5,7 @@ title: TextPart
 
 # Interface: TextPart\<TMetadata\>
 
-Defined in: packages/typescript/ai/src/types.ts:304
+Defined in: packages/typescript/ai/src/types.ts:305
 
 Message parts - building blocks of UIMessage
 
@@ -23,7 +23,7 @@ Message parts - building blocks of UIMessage
 content: string;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:306
+Defined in: packages/typescript/ai/src/types.ts:307
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: packages/typescript/ai/src/types.ts:306
 optional metadata: TMetadata;
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:307
+Defined in: packages/typescript/ai/src/types.ts:308
 
 ***
 
@@ -43,4 +43,4 @@ Defined in: packages/typescript/ai/src/types.ts:307
 type: "text";
 ```
 
-Defined in: packages/typescript/ai/src/types.ts:305
+Defined in: packages/typescript/ai/src/types.ts:306
