@@ -1,5 +1,5 @@
 ---
-total: 109
+total: 112
 ---
 
 # Docs Index
@@ -30,6 +30,12 @@ total: 109
 
 - [Wrapping Composables](./0.typescript/head/guides/1.core-concepts/0.wrapping-composables.md): Quick Answer: Create custom composables by wrapping useHead() with your own defaults. Pass the head instance to reuse across your application.
 - [Streaming SSR](./0.typescript/head/guides/1.core-concepts/5.streaming.md): Standard SSR waits for everything to render before sending HTML. Streaming sends the document shell immediately, then streams content as async oper...
+
+## 0.typescript/head/guides/2.tooling (3)
+
+- [ESLint Plugin](./0.typescript/head/guides/2.tooling/0.eslint-plugin.md): @unhead/eslint-plugin is a flat-config ESLint plugin that surfaces unhead-specific issues in your editor and CI before they reach a browser. It mir...
+- [CLI](./0.typescript/head/guides/2.tooling/1.cli.md): @unhead/cli ships an unhead binary that wraps both source-level lint and runtime-rule validation behind a small set of subcommands. Use it locally ...
+- [Validate Plugin](./0.typescript/head/guides/2.tooling/2.validate-plugin.md): ValidatePlugin is the runtime arm of unhead's validation story. Where the ESLint plugin sees source files and the CLI sees rendered HTML, the runti...
 
 ## 0.typescript/schema-org/guides/get-started (1)
 
