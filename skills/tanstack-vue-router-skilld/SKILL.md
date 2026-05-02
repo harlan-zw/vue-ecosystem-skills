@@ -4,7 +4,7 @@ description: "Modern and scalable routing for Vue applications. ALWAYS use when 
 metadata:
   version: 1.166.7
   generated_at: 2026-03-11
-  references_synced_at: 2026-05-01
+  references_synced_at: 2026-05-02
 ---
 
 # TanStack/router `@tanstack/vue-router`
