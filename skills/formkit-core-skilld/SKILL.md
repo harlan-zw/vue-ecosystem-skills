@@ -3,8 +3,8 @@ name: formkit-core-skilld
 description: "The framework agnostic core of FormKit. ALWAYS use when writing code importing \"@formkit/core\". Consult for debugging, best practices, or modifying @formkit/core, formkit/core, formkit core, formkit."
 metadata:
   version: 2.0.0
-  generated_at: 2026-04-03
-  references_synced_at: 2026-04-03
+  generated_at: 2026-05-03
+  references_synced_at: 2026-05-03
 ---
 
 # formkit/formkit `@formkit/core@2.0.0`
